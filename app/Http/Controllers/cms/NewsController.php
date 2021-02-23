@@ -13,4 +13,11 @@ class NewsController extends Controller
 
         ])->render();
     }
+
+    public function create()
+    {
+        return view('livewire.cms.news.create', [
+
+        ])->render();
+    }
 }
