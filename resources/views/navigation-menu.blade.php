@@ -1,21 +1,27 @@
-<nav x-data="{ open: false }" class="bg-yellow-200 border-b border-gray-100 rounded-l-lg md:w-20 md:fixed md:h-full">
+<nav x-data="{ open: false }" class="fixed w-20 h-full bg-yellow-500 border-b border-gray-100 rounded-l-lg">
     <!-- Primary Navigation Menu -->
-    <div class="md:grid md:grid-cols-1">
+    <div class="grid-cols-1 m-auto text-center">
         <!-- Logo -->
-        <div class="flex items-center flex-shrink-0 py-4 m-auto">
+        <div class="flex px-5 py-4 m-auto space-x-8">
             <a href="{{ route('dashboard') }}">
                 <x-jet-application-mark class="block w-auto h-9" />
             </a>
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden space-x-8 sm:-my-px sm:m-auto sm:py-4 sm:flex">
+        <div class="flex px-5 py-4 m-auto space-x-8">
             <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 <img src="{{ asset('icon/speedometer.svg') }}" alt="dashboard" class="w-7" >
             </x-jet-nav-link>
         </div>
 
-        <div class="hidden md:mt-32 md:order-last sm:flex sm:items-center sm:m-auto md:mb-0 md:flex-end">
+        <div class="flex px-5 py-4 m-auto space-x-8">
+            <x-jet-nav-link href="{{ route('news.index') }}" :active="request()->routeIs(['news.index'])">
+                <img src="{{ asset('icon/newspaper.svg') }}" alt="newspaper" class="m-auto w-7" >
+            </x-jet-nav-link>
+        </div>
+
+        <div class="px-5 py-4 m-auto space-x-8 flex-end">
             <!-- Teams Dropdown -->
             @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                 <div class="relative ml-3">

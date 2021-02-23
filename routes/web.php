@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\DashboardController;
+use App\Http\Controllers\cms\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,9 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::prefix('news')->name('news.')->group(function () {
+        Route::get('/index', [NewsController::class, 'index'])->name('index');
+    });
+
 });

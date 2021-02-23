@@ -5,11 +5,11 @@ namespace App\Http\Controllers\cms;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class NewsController extends Controller
 {
     public function index()
     {
-        return view('livewire.cms.dashboard.index', [
+        return view('livewire.cms.news.index', [
 
         ])->render();
     }
