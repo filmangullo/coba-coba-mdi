@@ -20,4 +20,11 @@ class NewsController extends Controller
 
         ])->render();
     }
+
+    public function show()
+    {
+        return view('livewire.cms.news.show', [
+
+        ])->render();
+    }
 }

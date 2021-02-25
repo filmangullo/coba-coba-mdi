@@ -1,8 +1,8 @@
-<nav x-data="{ open: false }" class="fixed w-20 h-full bg-yellow-500 border-b border-gray-100 rounded-l-lg">
+<nav x-data="{ open: false }" class="fixed w-20 h-full bg-purple-800 border-b border-gray-100 rounded-l-lg">
     <!-- Primary Navigation Menu -->
     <div class="grid-cols-1 m-auto text-center">
         <!-- Logo -->
-        <div class="flex px-5 py-4 m-auto space-x-8">
+        <div class="flex px-4 py-2 m-auto space-x-8">
             <a href="{{ route('dashboard') }}">
                 <x-jet-application-mark class="block w-auto h-9" />
             </a>

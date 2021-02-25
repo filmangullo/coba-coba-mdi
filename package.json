@@ -20,5 +20,10 @@
         "postcss": "^8.1.14",
         "postcss-import": "^12.0.1",
         "tailwindcss": "^2.0.1"
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-build-classic": "^25.0.0",
+        "@ckeditor/ckeditor5-vue2": "^1.0.5",
+        "quill": "^1.3.6"
     }
 }
