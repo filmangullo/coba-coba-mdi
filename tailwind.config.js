@@ -27,18 +27,9 @@ module.exports = {
                     danger: '#f7b7b9'
                 },
             },
-            // backgroundColor: theme => ({
-            //     'cms-first': '#f7f8f9',
-            //     'cms-second': '#fdbe11',
-            //     'cms-third': '#212021'
-            // }),
-            // colors: {
-            //     seindo: {
-            //       default: '#EB2D34',
-            //       dark: '#7F141C',
-            //       bright: '#F47A86'
-            //     },
-            // }
+            width: {
+                '10.5': '2.625rem',
+            }
 
         }
     },

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\NewsController;
+use App\Http\Controllers\cms\CareerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,13 +20,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::prefix('news')->name('news.')->group(function () {
         Route::get('/index', [NewsController::class, 'index'])->name('index');
         Route::get('/create', [NewsController::class, 'create'])->name('create');
         Route::get('/{slug}/show', [NewsController::class, 'show'])->name('show');
+    });
+
+    Route::prefix('career')->name('career.')->group(function () {
+        Route::get('/', [CareerController::class, 'index'])->name('index');
+        Route::get('/create', [CareerController::class, 'create'])->name('create');
     });
 
 });

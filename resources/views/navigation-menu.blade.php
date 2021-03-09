@@ -27,6 +27,12 @@
             </x-jet-nav-link>
         </div>
 
+        <div class="flex px-5 py-4 m-auto space-x-8 mt-100">
+            <x-jet-nav-link href="{{ route('career.index') }}" :active="request()->routeIs(['career.index'])">
+                <img src="{{ asset('icon/curriculum-vitae.svg') }}" alt="career" class="m-auto w-7" >
+            </x-jet-nav-link>
+        </div>
+
         <div class="px-5 py-4 m-auto space-x-8 flex-end">
             <!-- Teams Dropdown -->
             @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())

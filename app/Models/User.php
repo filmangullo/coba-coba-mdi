@@ -10,6 +10,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Jetstream\HasTeams;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Career;
 
 class User extends Authenticatable
 {
@@ -58,4 +59,14 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function careers()
+    {
+        return $this->hasMany(Career::class, 'author_id', 'id');
+    }
+
+    public function news()
+    {
+        return $this->hasMany(News::class, 'author_id', 'id');
+    }
 }

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 
-class News extends Model
+class Career extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -16,7 +16,7 @@ class News extends Model
      *
      * @var string
      */
-    protected $table = 'news';
+    protected $table = 'careers';
 
     public function authors()
     {
