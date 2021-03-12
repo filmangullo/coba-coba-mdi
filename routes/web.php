@@ -32,6 +32,7 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
     Route::prefix('career')->name('career.')->group(function () {
         Route::get('/', [CareerController::class, 'index'])->name('index');
         Route::get('/create', [CareerController::class, 'create'])->name('create');
+        Route::get('/update', [CareerController::class, 'update'])->name('update');
     });
 
 });

@@ -14,6 +14,11 @@ class CareerController extends Controller
 
     public function create()
     {
-        return view('livewire.cms.career.create')->render();
+        return view('cms.career.create')->render();
+    }
+
+    public function update()
+    {
+        return view('cms.career.update')->render();
     }
 }
