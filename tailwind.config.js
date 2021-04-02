@@ -10,7 +10,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                'sans': ['Montserrat', 'sans-serif'],
             },
             borderRadius: {
                 'none': '0',
@@ -26,6 +26,11 @@ module.exports = {
                     secondary: '#7F141C',
                     danger: '#f7b7b9'
                 },
+                mark: {
+                    dark: '#954914',
+                    default: '#F07721',
+                },
+                hitam: '#0F0F0F'
             },
             width: {
                 '10.5': '2.625rem',
