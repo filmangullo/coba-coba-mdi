@@ -17,12 +17,12 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="font-sans text-hitam antialiased">
             
             {{-- Header --}}
-            <div class="bg-hitam">
-                <div class="flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6">
-                    <img src="#" alt="Mark Dynamics Indonesia">
+            <div class="bg-hitam fixed z-40 w-full">
+                <div class="flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <img onclick="location.href='/';" src="#" alt="Mark Dynamics Indonesia">
                     <div class="flex items-center text-white text-xs font-medium gap-12 py-10">
                         <a href="#">About Us</a>
                         <a href="#">Products & Gallery</a>
@@ -36,6 +36,17 @@
 
             @yield('content')
 
+            {{-- Footer --}}
+            <div class="bg-white border-t bottom-0 border-gray-300">
+                <div class="grid grid-cols-5 justify-items-center font-medium text-xs py-10 items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Sustainability</a>
+                    <img class="w-24" src="{{ asset('img/logo.svg') }}">
+                    <a href="#">Career</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="text-xs text-center pb-6">All Rights Reserved &copy; Mark Dynamics 2021.</div>
+            </div>
         </div>
     </body>
 </html>
