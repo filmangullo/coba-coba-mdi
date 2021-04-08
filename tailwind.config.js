@@ -20,6 +20,12 @@ module.exports = {
                'full': '9999px',
                'large': '12px',
             },
+            backgroundColor: {
+                'mark': '#F07721'
+            },
+            borderColor: {
+                'mark': '#F07721'
+            },
             colors: {
                 cms: {
                     primary: '#EB2D34',

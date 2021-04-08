@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\web\KontakController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\NewsController;
@@ -19,6 +21,9 @@ use App\Http\Controllers\cms\CareerController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
