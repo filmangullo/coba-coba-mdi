@@ -15,7 +15,7 @@
 <div class="mt-24 mb-12 py-12 bg-mark-default">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <div class="text-center font-bold text-4xl mb-12">Our Products</div>
-        <div class="flex items-center gap-40 justify-center text-center">
+        <div class="flex content-between gap-40 justify-center text-center">
             <div>
                 <img class="object-cover rounded-full w-48 h-48 mb-6" src="{{ asset('img/our-products-1.png') }}" alt="Mark Dynamics Hand Former">
                 <div class="font-bold text-xl">Hand Former</div>
@@ -42,7 +42,7 @@
         <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
             <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
-            <div class="absolute w-full grid grid-cols-1 items-center h-full p-6 top-0 text-white">
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
                 <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
@@ -53,7 +53,7 @@
         <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
             <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
-            <div class="absolute w-full grid grid-cols-1 items-center h-full p-6 top-0 text-white">
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
                 <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
@@ -64,7 +64,7 @@
         <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
             <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
-            <div class="absolute w-full grid grid-cols-1 items-center h-full p-6 top-0 text-white">
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
                 <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
@@ -75,7 +75,7 @@
         <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
             <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
-            <div class="absolute w-full grid grid-cols-1 items-center h-full p-6 top-0 text-white">
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
                 <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
@@ -91,7 +91,7 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
     <div class="text-mark-default mb-12 text-4xl text-center font-bold">Our Clients</div>
-    <div class="grid grid-cols-5 gap-32 justify-center items-center">
+    <div class="grid grid-cols-5 gap-32 justify-center content-between">
         <img class="w-full" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
         <img class="w-full" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
         <img class="w-full" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
