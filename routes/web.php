@@ -28,6 +28,14 @@ Route::get('/news', function () {
 
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 
+Route::get('ceo-message', function () {
+    return view('aboutus.ceo-message');
+})->name('ceo-message');
+
+Route::get('our-business', function () {
+    return view('aboutus.our-business');
+})->name('our-business');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
