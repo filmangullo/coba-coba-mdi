@@ -36,6 +36,17 @@ Route::get('our-business', function () {
     return view('aboutus.our-business');
 })->name('our-business');
 
+Route::get('vision-mission', function () {
+    return view('aboutus.vision&mission');
+})->name('vision&mission');
+
+Route::get('milestones', function () {
+    return view('aboutus.milestones');
+})->name('milestones');
+
+Route::get('awards-certificates', function () {
+    return view('aboutus.awards');
+})->name('awards');
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
