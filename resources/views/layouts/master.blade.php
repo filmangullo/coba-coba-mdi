@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-
+            
             @yield('content')
 
             {{-- Footer --}}
