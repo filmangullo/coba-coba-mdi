@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard';
+    public const HOME = 'App\Providers\CmsServiceProvider';
 
     /**
      * The controller namespace for the application.
@@ -35,6 +35,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Route::pattern('subdomain', '[a-z0-9.\-]+');
         $this->configureRateLimiting();
 
         $this->routes(function () {
@@ -42,6 +43,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api.php'));
+
+            Route::domain('cms.' . env('APP_DOMAIN'))
+                ->middleware('web')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/cms.php'));
 
             Route::middleware('web')
                 ->namespace($this->namespace)

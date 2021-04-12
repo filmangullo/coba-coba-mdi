@@ -8,7 +8,7 @@
             </div>
 
             <div>
-                <a href="{{ route('career.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add Career</a>
+                <a href="{{ route('cms-career.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add Career</a>
             </div>
         </div>
 

@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        return view('livewire.cms.dashboard.index', [
+        return view('cms.dashboard.index', [
 
         ])->render();
     }

@@ -28,7 +28,7 @@
         </div>
 
         <div class="flex px-5 py-4 m-auto space-x-8 mt-100">
-            <x-jet-nav-link href="{{ route('career.index') }}" :active="request()->routeIs(['career.index'])">
+            <x-jet-nav-link href="{{ route('cms-career.index') }}" :active="request()->routeIs(['cms-career.index'])">
                 <img src="{{ asset('icon/curriculum-vitae.svg') }}" alt="career" class="m-auto w-7" >
             </x-jet-nav-link>
         </div>

@@ -107,7 +107,7 @@
                                 <a href="#" class="py-3.5 text-center hover:bg-hitam block">Human Resources</a>
                             </div>
                         </div>
-                        <a class="px-6 py-10" href="#">Career</a>
+                        <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
                         <a class="px-6 py-10" href="{{ route('kontak') }}">Contact Us</a>
                     </div>
                 </div>

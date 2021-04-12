@@ -8,7 +8,7 @@
             </div>
 
             <div>
-                <a href="{{ route('career.index') }}" class="float-right px-10 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-blue-50">Back</a>
+                <a href="{{ route('cms-career.index') }}" class="float-right px-10 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-blue-50">Back</a>
             </div>
         </div>
 
