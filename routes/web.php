@@ -48,6 +48,10 @@ Route::get('awards-certificates', function () {
     return view('aboutus.awards');
 })->name('awards');
 
+Route::get('prospectus', function () {
+    return view('investor.prospectus');
+})->name('prospectus');
+
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 

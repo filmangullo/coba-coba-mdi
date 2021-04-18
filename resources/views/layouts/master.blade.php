@@ -34,11 +34,11 @@
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
                             x-show="about === true" @click.away="about = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">CEO Message</a>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Our Business</a>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Vision, Mission & Values</a>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Milestones</a>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Awards & Certificates</a>
+                                <a href="{{ route('ceo-message') }}" class="py-3.5 text-center hover:bg-hitam block">CEO Message</a>
+                                <a href="{{ route('our-business') }}" class="py-3.5 text-center hover:bg-hitam block">Our Business</a>
+                                <a href="{{ route('vision&mission') }}" class="py-3.5 text-center hover:bg-hitam block">Vision, Mission & Values</a>
+                                <a href="{{ route('milestones') }}" class="py-3.5 text-center hover:bg-hitam block">Milestones</a>
+                                <a href="{{ route('awards') }}" class="py-3.5 text-center hover:bg-hitam block">Awards & Certificates</a>
                             </div>
                         </div>
                         <a class="px-6 py-10" href="#">Products & Gallery</a>
