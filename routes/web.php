@@ -1,11 +1,8 @@
 <?php
 
-use App\Http\Controllers\web\KontakController;
-
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\cms\DashboardController;
-use App\Http\Controllers\cms\NewsController;
-use App\Http\Controllers\cms\CareerController;
+use App\Http\Controllers\web\KontakController;
+use App\Http\Controllers\web\CareerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +24,8 @@ Route::get('/news', function () {
 })->name('news');
 
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
+
+Route::get('/career', [CareerController::class, 'index'])->name('career');
 
 Route::get('ceo-message', function () {
     return view('aboutus.ceo-message');
@@ -67,4 +66,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/update', [CareerController::class, 'update'])->name('update');
     });
 
+/**
+ * cms handle services.
+ *
+ * @return void
+ */
+Route::get('/App/Providers/CmsServiceProvider', function () {
+    return redirect('/');
 });
+

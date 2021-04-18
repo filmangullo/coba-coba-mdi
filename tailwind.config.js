@@ -21,7 +21,9 @@ module.exports = {
                'large': '12px',
             },
             backgroundColor: {
-                'mark': '#F07721'
+                'dark': '#b8540c',
+                'mark': '#F07721',
+                'bright' : '#f39451'
             },
             borderColor: {
                 'mark': '#F07721'
