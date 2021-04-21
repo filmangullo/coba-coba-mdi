@@ -3,7 +3,7 @@
 @section('content')
     <div class="w-full h-auto relative pt-24">
         <img src="{{ asset('img/our-business-hero.png') }}" alt="Mark Dynamics Our Business">
-        <div class="absolute bg-mark bg-opacity-50 h-full top-0 w-full"></div>
+        <div class="absolute bg-mark-default bg-opacity-50 h-full top-0 w-full"></div>
         <div class="absolute text-white text-center w-full text-4xl font-bold top-1/2 mt-5 h-full">Our Business</div>
     </div>
     <div class="max-w-7xl mx-auto grid grid-cols-2 px-4 gap-7 sm:px-6 lg:px-8 my-24">

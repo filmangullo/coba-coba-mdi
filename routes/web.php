@@ -51,6 +51,30 @@ Route::get('prospectus', function () {
     return view('investor.prospectus');
 })->name('prospectus');
 
+Route::get('annual-meeting', function () {
+    return view('investor.annual-meeting');
+})->name('annual-meeting');
+
+Route::get('financial-report', function () {
+    return view('investor.reports.financial-reports');
+})->name('financial-report');
+
+Route::get('dividend', function () {
+    return view('investor.reports.dividend');
+})->name('dividend');
+
+Route::get('dividend', function () {
+    return view('investor.reports.dividend');
+})->name('dividend');
+
+Route::get('annual', function () {
+    return view('investor.reports.annual-reports');
+})->name('annual');
+
+Route::get('public', function () {
+    return view('investor.reports.public-expose');
+})->name('public');
+
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -65,7 +89,7 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/create', [CareerController::class, 'create'])->name('create');
         Route::get('/update', [CareerController::class, 'update'])->name('update');
     });
-
+});
 /**
  * cms handle services.
  *
@@ -74,4 +98,3 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
 Route::get('/App/Providers/CmsServiceProvider', function () {
     return redirect('/');
 });
-

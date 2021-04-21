@@ -20,11 +20,6 @@ module.exports = {
                'full': '9999px',
                'large': '12px',
             },
-            backgroundColor: {
-                'dark': '#b8540c',
-                'mark': '#F07721',
-                'bright' : '#f39451'
-            },
             borderColor: {
                 'mark': '#F07721'
             },

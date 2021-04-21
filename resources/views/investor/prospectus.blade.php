@@ -6,7 +6,7 @@
     <div class="py-24 text-center">
         <div>PT. Mark Dynamics Indonesia Tbk is listed in Indonesia Stock Exchange with stock code of MARK. Please click<br> on the following link to download.</div>
         <div class="flex justify-center mt-12">
-            <div class="text-white bg-mark px-5 cursor-pointer hover:bg-mark-dark py-2 rounded-sm inline-block font-semibold">Prospectus</div>
+            <div class="text-white bg-mark-default px-5 cursor-pointer hover:bg-mark-dark py-2 rounded-sm inline-block font-semibold">Prospectus</div>
         </div>
     </div>
 </div>
