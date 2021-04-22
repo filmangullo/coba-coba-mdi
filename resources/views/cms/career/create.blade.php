@@ -15,6 +15,6 @@
     </x-slot>
 
     @livewire('cms.career.add-content', [
-        'event'     => null
+        'career'     => null
     ])
 </x-app-layout>

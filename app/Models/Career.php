@@ -17,6 +17,7 @@ class Career extends Model
      * @var string
      */
     protected $table = 'careers';
+    protected $guarded = [];
 
     public function authors()
     {
