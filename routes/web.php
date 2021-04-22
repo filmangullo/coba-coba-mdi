@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
+use App\Http\Controllers\web\CorporateGovernanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,19 +76,10 @@ Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
 
-Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-    Route::prefix('news')->name('news.')->group(function () {
-        Route::get('/index', [NewsController::class, 'index'])->name('index');
-        Route::get('/create', [NewsController::class, 'create'])->name('create');
-        Route::get('/{slug}/show', [NewsController::class, 'show'])->name('show');
-    });
-
-    Route::prefix('career')->name('career.')->group(function () {
-        Route::get('/', [CareerController::class, 'index'])->name('index');
-        Route::get('/create', [CareerController::class, 'create'])->name('create');
-        Route::get('/update', [CareerController::class, 'update'])->name('update');
+Route::prefix('investor-relations')->group(function () {
+    Route::prefix('corporate-governance')->group(function () {
+        Route::get('board-members', [CorporateGovernanceController::class, 'boardMembers'])->name('corporate-governanc.board-members');
+        Route::get('audit-comittee', [CorporateGovernanceController::class, 'auditComittee'])->name('corporate-governanc.audit-comittee');
     });
 });
 /**
