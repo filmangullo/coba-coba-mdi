@@ -3,12 +3,12 @@
 @section('content')
     <div class="w-full h-auto relative pt-24">
         <img src="{{ asset('img/milestones-hero.png') }}" alt="Mark Dynamics Milestones">
-        <div class="absolute bg-mark bg-opacity-50 h-full top-0 w-full"></div>
+        <div class="absolute bg-mark-default bg-opacity-50 h-full top-0 w-full"></div>
         <div class="absolute text-white text-center w-full text-4xl font-bold top-1/2 mt-5 h-full">Milestones</div>
     </div>
     <div class="my-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="w-full h-auto relative grid grid-cols-1 justify-center">
-            <div class="bg-mark h-5/6 top-10 z-0 absolute mx-auto w-1 left-1/2 -ml-0.5"></div>
+            <div class="bg-mark-default h-5/6 top-10 z-0 absolute mx-auto w-1 left-1/2 -ml-0.5"></div>
             <div class="grid grid-cols-12 mb-12 z-10 justify-center">
                 <div class="col-span-5"></div>
                 <div class="col-span-2">

@@ -17,7 +17,7 @@
             <div class="relative w-full h-full">
                 <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
                 <img src="{{ asset('img/mission.png') }}" alt="">
-                <div class="absolute top-0 w-full py-24 text-center">
+                <div class="absolute top-0 w-full py-24 -mt-4 text-center">
                     <div class="mb-12 text-4xl font-bold text-mark-default">Mission</div>
                     <div class="space-y-24 text-sm font-semibold text-white">
                         <div class="grid grid-cols-2 mx-48">

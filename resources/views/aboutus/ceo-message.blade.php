@@ -6,7 +6,7 @@
     <div class="my-24">
         <img class="w-1/3 mx-auto" src="{{ asset('img/ceo-message.png') }}" alt="Mark Dynamics Ceo Message">
     </div>
-    <div class="bg-mark w-full py-24 mb-24 px-52 rounded-md relative">
+    <div class="bg-mark-default w-full py-24 mb-24 px-52 rounded-md relative">
         <div class="text-lg font-semibold text-white">
             In 2020, we have witnessed something beyond our imagination as the Coronavirus-19 hit the entire world. Damage inflicted by the pandemic has stunned many across the world. Lives were gone, jobs were lost, and businesses collapsed. I would like to express my deepest condolences to those who have been negatively impacted by the outbreak and to direct my utmost gratitude to the medical professionals who have risked everything to cure the world. With vaccines available now, I do believe that this pandemic is coming to an end, sooner or later. <br>
             As we can see, the pandemic has caused the demand of gloves surging to a level it has never reached before. The spike has forced us to move quickly as global supply of hand formers is facing a shortage. We took the chance to expand by adding a new machine with the capacity of 200,000 pieces per month in the mid-year 2020, and building a new factory armed with a capacity of 600,000 pieces per month at the end of the year. The new factory has commenced operation in the first quarter of 2021. <br>

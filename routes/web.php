@@ -47,7 +47,49 @@ Route::get('awards-certificates', function () {
     return view('aboutus.awards');
 })->name('awards');
 
+Route::get('prospectus', function () {
+    return view('investor.prospectus');
+})->name('prospectus');
 
+Route::get('annual-meeting', function () {
+    return view('investor.annual-meeting');
+})->name('annual-meeting');
+
+Route::get('financial-report', function () {
+    return view('investor.reports.financial-reports');
+})->name('financial-report');
+
+Route::get('dividend', function () {
+    return view('investor.reports.dividend');
+})->name('dividend');
+
+Route::get('dividend', function () {
+    return view('investor.reports.dividend');
+})->name('dividend');
+
+Route::get('annual', function () {
+    return view('investor.reports.annual-reports');
+})->name('annual');
+
+Route::get('public', function () {
+    return view('investor.reports.public-expose');
+})->name('public');
+
+Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::prefix('news')->name('news.')->group(function () {
+        Route::get('/index', [NewsController::class, 'index'])->name('index');
+        Route::get('/create', [NewsController::class, 'create'])->name('create');
+        Route::get('/{slug}/show', [NewsController::class, 'show'])->name('show');
+    });
+
+    Route::prefix('career')->name('career.')->group(function () {
+        Route::get('/', [CareerController::class, 'index'])->name('index');
+        Route::get('/create', [CareerController::class, 'create'])->name('create');
+        Route::get('/update', [CareerController::class, 'update'])->name('update');
+    });
+});
 /**
  * cms handle services.
  *
@@ -56,4 +98,3 @@ Route::get('awards-certificates', function () {
 Route::get('/App/Providers/CmsServiceProvider', function () {
     return redirect('/');
 });
-
