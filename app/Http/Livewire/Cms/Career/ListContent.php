@@ -2,12 +2,20 @@
 
 namespace App\Http\Livewire\Cms\Career;
 
+use Livewire\WithPagination;
 use Livewire\Component;
+use App\Models\Career;
 
 class ListContent extends Component
 {
+    use WithPagination;
+
     public function render()
     {
-        return view('livewire.cms.career.list-content');
+        $listCareer  = Career::orderBy('created_at', 'desc')
+                             ->paginate(6);
+        return view('livewire.cms.career.list-content', [
+            'listCareer'       => $listCareer
+        ]);
     }
 }

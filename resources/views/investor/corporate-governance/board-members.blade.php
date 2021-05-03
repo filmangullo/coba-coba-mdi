@@ -20,40 +20,40 @@
         <h1>Board of Commisioner</h1>
     </div>
 
-    <div class="grid grid-flow-col grid-cols-4 grid-rows-3 gap-4 px-12 mb-12">
-        <div class="col-span-1 row-span-3 ">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-12 md:grid-flow-col md:grid-cols-4 md:grid-rows-3">
+        <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/chin-kien-ping.png') }}'>
         </div>
-        <div class="col-span-4 ml-5">
+        <div class="col-span-1 ml-5 md:col-span-4">
             <h1 class="text-2xl font-bold">Chin Kien Ping</h1>
             <p class="italic font-semibold ">President Comissioner</p>
         </div>
-        <div class="col-span-4 row-span-2 ml-5 text-justify">
+        <div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">
             A Malaysian citizen, 44 years old domiciled in Kuala Lumpur, appointed as the President Commissioner based on shareholder’s decision on March 22, 2017, in accordance with Notarial Deed Number 132 dated March 22, 2017.
 He holds a diploma in Animal and Veterinary Science from the National Pingtung Polytechnic Institute, Taiwan in 1995, and an MBA from the West Coast Institute of Management and Technology, Australia in 2000. He began his career in the company since 2002 as a Director. After 12 years, he was then appointed as the President Director, serving from 2014 to 2015 before returning to being a Director until 2017. Since 2017, he has been the President Commissioner of the Company.
         </div>
     </div>
 
-    <div class="grid grid-flow-col grid-cols-4 grid-rows-5 gap-4 px-12 mb-12">
-        <div class="col-span-1 row-span-5 ">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-12 md:grid-flow-col md:grid-cols-4 md:grid-rows-4">
+        <div class="col-span-1 md:row-span-4 ">
             <img class="w-full mx-auto" src='{{ asset('img/dompak-pasaribu.png') }}'>
         </div>
-        <div class="col-span-4 ml-5">
+        <div class="col-span-1 ml-5 md:col-span-4">
             <h1 class="text-2xl font-bold">Dompak Pasaribu</h1>
             <p class="italic font-semibold ">Independent Comissioner</p>
         </div>
-        <div class="col-span-4 row-span-4 ml-5 text-justify">
+        <div class="col-span-4 row-span-3 ml-5 text-justify">
             Indonesian citizen, 46 years old residing in Medan. He was appointed as an Independent Commissioner of the Company based on the decision of the shareholders on 22 March 2017, in accordance with Notarial Deed No. 132 dated 22 March 2017.
 A holder of the Doctorate Degree in Accounting from the University of North Sumatra (USU) in 2018, a Masteral Degree of Accounting Science from the USU Faculty of Economics and Business in 2003 and a Bachelor of Economics in Accounting Study Program at the Faculty of Economics, Methodist University of Indonesia (UMI) in 1998. Having a Certified Public Accountant (CPA) from the Indonesian Institute of Certified Public Accountants in 2017. Active as a teaching staff in the Accounting Study Program of the Faculty of Economics and the Information Systems Study Program of the Faculty of Computer Science UMI. Dompak Pasaribu has served as Vice Dean II of Information Systems at the Faculty of Computer Science at UMI. The Secretary of the UMI Quality Assurance Agency in 2012-2016, was later appointed as the Chairperson of the UMI Quality Assurance Agency in 2016 until today. In addition, he also became the Chairperson of UMI Employee Cooperative Management Board since 2018.
 He served as a Branch Manager at PT. Etrading Securities in Medan from 2007 until 2013. Since 2015, he serves as the Audit Committee at PT. ATMINDO, Tbk.
         </div>
     </div>
 
-    <div class="grid grid-flow-col grid-cols-4 grid-rows-5 gap-4 px-12 mb-12">
-        <div class="col-span-1 row-span-5 ">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-12 md:grid-flow-col md:grid-cols-4 md:grid-rows-3">
+        <div class="col-span-1 md:row-span-5 ">
             <img class="w-full mx-auto" src='{{ asset('img/ridwan-goh.png') }}'>
         </div>
-        <div class="col-span-4 ml-5">
+        <div class="col-span-1 ml-5 md:col-span-4">
             <h1 class="text-2xl font-bold">Ridwan Goh</h1>
             <p class="italic font-semibold ">President Director</p>
         </div>
@@ -63,11 +63,11 @@ He started his career as an International Marketing Manager at PT. Tropical Wood
         </div>
     </div>
 
-    <div class="grid grid-flow-col grid-cols-4 grid-rows-5 gap-4 px-12 mb-12">
-        <div class="col-span-1 row-span-5 ">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-12 md:grid-flow-col md:grid-cols-4 md:grid-rows-3">
+        <div class="col-span-1 md:row-span-5 ">
             <img class="w-full mx-auto" src='{{ asset('img/sutiyoso-bin-risman.png') }}'>
         </div>
-        <div class="col-span-4 ml-5">
+        <div class="col-span-1 ml-5 md:col-span-4">
             <h1 class="text-2xl font-bold">Sutiyoso Bin Risman</h1>
             <p class="italic font-semibold ">Director</p>
         </div>
@@ -77,11 +77,11 @@ He has worked in the Company since 2002 with a position as General Manager betwe
         </div>
     </div>
 
-    <div class="grid grid-flow-col grid-cols-4 grid-rows-5 gap-4 px-12 mb-12">
-        <div class="col-span-1 row-span-5 ">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-12 md:grid-flow-col md:grid-cols-4 md:grid-rows-3">
+        <div class="col-span-1 md:row-span-5 ">
             <img class="w-full mx-auto" src='{{ asset('img/cahaya-dewi-surbakti.png') }}'>
         </div>
-        <div class="col-span-4 ml-5">
+        <div class="col-span-1 ml-5 md:col-span-4">
             <h1 class="text-2xl font-bold">Cahaya Dewi Surbakti</h1>
             <p class="italic font-semibold ">Independent Director</p>
         </div>

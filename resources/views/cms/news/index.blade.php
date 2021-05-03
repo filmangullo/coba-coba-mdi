@@ -14,7 +14,5 @@
 
     </x-slot>
 
-    @livewire('cms.career.add-content', [
-        'career'        => $query
-    ])
+    @livewire('cms.news.list-content')
 </x-app-layout>

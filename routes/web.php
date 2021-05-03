@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
 use App\Http\Controllers\web\CorporateGovernanceController;
+use App\Http\Controllers\web\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,12 +77,19 @@ Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
 
+Route::prefix('news')->group(function () {
+    Route::get('/', [NewsController::class, 'list'])->name('news.list');
+    Route::get('/{slug}', [NewsController::class, 'show'])->name('news.show');
+});
+
 Route::prefix('investor-relations')->group(function () {
     Route::prefix('corporate-governance')->group(function () {
         Route::get('board-members', [CorporateGovernanceController::class, 'boardMembers'])->name('corporate-governanc.board-members');
+        Route::get('organization-structure', [CorporateGovernanceController::class, 'organizationStructure'])->name('corporate-governanc.organization-structure');
         Route::get('audit-comittee', [CorporateGovernanceController::class, 'auditComittee'])->name('corporate-governanc.audit-comittee');
     });
 });
+
 /**
  * cms handle services.
  *

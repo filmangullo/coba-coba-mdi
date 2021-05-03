@@ -1,4 +1,4 @@
-<x-app-layout>
+
     <x-slot name="header">
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div>
@@ -8,7 +8,7 @@
             </div>
 
             <div>
-                <a href="{{ route('news.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add News</a>
+                <a href="{{ route('cms-news.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add News</a>
             </div>
         </div>
 
@@ -41,4 +41,3 @@
             </div>
         </div>
     </div>
-</x-app-layout>

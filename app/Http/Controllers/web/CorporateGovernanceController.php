@@ -12,6 +12,10 @@ class CorporateGovernanceController extends Controller
         return view('investor.corporate-governance.board-members');
     }
 
+    public function organizationStructure()
+    {
+        return view('investor.corporate-governance.organization-structure');
+    }
     public function auditComittee()
     {
         return view('investor.corporate-governance.audit-comittee');

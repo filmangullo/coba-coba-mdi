@@ -3,18 +3,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div>
                 <h2 class="text-2xl font-semibold leading-tight text-gray-800">
-                    {{ __('Career') }}
+                    {{ __('News') }}
                 </h2>
             </div>
 
             <div>
-                <a href="{{ route('cms-career.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add Career</a>
+                <a href="{{ route('cms-news.index') }}" class="float-right py-2 text-sm text-gray-600 border border-gray-600 rounded-md px-9 focus:outline-none hover:bg-gray-100">Back</a>
             </div>
         </div>
 
     </x-slot>
 
-    @livewire('cms.career.add-content', [
-        'career'        => $query
-    ])
+    @livewire('cms.news.add-content')
 </x-app-layout>

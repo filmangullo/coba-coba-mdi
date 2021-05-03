@@ -63,7 +63,7 @@
                                     x-transition:leave-end="transform opacity-0 scale-95"
                                     x-show="corporate === true" @click.away="corporate = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
                                         <a href="{{ route('corporate-governanc.board-members') }}" class="py-3.5 text-center hover:bg-hitam block">Board Members</a>
-                                        <a href="#" class="py-3.5 text-center hover:bg-hitam block">Organization Structure</a>
+                                        <a href="{{ route('corporate-governanc.organization-structure') }}" class="py-3.5 text-center hover:bg-hitam block">Organization Structure</a>
                                         <a href="{{ route('corporate-governanc.audit-comittee') }}" class="py-3.5 text-center hover:bg-hitam block">Audit Comittee</a>
                                         <a href="#" class="py-3.5 text-center hover:bg-hitam block">Corporate Secretary</a>
                                     </div>
