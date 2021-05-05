@@ -2,102 +2,96 @@
 
 @section('content')
 {{-- Slider --}}
-<div class="relative w-full h-full">
-    <div class="absolute left-0 right-0 z-20 w-full py-64 mx-auto my-auto space-y-6 text-center text-white">
+<div class="w-full h-full relative">
+    <div class="text-center text-white absolute right-0 left-0 my-auto mx-auto py-64 z-20 w-full space-y-6">
         <div class="text-5xl font-bold">World’s Leading Hand-Former<br>Manufacturer</div>
         <div class="text-lg font-light">Serving 40% of global market share, we have been a<br>big player in helping the gloves industry.</div>
         <div class="px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">Our Business</div>
     </div>
-    <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
+    <div class="bg-hitam bg-opacity-50 w-full h-full absolute"></div>
     <img class="w-full h-full" src='{{ asset('img/hero-1.png') }}'>
 </div>
 
-<div class="py-12 mt-24 mb-12 bg-mark-default">
-    <div class="px-4 mx-auto text-white max-w-7xl sm:px-6 lg:px-8">
-        <div class="mb-12 text-4xl font-bold text-center">Our Products</div>
-        <div class="flex content-between justify-center gap-40 text-center">
+<div class="mt-24 mb-12 py-12 bg-mark-default">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        <div class="text-center font-bold text-4xl mb-12">Our Products</div>
+        <div class="flex content-between gap-40 justify-center text-center">
             <div>
-                <img class="object-cover w-48 h-48 mb-6 rounded-full" src="{{ asset('img/our-products-1.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-xl font-bold">Hand Former</div>
+                <img class="object-cover rounded-full w-48 h-48 mb-6" src="{{ asset('img/our-products-1.png') }}" alt="Mark Dynamics Hand Former">
+                <div class="font-bold text-xl">Hand Former</div>
             </div>
             <div>
-                <img class="object-cover w-48 h-48 mb-6 rounded-full" src="{{ asset('img/our-products-2.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-xl font-bold">Sanitary Wares</div>
+                <img class="object-cover rounded-full w-48 h-48 mb-6" src="{{ asset('img/our-products-2.png') }}" alt="Mark Dynamics Hand Former">
+                <div class="font-bold text-xl">Sanitary Wares</div>
             </div>
             <div>
-                <img class="object-cover w-48 h-48 mb-6 rounded-full" src="{{ asset('img/our-products-3.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-xl font-bold">Agriculture</div>
+                <img class="object-cover rounded-full w-48 h-48 mb-6" src="{{ asset('img/our-products-3.png') }}" alt="Mark Dynamics Hand Former">
+                <div class="font-bold text-xl">Agriculture</div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="mb-12 text-4xl font-bold text-center text-mark-default">News & Updates</div>
+<div class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-mark-default mb-12 text-4xl text-center font-bold">News & Updates</div>  
     <div class="relative w-full h-full">
         <img class="w-full h-full" src="{{ asset('img/stock-price.png') }}" alt="Mark Dynamics Stock Price">
-        <div class="absolute w-full text-3xl font-bold text-center text-white top-12">Stock Price</div>
+        <div class="absolute font-bold text-3xl top-12 text-center w-full text-white">Stock Price</div>
     </div>
     <div class="grid grid-cols-2 gap-12 mt-12">
-        <div class="relative w-full h-full">
+        <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
-            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
-            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
-                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+            <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
+                <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
-                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                    <div class="px-3 hover:bg-gray-50 hover:text-hitam transition-all duration-200 cursor-pointer py-2 bottom-0 font-bold inline-block rounded-md border border-white">Baca Selengkapnya</div>
                 </div>
             </div>
         </div>
-        <div class="relative w-full h-full">
+        <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
-            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
-            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
-                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+            <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
+                <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
-                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                    <div class="px-3 hover:bg-gray-50 hover:text-hitam transition-all duration-200 cursor-pointer py-2 bottom-0 font-bold inline-block rounded-md border border-white">Baca Selengkapnya</div>
                 </div>
             </div>
         </div>
-        <div class="relative w-full h-full">
+        <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
-            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
-            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
-                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+            <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
+                <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
-                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                    <div class="px-3 hover:bg-gray-50 hover:text-hitam transition-all duration-200 cursor-pointer py-2 bottom-0 font-bold inline-block rounded-md border border-white">Baca Selengkapnya</div>
                 </div>
             </div>
         </div>
-        <div class="relative w-full h-full">
+        <div class="w-full h-full relative">
             <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
-            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
-            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
-                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+            <div class="absolute w-full h-full top-0 rounded-md bg-hitam bg-opacity-50"></div>
+            <div class="absolute w-full grid grid-cols-1 content-between h-full p-6 top-0 text-white">
+                <div class="truncate text-xl font-bold">Porselen cetakan sarung tangan berkilap</div>
                 <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
                 <div>
-                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                    <div class="px-3 hover:bg-gray-50 hover:text-hitam transition-all duration-200 cursor-pointer py-2 bottom-0 font-bold inline-block rounded-md border border-white">Baca Selengkapnya</div>
                 </div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-    <a class="mx-auto mt-12">
+    <a href="{{ route('news.detail') }}" class="mx-auto mt-12">
         <div class="px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">More News</div>
     </a>
-=======
-    <div class="mt-12 text-center">
-        <a href="{{ route('news.list') }}   " class="px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">More News</a>
-    </div>
->>>>>>> d00657513309156233b15e77e7f0774e9c412285
 </div>
 
-<div class="px-4 pt-12 pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="mb-12 text-4xl font-bold text-center text-mark-default">Our Clients</div>
-    <div class="grid content-between justify-center grid-cols-5 gap-32">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
+    <div class="text-mark-default mb-12 text-4xl text-center font-bold">Our Clients</div>
+    <div class="grid grid-cols-5 gap-32 justify-center content-between">
         <img class="w-full" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
         <img class="w-full" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
         <img class="w-full" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">

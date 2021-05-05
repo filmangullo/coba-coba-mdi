@@ -41,7 +41,7 @@
                                 <a href="{{ route('awards') }}" class="py-3.5 text-center hover:bg-hitam block">Awards & Certificates</a>
                             </div>
                         </div>
-                        <a class="px-6 py-10" href="#">Products & Gallery</a>
+                        <a href="{{ route('gallery')}}"class="px-6 py-10" href="#">Products & Gallery</a>
                         <div @mouseover="investor = true" @mouseleave="investor = false" class="relative w-auto px-6 py-10 cursor-pointer">
                             <a href="#">Investor Relations</a>
                             <div

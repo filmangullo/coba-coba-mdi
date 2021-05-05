@@ -21,9 +21,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/news', function () {
+Route::get('/news-detail', function () {
     return view('news');
-})->name('news');
+})->name('news.detail');
 
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 
@@ -72,6 +72,10 @@ Route::get('annual', function () {
 Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
+
+Route::get('gallery', function () {
+    return view('gallery');
+})->name('gallery');
 
 Route::prefix('news')->group(function () {
     Route::get('/', [NewsController::class, 'list'])->name('news.list');
