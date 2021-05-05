@@ -63,10 +63,6 @@ Route::get('dividend', function () {
     return view('investor.reports.dividend');
 })->name('dividend');
 
-Route::get('dividend', function () {
-    return view('investor.reports.dividend');
-})->name('dividend');
-
 Route::get('annual', function () {
     return view('investor.reports.annual-reports');
 })->name('annual');

@@ -84,9 +84,9 @@
             </div>
         </div>
     </div>
-    <div class="text-center mt-12">
+    <a class="mx-auto mt-12">
         <div class="px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">More News</div>
-    </div>
+    </a>
 </div>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
