@@ -16,11 +16,14 @@ class CreateCareersTable extends Migration
         Schema::create('careers', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('author_id')->nullable();
-            $table->text('slug')->unique();
-            $table->string('job_position');
-            $table->text('brief_description');
             $table->date('publish_date');
-            $table->text('content');
+            $table->text('slug')->unique();
+            $table->string('job_position_id')->nullable();
+            $table->string('job_position_en')->nullable();
+            $table->text('brief_description_id')->nullable();
+            $table->text('brief_description_en')->nullable();
+            $table->text('description_id')->nullable();
+            $table->text('description_en')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

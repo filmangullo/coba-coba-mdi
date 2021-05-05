@@ -24,7 +24,7 @@
                 <div class="flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <img onclick="location.href='/';" src="#" alt="Mark Dynamics Indonesia">
                     <div class="flex text-xs font-medium text-white">
-                        <div @mouseover="about = true" @mouseleave="about = false" class="cursor-pointer relative w-auto px-6 py-10">
+                        <div @mouseover="about = true" @mouseleave="about = false" class="relative w-auto px-6 py-10 cursor-pointer">
                             <a href="#">About Us</a>
                             <div
                             x-transition:enter="transition ease-out duration-100"
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <a class="px-6 py-10" href="#">Products & Gallery</a>
-                        <div @mouseover="investor = true" @mouseleave="investor = false" class="cursor-pointer relative w-auto px-6 py-10">
+                        <div @mouseover="investor = true" @mouseleave="investor = false" class="relative w-auto px-6 py-10 cursor-pointer">
                             <a href="#">Investor Relations</a>
                             <div
                             x-transition:enter="transition ease-out duration-100"
@@ -62,9 +62,9 @@
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
                                     x-show="corporate === true" @click.away="corporate = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
-                                        <a href="#" class="py-3.5 text-center hover:bg-hitam block">Board Members</a>
-                                        <a href="#" class="py-3.5 text-center hover:bg-hitam block">Organization Structure</a>
-                                        <a href="#" class="py-3.5 text-center hover:bg-hitam block">Audit Comittee</a>
+                                        <a href="{{ route('corporate-governanc.board-members') }}" class="py-3.5 text-center hover:bg-hitam block">Board Members</a>
+                                        <a href="{{ route('corporate-governanc.organization-structure') }}" class="py-3.5 text-center hover:bg-hitam block">Organization Structure</a>
+                                        <a href="{{ route('corporate-governanc.audit-comittee') }}" class="py-3.5 text-center hover:bg-hitam block">Audit Comittee</a>
                                         <a href="#" class="py-3.5 text-center hover:bg-hitam block">Corporate Secretary</a>
                                     </div>
                                     <svg class="absolute w-2 h-2 -mt-3 text-white fill-current right-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"/></svg>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            
+
             @yield('content')
 
             {{-- Footer --}}

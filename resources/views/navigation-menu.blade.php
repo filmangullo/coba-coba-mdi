@@ -16,13 +16,13 @@
         </div>
 
         <div class="flex px-5 py-4 m-auto space-x-8">
-            <x-jet-nav-link href="{{ route('news.index') }}" :active="request()->routeIs(['news.index'])">
+            <x-jet-nav-link href="{{ route('cms-news.index') }}" :active="request()->routeIs(['cms-news.index'])">
                 <img src="{{ asset('icon/newspaper.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
         </div>
 
         <div class="flex px-5 py-4 m-auto space-x-8 mt-100">
-            <x-jet-nav-link href="{{ route('news.index') }}" :active="request()->routeIs(['news.index'])">
+            <x-jet-nav-link href="{{ route('cms-news.index') }}" :active="request()->routeIs(['cms-news.index'])">
                 <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
         </div>

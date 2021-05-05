@@ -9,14 +9,14 @@ class NewsController extends Controller
 {
     public function index()
     {
-        return view('livewire.cms.news.index', [
+        return view('cms.news.index', [
 
         ])->render();
     }
 
     public function create()
     {
-        return view('livewire.cms.news.create', [
+        return view('cms.news.create', [
 
         ])->render();
     }

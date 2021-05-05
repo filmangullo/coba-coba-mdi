@@ -4,7 +4,7 @@ namespace App\Http\Controllers\cms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models\Career;
 class CareerController extends Controller
 {
     public function index()
@@ -17,8 +17,10 @@ class CareerController extends Controller
         return view('cms.career.create')->render();
     }
 
-    public function update()
+    public function update($id)
     {
-        return view('cms.career.update')->render();
+        $query  = Career::where('id', $id)->firstOrFail();
+
+        return view('cms.career.update', compact('query'))->render();
     }
 }

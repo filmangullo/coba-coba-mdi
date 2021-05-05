@@ -8,13 +8,11 @@
             </div>
 
             <div>
-                <a href="{{ route('cms-career.index') }}" class="float-right px-10 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-blue-50">Back</a>
+                <a href="{{ route('cms-career.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add Career</a>
             </div>
         </div>
 
     </x-slot>
 
-    @livewire('cms.career.add-content', [
-        'career'     => null
-    ])
+    @livewire('cms.news.list-content')
 </x-app-layout>
