@@ -17,11 +17,15 @@ class CreateNewsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('author_id')->nullable();
             $table->text('slug')->unique();
-            $table->string('title');
-            $table->text('brief_description');
             $table->date('news_date');
             $table->integer('status')->default(1);
-            $table->text('content');
+            $table->text('cover');
+            $table->string('title_id');
+            $table->string('title_en');
+            $table->text('brief_description_id');
+            $table->text('brief_description_en');
+            $table->text('content_id');
+            $table->text('content_en');
             $table->timestamps();
             $table->softDeletes();
 

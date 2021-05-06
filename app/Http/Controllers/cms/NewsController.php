@@ -4,6 +4,7 @@ namespace App\Http\Controllers\cms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\News;
 
 class NewsController extends Controller
 {
@@ -17,7 +18,14 @@ class NewsController extends Controller
     public function create()
     {
         return view('cms.news.create', [
+            'news'      => null
+        ])->render();
+    }
 
+    public function update($id)
+    {
+        return view('cms.news.update', [
+            'news'      => News::where('id', $id)->firstOrFail()
         ])->render();
     }
 

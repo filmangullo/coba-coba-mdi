@@ -14,5 +14,7 @@
 
     </x-slot>
 
-    @livewire('cms.news.add-content')
+    @livewire('cms.news.add-content', [
+        'news'      => $news
+    ])
 </x-app-layout>

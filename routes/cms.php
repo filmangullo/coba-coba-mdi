@@ -25,7 +25,7 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
     Route::prefix('news')->name('cms-news.')->group(function () {
         Route::get('/index', [NewsController::class, 'index'])->name('index');
         Route::get('/create', [NewsController::class, 'create'])->name('create');
-        Route::get('/update', [NewsController::class, 'update'])->name('update');
+        Route::get('/{id}/update', [NewsController::class, 'update'])->name('update');
         Route::get('/{slug}/show', [NewsController::class, 'show'])->name('show');
     });
 

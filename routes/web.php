@@ -5,6 +5,7 @@ use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
 use App\Http\Controllers\web\CorporateGovernanceController;
 use App\Http\Controllers\web\NewsController;
+use App\Http\Controllers\web\TradingViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +90,12 @@ Route::prefix('investor-relations')->group(function () {
         Route::get('audit-comittee', [CorporateGovernanceController::class, 'auditComittee'])->name('corporate-governanc.audit-comittee');
     });
 });
+
+Route::prefix('trading')->group(function () {
+    Route::get('/author', [TradingViewController::class, 'author'])->name('trading.author');
+    // Route::get('/{slug}', [NewsController::class, 'show'])->name('news.show');
+});
+
 
 /**
  * cms handle services.

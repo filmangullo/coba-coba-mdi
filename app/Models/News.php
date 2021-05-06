@@ -17,6 +17,7 @@ class News extends Model
      * @var string
      */
     protected $table = 'news';
+    protected $guarded = [];
 
     public function authors()
     {

@@ -1,47 +1,142 @@
 @extends('layouts.master')
 
 @section('content')
-{{-- Slider --}}
-<div class="h-20">
-    Header
-</div>
-<div class="relative w-full h-60">
-    <div class="absolute left-0 right-0 z-20 w-full py-20 mx-auto my-auto space-y-6 text-center text-white">
-        <div class="text-5xl font-bold">News</div>
+    <div class="relative w-full h-screen">
+        <div class="absolute z-10 space-y-6 bottom-12 left-16">
+            <div class="pr-48 text-6xl font-bold text-white">Harga saham Mark Dynamics kembali meroket</div>
+            <div class="text-lg text-white pr-96">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus adipiscing mattis ullamcorper eget mattis neque.</div>
+            <div>
+                <div class="bottom-0 inline-block px-3 py-2 font-bold text-white transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+            </div>
+        </div>
+        <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
+        <img class="object-cover w-full h-full" src="{{ asset('img/news-hero.png') }}" alt="Mark Dynamics News">
     </div>
-    <div class="absolute w-full h-full bg-opacity-50 bg-mark"></div>
-    <img class="w-full h-full" src='{{ asset('img/audit-comittee.png') }}'>
-</div>
-
-<div class="container pt-12 mx-auto">
-    <div class="grid grid-cols-12">
-        <div class="col-span-8">
-            <div class="px-5 mx-3 shadow-md mb-7">
-                <h1 class="pb-4 text-2xl font-bold text-justify">Saham Mark dinamic ditawar lebih mahal karena kualitas yang lebih agus</h1>
-                <div class="grid grid-cols-2">
-                    <div class="py-1 text-left text-gray-500 items-left">
-                        <img class="inline-block w-5 opacity-60" src="{{ asset('icon/calendar-interface-symbol-tool.svg') }}">
-                        <span class="ml-2 text-xs font-semibold">12 Jan 2021</span>
-                    </div>
-                    <div class="content-end text-right text-gray-500 items-right">
-                        <img class="inline-block w-5 opacity-60" src="{{ asset('icon/user.svg') }}">
-                        <span class="m-2 text-xs font-semibold">12 Jan 2021</span>
-                    </div>
-                </div>
-                <div class="py-1 text-justify">
-                    Consequat incididunt cupidatat quis quis duis ad laboris proident. Ea officia excepteur sit aliqua aliquip sint Lorem sunt. Ipsum non ea ullamco cupidatat ullamco occaecat quis in nisi dolore. Officia in laboris esse eu ad non minim commodo duis exercitation id dolor sunt. Labore excepteur veniam exercitation et ad elit anim magna labore enim ipsum. Ullamco culpa ad irure ex ea tempor amet ea voluptate fugiat cupidatat non. Laboris commodo pariatur sunt enim Lorem sit commodo minim.
+    <div class="grid grid-cols-2 gap-12 px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
                 </div>
             </div>
         </div>
-        <div class="col-span-4">
-            <div class="mx-2 shadow-md">
-                <div class="my-3 text-xl font-bold text-center uppercase">Latest news list</div>
-                <div class="mb-2 text-justify">
-                    <h5 class="font-semibold">Lorem Ipsum Terbaru</h5>
-                    <p class="ml-1">Mollit voluptate aute adipisicing aliqua veniam irure et nisi quis laboris exercitation dolor eiusmod ut.</p>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="relative w-full h-80">
+        <img class="object-cover w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
+        <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+        <div class="absolute top-0 grid content-between w-7/12 h-full grid-cols-1 p-12 text-white">
+            <div class="space-y-4">
+                <div class="text-4xl font-bold line-clamp-2">Porselen cetakan sarung tangan berkilap lorem ipsum.</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+            </div>
+            <div>
+                <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-12 px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-1.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img class="w-full h-full" src="{{ asset('img/news-2.png') }}" alt="Mark Dynamics News">
+            <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
+            <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                <div class="text-xl font-bold truncate">Porselen cetakan sarung tangan berkilap</div>
+                <div class="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant faucibus pretium orci praesent. Mattis congue id mi nec turpis dictumst non...</div>
+                <div>
+                    <div class="bottom-0 inline-block px-3 py-2 font-bold transition-all duration-200 border border-white rounded-md cursor-pointer hover:bg-gray-50 hover:text-hitam">Baca Selengkapnya</div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

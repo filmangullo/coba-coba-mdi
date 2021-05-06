@@ -31,13 +31,14 @@ class AddContent extends Component
 
             $this->publish_date             = $this->career->publish_date;
             $this->author                   = $this->career->author;
-            $this->position_id              = $this->career->position_id;
+            $this->position_id              = $this->career->job_position_id;
             $this->brief_description_id     = $this->career->brief_description_id;
             $this->description_id           = $this->career->description_id;
-            $this->position_en              = $this->career->position_en;
+            $this->position_en              = $this->career->job_position_en;
             $this->brief_description_en     = $this->career->brief_description_en;
             $this->description_en           = $this->career->description_en;
-
+        } else {
+            $this->publish_date             = date("Y-m-d");
         }
     }
 

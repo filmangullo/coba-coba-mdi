@@ -13,9 +13,10 @@
                     <div class="col-span-2 py-2 md:px-3 md:text-right">
                         <span>Publish Date</span>
                     </div>
-                    <div wire:model="publish_date"
-                        class="col-span-3">
-                        <input type="date" class="w-full leading-tight border shadow ppearance-none focus:outline-none focus:shadow-outline">
+                    <div class="col-span-3">
+                        <input wire:model="publish_date"
+                            type="date" class="w-full leading-tight border shadow ppearance-none focus:outline-none focus:shadow-outline"
+                            value="{{ $publish_date }}">
                         @error('publish_date') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span> @enderror
                     </div>
                     <div class="col-span-4 py-2 md:px-3 md:text-right ">

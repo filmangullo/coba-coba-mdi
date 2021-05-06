@@ -12,20 +12,38 @@
                     </div>
                     <div class="col-span-3">
                         <input type="date"
-                            class="w-full leading-tight border shadow ppearance-none focus:outline-none focus:shadow-outline">
+                            wire:model='date_news'
+                            class="w-full leading-tight border shadow ppearance-none focus:outline-none focus:shadow-outline"
+                            value="{{ $date_news }}">
                     </div>
 
                     <div class="col-span-3 px-3 py-2 text-right ">
                         <span>Status</span>
                     </div>
                     <div class="col-span-3">
-                        <select
+                        <select wire:model='status'
                             class="w-full leading-tight border shadow ppearance-none focus:outline-none focus:shadow-outline">
-                            <option>Hold</option>
-                            <option>Publish</option>
+                            <option value="0">Hold</option>
+                            <option value="1">Publish</option>
                         </select>
                     </div>
 
+                </div>
+
+                <div class="grid grid-cols-12 py-2 mx-6">
+                    <div class="col-span-3 px-3 py-2 text-right ">
+                        <span>Author</span>
+                    </div>
+                    <div class="col-span-9">
+                        <select wire:model="author_id"
+                            class="w-full leading-tight border shadow ppearance-none focus:outline-none focus:shadow-outline">
+                                <option value="">Select</option>
+                                @foreach ($users as $u)
+                                    <option value="{{ $u->id }}">{{ $u->name }}</option>
+                                @endforeach
+                        </select>
+                        @error('author_id') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span> @enderror
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-12 py-2 mx-6">
