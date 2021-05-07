@@ -32,7 +32,7 @@
     </div>
 </div>
 
-@livewire('web.welcome.news')
+@livewire('web.welcome.short-list-news')
 
 <div class="px-4 pt-12 pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-4xl font-bold text-center text-mark-default">Our Clients</div>

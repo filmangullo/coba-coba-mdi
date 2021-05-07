@@ -17,29 +17,38 @@
     <div class="grid grid-cols-12">
         <div class="col-span-8">
             <div class="px-5 mx-3 shadow-md mb-7">
-                <h1 class="pb-4 text-2xl font-bold text-justify">Saham Mark dinamic ditawar lebih mahal karena kualitas yang lebih agus</h1>
-                <div class="grid grid-cols-2">
+                <h1 class="pb-4 text-2xl font-bold text-justify">{{ $news->title_id }}</h1>
+                <div class="grid grid-cols-2 mb-4">
                     <div class="py-1 text-left text-gray-500 items-left">
                         <img class="inline-block w-5 opacity-60" src="{{ asset('icon/calendar-interface-symbol-tool.svg') }}">
-                        <span class="ml-2 text-xs font-semibold">12 Jan 2021</span>
+                        <span class="ml-2 text-xs font-semibold">{{ date("d M Y", strtotime($news->news_date)) }}</span>
                     </div>
                     <div class="content-end text-right text-gray-500 items-right">
                         <img class="inline-block w-5 opacity-60" src="{{ asset('icon/user.svg') }}">
-                        <span class="m-2 text-xs font-semibold">12 Jan 2021</span>
+                        <span class="m-2 text-xs font-semibold">{{ $news->authors['name'] }}</span>
                     </div>
                 </div>
                 <div class="py-1 text-justify">
-                    Consequat incididunt cupidatat quis quis duis ad laboris proident. Ea officia excepteur sit aliqua aliquip sint Lorem sunt. Ipsum non ea ullamco cupidatat ullamco occaecat quis in nisi dolore. Officia in laboris esse eu ad non minim commodo duis exercitation id dolor sunt. Labore excepteur veniam exercitation et ad elit anim magna labore enim ipsum. Ullamco culpa ad irure ex ea tempor amet ea voluptate fugiat cupidatat non. Laboris commodo pariatur sunt enim Lorem sit commodo minim.
+                    {!! $news->content_id !!}
                 </div>
             </div>
         </div>
         <div class="col-span-4">
-            <div class="mx-2 shadow-md">
+            <div class="ml-10 mr-5 shadow-md">
                 <div class="my-3 text-xl font-bold text-center uppercase">Latest news list</div>
-                <div class="mb-2 text-justify">
-                    <h5 class="font-semibold">Lorem Ipsum Terbaru</h5>
-                    <p class="ml-1">Mollit voluptate aute adipisicing aliqua veniam irure et nisi quis laboris exercitation dolor eiusmod ut.</p>
+                @foreach ($list as $item)
+                <div class="px-4 mb-5 text-justify">
+                    <a href="{{ route('news.show', $item->slug )}}">
+                        <h5 class="font-semibold cursor-pointer">{{ $item->title_id }}</h5>
+                    </a>
+                    <p class="ml-5 text-gray-600">{{ Str::limit($item->brief_description_id, 50, '...') }}</p>
+                    <div class="py-1 text-left text-gray-500 items-left">
+                        <img class="inline-block w-5 opacity-60" src="{{ asset('icon/calendar-interface-symbol-tool.svg') }}">
+                        <span class="ml-2 text-xs font-semibold">{{ date("d M Y", strtotime($item->news_date)) }}</span>
+                    </div>
                 </div>
+                @endforeach
+
             </div>
         </div>
     </div>
