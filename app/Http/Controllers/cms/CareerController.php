@@ -23,4 +23,11 @@ class CareerController extends Controller
 
         return view('cms.career.update', compact('query'))->render();
     }
+
+    public function show($id)
+    {
+        $query  = Career::where('id', $id)->firstOrFail();
+
+        return view('cms.career.show', compact('query'))->render();
+    }
 }

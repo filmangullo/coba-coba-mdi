@@ -29,10 +29,10 @@ class NewsController extends Controller
         ])->render();
     }
 
-    public function show()
+    public function show($id)
     {
-        return view('livewire.cms.news.show', [
-
+        return view('cms.news.show', [
+            'news'      => News::where('id', $id)->firstOrFail()
         ])->render();
     }
 }

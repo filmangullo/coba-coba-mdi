@@ -33,6 +33,7 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [CareerController::class, 'index'])->name('index');
         Route::get('/create', [CareerController::class, 'create'])->name('create');
         Route::get('/{id}/update', [CareerController::class, 'update'])->name('update');
+        Route::get('/{id}/show', [CareerController::class, 'show'])->name('show');
     });
 
 });
