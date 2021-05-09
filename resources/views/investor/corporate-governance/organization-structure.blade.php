@@ -2,17 +2,10 @@
 
 @section('content')
 {{-- Slider --}}
-<div class="h-20">
-    Header
-</div>
-<div class="relative w-full h-60">
-    <div class="absolute left-0 right-0 z-20 w-full py-20 mx-auto my-auto space-y-6 text-center text-white">
-        <div class="text-5xl font-bold">Organization Structure</div>
-
-    </div>
-    <div class="absolute w-full h-full bg-opacity-50 bg-mark"></div>
-    <img class="w-full h-full" src='{{ asset('img/organization-structure.png') }}'>
-
+<div class="w-full h-auto relative pt-24">
+    <img src="{{ asset('img/organization-structure.png') }}" alt="Mark Dynamics Organization Structure">
+    <div class="absolute bg-mark-default bg-opacity-50 h-full top-0 w-full"></div>
+    <div class="absolute text-white text-center w-full text-4xl font-bold top-1/2 mt-5 h-full">Organization Structure</div>
 </div>
 
 <div class="container pt-12 mx-auto">

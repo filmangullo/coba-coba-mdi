@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <a href="{{ route('news.detail') }}" class="mx-auto mt-12">
+    <a href="{{ route('news.detail') }}" class="mx-auto mt-12 w-full flex items-center justify-center">
         <div class="px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">More News</div>
     </a>
 </div>
