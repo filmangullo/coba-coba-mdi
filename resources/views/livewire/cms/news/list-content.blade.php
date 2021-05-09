@@ -29,7 +29,7 @@
                         </div>
                         <div class="mt-5 text-2xl text-right">
 
-                                <a href="{{ route('news.show', 'xxxx') }}" class="px-5 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-gray-50">Show</a>
+                                <a href="{{ route('cms-news.show', $n->id) }}" class="px-5 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-gray-50">Show</a>
 
                                 <a href="{{ route('cms-news.update', $n->id) }}" type="button" class="py-2 text-sm text-green-600 border border-green-600 rounded-md focus:outline-none px-7 hover:bg-green-50">Edit</a>
 
@@ -45,5 +45,8 @@
                 </div>
             @endforelse
 
+            <div>
+                {{ $news->links() }}
+            </div>
         </div>
     </div>

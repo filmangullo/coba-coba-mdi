@@ -22,10 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/news-detail', function () {
-    return view('news');
-})->name('news.detail');
-
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 
 Route::get('/career', [CareerController::class, 'index'])->name('career');

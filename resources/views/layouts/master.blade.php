@@ -22,7 +22,11 @@
             {{-- Header --}}
             <div class="fixed z-40 w-full bg-hitam">
                 <div class="flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <img onclick="location.href='/';" src="#" alt="Mark Dynamics Indonesia">
+                    <img
+                        onclick="location.href='/';"
+                        src="{{ asset('logo.svg') }}"
+                        alt="Mark Dynamics Indonesia"
+                        class="cursor-pointer">
                     <div class="flex text-xs font-medium text-white">
                         <div @mouseover="about = true" @mouseleave="about = false" class="relative w-auto px-6 py-10 cursor-pointer">
                             <a href="#">About Us</a>
