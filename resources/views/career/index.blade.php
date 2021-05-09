@@ -8,19 +8,61 @@
     <div class="absolute text-white text-center w-full text-4xl font-bold top-1/2 mt-5 h-full">Career</div>
 </div>
 
-<div class="container mx-auto">
-    <div class="grid grid-cols-1 px-5 mt-20 mb-10 md:grid-cols-2">
-        <div>
-            <div class="text-3xl font-bold truncate">
-                Maintener Head
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="grid grid-cols-1 gap-x-12 gap-y-24 px-5 md:grid-cols-2">
+        <div class="space-y-6">
+            <div class="text-3xl font-bold">
+                <div class="truncate">
+                    Maintenance Head
+                </div>
+                <div class="text-sm text-gray-500 font-semibold">Senin, 28 Januari 2020</div>
             </div>
-            <span class="text-sm text-gray-500 font-semibold">Senin, 28 Januari 2020</span>
-            <p class="my-5 text-justify">
+            <p class="text-sm line-clamp-4">
                 PT Mark Dynamics Indonesia Tbk membutuhkan seorang profesional untuk bergabung sebagai Maintenance Manager yang bertanggung jawab untuk memastikan instalasi, perbaikan, serta operasional seluruh mesin dan fasilitas perusahaan untuk mendukung operasional...
             </p>
-            <a href="" class="px-5 py-2 my-4 font-semibold text-white rounded-md bg-mark hover:bg-bright">
-            Read More
-            </a>
+            <div>
+                <a href="">
+                    <div  class="px-5 py-2 inline-block text-xs font-semibold text-white rounded-md hover:bg-mark-dark bg-mark-default hover:bg-bright">
+                        Read More
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <div class="text-3xl font-bold">
+                <div class="truncate">
+                    Maintenance Head
+                </div>
+                <div class="text-sm text-gray-500 font-semibold">Senin, 28 Januari 2020</div>
+            </div>
+            <p class="text-sm line-clamp-4">
+                PT Mark Dynamics Indonesia Tbk membutuhkan seorang profesional untuk bergabung sebagai Maintenance Manager yang bertanggung jawab untuk memastikan instalasi, perbaikan, serta operasional seluruh mesin dan fasilitas perusahaan untuk mendukung operasional...
+            </p>
+            <div>
+                <a href="">
+                    <div  class="px-5 py-2 inline-block text-xs font-semibold text-white rounded-md hover:bg-mark-dark bg-mark-default hover:bg-bright">
+                        Read More
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <div class="text-3xl font-bold">
+                <div class="truncate">
+                    Maintenance Head
+                </div>
+                <div class="text-sm text-gray-500 font-semibold">Senin, 28 Januari 2020</div>
+            </div>
+            <p class="text-sm line-clamp-4">
+                PT Mark Dynamics Indonesia Tbk membutuhkan seorang profesional untuk bergabung sebagai Maintenance Manager yang bertanggung jawab untuk memastikan instalasi, perbaikan, serta operasional seluruh mesin dan fasilitas perusahaan untuk mendukung operasional...
+            </p>
+            <div>
+                <a href="">
+                    <div  class="px-5 py-2 inline-block text-xs font-semibold text-white rounded-md hover:bg-mark-dark bg-mark-default hover:bg-bright">
+                        Read More
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
