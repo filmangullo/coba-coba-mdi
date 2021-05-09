@@ -26,7 +26,7 @@
                         onclick="location.href='/';"
                         src="{{ asset('logo.svg') }}"
                         alt="Mark Dynamics Indonesia"
-                        class="cursor-pointer">
+                        class="w-40 cursor-pointer">
                     <div class="flex text-xs font-medium text-white">
                         <div @mouseover="about = true" @mouseleave="about = false" class="relative w-auto px-6 py-10 cursor-pointer">
                             <a href="#">About Us</a>

@@ -8,7 +8,7 @@
     <div class="absolute text-white text-center w-full text-4xl font-bold top-1/2 mt-5 h-full">Audit Comittee</div>
 </div>
 
-<div class="container pt-24 mx-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
     <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/dompak-pasaribu.png') }}'>
