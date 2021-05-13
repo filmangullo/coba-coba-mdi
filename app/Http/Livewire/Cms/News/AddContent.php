@@ -67,6 +67,10 @@ class AddContent extends Component
             'content_en'            => ['required', 'min:1'],
         ];
 
+        if (!$edit) {
+            $rules['cover'] = ['required', 'image', 'max:1024' ];
+        }
+
         $this->validate($rules);
 
         $news = [
@@ -82,18 +86,13 @@ class AddContent extends Component
             'content_en'            => $this->content_en
         ];
 
-        if (!$edit) {
-            $news['cover'] = ['required', 'image', 'max:1024' ];
-        }
-
         if ($this->cover) {
             $news['cover'] = 'storage/'. $this->cover->store('news', 'public');
         }
 
 
         if ($edit) {
-            News::find($this->news->id)
-                              ->update($news);
+            $this->handleEventUpload($news);
         } else {
             News::create($news);
         }
