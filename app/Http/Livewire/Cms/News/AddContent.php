@@ -87,7 +87,7 @@ class AddContent extends Component
         ];
 
         if ($this->cover) {
-            $news['cover'] = 'storage/'. $this->cover->store('news', 'public');
+            $news['cover'] = 'storage/'. $this->cover->store('', 'public');
         }
 
 
@@ -103,7 +103,7 @@ class AddContent extends Component
     private function handleEventUpload($news)
     {
         if (isset($news['cover'])) {
-            Storage::delete($this->news->cover);
+            Storage::disk('public')->delete(substr($this->news->cover, 8));
         }
 
         News::find($this->news->id)

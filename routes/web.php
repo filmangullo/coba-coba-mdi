@@ -5,6 +5,7 @@ use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
 use App\Http\Controllers\web\CorporateGovernanceController;
 use App\Http\Controllers\web\NewsController;
+use App\Http\Controllers\web\ProductGalleryController;
 use App\Http\Controllers\web\TradingViewController;
 
 /*
@@ -70,9 +71,10 @@ Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
 
-Route::get('gallery', function () {
-    return view('gallery');
-})->name('gallery');
+// Route::get('gallery', function () {
+//     return view('gallery');
+// })->name('');
+Route::get('/product-gallery', [ProductGalleryController::class, 'list'])->name('gallery');
 
 Route::prefix('news')->group(function () {
     Route::get('/', [NewsController::class, 'list'])->name('news.list');
