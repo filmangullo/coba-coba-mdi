@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\CareerController;
+use App\Http\Controllers\cms\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,13 @@ Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::prefix('gallery')->name('cms-gallery.')->group(function () {
+        Route::get('/index', [GalleryController::class, 'index'])->name('index');
+        Route::get('/create', [GalleryController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [GalleryController::class, 'update'])->name('update');
+        Route::get('/{slug}/show', [GalleryController::class, 'show'])->name('show');
+    });
 
     Route::prefix('news')->name('cms-news.')->group(function () {
         Route::get('/index', [NewsController::class, 'index'])->name('index');

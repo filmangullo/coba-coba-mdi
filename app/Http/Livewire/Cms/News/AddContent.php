@@ -67,6 +67,10 @@ class AddContent extends Component
             'content_en'            => ['required', 'min:1'],
         ];
 
+        if (!$edit) {
+            $rules['cover'] = ['required', 'image', 'max:1024' ];
+        }
+
         $this->validate($rules);
 
         $news = [
@@ -82,18 +86,13 @@ class AddContent extends Component
             'content_en'            => $this->content_en
         ];
 
-        if (!$edit) {
-            $news['cover'] = ['required', 'image', 'max:1024' ];
-        }
-
         if ($this->cover) {
-            $news['cover'] = 'storage/'. $this->cover->store('news', 'public');
+            $news['cover'] = 'storage/'. $this->cover->store('', 'public');
         }
 
 
         if ($edit) {
-            News::find($this->news->id)
-                              ->update($news);
+            $this->handleEventUpload($news);
         } else {
             News::create($news);
         }
@@ -104,7 +103,7 @@ class AddContent extends Component
     private function handleEventUpload($news)
     {
         if (isset($news['cover'])) {
-            Storage::delete($this->news->cover);
+            Storage::disk('public')->delete(substr($this->news->cover, 8));
         }
 
         News::find($this->news->id)

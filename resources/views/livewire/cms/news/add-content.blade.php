@@ -58,10 +58,17 @@
                         @error('cover') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span> @enderror
                     </div>
 
-                    <div class="col-span-9 col-start-4">
+                    <div class="col-span-9 col-start-4 py-2">
                         @if ($cover)
                             <div class="h-48 gap-4">
                                 <img src="{{ $cover->temporaryUrl() }}" class="h-full m-auto">
+                            </div>
+                        @endif
+
+                        @if (!$cover && isset($news->cover))
+
+                            <div class="h-48 gap-4">
+                                <img src="{{ asset( $news->cover) }}" class="h-full m-auto">
                             </div>
                         @endif
                     </div>
