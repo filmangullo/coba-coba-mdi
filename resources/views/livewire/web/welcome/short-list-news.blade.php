@@ -1,4 +1,4 @@
-<div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div class="px-4 py-6 sm:py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl lg:text-4xl font-bold text-center text-mark-default">News & Updates</div>
     <div class="relative w-full h-full">
         <img class="w-full h-full" src="{{ asset('img/stock-price.png') }}" alt="Mark Dynamics Stock Price">

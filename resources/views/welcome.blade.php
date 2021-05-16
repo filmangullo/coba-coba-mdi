@@ -31,10 +31,33 @@
         </div>
     </div>
 </div> --}}
+<div class="py-12">
+    <div class="mb-12 text-2xl lg:text-4xl font-bold text-center text-mark-default">Our Products</div>
+    <div class="sm:grid grid-cols-3 space-y-12 lg:space-y-0 items-start justify-center">
+        <div class="mx-auto">
+            <div class="rounded-full mx-auto border-4 w-32 h-32 lg:w-52 lg:h-52 p-6 lg:p-10 border-mark">
+                <img class="transform transition-all duration-500 hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
+            </div>
+            <div class="text-center text-mark-default mt-6 text-lg lg:text-2xl font-bold">Agriculture</div>
+        </div>
+        <div class="mx-auto">
+            <div class="rounded-full mx-auto border-4 w-32 h-32 lg:w-52 lg:h-52 p-6 lg:p-10 border-mark">
+                <img class="transform transition-all duration-500 hover:scale-125 -mt-4 lg:-mt-7" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
+            </div>
+            <div class="text-center text-mark-default mt-6 text-lg lg:text-2xl font-bold">Hand Former</div>
+        </div>
+        <div class="mx-auto">
+            <div class="rounded-full mx-auto border-4 w-32 h-32 lg:w-52 lg:h-52 p-6 lg:p-10 border-mark">
+                <img class="transform transition-all duration-500 hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Sanitary Wares">
+            </div>
+            <div class="text-center text-mark-default mt-6 text-lg lg:text-2xl font-bold">Sanitary Wares</div>
+        </div>
+    </div>
+</div>
 
 @livewire('web.welcome.short-list-news')
 
-<div class="px-4 pt-12 pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div class="px-4 pt-12 pb-12 sm:pb-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl lg:text-4xl font-bold text-center text-mark-default">Our Clients</div>
     <div class="grid content-between justify-center grid-cols-3 md:grid-cols-5 gap-12 md:gap-20 lg:gap-32">
         <img class="w-full" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
