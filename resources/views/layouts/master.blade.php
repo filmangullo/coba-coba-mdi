@@ -112,7 +112,7 @@
                         <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
                         <a class="px-6 py-10" href="{{ route('kontak') }}">Contact Us</a>
                     </div>
-                    <div x-on:click="menu = !menu" class="lg:hidden p-2 rounded-md hover:bg-mark-default">
+                    <div x-on:click="menu = !menu" class="lg:hidden p-2 rounded-md focus:bg-mark-default">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -243,9 +243,9 @@
             {{-- Footer --}}
             <div class="bottom-0 bg-white border-t border-gray-300">
                 <div class="grid items-center grid-cols-5 px-4 py-10 mx-auto text-xs font-medium justify-items-center max-w-7xl sm:px-6 lg:px-8">
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Sustainability</a>
-                    <img class="w-24" src="{{ asset('img/logo.svg') }}">
+                    <a href="{{ route('prospectus') }}">Prospectus</a>
+                    <a href="{{ route('financial-report') }}">Financial Report</a>
+                    <img class="w-24" src="{{ asset('img/logo.png') }}">
                     <a href="#">Career</a>
                     <a href="{{ route('kontak') }}">Contact Us</a>
                 </div>
