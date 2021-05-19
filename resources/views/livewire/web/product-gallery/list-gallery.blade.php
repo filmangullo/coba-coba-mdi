@@ -3,7 +3,7 @@
     <div class="grid grid-cols-4 gap-4 pb-24">
         @foreach($gallery as $g)
         <div>
-            <img class="object-cover h-40 rounded-md" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover h-40 rounded-md" src="{{ asset( $g->img ) }}" alt="Mark Dynamics Gallery & Products">
         </div>
         @endforeach
     </div>

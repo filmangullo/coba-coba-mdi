@@ -1,4 +1,7 @@
 @push('styles')
+<style>
+    .mce-notification {display: none !important;}
+</style>
 <script src="https://cdn.tiny.cloud/1/gl3szu5lusjd02mc1fx7beymqaldxuceta87i0o5ylw3kpwy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 @endpush
 
