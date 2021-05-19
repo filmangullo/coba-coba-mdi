@@ -112,7 +112,7 @@
                         <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
                         <a class="px-6 py-10" href="{{ route('kontak') }}">Contact Us</a>
                     </div>
-                    <div x-on:click="menu = !menu" class="lg:hidden p-2 rounded-md hover:bg-mark-default">
+                    <div x-on:click="menu = !menu" class="lg:hidden p-2 rounded-md focus:bg-mark-default">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -242,12 +242,13 @@
 
             {{-- Footer --}}
             <div class="bottom-0 bg-white border-t border-gray-300">
-                <div class="grid items-center grid-cols-5 px-4 py-10 mx-auto text-xs font-medium justify-items-center max-w-7xl sm:px-6 lg:px-8">
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Sustainability</a>
-                    <img class="w-24" src="{{ asset('img/logo.svg') }}">
-                    <a href="#">Career</a>
-                    <a href="{{ route('kontak') }}">Contact Us</a>
+                <img class="w-24 mx-auto md:hidden pt-5" src="{{ asset('img/logo.png') }}">
+                <div class="grid items-center grid-cols-2 gap-6 md:gap-0 md:grid-cols-5 px-4 py-10 mx-auto text-xs font-medium justify-items-center max-w-7xl sm:px-6 lg:px-8">
+                    <a class="text-center" href="{{ route('prospectus') }}">Prospectus</a>
+                    <a class="text-center" href="{{ route('financial-report') }}">Financial Report</a>
+                    <img class="w-24 hidden md:block" src="{{ asset('img/logo.png') }}">
+                    <a class="text-center" href="#">Career</a>
+                    <a class="text-center" href="{{ route('kontak') }}">Contact Us</a>
                 </div>
                 <div class="pb-6 text-xs text-center">All Rights Reserved &copy; Mark Dynamics 2021.</div>
             </div>
