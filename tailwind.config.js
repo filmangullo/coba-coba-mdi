@@ -12,6 +12,11 @@ module.exports = {
             fontFamily: {
                 'sans': ['Montserrat', 'sans-serif'],
             },
+            backgroundColor: {
+                chart: {
+                    default: '#131722'
+                }
+            },
             borderRadius: {
                 'none': '0',
                'sm': '0.125rem',

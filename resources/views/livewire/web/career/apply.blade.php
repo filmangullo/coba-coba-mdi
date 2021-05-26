@@ -5,7 +5,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="job">
-              Full Name : {{$name}}
+              Full Name : {{$fullname}}
             </label>
         </div>
     </div>
@@ -23,7 +23,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
               Name
             </label>
-            <input wire:model="name"
+            <input wire:model="fullname"
                 class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
         </div>
 

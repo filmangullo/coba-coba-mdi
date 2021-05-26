@@ -57,7 +57,7 @@
 
 <div class="px-4 py-6 mx-auto sm:py-12 max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default">News & Updates</div>
-    <div class="relative w-full h-full">
+    <div class="relative w-full h-full bg-chart-default">
         @livewire('web.welcome.chart')
     </div>
 
