@@ -1,5 +1,5 @@
 
-<div class="z-20 grid grid-cols-1 md:grid-cols-2">
+<form class="z-20 grid grid-cols-1 md:grid-cols-2">
     <div class="px-6 py-10 text-white bg-mark-default md:rounded-l-md">
         <div class="text-4xl font-bold text-center">"Staf IT"</div>
 
@@ -23,14 +23,16 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
               Name
             </label>
+            @dump($name)
             <input wire:model="name"
-                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
+                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" name="name" id="name" type="text" placeholder="Full Name">
         </div>
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
               Email
             </label>
+            @dump($email)
             <input wire:model="email"
                 class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="email" placeholder="Email">
         </div>
@@ -63,5 +65,5 @@
             <textarea class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Give a brief and clear explanation"></textarea>
         </div>
     </div>
-</div>
+</form>
 
