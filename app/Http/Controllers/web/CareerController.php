@@ -23,4 +23,11 @@ class CareerController extends Controller
             'news'  => News::where('status', 1)->orderBy('created_at', 'desc')->limit(5)->get()
         ]);
     }
+
+    public function form()
+    {
+        return view('career.form', [
+
+        ]);
+    }
 }

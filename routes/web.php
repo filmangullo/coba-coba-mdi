@@ -87,8 +87,12 @@ Route::prefix('investor-relations')->group(function () {
 
 Route::prefix('career')->group(function () {
     Route::get('/', [CareerController::class, 'index'])->name('career');
-    Route::get('/{slug}', [CareerController::class, 'show'])->name('career.show');
+    Route::get('/show/{slug}', [CareerController::class, 'show'])->name('career.show');
+    Route::get('/form', [CareerController::class, 'form'])->name('career.form');
+
 });
+
+
 
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');
 

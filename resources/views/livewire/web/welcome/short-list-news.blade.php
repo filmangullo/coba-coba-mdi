@@ -1,10 +1,5 @@
-<div class="px-4 py-6 sm:py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="mb-12 text-2xl lg:text-4xl font-bold text-center text-mark-default">News & Updates</div>
-    <div class="relative w-full h-full">
-        <img class="w-full h-full" src="{{ asset('img/stock-price.png') }}" alt="Mark Dynamics Stock Price">
-        <div class="absolute w-full text-xl lg:text-3xl font-bold text-center text-white top-6 lg:top-12">Stock Price</div>
-    </div>
-    <div class="grid grid-cols-2 gap-6 lg:gap-12 mt-6 lg:mt-12">
+
+    <div class="grid grid-cols-2 gap-6 mt-6 lg:gap-12 lg:mt-12">
         @forelse ($news as $n)
             <div class="relative w-full overflow-hidden rounded-md h-60">
                 <img class="w-full" src="{{ asset($n->cover) }}" alt="Mark Dynamics News">
@@ -23,9 +18,3 @@
 
 
     </div>
-    <div class="inline-flex items-center flex-1 w-full mt-1.5 lg:mt-3">
-        <a href="{{ route('news.list') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">
-            More News
-        </a>
-    </div>
-</div>

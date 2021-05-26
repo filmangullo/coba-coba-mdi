@@ -20,14 +20,14 @@
         <div class="font-sans antialiased text-hitam">
 
             {{-- Header --}}
-            <div class="fixed z-50 w-full bg-hitam border-b lg:border-0 border-mark">
+            <div class="fixed z-50 w-full border-b bg-hitam lg:border-0 border-mark">
                 <div class="flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <img
                         onclick="location.href='/';"
                         src="{{ asset('logo.svg') }}"
                         alt="Mark Dynamics Indonesia"
-                        class="py-4 lg:py-0 w-32 lg:w-40 cursor-pointer">
-                    <div class="hidden lg:flex text-xs font-medium text-white">
+                        class="w-32 py-4 cursor-pointer lg:py-0 lg:w-40">
+                    <div class="hidden text-xs font-medium text-white lg:flex">
                         <div @mouseover="about = true" @mouseleave="about = false" class="relative w-auto px-6 py-10 cursor-pointer">
                             <a href="#">About Us</a>
                             <div
@@ -112,8 +112,8 @@
                         <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
                         <a class="px-6 py-10" href="{{ route('kontak') }}">Contact Us</a>
                     </div>
-                    <div x-on:click="menu = !menu" class="lg:hidden p-2 rounded-md focus:bg-mark-default">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div x-on:click="menu = !menu" class="p-2 rounded-md lg:hidden focus:bg-mark-default">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </div>
@@ -127,12 +127,12 @@
             x-transition:leave="transition-all ease-in duration-100"
             x-transition:leave-start="right-0"
             x-transition:leave-end="-right-32"
-            x-show="menu" x-on:click.away="menu = false" class="h-full overflow-y-auto right-0 fixed z-40 w-1/2 sm:w-1/3 pt-16 bg-hitam bg-opacity-90">
+            x-show="menu" x-on:click.away="menu = false" class="fixed right-0 z-40 w-1/2 h-full pt-16 overflow-y-auto sm:w-1/3 bg-hitam bg-opacity-90">
                 {{-- About Us --}}
                 <div>
-                    <div x-on:click="aboutmob = !aboutmob" class="text-white flex items-center justify-between w-auto px-3 sm:px-6 py-4 cursor-pointer">
+                    <div x-on:click="aboutmob = !aboutmob" class="flex items-center justify-between w-auto px-3 py-4 text-white cursor-pointer sm:px-6">
                         <a href="#" class="text-sm font-semibold">About Us</a>
-                        <svg :class="{ '-rotate-180': aboutmob === true }" xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 h-4 w-4 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg :class="{ '-rotate-180': aboutmob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
@@ -143,21 +143,21 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="aboutmob" class="text-white w-full">
-                        <a href="{{ route('ceo-message') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">CEO Message</a>
-                        <a href="{{ route('our-business') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Our Business</a>
-                        <a href="{{ route('vision&mission') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Vision, Mission & Value</a>
-                        <a href="{{ route('milestones') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Milestones</a>
-                        <a href="{{ route('awards') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Awards & Certificates</a>
+                    x-show="aboutmob" class="w-full text-white">
+                        <a href="{{ route('ceo-message') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CEO Message</a>
+                        <a href="{{ route('our-business') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Our Business</a>
+                        <a href="{{ route('vision&mission') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Vision, Mission & Value</a>
+                        <a href="{{ route('milestones') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Milestones</a>
+                        <a href="{{ route('awards') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Awards & Certificates</a>
                     </div>
                 </div>
                 {{-- Products & Gallery --}}
-                <a href="{{ route('gallery')}}"class="px-3 sm:px-6 py-4 text-white text-sm font-semibold block" href="#">Products & Gallery</a>
+                <a href="{{ route('gallery')}}"class="block px-3 py-4 text-sm font-semibold text-white sm:px-6" href="#">Products & Gallery</a>
                 {{-- Investor Relations --}}
                 <div>
-                    <div x-on:click="investormob = !investormob" class="text-white flex items-center justify-between w-auto px-3 sm:px-6 py-4 cursor-pointer">
+                    <div x-on:click="investormob = !investormob" class="flex items-center justify-between w-auto px-3 py-4 text-white cursor-pointer sm:px-6">
                         <a href="#" class="text-sm font-semibold">Investor Relations</a>
-                        <svg :class="{ '-rotate-180': investormob === true }" xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 h-4 w-4 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg :class="{ '-rotate-180': investormob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
@@ -168,10 +168,10 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="investormob" class="text-white w-full">
-                        <div x-on:click="corporatemob = !corporatemob" class="relative px-6 sm:px-12 py-4 flex items-center cursor-pointer justify-between focus:bg-hitam text-xs">
+                    x-show="investormob" class="w-full text-white">
+                        <div x-on:click="corporatemob = !corporatemob" class="relative flex items-center justify-between px-6 py-4 text-xs cursor-pointer sm:px-12 focus:bg-hitam">
                             <a  href="#">Corporate Governance</a>
-                            <svg :class="{ '-rotate-180': corporatemob === true }" xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 h-4 w-4 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg :class="{ '-rotate-180': corporatemob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </div>
@@ -182,16 +182,16 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        x-show="corporatemob" x-on:click.away="corporatemob = false" class="text-white w-full">
-                            <a href="{{ route('corporate-governanc.board-members') }}" class="py-4 px-10 sm:px-20 text-xs  focus:bg-hitam block">Board Members</a>
-                            <a href="{{ route('corporate-governanc.organization-structure') }}" class="py-4 px-10 sm:px-20 text-xs    focus:bg-hitam block">Organization Structure</a>
-                            <a href="{{ route('corporate-governanc.audit-comittee') }}" class="py-4 px-10 sm:px-20 text-xs    focus:bg-hitam block">Audit Committee</a>
+                        x-show="corporatemob" x-on:click.away="corporatemob = false" class="w-full text-white">
+                            <a href="{{ route('corporate-governanc.board-members') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Board Members</a>
+                            <a href="{{ route('corporate-governanc.organization-structure') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Organization Structure</a>
+                            <a href="{{ route('corporate-governanc.audit-comittee') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Audit Committee</a>
                         </div>
-                        <a href="#" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Shareholders Information</a>
-                        <a href="#" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Financial Highlight</a>
-                        <div x-on:click="publicmob = !publicmob" class="relative px-6 sm:px-12 py-4 flex items-center cursor-pointer justify-between focus:bg-hitam text-xs">
+                        <a href="#" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Shareholders Information</a>
+                        <a href="#" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Financial Highlight</a>
+                        <div x-on:click="publicmob = !publicmob" class="relative flex items-center justify-between px-6 py-4 text-xs cursor-pointer sm:px-12 focus:bg-hitam">
                             <a  href="#">Reports / Publication</a>
-                            <svg :class="{ '-rotate-180': publicmob === true }" xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 h-4 w-4 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg :class="{ '-rotate-180': publicmob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </div>
@@ -202,21 +202,21 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        x-show="publicmob" x-on:click.away="publicmob = false" class="text-white w-full">
-                            <a href="{{ route('financial-report') }}" class="py-4 px-10 sm:px-20 text-xs  focus:bg-hitam block">Financial Report</a>
-                            <a href="{{ route('annual') }}" class="py-4 px-10 sm:px-20 text-xs    focus:bg-hitam block">Annual Report</a>
-                            <a href="{{ route('public') }}" class="py-4 px-10 sm:px-20 text-xs    focus:bg-hitam block">Public Expose</a>
-                            <a href="{{ route('dividend') }}" class="py-4 px-10 sm:px-20 text-xs    focus:bg-hitam block">Dividend Information</a>
+                        x-show="publicmob" x-on:click.away="publicmob = false" class="w-full text-white">
+                            <a href="{{ route('financial-report') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Financial Report</a>
+                            <a href="{{ route('annual') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Annual Report</a>
+                            <a href="{{ route('public') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Public Expose</a>
+                            <a href="{{ route('dividend') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Dividend Information</a>
                         </div>
-                        <a href="{{ route('annual-meeting') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Annual General Meeting</a>
-                        <a href="{{ route('prospectus') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Prospectus</a>
+                        <a href="{{ route('annual-meeting') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Annual General Meeting</a>
+                        <a href="{{ route('prospectus') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Prospectus</a>
                     </div>
                 </div>
                 {{-- Sustainability --}}
                 <div>
-                    <div x-on:click="sustainmob = !sustainmob" class="text-white flex items-center justify-between w-auto px-3 sm:px-6 py-4 cursor-pointer">
+                    <div x-on:click="sustainmob = !sustainmob" class="flex items-center justify-between w-auto px-3 py-4 text-white cursor-pointer sm:px-6">
                         <a href="#" class="text-sm font-semibold">Sustainability</a>
-                        <svg :class="{ '-rotate-180': sustainmob === true }" xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 h-4 w-4 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg :class="{ '-rotate-180': sustainmob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
@@ -227,31 +227,33 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="sustainmob" class="text-white w-full">
-                        <a href="{{ route('career') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">CSR</a>
-                        <a href="{{ route('our-business') }}" class="px-6 sm:px-12 py-4 focus:bg-hitam text-xs block">Environment</a>
+                    x-show="sustainmob" class="w-full text-white">
+                        <a href="{{ route('career') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CSR</a>
+                        <a href="{{ route('our-business') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Environment</a>
                     </div>
                 </div>
                 {{-- Career --}}
-                <a href="{{ route('career')}}"class="px-3 sm:px-6 py-4 text-white text-sm font-semibold block" href="#">Career</a>
+                <a href="{{ route('career')}}"class="block px-3 py-4 text-sm font-semibold text-white sm:px-6" href="#">Career</a>
                 {{-- Contact Us --}}
-                <a href="{{ route('kontak')}}"class="px-3 sm:px-6 py-4 text-white text-sm font-semibold block" href="#">Contact Us</a>
+                <a href="{{ route('kontak')}}"class="block px-3 py-4 text-sm font-semibold text-white sm:px-6" href="#">Contact Us</a>
             </div>
 
             @yield('content')
 
             {{-- Footer --}}
             <div class="bottom-0 bg-white border-t border-gray-300">
-                <img class="w-24 mx-auto md:hidden pt-5" src="{{ asset('img/logo.png') }}">
-                <div class="grid items-center grid-cols-2 gap-6 md:gap-0 md:grid-cols-5 px-4 py-10 mx-auto text-xs font-medium justify-items-center max-w-7xl sm:px-6 lg:px-8">
+                <img class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo.png') }}">
+                <div class="grid items-center grid-cols-2 gap-6 px-4 py-10 mx-auto text-xs font-medium md:gap-0 md:grid-cols-5 justify-items-center max-w-7xl sm:px-6 lg:px-8">
                     <a class="text-center" href="{{ route('prospectus') }}">Prospectus</a>
                     <a class="text-center" href="{{ route('financial-report') }}">Financial Report</a>
-                    <img class="w-24 hidden md:block" src="{{ asset('img/logo.png') }}">
-                    <a class="text-center" href="#">Career</a>
-                    <a class="text-center" href="{{ route('kontak') }}">Contact Us</a>
+                    <img class="hidden w-24 md:block" src="{{ asset('img/logo.png') }}">
+                    <a class="text-center" href="{{ route('career') }}">Career</a>
+                    <a class="text-center" href="{{ route('kontak')}}">Contact Us</a>
                 </div>
                 <div class="pb-6 text-xs text-center">All Rights Reserved &copy; Mark Dynamics 2021.</div>
             </div>
         </div>
+
+        @stack('scripts')
     </body>
 </html>

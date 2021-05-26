@@ -40,7 +40,7 @@
         <h1 class="mb-1 text-3xl font-bold">Interested in working with us?</h1>
         <p>Press the button below and fill the form to get the chance to work with us.</p>
         <div class="pt-12">
-            <a href="#"
+            <a href="{{ route('career.form') }}"
                 class="px-3 py-2 text-sm font-semibold transition-all duration-300 border-2 border-white rounded-lg hover:bg-white hover:text-mark-default">
                 Career Form
             </a>
