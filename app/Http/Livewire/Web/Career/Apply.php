@@ -7,12 +7,12 @@ use Livewire\Component;
 class Apply extends Component
 {
     public $apply_job;
-    public $name;
-    public $email;
-    public $phone;
-    public $address;
-    public $about;
-    public $why;
+    public $fullname = "ss";
+    // public $email;
+    // public $phone;
+    // public $address;
+    // public $about;
+    // public $why;
 
     public function render()
     {
