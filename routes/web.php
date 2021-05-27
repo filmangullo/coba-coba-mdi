@@ -47,6 +47,10 @@ Route::get('shareholders', function () {
     return view('investor.shareholders');
 })->name('shareholders');
 
+Route::get('financial-highlight', function () {
+    return view('investor.financial-highlight');
+})->name('financial-highlight');
+
 Route::get('prospectus', function () {
     return view('investor.prospectus');
 })->name('prospectus');
