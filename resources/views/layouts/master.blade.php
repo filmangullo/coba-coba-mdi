@@ -105,7 +105,7 @@
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
                             x-show="sustain === true" @click.away="sustain = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">CSR</a>
+                                <a href="{{ route('csr') }}" class="py-3.5 text-center hover:bg-hitam block">CSR</a>
                                 <a href="{{ route('environment') }}" class="py-3.5 text-center hover:bg-hitam block">Environment</a>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
                     x-show="sustainmob" class="w-full text-white">
-                        <a href="#" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CSR</a>
+                        <a href="{{ route('csr') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CSR</a>
                         <a href="{{ route('environment') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Environment</a>
                     </div>
                 </div>

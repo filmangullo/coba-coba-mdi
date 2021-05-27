@@ -75,6 +75,10 @@ Route::get('environment', function () {
     return view('sustainability.environment');
 })->name('environment');
 
+Route::get('csr', function () {
+    return view('sustainability.csr');
+})->name('csr');
+
 // Route::get('gallery', function () {
 //     return view('gallery');
 // })->name('');
