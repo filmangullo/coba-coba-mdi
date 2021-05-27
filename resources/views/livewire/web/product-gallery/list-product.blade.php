@@ -1,26 +1,19 @@
-<div>
+<div class="">
     <div class="py-24 text-4xl font-bold text-center">Products</div>
-    <div class="grid grid-cols-6 gap-4 pb-24 border-b border-gray-500">
-        <div class="col-span-6 h-3/4">
-            <img class="object-cover w-full rounded-md" src="{{ asset( $preview->img ) }}" alt="Mark Dynamics Gallery & Products">
+    <div class=" border-b border-gray-500">
+        <div class="flex items-center">
+            <div class="w-full  h-3/4 ">
+                <img class="object-cover w-full rounded-md" src="{{ asset( $preview->img ) }}" alt="Mark Dynamics Gallery & Products">
+            </div>
         </div>
-        <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+
+        
+        <div class="flex items-start  py-14 w-full xsm:px-4 lg:flex-nowrap flex-wrap sm:px-6 lg:px-8 mx-auto -my-3 ">
+        @for($i=0; $i <= 5; $i++)
+        <div class="xsm:w-6/12 lg:w-6/12 w-full xl:w-2/12 px-3 py-3">
+            <img class="object-cover rounded-md w-full h-48 lg:h-28 " src="{{ asset('img/bg-slider.jpg') }}" alt="Mark Dynamics Gallery & Products">
         </div>
-        <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
-        </div>
-        <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
-        </div>
-        <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
-        </div>
-        <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
-        </div>
-        <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+        @endfor
         </div>
     </div>
 </div>

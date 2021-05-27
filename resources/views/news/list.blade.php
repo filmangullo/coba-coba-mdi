@@ -15,7 +15,7 @@
         <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
         <img class="object-cover w-full h-full" src="{{ asset($item->cover) }}" alt="Mark Dynamics News">
     </div>
-    @elseif($key == 6)
+    @elseif($key == 5)
     <div class="relative col-span-2 h-80">
         <img class="object-cover w-full h-full" src="{{ asset($item->cover) }}" alt="Mark Dynamics News">
         <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>

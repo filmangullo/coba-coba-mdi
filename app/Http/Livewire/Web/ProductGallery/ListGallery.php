@@ -11,7 +11,7 @@ class ListGallery extends Component
     public function render()
     {
         return view('livewire.web.product-gallery.list-gallery', [
-            'gallery'       => Gallery::where('is_product', false)->paginate(12)
+            'gallery'       => Gallery::where('is_product', false)->paginate(8)
         ]);
     }
 }

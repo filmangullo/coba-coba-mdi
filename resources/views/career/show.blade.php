@@ -8,9 +8,9 @@
     <div class="absolute w-full h-full mt-5 text-4xl font-bold text-center text-white top-1/2">Career</div>
 </div>
 
-<div class="container pt-12 mx-auto">
-    <div class="grid grid-cols-12">
-        <div class="col-span-8">
+<div class="sm:container pt-12 sm:mx-auto sm:px-0 ">
+    <div class="flex items-start lg:flex-nowrap flex-wrap">
+        <div class="w-full md:w-8/12">
             <div class="px-5 mx-3 shadow-md mb-7">
                 <h1 class="pb-4 text-2xl font-bold text-justify">{{ $career->job_position_id }}</h1>
                 <div class="grid grid-cols-2 mb-4">
@@ -28,9 +28,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-span-4">
-            <div class="ml-10 mr-5 shadow-md">
-                <div class="my-3 text-xl font-bold text-center uppercase">Latest news list</div>
+        <div class="w-full md:w-4/12 mx-4 md:mx-0 mb-12 mt-8">
+            <div class="md:ml-10 shadow-md md:mr-4">
+                <div class="py-2 text-xl font-bold text-center uppercase">Latest news list</div>
                 @foreach ($news as $item)
                 <div class="px-4 mb-5 text-justify">
                     <a href="{{ route('news.show', $item->slug )}}">

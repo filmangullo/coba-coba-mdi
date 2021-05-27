@@ -9,10 +9,10 @@
 </div>
 
 <div class="px-4 py-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 px-5 gap-x-12 gap-y-24 md:grid-cols-2">
+    <div class="px-5 flex items-center flex-wrap -mx-4 -my-12">
 
         @foreach ($career as $item)
-            <div class="space-y-6">
+            <div class="space-y-6 w-full sm:w-6/12 xl:w-4/12 px-4 py-12">
                 <div class="text-3xl font-bold">
                     <div class="truncate">
                         {{ $item->job_position_id}}
@@ -36,7 +36,7 @@
 </div>
 
 <div class="text-center bg-mark-default">
-    <div class="container py-12 mx-auto text-white">
+    <div class="container py-12 mx-auto text-white sm:px-0 px-4">
         <h1 class="mb-1 text-3xl font-bold">Interested in working with us?</h1>
         <p>Press the button below and fill the form to get the chance to work with us.</p>
         <div class="pt-12">
