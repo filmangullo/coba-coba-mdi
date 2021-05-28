@@ -5,7 +5,7 @@
 <div class="relative w-full h-auto pt-24">
     <img src="{{ asset('img/header-contact.png') }}" alt="Mark Dynamics Career">
     <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
-    <div class="absolute w-full h-full mt-5 text-2xl sm:text-4xl font-bold text-center text-white top-1/2">Career</div>
+    <div class="absolute w-full h-full mt-5 text-3xl sm:text-4xl font-bold text-center text-white top-1/2">Contact</div>
 </div>
 
 <div class="flex items-start lg:flex-nowrap flex-wrap w-full sm:mx-auto px-4 sm:px-6 lg:px-8 py-24 ">

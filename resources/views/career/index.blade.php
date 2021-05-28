@@ -5,7 +5,7 @@
 <div class="relative w-full h-auto pt-24">
     <img src="{{ asset('img/header-career.png') }}" alt="Mark Dynamics Career">
     <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
-    <div class="absolute w-full h-full mt-5 text-4xl font-bold text-center text-white top-1/2">Career</div>
+    <div class="absolute w-full h-full mt-5 text-3xl sm:text-4xl font-bold text-center text-white top-1/2">Career</div>
 </div>
 
 <div class="px-4 py-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -14,7 +14,7 @@
         @foreach ($career as $item)
             <div class="space-y-6 w-full sm:w-6/12 xl:w-4/12 px-4 py-12">
                 <div class="text-3xl font-bold">
-                    <div class="truncate">
+                    <div class="truncate md:text-3xl text-2xl">
                         {{ $item->job_position_id}}
                     </div>
                     <div class="text-sm font-semibold text-gray-500">{{ date('D, d F Y', strtotime($item->publish_date))}}</div>

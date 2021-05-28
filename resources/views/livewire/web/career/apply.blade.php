@@ -1,6 +1,6 @@
 
-<form class="z-20 grid grid-cols-1 md:grid-cols-2">
-    <div class="px-6 py-10 text-white bg-mark-default md:rounded-l-md">
+<form class="z-20 flex items-start flex-row-reverse lg:container lg:mx-auto space-y-8 md:space-y-0 md:space-x-6  md:flex-row flex-wrap md:flex-nowrap">
+    <div class="w-full md:w-6/12 px-6 py-10 text-white bg-mark-default md:rounded-l-md">
         <div class="text-4xl font-bold text-center">"Staf IT"</div>
 
         <div class="mb-4">
@@ -9,7 +9,7 @@
             </label>
         </div>
     </div>
-    <div class="px-6 py-10">
+    <div class="px-6 pb-10 w-full md:w-6/12 ">
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="job">
               Apply Job
