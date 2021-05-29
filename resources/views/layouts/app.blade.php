@@ -15,6 +15,9 @@
 
         @livewireStyles
         @stack('styles')
+        <style>
+            [x-cloak] { display: none; }
+        </style>
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>

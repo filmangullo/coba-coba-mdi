@@ -43,6 +43,14 @@ Route::get('awards-certificates', function () {
     return view('aboutus.awards');
 })->name('awards');
 
+Route::get('shareholders', function () {
+    return view('investor.shareholders');
+})->name('shareholders');
+
+Route::get('financial-highlight', function () {
+    return view('investor.financial-highlight');
+})->name('financial-highlight');
+
 Route::get('prospectus', function () {
     return view('investor.prospectus');
 })->name('prospectus');
@@ -66,6 +74,14 @@ Route::get('annual', function () {
 Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
+
+Route::get('environment', function () {
+    return view('sustainability.environment');
+})->name('environment');
+
+Route::get('csr', function () {
+    return view('sustainability.csr');
+})->name('csr');
 
 // Route::get('gallery', function () {
 //     return view('gallery');

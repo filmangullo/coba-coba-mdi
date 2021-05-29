@@ -12,9 +12,12 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
+        @livewireStyles
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <style>
+            [x-cloak] { display: none; }
+        </style>
     </head>
     <body x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, menu : false, aboutmob : false, investormob : false, corporatemob : false, publicmob : false, sustainmob : false }">
         <div class="font-sans antialiased text-hitam">
@@ -37,7 +40,7 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            x-show="about === true" @click.away="about = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
+                            x-cloak x-show="about === true" @click.away="about = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
                                 <a href="{{ route('ceo-message') }}" class="py-3.5 text-center hover:bg-hitam block">CEO Message</a>
                                 <a href="{{ route('our-business') }}" class="py-3.5 text-center hover:bg-hitam block">Our Business</a>
                                 <a href="{{ route('vision&mission') }}" class="py-3.5 text-center hover:bg-hitam block">Vision, Mission & Values</a>
@@ -55,7 +58,7 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            x-show="investor === true" @click.away="investor = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
+                            x-cloak x-show="investor === true" @click.away="investor = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
                                 <div @mouseover="corporate = true" @mouseleave="corporate = false" class="relative w-auto cursor-pointer text-center hover:bg-hitam py-3.5">
                                     <a href="#">Corporate Governance</a>
                                     <div
@@ -65,15 +68,15 @@
                                     x-transition:leave="transition ease-in duration-75"
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
-                                    x-show="corporate === true" @click.away="corporate = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
+                                    x-cloak x-show="corporate === true" @click.away="corporate = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
                                         <a href="{{ route('corporate-governanc.board-members') }}" class="py-3.5 text-center hover:bg-hitam block">Board Members</a>
                                         <a href="{{ route('corporate-governanc.organization-structure') }}" class="py-3.5 text-center hover:bg-hitam block">Organization Structure</a>
                                         <a href="{{ route('corporate-governanc.audit-comittee') }}" class="py-3.5 text-center hover:bg-hitam block">Audit Committee</a>
                                     </div>
                                     <svg class="absolute w-2 h-2 -mt-3 text-white fill-current right-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"/></svg>
                                 </div>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Shareholders Information</a>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Financial Highlight</a>
+                                <a href="{{ route('shareholders') }}" class="py-3.5 text-center hover:bg-hitam block">Shareholders Information</a>
+                                <a href="{{ route('financial-highlight') }}" class="py-3.5 text-center hover:bg-hitam block">Financial Highlight</a>
                                 <div @mouseover="reports = true" @mouseleave="reports = false" class="relative w-auto cursor-pointer text-center hover:bg-hitam py-3.5">
                                     <a  href="#">Reports / Publications</a>
                                     <div
@@ -83,7 +86,7 @@
                                     x-transition:leave="transition ease-in duration-75"
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
-                                    x-show="reports === true" @click.away="reports = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
+                                    x-cloak x-show="reports === true" @click.away="reports = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
                                         <a href="{{ route('financial-report') }}" class="py-3.5 text-center hover:bg-hitam block">Financial Report</a>
                                         <a href="{{ route('annual') }}" class="py-3.5 text-center hover:bg-hitam block">Annual Report</a>
                                         <a href="{{ route('public') }}" class="py-3.5 text-center hover:bg-hitam block">Public Expose</a>
@@ -104,9 +107,9 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            x-show="sustain === true" @click.away="sustain = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">CSR</a>
-                                <a href="#" class="py-3.5 text-center hover:bg-hitam block">Environment</a>
+                            x-cloak x-show="sustain === true" @click.away="sustain = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
+                                <a href="{{ route('csr') }}" class="py-3.5 text-center hover:bg-hitam block">CSR</a>
+                                <a href="{{ route('environment') }}" class="py-3.5 text-center hover:bg-hitam block">Environment</a>
                             </div>
                         </div>
                         <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
@@ -127,7 +130,7 @@
             x-transition:leave="transition-all ease-in duration-100"
             x-transition:leave-start="right-0"
             x-transition:leave-end="-right-32"
-            x-show="menu" x-on:click.away="menu = false" class="fixed right-0 z-40 w-1/2 h-full pt-16 overflow-y-auto sm:w-1/3 bg-hitam bg-opacity-90">
+            x-cloak x-show="menu" x-on:click.away="menu = false" class="fixed right-0 z-40 w-1/2 h-full pt-16 overflow-y-auto sm:w-1/3 bg-hitam bg-opacity-90">
                 {{-- About Us --}}
                 <div>
                     <div x-on:click="aboutmob = !aboutmob" class="flex items-center justify-between w-auto px-3 py-4 text-white cursor-pointer sm:px-6">
@@ -143,7 +146,7 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="aboutmob" class="w-full text-white">
+                    x-cloak x-show="aboutmob" class="w-full text-white">
                         <a href="{{ route('ceo-message') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CEO Message</a>
                         <a href="{{ route('our-business') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Our Business</a>
                         <a href="{{ route('vision&mission') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Vision, Mission & Value</a>
@@ -168,7 +171,7 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="investormob" class="w-full text-white">
+                    x-cloak x-show="investormob" class="w-full text-white">
                         <div x-on:click="corporatemob = !corporatemob" class="relative flex items-center justify-between px-6 py-4 text-xs cursor-pointer sm:px-12 focus:bg-hitam">
                             <a  href="#">Corporate Governance</a>
                             <svg :class="{ '-rotate-180': corporatemob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -182,13 +185,13 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        x-show="corporatemob" x-on:click.away="corporatemob = false" class="w-full text-white">
+                        x-cloak x-show="corporatemob" x-on:click.away="corporatemob = false" class="w-full text-white">
                             <a href="{{ route('corporate-governanc.board-members') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Board Members</a>
                             <a href="{{ route('corporate-governanc.organization-structure') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Organization Structure</a>
                             <a href="{{ route('corporate-governanc.audit-comittee') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Audit Committee</a>
                         </div>
-                        <a href="#" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Shareholders Information</a>
-                        <a href="#" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Financial Highlight</a>
+                        <a href="{{ route('shareholders') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Shareholders Information</a>
+                        <a href="{{ route('financial-highlight') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Financial Highlight</a>
                         <div x-on:click="publicmob = !publicmob" class="relative flex items-center justify-between px-6 py-4 text-xs cursor-pointer sm:px-12 focus:bg-hitam">
                             <a  href="#">Reports / Publication</a>
                             <svg :class="{ '-rotate-180': publicmob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -202,7 +205,7 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        x-show="publicmob" x-on:click.away="publicmob = false" class="w-full text-white">
+                        x-cloak x-show="publicmob" x-on:click.away="publicmob = false" class="w-full text-white">
                             <a href="{{ route('financial-report') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Financial Report</a>
                             <a href="{{ route('annual') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Annual Report</a>
                             <a href="{{ route('public') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Public Expose</a>
@@ -227,9 +230,9 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="sustainmob" class="w-full text-white">
-                        <a href="{{ route('career') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CSR</a>
-                        <a href="{{ route('our-business') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Environment</a>
+                    x-cloak x-show="sustainmob" class="w-full text-white">
+                        <a href="{{ route('csr') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CSR</a>
+                        <a href="{{ route('environment') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Environment</a>
                     </div>
                 </div>
                 {{-- Career --}}
@@ -254,6 +257,7 @@
             </div>
         </div>
 
+        @livewireScripts
         @stack('scripts')
     </body>
 </html>

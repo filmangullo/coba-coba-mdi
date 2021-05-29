@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor1">
+                        <textarea class="editor1" id="">
                             {!! $content_id !!}
                         </textarea>
                         @error('content_id') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
@@ -166,6 +166,12 @@
     </div>
 </div>
 
+@push('scripts')
+<script src="ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+@endpush
 
 <script>
     tinymce.init({
