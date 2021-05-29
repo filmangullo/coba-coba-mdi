@@ -2,7 +2,7 @@
     <div x-data="{ tab: 'id' }" class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col mx-auto overflow-hidden bg-white shadow-lg md:w-3/6 rounded-xl">
             <div class="px-12 py-5">
-                <h2 class="text-2xl font-semibold text-center text-gray-800">Upload and CSR content!</h2>
+                <h2 class="text-2xl font-semibold text-center text-gray-800">Upload and Awards & Certificates !</h2>
             </div>
 
             <div class="items-center w-full bg-gray-200">
@@ -12,8 +12,8 @@
                         <label @if ($img) style=" background-image: url('{{ $img->temporaryUrl() }}');
                                         background-size: 100%;
                                         background-repeat: no-repeat;
-                                        background-position: center" @endif @if (!$img && isset($image->img))
-                            style=" background-image: url('{{ asset( $image->img ) }}');
+                                        background-position: center" @endif @if (!$img && isset($awards_certificates->img))
+                            style=" background-image: url('{{ asset( $awards_certificates->img ) }}');
                             background-size: 100%;
                             background-repeat: no-repeat;
                             background-position: center"
@@ -28,15 +28,6 @@
                                 <span class="mt-2 text-base leading-normal">Select a file</span>
                             </span>
                             <input wire:model="img" type='file' class="hidden" />
-                        </label>
-                    </div>
-
-                    <div class="relative w-full h-10 mb-5 ">
-                        <input wire:model="date" type="date"
-                            class="w-full h-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">
-
-                        <label for="date" class="absolute px-1 text-xs transition-all bg-gray-200 left-2">
-                            Date
                         </label>
                     </div>
 
@@ -88,7 +79,7 @@
                             </label>
                         </div>
                         <div class="w-full mb-5" >
-                            <textarea wire:model="description_en" id="editor2" rows="4"
+                            <textarea wire:model="description_en"  rows="4"
                                 class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue"></textarea>
                         </div>
                     </div>
@@ -101,7 +92,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center h-20">
-                <a href="{{ route('cms-csr.index') }}" class="text-gray-600">Maybe later</a>
+                <a href="{{ route('cms-awards-certificates.index') }}" class="text-gray-600">Maybe later</a>
             </div>
         </div>
     </div>
