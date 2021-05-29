@@ -11,6 +11,10 @@
 width: 100% !important;
 }
 
+body {
+    background-color: : #F07721 !important;
+}
+
 .footer {
 width: 100% !important;
 }

@@ -34,7 +34,7 @@ class Apply extends Component
             'filecv' => $this->filecv->getRealPath(),
         ];
 
-        Mail::to('sinjiprasetio2690@gmail.com')->send(new CareerMail($details));
+        Mail::to('jouwineliepangi@gmail.com')->send(new CareerMail($details));
 
 
     }
