@@ -1,11 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="w-full flex items-start flex-wrap ">
+<div class="w-full lg:grid grid-cols-2 gap-12 items-start">
 @forelse ($news as $key => $item)
     @if ($key == 0)
-    <div class="relative h-screen w-full">
-        <div class="absolute z-10 space-y-6 bottom-12 pl-8 xsm:pl-16 w-11/12">
+    <div class="relative h-screen w-full col-span-2">
+        <div class="absolute z-10 space-y-6 bottom-12 pl-8 sm:pl-16 w-11/12">
             <div class=" text-4xl xsm:text-6xl font-bold text-white">{{ $item->title_id }}</div>
             <div class="text-lg text-justify text-white ">{{ Str::limit($item->brief_description_id, 250, '...') }}</div>
             <div>
@@ -30,7 +30,7 @@
         </div>
     </div>
     @else
-    <div class="lg:container lg:mx-auto px-4 py-12 rounded-md  w-full xsm:w-6/12 sm:px-6 lg:px-8">
+    <div class="lg:container lg:mx-auto px-4 mt-12 lg::mt-0 rounded-md w-full sm:px-6 lg:px-8">
         <div class="relative w-full mx-auto overflow-hidden rounded-md h-72 ">
             <img class="w-full h-full object-cover" src="{{ asset($item->cover) }}" alt="Mark Dynamics News">
             <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
