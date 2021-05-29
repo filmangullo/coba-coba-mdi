@@ -95,6 +95,9 @@
                         now</button>
                     </div>
                 </div>
+                <div id="editor">
+                    <p>This is the editor content.</p>
+                </div>
             </div>
                 <div class="flex items-center justify-center h-20">
                     <a href="{{ route('cms-csr.index') }}" class="text-gray-600">Maybe later</a>
@@ -103,3 +106,8 @@
         </div>
     </div>
 
+
+<script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor' );
+</script>
