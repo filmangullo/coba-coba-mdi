@@ -2,21 +2,15 @@
 
 @section('content')
 {{-- Slider --}}
-<div class="h-20">
-    Header
+<div class="w-full h-auto relative pt-12 lg:pt-24">
+    <img src="{{ asset('img/audit-comittee.png') }}" alt="Mark Dynamics Awards & Certificates">
+    <div class="absolute bg-mark-default bg-opacity-50 h-full top-0 w-full"></div>
+    <div class="absolute text-white text-center w-full text-sm sm:text-2xl lg:text-4xl font-bold top-1/2 mt-5 h-full">News</div>
 </div>
-<div class="relative w-full h-60">
-    <div class="absolute left-0 right-0 z-20 w-full py-20 mx-auto my-auto space-y-6 text-center text-white">
-        <div class="text-5xl font-bold">News</div>
-    </div>
-    <div class="absolute w-full h-full bg-opacity-50 bg-mark"></div>
-    <img class="w-full h-full" src='{{ asset('img/audit-comittee.png') }}'>
-</div>
-
-<div class="container pt-12 mx-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
     <div class="grid grid-cols-12">
         <div class="col-span-8">
-            <div class="px-5 mx-3 shadow-md mb-7">
+            <div class="px-5 mx-3 mb-7">
                 <h1 class="pb-4 text-2xl font-bold text-justify">{{ $news->title_id }}</h1>
                 <div class="grid grid-cols-2 mb-4">
                     <div class="py-1 text-left text-gray-500 items-left">
