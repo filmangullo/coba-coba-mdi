@@ -20,6 +20,22 @@ class Apply extends Component
     public $about;
     public $why;
     public $filecv;
+    public $success = false;
+
+    protected $rules = [
+        'name' =>   'required|min:3',
+        'email' => 'required|email',
+        'phone' => 'required|numeric',
+        'address' => 'required|min:10',
+        'about' => 'required|min:15|max:300',
+        'why' => 'required|min:15|max:300',
+        'filecv' => 'required|mimes:pdf|max:1024',
+    ];
+
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
 
     public function submit() {
         
@@ -36,6 +52,13 @@ class Apply extends Component
 
         Mail::to('sinjiprasetio2690@gmail.com')->send(new CareerMail($details));
 
+        $details = [
+            'text'       => 'Hi, '.$this->name.', thank you for emailing us, We will process your application shortly.'
+        ];
+
+        Mail::to($this->email)->send(new NotificationMail($details));
+
+        $this->success = true;
 
     }
 
