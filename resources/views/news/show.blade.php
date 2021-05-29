@@ -7,10 +7,25 @@
     <div class="absolute bg-mark-default bg-opacity-50 h-full top-0 w-full"></div>
     <div class="absolute text-white text-center w-full text-sm sm:text-2xl lg:text-4xl font-bold top-1/2 mt-5 h-full">News</div>
 </div>
+<<<<<<< HEAD
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
     <div class="grid grid-cols-12">
         <div class="col-span-8">
             <div class="px-5 mx-3 mb-7">
+=======
+<div class="relative w-full h-60">
+    <div class="absolute left-0 right-0 z-20 w-full py-20 mx-auto my-auto space-y-6 text-center text-white">
+        <div class="text-5xl font-bold">News</div>
+    </div>
+    <div class="absolute w-full h-full bg-opacity-50 bg-mark"></div>
+    <img class="w-full h-full" src='{{ asset('img/audit-comittee.png') }}'>
+</div>
+
+<div class="pt-12">
+    <div class="flex items-start flex-wrap md:flex-nowrap space-x-0 space-y-6 mb-6 md:space-y-0 md:space-x-8">
+        <div class="w-full md:w-8/12">
+            <div class="px-5 mx-3 shadow-md mb-7 py-2">
+>>>>>>> e54b561734ce583e4c830860fcc966cb17d387d1
                 <h1 class="pb-4 text-2xl font-bold text-justify">{{ $news->title_id }}</h1>
                 <div class="grid grid-cols-2 mb-4">
                     <div class="py-1 text-left text-gray-500 items-left">
@@ -27,9 +42,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-span-4">
-            <div class="ml-10 mr-5 shadow-md">
-                <div class="my-3 text-xl font-bold text-center uppercase">Latest news list</div>
+        <div class="w-full md:w-4/12">
+            <div class="px-4 mx-4 shadow-md py-2">
+                <div class="text-lg xsm:text-xl py-4 font-bold text-center uppercase">Latest news list</div>
                 @foreach ($list as $item)
                 <div class="px-4 mb-5 text-justify">
                     <a href="{{ route('news.show', $item->slug )}}">

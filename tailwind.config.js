@@ -42,7 +42,11 @@ module.exports = {
             },
             width: {
                 '10.5': '2.625rem',
-            }
+            },
+            screens: {
+                'xssm': {'min': '300px'},
+                'xsm': {'min': '475px'}
+            },
 
         }
     },

@@ -5,6 +5,7 @@ use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\CareerController;
 use App\Http\Controllers\cms\GalleryController;
+use App\Http\Controllers\cms\CsrController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,13 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/create', [CareerController::class, 'create'])->name('create');
         Route::get('/{id}/update', [CareerController::class, 'update'])->name('update');
         Route::get('/{id}/show', [CareerController::class, 'show'])->name('show');
+    });
+
+    Route::prefix('csr')->name('cms-csr.')->group(function () {
+        Route::get('/', [CsrController::class, 'index'])->name('index');
+        Route::get('/create', [CsrController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [CsrController::class, 'update'])->name('update');
+        Route::get('/{id}/show', [CsrController::class, 'show'])->name('show');
     });
 
 });
