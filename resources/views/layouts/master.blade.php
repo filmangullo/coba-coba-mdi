@@ -15,6 +15,9 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <style>
+            [x-cloak] { display: none; }
+        </style>
     </head>
     <body x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, menu : false, aboutmob : false, investormob : false, corporatemob : false, publicmob : false, sustainmob : false }">
         <div class="font-sans antialiased text-hitam">

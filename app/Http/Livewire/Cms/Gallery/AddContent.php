@@ -21,7 +21,7 @@ class AddContent extends Component
 
         if($image)
         {
-            $this->image    = $image;
+            $this->image        = $image;
 
             $this->is_product   = $this->image->is_product;
         }
