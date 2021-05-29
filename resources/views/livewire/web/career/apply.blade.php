@@ -1,15 +1,15 @@
-
-<form class="z-20 flex items-start flex-row-reverse lg:container lg:mx-auto space-y-8 md:space-y-0 md:space-x-6  md:flex-row flex-wrap md:flex-nowrap">
-    <div class="w-full md:w-6/12 px-6 py-10 text-white bg-mark-default md:rounded-l-md">
+<div>
+<div class="z-20 flex flex-row-reverse flex-wrap items-start space-y-8 lg:container lg:mx-auto md:space-y-0 md:space-x-6 md:flex-row md:flex-nowrap">
+    <div class="w-full px-6 py-10 text-white md:w-6/12 bg-mark-default md:rounded-l-md">
         <div class="text-4xl font-bold text-center">"Staf IT"</div>
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="job">
-              Full Name : {{$fullname}}
+              Full Name : {{$nama}}
             </label>
         </div>
     </div>
-    <div class="px-6 pb-10 w-full md:w-6/12 ">
+    <div class="w-full px-6 pb-10 md:w-6/12 ">
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="job">
               Apply Job
@@ -23,8 +23,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
               Name
             </label>
-            <input wire:model="fullname"
-                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
+            <input wire:model="nama" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
         </div>
 
         <div class="mb-4">
@@ -62,6 +61,12 @@
             </label>
             <textarea class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Give a brief and clear explanation"></textarea>
         </div>
-    </div>
-</form>
 
+        <div class="mb-4">
+            <div wire:click='submit' class="inline-block px-4 py-3 mb-2 text-sm font-bold text-white rounded-md cursor-pointer bg-mark-default hover:bg-mark-dark">
+            Submit
+            </div>
+        </div>
+    </div>
+</div>
+</div>

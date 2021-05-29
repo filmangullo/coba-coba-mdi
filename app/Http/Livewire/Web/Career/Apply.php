@@ -6,13 +6,17 @@ use Livewire\Component;
 
 class Apply extends Component
 {
-    public $apply_job;
-    public $fullname = "ss";
+    public $pilihjob;
+    public $nama;
     // public $email;
     // public $phone;
     // public $address;
     // public $about;
     // public $why;
+
+    public function submit() {
+
+    }
 
     public function render()
     {
