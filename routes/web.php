@@ -22,6 +22,7 @@ use App\Http\Controllers\web\TradingViewController;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -115,6 +116,15 @@ Route::prefix('trading')->group(function () {
     // Route::get('/{slug}', [NewsController::class, 'show'])->name('news.show');
 });
 
+/**
+ * Localization handler midleware.
+ *
+ * @return void
+ */
+Route::get('/lang/{locale}', function ($locale)
+{
+    return redirect()->back()->withCookie(cookie()->forever('lang', $locale));
+});
 
 /**
  * cms handle services.
