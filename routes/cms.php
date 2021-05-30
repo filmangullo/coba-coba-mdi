@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\AwardsCertificatesController;
 use App\Http\Controllers\cms\DashboardController;
+use App\Http\Controllers\cms\EnvironmentController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\CareerController;
 use App\Http\Controllers\cms\GalleryController;
@@ -57,6 +58,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [AwardsCertificatesController::class, 'index'])->name('index');
         Route::get('/create', [AwardsCertificatesController::class, 'create'])->name('create');
         Route::get('/{id}/update', [AwardsCertificatesController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('environment')->name('cms-environment.')->group(function () {
+        Route::get('/', [EnvironmentController::class, 'index'])->name('index');
+        Route::get('/create', [EnvironmentController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [EnvironmentController::class, 'update'])->name('update');
     });
 
 });

@@ -2,7 +2,7 @@
     <div x-data="{ tab: 'id' }" class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col mx-auto overflow-hidden bg-white shadow-lg md:w-3/6 rounded-xl">
             <div class="px-12 py-5">
-                <h2 class="text-2xl font-semibold text-center text-gray-800">Upload and Awards & Certificates !</h2>
+                <h2 class="text-2xl font-semibold text-center text-gray-800">Upload Awards & Certificates !</h2>
             </div>
 
             <div class="items-center w-full bg-gray-200">

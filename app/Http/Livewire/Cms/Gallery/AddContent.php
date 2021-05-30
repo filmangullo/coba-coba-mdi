@@ -42,6 +42,7 @@ class AddContent extends Component
         $image = [
             'is_product'        => $this->is_product == 'true' ? true : false,
         ];
+
         if ($this->img) {
             $image['img'] = 'storage/'. $this->img->store('', 'public');
         }

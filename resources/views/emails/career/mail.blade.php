@@ -1,9 +1,3 @@
-<style>
-* {
-    background-color: #F07721 !important;
-}
-</style>
-
 @component('mail::message')
 # Introduction
 
