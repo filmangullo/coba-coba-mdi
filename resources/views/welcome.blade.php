@@ -31,7 +31,7 @@
         </div>
     </div>
 </div> --}}
-<div class="py-12 animate__animated animate__fadeInUp">
+<div class="py-12">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default">Our Products</div>
     <div class="items-start justify-center grid-cols-3 space-y-12 sm:grid lg:space-y-0">
         <div class="mx-auto">
