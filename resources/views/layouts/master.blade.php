@@ -117,7 +117,7 @@
                         </div>
                         <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
                         <a class="px-6 py-10" href="{{ route('kontak') }}">Contact Us</a>
-                        <div class="flex items-center w-20 border border-gray-300 rounded-lg">
+                        <div class="flex items-center w-20">
                             <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-seindo-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
                             <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-seindo-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>
                         </div>
