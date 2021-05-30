@@ -3,18 +3,11 @@
         <div class="container px-4 mx-auto overflow-hidden bg-white shadow-xl sm:rounded-lg">
 
             <div class="grid grid-cols-4 gap-4 p-4">
-                @forelse ($galleries as $item)
+                @forelse ($env as $item)
                 <div class="p-2 text-center border border-gray-400 rounded-t-md">
                     <div class="flex items-center justify-center overflow-hidden h-52">
                         <img src="{{ asset($item->img) }}" class="w-full m-auto">
                     </div>
-                    <span class="my-1 text-xs">
-                        @if ($item->is_product == true)
-                        image of product
-                        @else
-                        non product
-                        @endif
-                    </span>
                     <div class="py-3 text-center border-t border-gray-400">
                         <button wire:click='openModalDelete({{$item->id}})'
                             type="button"
@@ -25,7 +18,9 @@
                 </div>
 
                 @empty
-
+                <div class="w-full col-span-4 p-2 my-3 text-center border border-red-500 rounded-md">
+                    Environment is empty !
+                </div>
                 @endforelse
             </div>
         </div>
@@ -79,6 +74,5 @@
         </div>
     </div>
     @endif
+
 </div>
-
-

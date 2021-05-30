@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\web\AboutUsController;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
 use App\Http\Controllers\web\CorporateGovernanceController;
@@ -39,9 +40,10 @@ Route::get('milestones', function () {
     return view('aboutus.milestones');
 })->name('milestones');
 
-Route::get('awards-certificates', function () {
-    return view('aboutus.awards');
-})->name('awards');
+Route::prefix('about-us')->group(function () {
+    Route::get('/awards-certificates', [AboutUsController::class, 'awardsCertificates'])->name('awards');
+});
+
 
 Route::get('shareholders', function () {
     return view('investor.shareholders');
