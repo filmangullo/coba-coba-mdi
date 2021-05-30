@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\web\AboutUsController;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
@@ -122,4 +123,19 @@ Route::prefix('trading')->group(function () {
  */
 Route::get('/App/Providers/CmsServiceProvider', function () {
     return redirect('/');
+});
+
+//Download Route
+
+//Financial Report
+
+Route::get('/download-financial-report/{name}', function($name){
+    if($name === '0-2017'){
+        // return Storage::disk('public')->download(public_path('fs-mark-2q17.pdf'), 'FS Mark 2Q17.pdf');
+        return Storage::download(storage_path('fs-mark-2q17.pdf'), 'FS Mark 2Q17');
+    } elseif($name === '1-2017'){
+        return Storage::download('fs-mark-3q17.pdf', 'FS Mark 3Q17');
+    } elseif($name === '2-2017'){
+        return Storage::download('fs-mark-4q17.pdf', 'FS Mark 4Q17');
+    }
 });
