@@ -8,7 +8,18 @@
     <div class="py-12">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="overflow-hidden bg-white shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
+                <div class="p-6 bg-white border-b border-gray-200 sm:px-20">
+                    <div>
+                        <x-jet-application-logo class="block w-auto h-12" />
+                    </div>
+
+                    <div class="mt-8 mb-4 text-2xl">
+                        Welcome to Mark Dynamic Sindo application!
+                    </div>
+
+                    @livewire('cms.message.list-content')
+
+                </div>
             </div>
         </div>
     </div>
