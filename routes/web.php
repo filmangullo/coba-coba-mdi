@@ -7,6 +7,7 @@ use App\Http\Controllers\web\CareerController;
 use App\Http\Controllers\web\CorporateGovernanceController;
 use App\Http\Controllers\web\NewsController;
 use App\Http\Controllers\web\ProductGalleryController;
+use App\Http\Controllers\web\SustainabilityController;
 use App\Http\Controllers\web\TradingViewController;
 
 /*
@@ -77,17 +78,11 @@ Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
 
-Route::get('environment', function () {
-    return view('sustainability.environment');
-})->name('environment');
+Route::prefix('sustainability')->group(function () {
+    Route::get('/csr', [SustainabilityController::class, 'csr'])->name('csr');
+    Route::get('/environment', [SustainabilityController::class, 'environment'])->name('environment');
+});
 
-Route::get('csr', function () {
-    return view('sustainability.csr');
-})->name('csr');
-
-// Route::get('gallery', function () {
-//     return view('gallery');
-// })->name('');
 Route::get('/product-gallery', [ProductGalleryController::class, 'list'])->name('gallery');
 
 Route::prefix('news')->group(function () {
