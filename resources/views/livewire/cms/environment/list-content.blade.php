@@ -12,7 +12,7 @@
                         <button wire:click='openModalDelete({{$item->id}})'
                             type="button"
                             class="inline-block px-5 py-2 font-semibold text-white uppercase bg-red-600 rounded-lg">delete</button>
-                        <a href="{{ route('cms-gallery.update', $item->id) }}"
+                        <a href="{{ route('cms-environment.update', $item->id) }}"
                             class="inline-block px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Update</a>
                     </div>
                 </div>
