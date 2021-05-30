@@ -3,7 +3,7 @@
 @section('content')
 {{-- Slider --}}
 <div class="relative w-full h-auto pt-24">
-    <img src="{{ asset('img/audit-comittee.png') }}" alt="Mark Dynamics Audit Comittee">
+    <img class="2xl:w-full" src="{{ asset('img/audit-comittee.png') }}" alt="Mark Dynamics Audit Comittee">
     <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
     <div class="absolute w-full h-full mt-5 text-4xl font-bold text-center text-white top-1/2">Audit Comittee</div>
 </div>
