@@ -10,12 +10,10 @@
     @foreach ($csr as $item)
         <div class="py-6 lg:py-12">
             <div class="text-sm font-bold uppercase text-mark-default sm:text-xl lg:text-3xl">{{ $item->title_id }}</div>
-            <div class="mt-1 text-xs italic font-bold sm:mt-3 sm:text-sm lg:text-base uppecase">CORPORATE SOCIAL RESPONSIBILITY RELATED TO THE ENVIRONMENT</div>
-            <div class="mt-6 text-xs tracking-wide lg:mt-12 lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum arcu volutpat dolor gravida. Mauris scelerisque adipiscing at semper luctus. Tempus ut donec pellentesque et eget velit, nunc. Integer non neque sagittis, varius. Elementum ut egestas aliquet nunc morbi ac nec. Egestas sit risus nibh fringilla amet. Nunc id amet viverra tristique pulvinar egestas orci. Aliquam vulputate viverra enim tincidunt sapien turpis varius. Eu condimentum nec phasellus ultricies in ipsum amet. Pellentesque dignissim sit eget rhoncus, urna pulvinar euismod lacus. Ultricies cum fringilla cursus amet eget adipiscing. Ipsum pulvinar sit lectus est quisque adipiscing sagittis enim. Risus feugiat semper id eu nulla scelerisque enim. Ut ut volutpat rhoncus facilisis turpis enim, facilisis blandit convallis.
-                Scelerisque blandit fermentum sit imperdiet etiam ut. Elementum elementum consequat lacus, in sed viverra at. Urna, et congue sem faucibus nunc mi elementum semper neque. Magna augue elementum at mauris. Proin arcu malesuada elementum eleifend quis porttitor fermentum laoreet. Euismod quam proin at dui mollis augue fringilla tristique.
-                Lectus eu facilisis ullamcorper sagittis a ac ac, volutpat. Bibendum purus urna, amet, quisque pellentesque sollicitudin nunc. Convallis tristique at enim, morbi consequat nunc cursus et. Odio vel pulvinar scelerisque ipsum dapibus. Neque tristique aliquet sed turpis urna ornare urna. Porttitor amet, est, cursus amet euismod erat fermentum. Turpis quisque posuere lectus blandit vitae odio. Dignissim in tellus sed duis luctus ut id ullamcorper semper. Ac mauris massa eget morbi viverra. Nibh et eget lacinia est sed. Egestas sed et urna, nunc sit. Feugiat ut at ante tincidunt egestas ornare ac id. In viverra nunc convallis in neque facilisis facilisis morbi gravida. Convallis non venenatis adipiscing amet orci, etiam. Rutrum vel pulvinar arcu ut pretium sit vitae porttitor in.
-                Eu augue vulputate non id habitant in. Enim vel gravida sed sit tristique sed. Ultrices fermentum nulla scelerisque ornare scelerisque. Ornare sit viverra et feugiat non mattis urna id elit. Mattis.</div>
-            <img class="object-cover h-48 mx-auto mt-6 sm:h-96 lg:h-screen lg:mt-12" src="{{ asset('img/csr-1.jpg') }}" alt="Mark Dynamics CSR">
+            <div class="mt-1 text-xs italic font-bold text-gray-600 sm:mt-3 sm:text-sm lg:text-base uppecase">{{ $item->title_en }}</div>
+            <div class="mt-6 text-xs tracking-wide lg:mt-12 lg:text-sm">{!! $item->description_id !!}</div>
+            <div class="mt-6 text-xs italic tracking-wide text-right lg:mt-12 lg:text-sm">{!! $item->description_en !!}</div>
+            <img class="object-cover h-48 mx-auto mt-6 sm:h-96 lg:h-screen lg:mt-12" src="{{ asset($item->img) }}" alt="Mark Dynamics CSR">
         </div>
     @endforeach
 

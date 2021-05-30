@@ -2,17 +2,10 @@
 
 @section('content')
 {{-- Slider --}}
-<<<<<<< HEAD
 <div class="relative w-full h-auto pt-24">
-    <img src="{{ asset('img/board-member.png') }}" alt="Mark Dynamics Board Members">
+    <img class="2xl:w-full" src="{{ asset('img/board-member.png') }}" alt="Mark Dynamics Board Members">
     <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
     <div class="absolute w-full h-full mt-5 text-4xl font-bold text-center text-white top-1/2">Board Members</div>
-=======
-<div class="w-full h-auto relative pt-24">
-    <img class="2xl:w-full" src="{{ asset('img/board-member.png') }}" alt="Mark Dynamics Board Members">
-    <div class="absolute bg-mark-default bg-opacity-50 h-full top-0 w-full"></div>
-    <div class="absolute text-white text-center w-full text-4xl font-bold top-1/2 mt-5 h-full">Board Members</div>
->>>>>>> 7ab99d230764b785990be1f0ef244cfaaf24f288
 </div>
 
 <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
