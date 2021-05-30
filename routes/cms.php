@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\cms\AwardsCertificatesController;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\CareerController;
@@ -50,6 +51,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/create', [CsrController::class, 'create'])->name('create');
         Route::get('/{id}/update', [CsrController::class, 'update'])->name('update');
         Route::get('/{id}/show', [CsrController::class, 'show'])->name('show');
+    });
+
+    Route::prefix('awards-certificates')->name('cms-awards-certificates.')->group(function () {
+        Route::get('/', [AwardsCertificatesController::class, 'index'])->name('index');
+        Route::get('/create', [AwardsCertificatesController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [AwardsCertificatesController::class, 'update'])->name('update');
     });
 
 });

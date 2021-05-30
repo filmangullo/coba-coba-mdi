@@ -53,7 +53,7 @@ class Apply extends Component
         Mail::to('jouwineliepangi@gmail.com')->send(new CareerMail($details));
 
         $details = [
-            'text'       => 'Hi, '.$this->name.', thank you for emailing us, We will process your application shortly.'
+            'text'       => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.'
         ];
 
         Mail::to($this->email)->send(new NotificationMail($details));
