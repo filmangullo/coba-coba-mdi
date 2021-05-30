@@ -21,7 +21,7 @@
                     </div>
                 </div>
             @else
-            <div class="grid grid-cols-3 gap-8 py-12 lg:py-24 animate__animated animate__slideInRight">
+            <div class="grid grid-cols-3 gap-8 py-12 lg:py-24 wow animate__animated animate__slideInRight">
                 <div class="col-span-2 my-auto space-y-3 align-middle">
                     <div class="text-2xl font-bold">{!! $item->title_id !!}</div>
                     <div class="italic font-bold text-gray-500 text-md">{!! $item->title_en !!}</div>
@@ -41,8 +41,4 @@
 
 
     </div>
-
-    @push('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    @endpush
 @endsection
