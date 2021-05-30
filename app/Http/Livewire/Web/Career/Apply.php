@@ -50,7 +50,7 @@ class Apply extends Component
             'filecv' => $this->filecv->getRealPath(),
         ];
 
-        Mail::to('jouwineliepangi@gmail.com')->send(new CareerMail($details));
+        Mail::to('sinjiprasetio2690@gmail.com')->send(new CareerMail($details));
 
         $details = [
             'text'       => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.'
@@ -59,6 +59,8 @@ class Apply extends Component
         Mail::to($this->email)->send(new NotificationMail($details));
 
         $this->success = true;
+
+        dd($this->success);
 
     }
 
