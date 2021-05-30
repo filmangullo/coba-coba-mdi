@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 lg:pt-48">
-    <div class="text-2xl lg:text-4xl font-bold text-center">CEO Message</div>
-    <div class="my-12 lg:my-24">
+<div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 lg:pt-48">
+    <div class="animate__animated animate__fadeInUp text-2xl lg:text-4xl font-bold text-center">CEO Message</div>
+    <div class="animate__animated animate__fadeInUp my-12 lg:my-24">
         <img class="w-1/3 mx-auto" src="{{ asset('img/ceo-message.png') }}" alt="Mark Dynamics Ceo Message">
     </div>
     <div class="bg-mark-default w-full py-16 sm:py-24 mb-12 lg:mb-24 px-10 sm:px-16 md:px-40 lg:px-52 rounded-md relative">
