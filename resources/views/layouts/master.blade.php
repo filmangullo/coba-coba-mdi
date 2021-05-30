@@ -20,6 +20,7 @@
         <style>
             [x-cloak] { display: none; }
         </style>
+        @stack('styles')
     </head>
     <body x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, menu : false, aboutmob : false, investormob : false, corporatemob : false, publicmob : false, sustainmob : false }">
         <div class="font-sans antialiased text-hitam">
