@@ -48,19 +48,18 @@ class Apply extends Component
             'about' => $this->about,
             'why' => $this->why,
             'filecv' => $this->filecv->getRealPath(),
+            'text' => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.',
         ];
 
         Mail::to('jouwineliepangi@gmail.com')->send(new CareerMail($details));
-
-        $details = [
-            'text'       => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.'
-        ];
+    
+        // dd($details);
+        $this->success = true;
 
         Mail::to($this->email)->send(new NotificationMail($details));
 
-        $this->success = true;
 
-        dd($this->success);
+        // dd($this->success);
 
     }
 
