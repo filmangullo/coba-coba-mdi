@@ -38,6 +38,7 @@ class Apply extends Component
     }
 
     public function submit() {
+        $this->validate();
         
         $details = [
             'name' => $this->name,
@@ -55,7 +56,7 @@ class Apply extends Component
         $details = [
             'text'       => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.'
         ];
-
+        dd($details);
         Mail::to($this->email)->send(new NotificationMail($details));
 
         $this->success = true;
