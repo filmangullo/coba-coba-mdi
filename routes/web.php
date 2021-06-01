@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\web\AboutUsController;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;

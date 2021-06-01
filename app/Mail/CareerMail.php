@@ -12,6 +12,7 @@ class CareerMail extends Mailable
     use Queueable, SerializesModels;
 
     public $details;
+    public $message;
     /**
      * Create a new message instance.
      *
@@ -29,6 +30,6 @@ class CareerMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.career.mail')->view('email.internship')->attach($this->details['filecv']);
+        return $this->view('emails.career.mail')->view('emails.career.notification')->attach($this->details['filecv']);
     }
 }

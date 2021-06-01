@@ -8,12 +8,21 @@
 </div>
 <div class="my-24 w-full mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-start md:flex-nowrap flex-wrap -mx-4 -my-6">
-    @php $data = ['annual-2019.png', 'annual-2018.png', 'annual-2017.png']; $i = 9;@endphp
+    @php $data = ['annual-2020.png','annual-2019.png', 'annual-2018.png', 'annual-2017.png']; $i = 9;@endphp
     @foreach($data as $key => $val)
-        <div class="space-y-6 w-6/12 md:w-3/12 px-4 py-6">
+        @php
+            if($key === 0){
+                $ar = 'ar-mark-2019.pdf';
+            } elseif($key === 1){
+                $ar = 'ar-mark-2018.pdf';
+            } elseif($key === 2){
+                $ar = 'ar-mark-2017.pdf';
+            }
+        @endphp
+        <a href="{{ asset($ar) }}" download class="block space-y-6 w-6/12 md:w-3/12 px-4 py-6">
             <img class="w-1/2 h-full mx-auto" src="{{ asset('img/'.$val. '') }}" alt="Mark Dynamics Annual 2019">
             <div class="text-sm md:text-lg cursor-pointer font-bold text-center">Annual Report MARK 201{{$i--}}</div>
-        </div>
+        </a>
     @endforeach
     </div>
 </div>
