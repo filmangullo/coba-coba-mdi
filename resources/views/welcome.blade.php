@@ -6,7 +6,7 @@
     <div class="absolute z-20 w-full pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
         <div class="text-xl font-bold sm:text-3xl lg:text-5xl">World’s Leading Hand-Former<br>Manufacturer</div>
         <div class="text-xs font-light sm:text-sm lg:text-lg">Serving 40% of global market share, we have been a<br>big player in helping the gloves industry.</div>
-        <div class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">Our Business</div>
+        <a href="{{ route('our-business') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">Our Business</a>
     </div>
     <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
     <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
