@@ -38,7 +38,8 @@ class Apply extends Component
     }
 
     public function submit() {
-        
+        $this->validate();
+
         $details = [
             'name' => $this->name,
             'email' => $this->email,
