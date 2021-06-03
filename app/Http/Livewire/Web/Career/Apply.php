@@ -60,7 +60,7 @@ class Apply extends Component
 
         $this->success = true;
 
-        dd($this->success);
+        // dd($this->success);
 
     }
 
