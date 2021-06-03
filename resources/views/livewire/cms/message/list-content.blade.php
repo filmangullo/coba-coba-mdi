@@ -7,7 +7,7 @@
                     class="w-full py-1 text-left cursor-default">{{ $item->email }}</button>
             @endforeach
         </div>
-        <button class="w-full p-2 bg-gray-300 border border-gray-400">more</button>
+        <button wire:click="" class="w-full p-2 bg-gray-300 border border-gray-400">more</button>
     </div>
     @if ($showMessage)
         <div class="col-span-6 p-1 mx-2 border border-t-0 border-b-0 border-r-0">
