@@ -1,0 +1,2 @@
+[04-Jun-2021 03:18:55 UTC] PHP Warning:  Use of undefined constant InnoDB - assumed 'InnoDB' (this will throw an Error in a future version of PHP) in /home/costles1/mdi/config/database.php on line 60
+[04-Jun-2021 03:18:58 UTC] PHP Warning:  Use of undefined constant InnoDB - assumed 'InnoDB' (this will throw an Error in a future version of PHP) in /home/costles1/mdi/config/database.php on line 60

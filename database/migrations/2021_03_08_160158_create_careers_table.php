@@ -17,7 +17,7 @@ class CreateCareersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('author_id')->nullable();
             $table->date('publish_date');
-            $table->text('slug')->unique();
+            $table->string('slug')->unique();
             $table->string('job_position_id')->nullable();
             $table->string('job_position_en')->nullable();
             $table->text('brief_description_id')->nullable();

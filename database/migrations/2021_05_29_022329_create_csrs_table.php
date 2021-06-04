@@ -16,7 +16,7 @@ class CreateCsrsTable extends Migration
         Schema::create('csrs', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->text('slug')->unique();
+            $table->string('slug')->unique();
             $table->string('title_id')->nullable();
             $table->string('title_en')->nullable();
             $table->text('description_id')->nullable();
