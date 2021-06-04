@@ -79,6 +79,7 @@ class AddContent extends Component
         return $this->redirectRoute('cms-csr.index');
     }
 
+
     public function render()
     {
         return view('livewire.cms.csr.add-content');

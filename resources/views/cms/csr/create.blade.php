@@ -22,4 +22,15 @@
     @livewire('cms.csr.add-content', [
         'csr'     => null
     ])
+
+    @push('scripts')
+    <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+
+        CKEDITOR.replace('editor2', options);
+    </script>
+    @endpush
 </x-app-layout>
+
+

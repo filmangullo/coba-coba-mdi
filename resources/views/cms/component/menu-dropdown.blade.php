@@ -18,8 +18,8 @@
     <div class="py-1" role="none">
       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
       <a href="{{ route('cms-csr.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-0">CSR</a>
-      <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-1">Environment</a>
-      <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">About Us</a>
+      <a href="{{ route('cms-environment.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-1">Environment</a>
+      <a href="{{ route('cms-awards-certificates.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Awards & Certificates</a>
     </div>
   </div>
 </div>

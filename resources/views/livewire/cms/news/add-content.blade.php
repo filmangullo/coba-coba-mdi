@@ -1,7 +1,3 @@
-@push('styles')
-<script src="https://cdn.tiny.cloud/1/gl3szu5lusjd02mc1fx7beymqaldxuceta87i0o5ylw3kpwy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-@endpush
-
 <div class="py-12">
     <div x-data="{ tab: 'id' }" class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="overflow-hidden bg-white shadow-xl sm:rounded-lg">
@@ -112,7 +108,7 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor1">
+                        <textarea class="editor1" id="editor1">
                             {!! $content_id !!}
                         </textarea>
                         @error('content_id') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
@@ -147,7 +143,7 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor2">
+                        <textarea class="editor2" id="editor2">
                                 {!! $content_en !!}
                             </textarea>
                         @error('content_en') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
@@ -166,43 +162,15 @@
     </div>
 </div>
 
-
+@push('scripts')
+<script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script>
-    tinymce.init({
-        selector: '.editor1',
-        plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-        toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
-        toolbar_mode: 'floating',
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Mark Dinamic Sindo',
-        forced_root_block: false,
-        setup: function (editor) {
-            editor.on('init change', function () {
-                editor.save();
-            });
-            editor.on('change', function (e) {
-            @this.set('content_id', editor.getContent());
-            });
-        },
-    });
-</script>
+    CKEDITOR.replace( 'editor1' );
 
-<script>
-    tinymce.init({
-        selector: '.editor2',
-        plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-        toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
-        toolbar_mode: 'floating',
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Mark Dinamic Sindo',
-        forced_root_block: false,
-        setup: function (editor) {
-            editor.on('init change', function () {
-                editor.save();
-            });
-            editor.on('change', function (e) {
-            @this.set('content_en', editor.getContent());
-            });
-        },
-    });
+    CKEDITOR.replace( 'editor2' );
 </script>
+@endpush
+
+
+
+

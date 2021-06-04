@@ -1,11 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\web\AboutUsController;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
 use App\Http\Controllers\web\CorporateGovernanceController;
 use App\Http\Controllers\web\NewsController;
 use App\Http\Controllers\web\ProductGalleryController;
+use App\Http\Controllers\web\SustainabilityController;
 use App\Http\Controllers\web\TradingViewController;
 
 /*
@@ -18,6 +21,7 @@ use App\Http\Controllers\web\TradingViewController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -39,9 +43,10 @@ Route::get('milestones', function () {
     return view('aboutus.milestones');
 })->name('milestones');
 
-Route::get('awards-certificates', function () {
-    return view('aboutus.awards');
-})->name('awards');
+Route::prefix('about-us')->group(function () {
+    Route::get('/awards-certificates', [AboutUsController::class, 'awardsCertificates'])->name('awards');
+});
+
 
 Route::get('shareholders', function () {
     return view('investor.shareholders');
@@ -75,17 +80,11 @@ Route::get('public', function () {
     return view('investor.reports.public-expose');
 })->name('public');
 
-Route::get('environment', function () {
-    return view('sustainability.environment');
-})->name('environment');
+Route::prefix('sustainability')->group(function () {
+    Route::get('/csr', [SustainabilityController::class, 'csr'])->name('csr');
+    Route::get('/environment', [SustainabilityController::class, 'environment'])->name('environment');
+});
 
-Route::get('csr', function () {
-    return view('sustainability.csr');
-})->name('csr');
-
-// Route::get('gallery', function () {
-//     return view('gallery');
-// })->name('');
 Route::get('/product-gallery', [ProductGalleryController::class, 'list'])->name('gallery');
 
 Route::prefix('news')->group(function () {
@@ -117,6 +116,15 @@ Route::prefix('trading')->group(function () {
     // Route::get('/{slug}', [NewsController::class, 'show'])->name('news.show');
 });
 
+/**
+ * Localization handler midleware.
+ *
+ * @return void
+ */
+Route::get('/lang/{locale}', function ($locale)
+{
+    return redirect()->back()->withCookie(cookie()->forever('lang', $locale));
+});
 
 /**
  * cms handle services.

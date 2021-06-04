@@ -12,12 +12,15 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
         @livewireStyles
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
         <style>
             [x-cloak] { display: none; }
         </style>
+        @stack('styles')
     </head>
     <body x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, menu : false, aboutmob : false, investormob : false, corporatemob : false, publicmob : false, sustainmob : false }">
         <div class="font-sans antialiased text-hitam">
@@ -32,7 +35,7 @@
                         class="w-32 py-4 cursor-pointer lg:py-0 lg:w-40">
                     <div class="hidden text-xs font-medium text-white lg:flex">
                         <div @mouseover="about = true" @mouseleave="about = false" class="relative w-auto px-6 py-10 cursor-pointer">
-                            <a href="#">About Us</a>
+                            <a href="">{{ __('custom.about-us') }}</a>
                             <div
                             x-transition:enter="transition ease-out duration-100"
                             x-transition:enter-start="transform opacity-0 scale-95"
@@ -40,7 +43,7 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            x-show="about === true" @click.away="about = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
+                            x-cloak x-show="about === true" @click.away="about = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
                                 <a href="{{ route('ceo-message') }}" class="py-3.5 text-center hover:bg-hitam block">CEO Message</a>
                                 <a href="{{ route('our-business') }}" class="py-3.5 text-center hover:bg-hitam block">Our Business</a>
                                 <a href="{{ route('vision&mission') }}" class="py-3.5 text-center hover:bg-hitam block">Vision, Mission & Values</a>
@@ -58,7 +61,7 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            x-show="investor === true" @click.away="investor = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
+                            x-cloak x-show="investor === true" @click.away="investor = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
                                 <div @mouseover="corporate = true" @mouseleave="corporate = false" class="relative w-auto cursor-pointer text-center hover:bg-hitam py-3.5">
                                     <a href="#">Corporate Governance</a>
                                     <div
@@ -68,7 +71,7 @@
                                     x-transition:leave="transition ease-in duration-75"
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
-                                    x-show="corporate === true" @click.away="corporate = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
+                                    x-cloak x-show="corporate === true" @click.away="corporate = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
                                         <a href="{{ route('corporate-governanc.board-members') }}" class="py-3.5 text-center hover:bg-hitam block">Board Members</a>
                                         <a href="{{ route('corporate-governanc.organization-structure') }}" class="py-3.5 text-center hover:bg-hitam block">Organization Structure</a>
                                         <a href="{{ route('corporate-governanc.audit-comittee') }}" class="py-3.5 text-center hover:bg-hitam block">Audit Committee</a>
@@ -86,7 +89,7 @@
                                     x-transition:leave="transition ease-in duration-75"
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
-                                    x-show="reports === true" @click.away="reports = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
+                                    x-cloak x-show="reports === true" @click.away="reports = false" class="absolute top-0 w-56 left-full bg-hitam bg-opacity-90">
                                         <a href="{{ route('financial-report') }}" class="py-3.5 text-center hover:bg-hitam block">Financial Report</a>
                                         <a href="{{ route('annual') }}" class="py-3.5 text-center hover:bg-hitam block">Annual Report</a>
                                         <a href="{{ route('public') }}" class="py-3.5 text-center hover:bg-hitam block">Public Expose</a>
@@ -107,13 +110,17 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            x-show="sustain === true" @click.away="sustain = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
+                            x-cloak x-show="sustain === true" @click.away="sustain = false" class="absolute w-56 mt-10 left-1/2 -ml-28 bg-hitam bg-opacity-90">
                                 <a href="{{ route('csr') }}" class="py-3.5 text-center hover:bg-hitam block">CSR</a>
                                 <a href="{{ route('environment') }}" class="py-3.5 text-center hover:bg-hitam block">Environment</a>
                             </div>
                         </div>
                         <a class="px-6 py-10" href="{{ route('career') }}">Career</a>
                         <a class="px-6 py-10" href="{{ route('kontak') }}">Contact Us</a>
+                        <div class="flex items-center w-20">
+                            <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-mark-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
+                            <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-mark-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>
+                        </div>
                     </div>
                     <div x-on:click="menu = !menu" class="p-2 rounded-md lg:hidden focus:bg-mark-default">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -130,7 +137,7 @@
             x-transition:leave="transition-all ease-in duration-100"
             x-transition:leave-start="right-0"
             x-transition:leave-end="-right-32"
-            x-show="menu" x-on:click.away="menu = false" class="fixed right-0 z-40 w-1/2 h-full pt-16 overflow-y-auto sm:w-1/3 bg-hitam bg-opacity-90">
+            x-cloak x-show="menu" x-on:click.away="menu = false" class="fixed right-0 z-40 w-1/2 h-full pt-16 overflow-y-auto sm:w-1/3 bg-hitam bg-opacity-90">
                 {{-- About Us --}}
                 <div>
                     <div x-on:click="aboutmob = !aboutmob" class="flex items-center justify-between w-auto px-3 py-4 text-white cursor-pointer sm:px-6">
@@ -146,7 +153,7 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="aboutmob" class="w-full text-white">
+                    x-cloak x-show="aboutmob" class="w-full text-white">
                         <a href="{{ route('ceo-message') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CEO Message</a>
                         <a href="{{ route('our-business') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Our Business</a>
                         <a href="{{ route('vision&mission') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Vision, Mission & Value</a>
@@ -171,7 +178,7 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="investormob" class="w-full text-white">
+                    x-cloak x-show="investormob" class="w-full text-white">
                         <div x-on:click="corporatemob = !corporatemob" class="relative flex items-center justify-between px-6 py-4 text-xs cursor-pointer sm:px-12 focus:bg-hitam">
                             <a  href="#">Corporate Governance</a>
                             <svg :class="{ '-rotate-180': corporatemob === true }" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-all duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -185,7 +192,7 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        x-show="corporatemob" x-on:click.away="corporatemob = false" class="w-full text-white">
+                        x-cloak x-show="corporatemob" x-on:click.away="corporatemob = false" class="w-full text-white">
                             <a href="{{ route('corporate-governanc.board-members') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Board Members</a>
                             <a href="{{ route('corporate-governanc.organization-structure') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Organization Structure</a>
                             <a href="{{ route('corporate-governanc.audit-comittee') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Audit Committee</a>
@@ -205,7 +212,7 @@
                         x-transition:leave="transition ease-in duration-75"
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
-                        x-show="publicmob" x-on:click.away="publicmob = false" class="w-full text-white">
+                        x-cloak x-show="publicmob" x-on:click.away="publicmob = false" class="w-full text-white">
                             <a href="{{ route('financial-report') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Financial Report</a>
                             <a href="{{ route('annual') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Annual Report</a>
                             <a href="{{ route('public') }}" class="block px-10 py-4 text-xs sm:px-20 focus:bg-hitam">Public Expose</a>
@@ -230,7 +237,7 @@
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    x-show="sustainmob" class="w-full text-white">
+                    x-cloak x-show="sustainmob" class="w-full text-white">
                         <a href="{{ route('csr') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">CSR</a>
                         <a href="{{ route('environment') }}" class="block px-6 py-4 text-xs sm:px-12 focus:bg-hitam">Environment</a>
                     </div>
@@ -259,5 +266,18 @@
 
         @livewireScripts
         @stack('scripts')
+        <script src="{{asset('js/wow.min.js')}}"></script>
+        <script>
+            wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+        </script>
     </body>
 </html>
