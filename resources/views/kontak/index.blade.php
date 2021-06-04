@@ -2,27 +2,27 @@
 
 @section('content')
 {{-- Slider --}}
+<div>
 <div class="relative w-full h-auto pt-24">
     <img class="2xl:w-full" src="{{ asset('img/header-contact.png') }}" alt="Mark Dynamics Career">
     <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
-    <div class="absolute w-full h-full mt-5 text-3xl font-bold text-center text-white sm:text-4xl top-1/2">Contact</div>
+    <div class="absolute w-full h-full mt-5 text-3xl font-bold text-center text-white sm:text-4xl top-1/2">@lang('contact.title')</div>
 </div>
 
-<div class="flex flex-wrap items-start w-full px-4 py-24 lg:flex-nowrap sm:mx-auto sm:px-6 lg:px-8 ">
-    <div class="w-full lg:w-6/12">
+<div class="grid grid-cols-2 items-start w-full px-4 py-24 sm:mx-auto sm:px-6 lg:px-8 ">
+    <div>
         <div class="sm:mx-8">
             <div class="text-4xl font-bold">
-                Contact Us
+                @lang('contact.header')
             </div>
-            <span class="text-xs text-gray-800">Feel free to ask us anything, we’ll try our best to answer your question as fast as we could.</span>
+            <span class="text-xs text-gray-800">@lang('contact.sub-header')</span>
             @livewire('web.kontak.forms')
         </div>
     </div>
-
-    <div class="w-full lg:w-6/12">
+    <div>
         <div class="p-10 space-y-12 sm:mx-8 rounded-xl bg-mark-default">
             <div class="text-2xl font-bold text-white">
-                Our Information
+                @lang('contact.our-information')
             </div>
             <div class="space-y-6">
                 <div class="flex items-center gap-4">
@@ -50,5 +50,4 @@
         </div>
     </div>
 </div>
-
 @endsection

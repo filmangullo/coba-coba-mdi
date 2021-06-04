@@ -1,31 +1,31 @@
 <div>
 <div class="z-20 flex flex-row-reverse flex-wrap items-start space-y-8 lg:container lg:mx-auto md:space-y-0 md:space-x-6 md:flex-row md:flex-nowrap">
-    <div class="w-full px-6 py-10 text-white md:w-6/12 bg-mark-default md:rounded-l-md">
+    <div class="w-full px-6 py-10 text-white md:w-6/12 bg-mark-default rounded-md">
         <div class="text-4xl font-bold text-center">Application Form</div>
 
-        <div class="mb-4">
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+        <div class="mb-4 text-white pt-12 space-y-3">
+            <label class="block mb-2 text-sm font-bold">
               Full Name : {{$name}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+            <label class="block mb-2 text-sm font-bold">
             Job Applied : {{$apply}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+            <label class="block mb-2 text-sm font-bold">
             Phone : {{$phone}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+            <label class="block mb-2 text-sm font-bold">
             Email : {{$email}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+            <label class="block mb-2 text-sm font-bold">
             Address : {{$address}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+            <label class="block mb-2 text-sm font-bold">
             About yourself : {{$about}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
-            Why we should hire you? : {{$why}}
+            <label class="block mb-2 text-sm font-bold">
+            Why we should hire you? :<br> {{$why}}
             </label>
-            <label class="block mb-2 text-sm font-bold text-gray-700"">
+            <label class="block mb-2 text-sm font-bold">
             @error('filecv')
             {{$message}}
             @else
@@ -39,7 +39,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="job">
               Apply Job
             </label>
-            <select wire:model="apply" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+            <select wire:model="apply" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
                 <option value="">Select</option>
                 <option>IT Programmer</option>
                 <option>Manager</option>
@@ -51,7 +51,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
               Name
             </label>
-            <input wire:model="name" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
+            <input wire:model="name" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
         </div>
         @error('name')
             {{$message}}
@@ -62,7 +62,7 @@
               Email
             </label>
             <input wire:model="email" wire:model="email"
-                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="email" placeholder="Email">
+                class="w-full px-3 py-2 leading-tight focus:border-mark focus:ring-0 text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="email" placeholder="Email">
         </div>
         @error('email')
             {{$message}}
@@ -72,7 +72,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="phone">
               Phone
             </label>
-            <input wire:model="phone" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="tel" placeholder="Phone">
+            <input wire:model="phone" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="tel" placeholder="Phone">
         </div>
         @error('phone')
             {{$message}}
@@ -82,7 +82,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="address">
               Address
             </label>
-            <textarea wire:model="address" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Your current address"></textarea>
+            <textarea wire:model="address" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Your current address"></textarea>
         </div>
         @error('address')
             {{$message}}
@@ -92,7 +92,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="about">
                 Tell about yourself
             </label>
-            <textarea wire:model="about" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Tell it briefly and clearly"></textarea>
+            <textarea wire:model="about" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Tell it briefly and clearly"></textarea>
         </div>
         @error('about')
             {{$message}}
@@ -102,7 +102,7 @@
             <label class="block mb-2 text-sm font-bold text-gray-700" for="why">
                 Why we should hire you?
             </label>
-            <textarea wire:model="why" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Give a brief and clear explanation"></textarea>
+            <textarea wire:model="why" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Give a brief and clear explanation"></textarea>
         </div>
         @error('why')
             {{$message}}
@@ -115,9 +115,9 @@
             <div class="flex items-center space-x-4">
                 <button type="button" class="relative w-24 p-2 text-sm font-semibold text-gray-500 border-2 border-gray-200 rounded-md cursor-pointer focus:outline-none">
                     <span class="cursor-pointer">Browse</span>
-                    <input wire:model="filecv" type="file" class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer" name="upload" id="upload" >
+                    <input wire:model="filecv" type="file" class="focus:border-mark focus:ring-0 absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer" name="upload" id="upload" >
                 </button>
-                <span class="text-sm font-semibold">@if($filecv){{$filecv->getClientOriginalName()}}@else PDF file (Max 1024 kb) @endif</span>
+                <span class="text-sm ml-4 font-semibold">@if($filecv){{$filecv->getClientOriginalName()}}@else PDF file (Max 1024 kb) @endif</span>
             </div>
         </div>
         @error('filecv')
@@ -125,7 +125,7 @@
         @enderror
 
         <div class="mb-4">
-            <div wire:click='submit' class="inline-block px-4 py-3 mb-2 text-sm font-bold text-white rounded-md cursor-pointer bg-mark-default hover:bg-mark-dark">
+            <div wire:click='submit' class="inline-block px-6 py-3 mb-2 text-sm font-bold text-white rounded-md cursor-pointer bg-mark-default hover:bg-mark-dark">
             Submit
             </div>
         </div>
