@@ -1,6 +1,4 @@
-@component('mail::message')
-# Introduction
-
+<img src="{{ $message->embed(public_path('/img/logo-white.png')) }}" class="logo" alt="Laravel Logo">
 
 Full Name : {{$details['name']}}
 <br>
@@ -23,10 +21,6 @@ About yourself : {{$details['about']}}
 Why we should hire you? : {{$details['why']}}
 <br>
 
-@component('mail::button', ['url' => 'mailto:'. $details['email']])
-Reply Now
-@endcomponent
 
 Thanks,<br>
 {{ config('app.name') }}
-@endcomponent

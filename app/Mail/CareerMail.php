@@ -30,6 +30,6 @@ class CareerMail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.career.mail')->attach($this->details['filecv']);
+        return $this->view('emails.career.mail')->with(['details' => $this->details, 'message' => $this->message])->attach($this->details['filecv']);
     }
 }

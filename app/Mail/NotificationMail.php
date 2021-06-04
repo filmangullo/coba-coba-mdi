@@ -13,6 +13,7 @@ class NotificationMail extends Mailable
 
 
     public $details;
+    public $message;
     /**
      * Create a new message instance.
      *
@@ -21,7 +22,6 @@ class NotificationMail extends Mailable
     public function __construct($details)
     {
         $this->details = $details;
-        dd($this->details);
     }
 
     /**
