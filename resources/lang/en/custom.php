@@ -13,6 +13,7 @@ return [
     |
     */
 
+    'lang'      => 'en',
     'about-us' => 'About Us',
     'our-business' => 'Our Business',
 

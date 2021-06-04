@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'financial' => 'Informasi Keuangan',
+    'financial' => 'Sorotan Keuangan',
     'kinerja' => 'Kinerja Operasional',
     'neraca' => 'Neraca',
 ];

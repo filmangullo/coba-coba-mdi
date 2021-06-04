@@ -13,6 +13,7 @@ return [
     |
     */
 
+    'lang'      => 'id',
     'about-us' => 'Tentang',
     'our-business' => 'Bisnis',
 
