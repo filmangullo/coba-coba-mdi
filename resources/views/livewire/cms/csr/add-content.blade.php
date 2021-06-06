@@ -66,8 +66,8 @@
                                 Deskripsi
                             </label>
                         </div>
-                        <div class="w-full mb-5 ">
-                            <textarea wire:model="description_id" id="editor1" rows="4" wire:ignore
+                        <div class="w-full mb-5 " wire:ignore>
+                            <textarea wire:model="description_id" id="editor1" rows="4"
                                 class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">{!! $description_id !!}</textarea>
                         </div>
                     </div>
@@ -87,9 +87,9 @@
                                 Description
                             </label>
                         </div>
-                        <div class="w-full mb-5" >
-                            <textarea wire:model="description_en" id="editor2" rows="4" wire:ignore
-                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">{!! $description_en !!}</textarea>
+                        <div class="w-full mb-5" wire:ignore>
+                            <textarea wire:model="description_en" id="editor2" rows="4"
+                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue"></textarea>
                         </div>
                     </div>
 

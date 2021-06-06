@@ -13,7 +13,7 @@
         <h1>@lang('board-members.board_of_commisioner')</h1>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/chin-kien-ping.png') }}'>
         </div>
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/dompak-pasaribu.png') }}'>
         </div>
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/ridwan-goh.png') }}'>
         </div>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/sutiyoso-bin-risman.png') }}'>
         </div>
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/cahaya-dewi-surbakti.png') }}'>
         </div>

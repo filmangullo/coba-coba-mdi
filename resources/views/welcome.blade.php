@@ -93,12 +93,14 @@
 
 <div class="px-4 pb-12 mx-auto sm:pb-24 max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl font-bold text-center wow animate__animated animate__fadeInDown lg:text-4xl text-mark-default">@lang('custom.client')</div>
-    <div class="grid content-between justify-center grid-cols-3 gap-12 md:grid-cols-5 md:gap-20 lg:gap-32">
-        <img class="w-full transition-all duration-300 transform hover:scale-110 wow animate__animated animate__fadeIn" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-        <img class="w-full transition-all duration-300 transform hover:scale-110 wow animate__animated animate__fadeIn" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-        <img class="w-full transition-all duration-300 transform hover:scale-110 wow animate__animated animate__fadeIn" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-        <img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block wow animate__animated animate__fadeIn" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
-        <img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block wow animate__animated animate__fadeIn" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+    <div class=" owl-carousel owl-theme wow animate__animated animate__fadeIn">
+        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
+        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client"></div>
+        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client"></div>
+        <div><img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client"></div>
+        <div><img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
+        <div><img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
+        <div><img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
     </div>
 </div>
 
@@ -106,6 +108,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="{{asset('js/owl.carousel.min.js')}}"></script>
 <script>
 $(document).ready(function(){
   $('.slider').slick({
@@ -117,12 +120,38 @@ $(document).ready(function(){
     autoplaySpeed: 3000,
   });
 });
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:50,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1,
+            dots:true,
+        },
+        600:{
+            items:3,
+            dots:true,
+        },
+        1000:{
+            items:5,
+            dots:true,
+        }
+    }
+});
+});
 </script>
 @endpush
 
 @push('styles')
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<link rel="stylesheet" type="text/css" href="{{asset('/css/owl.carousel.min.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('/css/owl.theme.default.min.css')}}"/>
 <style>
     .slick-prev:before,
     .slick-next:before {
@@ -143,6 +172,24 @@ $(document).ready(function(){
     right: 25px;
     z-index: 9999;
     }
+
+    #tradingview_c56b2 {     
+    height: 610px !important;
+    }
+
+
+    @media only screen and (max-width: 600px)  {
+    #tradingview_c56b2 {     
+    height: 410px !important;
+    }
+    }
+
+    @media only screen and (max-width: 450px)  {
+    #tradingview_c56b2 {     
+    height: 330px !important;
+    }
+    }
+
 </style>
 @endpush
 
