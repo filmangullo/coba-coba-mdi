@@ -122,7 +122,7 @@
                             <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-mark-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>
                         </div>
                     </div>
-                    <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-6 lg:hidden">
                         <div class="flex items-center w-20 lg:hidden">
                             <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-mark-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
                             <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-mark-default bg-white @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>

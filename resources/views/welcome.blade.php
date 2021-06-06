@@ -2,7 +2,7 @@
 
 @section('content')
 {{-- Slider --}}
-<div class="relative w-full h-screen wow animate__animated animate__fadeInDown">
+<div class="relative w-full h-screen lg:wow lg:animate__animated lg:animate__fadeInDown">
 <div x-cloak class="relative w-full h-screen slider">
     <div class="relative w-full h-screen">
         <div class="absolute z-20 w-full pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
@@ -14,13 +14,19 @@
         <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
     </div>
     <div class="relative w-full h-screen">
-        <div class="absolute z-20 w-full pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="text-xl font-bold sm:text-3xl lg:text-5xl">@lang('custom.home-title1')</div>
-            <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle1')</div>
-            <a href="{{ route('our-business') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.our-business')</a>
+        <div class="absolute z-20 w-full lg:grid grid-cols-2 gap-12 justify-center items-center pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
+            <div class="text-center pl-8 sm:pl-12 lg:pl-16 space-y-6">
+                <div class="text-lg font-bold sm:text-2xl lg:text-4xl">A great oak was once a nut</div>
+                <div class="text-xs font-light sm:text-sm lg:text-lg">Our journey started from a barely recognized company. We keep pushing ourselves to produce only the highest quality products for our customers. On the other hand, we always draw a smile on our shareholders’ faces as our business runs very efficiently.</div>
+                <div class="flex items-center justify-between">
+                    <a href="{{ route('vision&mission') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.vision-mission')</a>
+                    <a href="{{ route('ceo-message') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.ceo-message')</a>
+                </div>
+            </div>
+            <img class="hidden lg:block pr-8 lg:pr-16 mx-auto object-cover w-full h-4/6 rounded-md" src="{{ asset('img/slider-2.png') }}" alt="">
         </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
-        <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
+        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-50"></div>
+        <img class="object-cover lg:hidden w-full h-full" src='{{ asset('img/slider-2.png') }}'>
     </div>
 </div>
 </div>
@@ -70,7 +76,7 @@
 
 <div class="px-4 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
-    <div class="relative w-full h-full bg-chart-default wow animate__animated animate__fadeInUp">
+    <div class="relative px-4 sm:px-6 max-w-7xl lg:px-8 h-auto bg-chart-default wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
 
