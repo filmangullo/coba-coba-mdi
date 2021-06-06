@@ -76,7 +76,7 @@
 
 <div class="px-4 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
-    <div class="relative px-4 sm:px-6 max-w-7xl lg:px-8 h-auto bg-chart-default wow animate__animated animate__fadeInUp">
+    <div class="relative h-auto px-4 sm:px-6 max-w-7xl lg:px-8 bg-chart-default wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
 
@@ -118,6 +118,7 @@ $(document).ready(function(){
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    mobileFirst:true,
   });
 });
 
@@ -130,15 +131,15 @@ $(document).ready(function(){
     autoplayTimeout:3000,
     responsive:{
         0:{
-            items:1,
-            dots:true,
-        },
-        600:{
             items:3,
             dots:true,
         },
-        1000:{
+        600:{
             items:5,
+            dots:true,
+        },
+        1000:{
+            items:6,
             dots:true,
         }
     }
