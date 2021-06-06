@@ -145,7 +145,7 @@
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
                         <textarea wire:model="content_en" class="editor2" id="editor2">
                                 {!! $content_en !!}
-                            </textarea>
+                        </textarea>
                     </div>
                     @error('content_en') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
                         @enderror

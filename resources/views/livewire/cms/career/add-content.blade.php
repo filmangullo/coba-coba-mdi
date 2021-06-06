@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor1">
+                        <textarea class="editor1" id="editor1">
                             {!! $description_id !!}
                         </textarea>
                         @error('description_id') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span> @enderror
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor2">
+                        <textarea class="editor2" id="editor2">
                             {!! $description_en !!}
                         </textarea>
                         @error('description_en') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span> @enderror
@@ -115,42 +115,19 @@
     </div>
 </div>
 
+@push('scripts')
+<script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script>
-    tinymce.init({
-        selector: '.editor1',
-        plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-        toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
-        toolbar_mode: 'floating',
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Mark Dinamic Sindo',
-        forced_root_block: false,
-        setup: function (editor) {
-            editor.on('init change', function () {
-                editor.save();
-            });
-            editor.on('change', function (e) {
-            @this.set('description_id', editor.getContent());
-            });
-        },
+    const editor1 = CKEDITOR.replace( 'editor1' );
+    editor1.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('description_id', event.editor.getData())
     });
-</script>
 
-<script>
-    tinymce.init({
-        selector: '.editor2',
-        plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-        toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
-        toolbar_mode: 'floating',
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Mark Dinamic Sindo',
-        forced_root_block: false,
-        setup: function (editor) {
-            editor.on('init change', function () {
-                editor.save();
-            });
-            editor.on('change', function (e) {
-            @this.set('description_en', editor.getContent());
-            });
-        },
+    const editor2 = CKEDITOR.replace( 'editor2' );
+    editor2.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('description_en', event.editor.getData())
     });
 </script>
+@endpush

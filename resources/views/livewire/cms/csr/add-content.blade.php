@@ -67,8 +67,8 @@
                             </label>
                         </div>
                         <div class="w-full mb-5 ">
-                            <textarea wire:model="description_id" id="editor1" rows="4"
-                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue"></textarea>
+                            <textarea wire:model="description_id" id="editor1" rows="4" wire:ignore
+                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">{!! $description_id !!}</textarea>
                         </div>
                     </div>
 
@@ -88,8 +88,8 @@
                             </label>
                         </div>
                         <div class="w-full mb-5" >
-                            <textarea wire:model="description_en" id="editor2" rows="4"
-                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue"></textarea>
+                            <textarea wire:model="description_en" id="editor2" rows="4" wire:ignore
+                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">{!! $description_en !!}</textarea>
                         </div>
                     </div>
 
@@ -107,5 +107,19 @@
     </div>
 </div>
 
+@push('scripts')
+<script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+<script>
+    const editor1 = CKEDITOR.replace( 'editor1' );
+    editor1.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('description_id', event.editor.getData())
+    });
 
-
+    const editor2 = CKEDITOR.replace( 'editor2' );
+    editor2.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('description_en', event.editor.getData())
+    });
+</script>
+@endpush
