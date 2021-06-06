@@ -40,4 +40,13 @@ return [
     'environment' => 'Lingkungan',
     'contact' => 'Hubungi Kami',
     'career' => 'Karir',
+    'home-title1' => 'Produsen Cetakan Tangan<br> Terkemuka di Dunia',
+    'home-subtitle1' => 'Melayani 40% pangsa pasar global, kami telah berperan besar<br> dalam membantu industri sarung tangan',
+    'our-products' => 'Produk Kami',
+    'agriculture' => 'Agrikultur',
+    'hand-former' => 'Cetakan Tangan',
+    'sanitary' => 'Produk Saniter',
+    'news' => 'Berita',
+    'more-news' => 'Berita Lainnya',
+    'client' => 'Klien Kami',
 ];
