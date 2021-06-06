@@ -9,7 +9,7 @@
 </div>
 
 <div class="px-4 pt-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__fadeInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/dompak-pasaribu.png') }}'>
         </div>
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__fadeInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/daulat-sihombing.png') }}'>
         </div>
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__fadeInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/septony-b.-siahaan.png') }}'>
         </div>
