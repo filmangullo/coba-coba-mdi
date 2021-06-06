@@ -168,13 +168,13 @@
     const editor1 = CKEDITOR.replace( 'editor1' );
     editor1.on('change', function(event) {
         console.log(event.editor.getData());
-        @this.set('content_id', event.editor.getData())
+        @this.set('content_id', event.editor.getData());
     });
 
     const editor2 = CKEDITOR.replace( 'editor2' );
     editor2.on('change', function(event) {
         console.log(event.editor.getData());
-        @this.set('content_en', event.editor.getData())
+        @this.set('content_en', event.editor.getData());
     });
 </script>
 @endpush
