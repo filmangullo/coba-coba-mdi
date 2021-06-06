@@ -1,7 +1,7 @@
 
     <div class="grid grid-cols-2 gap-6 mt-6 lg:gap-12 lg:mt-12">
-        @forelse ($news as $n)
-            <div class="relative w-full overflow-hidden rounded-md h-60">
+        @forelse ($news as $i => $n)
+            <div class="relative w-full overflow-hidden rounded-md h-60 @if($i % 2) wow animate__animated animate__fadeInRight @else wow animate__animated animate__fadeInLeft @endif">
                 <img class="w-full" src="{{ asset($n->cover) }}" alt="Mark Dynamics News">
                 <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
                 <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
