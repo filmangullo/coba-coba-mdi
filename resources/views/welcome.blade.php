@@ -166,6 +166,24 @@ $(document).ready(function(){
     right: 25px;
     z-index: 9999;
     }
+
+    #tradingview_c56b2 {     
+    height: 610px !important;
+    }
+
+
+    @media only screen and (max-width: 600px)  {
+    #tradingview_c56b2 {     
+    height: 410px !important;
+    }
+    }
+
+    @media only screen and (max-width: 450px)  {
+    #tradingview_c56b2 {     
+    height: 330px !important;
+    }
+    }
+
 </style>
 @endpush
 
