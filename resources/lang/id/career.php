@@ -17,4 +17,5 @@ return [
     'submit' => 'sudah di Submit',
     'not-submit' => 'belum di Submit.',
     'upload' => 'Upload CV',
+    'success' => 'Form mu sudah terkirim!',
 ];
