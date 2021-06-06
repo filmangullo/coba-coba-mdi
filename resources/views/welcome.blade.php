@@ -75,11 +75,11 @@
 <div class="px-4 pb-12 mx-auto sm:pb-24 max-w-7xl sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default">@lang('custom.client')</div>
     <div class="grid content-between justify-center grid-cols-3 gap-12 md:grid-cols-5 md:gap-20 lg:gap-32">
-        <img class="w-full" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-        <img class="w-full" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-        <img class="w-full" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-        <img class="hidden w-full md:block" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
-        <img class="hidden w-full md:block" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+        <img class="w-full transform transition-all duration-300 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+        <img class="w-full transform transition-all duration-300 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+        <img class="w-full transform transition-all duration-300 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+        <img class="hidden w-full transform transition-all duration-300 hover:scale-110 md:block" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+        <img class="hidden w-full transform transition-all duration-300 hover:scale-110 md:block" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
     </div>
 </div>
 

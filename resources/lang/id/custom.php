@@ -41,7 +41,7 @@ return [
     'contact' => 'Hubungi Kami',
     'career' => 'Karir',
     'home-title1' => 'Produsen Cetakan Tangan<br> Terkemuka di Dunia',
-    'home-subtitle1' => 'Melayani 40% pangsa pasar global, kami telah berperan besar<br> dalam membantu industri sarung tangan',
+    'home-subtitle1' => 'Melayani 40% pangsa pasar global, kami telah berperan besar<br> dalam membantu industri sarung tangan.',
     'our-products' => 'Produk Kami',
     'agriculture' => 'Agrikultur',
     'hand-former' => 'Cetakan Tangan',

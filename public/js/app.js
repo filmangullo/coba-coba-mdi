@@ -3804,8 +3804,6 @@ __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
 __webpack_require__(/*! quill */ "./node_modules/quill/dist/quill.js");
 
-__webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'wow.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

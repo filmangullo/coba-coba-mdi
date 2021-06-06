@@ -1,35 +1,35 @@
 <div>
 <div class="z-20 flex flex-row-reverse flex-wrap items-start space-y-8 lg:container lg:mx-auto md:space-y-0 md:space-x-6 md:flex-row md:flex-nowrap">
     <div class="w-full px-6 py-10 text-white md:w-6/12 bg-mark-default rounded-md">
-        <div class="text-4xl font-bold text-center">Application Form</div>
+        <div class="text-4xl font-bold text-center">@lang('career.application-form')</div>
 
         <div class="mb-4 text-white pt-12 space-y-3">
             <label class="block mb-2 text-sm font-bold">
-              Full Name : {{$name}}
+                @lang('career.full-name') : {{$name}}
             </label>
             <label class="block mb-2 text-sm font-bold">
-            Job Applied : {{$apply}}
+                @lang('career.job-applied') : {{$apply}}
             </label>
             <label class="block mb-2 text-sm font-bold">
-            Phone : {{$phone}}
+                @lang('career.phone') : {{$phone}}
             </label>
             <label class="block mb-2 text-sm font-bold">
             Email : {{$email}}
             </label>
             <label class="block mb-2 text-sm font-bold">
-            Address : {{$address}}
+                @lang('career.address') : {{$address}}
             </label>
             <label class="block mb-2 text-sm font-bold">
-            About yourself : {{$about}}
+                @lang('career.about') : {{$about}}
             </label>
             <label class="block mb-2 text-sm font-bold">
-            Why we should hire you? :<br> {{$why}}
+                @lang('career.why-we') :<br> {{$why}}
             </label>
             <label class="block mb-2 text-sm font-bold">
             @error('filecv')
             {{$message}}
             @else
-            CV @if(!empty($filecv)) is submitted. @else is not submitted yet. @endif 
+            CV @if(!empty($filecv)) @lang('career.submit') @else @lang('career.not-submit') @endif 
             @enderror
             </label>
         </div>
@@ -37,7 +37,7 @@
     <div class="w-full px-6 pb-10 md:w-6/12 ">
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="job">
-              Apply Job
+                @lang('career.job-applied')
             </label>
             <select wire:model="apply" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
                 <option value="">Select</option>
@@ -49,7 +49,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
-              Name
+                @lang('career.full-name')
             </label>
             <input wire:model="name" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="text" placeholder="Full Name">
         </div>
@@ -70,7 +70,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="phone">
-              Phone
+                @lang('career.phone')
             </label>
             <input wire:model="phone" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" type="tel" placeholder="Phone">
         </div>
@@ -80,7 +80,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="address">
-              Address
+                @lang('career.address')
             </label>
             <textarea wire:model="address" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Your current address"></textarea>
         </div>
@@ -90,7 +90,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="about">
-                Tell about yourself
+                @lang('career.about')
             </label>
             <textarea wire:model="about" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Tell it briefly and clearly"></textarea>
         </div>
@@ -100,7 +100,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="why">
-                Why we should hire you?
+                @lang('career.why-we')
             </label>
             <textarea wire:model="why" class="w-full focus:border-mark focus:ring-0 px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" placeholder="Give a brief and clear explanation"></textarea>
         </div>
@@ -110,7 +110,7 @@
 
         <div class="mb-4">
             <label class="block mb-2 text-sm font-bold text-gray-700" for="why">
-                Upload your CV
+                @lang('career.upload')
             </label>
             <div class="flex items-center space-x-4">
                 <button type="button" class="relative w-24 p-2 text-sm font-semibold text-gray-500 border-2 border-gray-200 rounded-md cursor-pointer focus:outline-none">

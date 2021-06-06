@@ -35,7 +35,7 @@
                         class="w-32 py-4 cursor-pointer lg:py-0 lg:w-40">
                     <div class="hidden text-xs font-medium text-white lg:flex">
                         <div @mouseover="about = true" @mouseleave="about = false" class="relative w-auto px-6 py-10 cursor-pointer">
-                            <a href="">{{ __('custom.about-us') }}</a>
+                            <a href="#">{{ __('custom.about-us') }}</a>
                             <div
                             x-transition:enter="transition ease-out duration-100"
                             x-transition:enter-start="transform opacity-0 scale-95"
