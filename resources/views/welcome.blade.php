@@ -15,7 +15,7 @@
     </div>
     <div class="relative w-full h-screen">
         <div class="absolute z-20 w-full lg:grid grid-cols-2 gap-12 justify-center items-center pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="text-center px-16 sm:px-24 lg:pl-16 space-y-6">
+            <div class="text-center px-4 sm:px-24 lg:pl-16 space-y-6">
                 <div class="text-lg font-bold sm:text-2xl lg:text-4xl">A great oak was once a nut</div>
                 <div class="text-xs font-light sm:text-sm lg:text-lg">Our journey started from a barely recognized company. We keep pushing ourselves to produce only the highest quality products for our customers. On the other hand, we always draw a smile on our shareholders’ faces as our business runs very efficiently.</div>
                 <div class="flex items-center justify-between">
@@ -52,7 +52,7 @@
 </div> --}}
 <div class="py-12 lg:py-24">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.our-products')</div>
-    <div class="items-start justify-center grid-cols-3 space-y-12 sm:grid lg:space-y-0">
+    <div class="items-start justify-center grid-cols-3 space-y-12 sm:grid sm:space-y-0">
         <div class="mx-auto wow animate__animated animate__fadeInLeft">
             <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
                 <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
