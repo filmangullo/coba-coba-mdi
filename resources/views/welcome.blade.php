@@ -2,7 +2,8 @@
 
 @section('content')
 {{-- Slider --}}
-<div class="relative w-full h-screen slider wow animate__animated animate__fadeInDown">
+<div class="relative w-full h-screen wow animate__animated animate__fadeInDown">
+<div x-cloak class="relative w-full h-screen slider">
     <div class="relative w-full h-screen">
         <div class="absolute z-20 w-full pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
             <div class="text-xl font-bold sm:text-3xl lg:text-5xl">@lang('custom.home-title1')</div>
@@ -21,6 +22,7 @@
         <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
         <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
     </div>
+</div>
 </div>
 
 {{-- <div class="py-12 mt-24 mb-12 bg-mark-default">
