@@ -122,28 +122,20 @@ $(document).ready(function(){
     .slick-next:before {
     color: white;
     z-index:9999;
-    font-family: 'slick';
-    font-size: 40px;
-    line-height: 1;
+    }
 
-    opacity: .75;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    .slick-list, .slick-track {
+        height:100vh;
     }
 
     .slick-prev {
-    left: 50px;
+    left: 25px;
     z-index: 9999;
-    height:40px;
-    width:40px;
     }
 
     .slick-next {
-    right: 50px;
+    right: 25px;
     z-index: 9999;
-    height:40px;
-    width:40px;
     }
 </style>
 @endpush
