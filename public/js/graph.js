@@ -9,7 +9,7 @@ new TradingView.widget({
     "style": "2",
     "locale": "id",
     "range": "1D",
-    "toolbar_bg": "#f1f3f6",
+    "toolbar_bg": "#ffffff",
     "enable_publishing": false,
     "hide_top_toolbar": true,
     "save_image": false,
