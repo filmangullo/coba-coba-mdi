@@ -74,9 +74,9 @@
     </div>
 </div>
 
-<div class="px-4 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl sm:px-6 lg:px-8">
+<div class="px-6 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl xl:px-0">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
-    <div class="relative h-auto px-4 sm:px-6 max-w-7xl lg:px-8 bg-chart-default wow animate__animated animate__fadeInUp">
+    <div class="relative h-auto bg-white max-w-7xl wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
 
