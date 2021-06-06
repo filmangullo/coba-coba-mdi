@@ -14,8 +14,8 @@
         <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
     </div>
     <div class="relative w-full h-screen">
-        <div class="absolute z-20 items-center justify-center w-full grid-cols-2 gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 lg:grid top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="pl-8 space-y-6 text-center sm:pl-12 lg:pl-16">
+        <div class="absolute z-20 w-full lg:grid grid-cols-2 gap-12 justify-center items-center pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
+            <div class="text-center px-16 sm:px-24 lg:pl-16 space-y-6">
                 <div class="text-lg font-bold sm:text-2xl lg:text-4xl">A great oak was once a nut</div>
                 <div class="text-xs font-light sm:text-sm lg:text-lg">Our journey started from a barely recognized company. We keep pushing ourselves to produce only the highest quality products for our customers. On the other hand, we always draw a smile on our shareholders’ faces as our business runs very efficiently.</div>
                 <div class="flex items-center justify-between">
@@ -23,10 +23,10 @@
                     <a href="{{ route('ceo-message') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.ceo-message')</a>
                 </div>
             </div>
-            <img class="hidden object-cover w-full pr-8 mx-auto rounded-md lg:block lg:pr-16 h-4/6" src="{{ asset('img/slider-2.png') }}" alt="">
+            <img class="slider2 pr-8 lg:pr-16 mx-auto object-cover w-full h-4/6 rounded-md" src="{{ asset('img/slider-2.png') }}" alt="">
         </div>
-        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-50"></div>
-        <img class="object-cover w-full h-full lg:hidden" src='{{ asset('img/slider-2.png') }}'>
+        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-100 bg-opacity-50"></div>
+        <img class="object-cover slider2-back w-full h-full" src='{{ asset('img/slider-2.png') }}'>
     </div>
 </div>
 </div>
@@ -178,6 +178,19 @@ $(document).ready(function(){
     height: 610px !important;
     }
 
+    .slider2 {
+        display: none !important;
+    }
+
+    @media (min-width: 1024px){
+        .slider2 {
+            display: block !important;
+        }
+
+        .slider2-back {
+            display: none !important;
+        }
+    }
 
     @media only screen and (max-width: 600px)  {
     #tradingview_c56b2 {     
