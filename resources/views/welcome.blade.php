@@ -51,8 +51,8 @@
     </div>
 </div> --}}
 <div class="py-12 lg:py-24">
-    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.our-products')</div>
-    <div class="items-start justify-center grid-cols-3 space-y-12 sm:grid sm:space-y-0">
+    <div class="mb-6 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.our-products')</div>
+    <div class="items-end justify-center grid-cols-3 space-y-12 sm:grid sm:space-y-0">
         <div class="mx-auto wow animate__animated animate__fadeInLeft">
             <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
                 <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
