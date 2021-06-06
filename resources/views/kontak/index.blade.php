@@ -3,13 +3,13 @@
 @section('content')
 {{-- Slider --}}
 <div>
-<div class="relative w-full h-auto pt-24">
+<div class="relative w-full h-auto pt-12 lg:pt-24">
     <img class="2xl:w-full" src="{{ asset('img/header-contact.png') }}" alt="Mark Dynamics Career">
     <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
-    <div class="absolute w-full h-full mt-5 text-3xl font-bold text-center text-white sm:text-4xl top-1/2">@lang('contact.title')</div>
+    <div class="absolute w-full h-full mt-5 text-sm font-bold text-center text-white sm:text-2xl lg:text-4xl top-1/2">@lang('contact.title')</div>
 </div>
 
-<div class="grid grid-cols-2 items-start w-full px-4 py-24 sm:mx-auto sm:px-6 lg:px-8 ">
+<div class="lg:grid space-y-6 lg:space-y-0 grid-cols-2 items-start w-full px-4 py-24 sm:mx-auto sm:px-6 lg:px-8 ">
     <div>
         <div class="sm:mx-8">
             <div class="text-4xl font-bold">

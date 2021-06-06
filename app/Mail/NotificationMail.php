@@ -31,6 +31,6 @@ class NotificationMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.career.notification');
+        return $this->view('emails.career.notification');
     }
 }
