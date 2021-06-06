@@ -51,27 +51,29 @@ class AddContent extends Component
         // dd();
     }
 
+    protected $rules = [
+        'author_id'             => 'required',
+        'date_news'             => 'required',
+        'status'                => 'required',
+        'title_id'              => 'required|string',
+        'title_en'              => 'required|string',
+        'brief_description_id'  => 'required|min:1',
+        'brief_description_en'  => 'required|min:1',
+        'content_id'            => 'required|min:1',
+        'content_en'            => 'required|min:1',
+    ];
+
     public function save()
     {
+        
         $edit = $this->news ? true : false;
-
-        $rules = [
-            'author_id'             => ['required'],
-            'date_news'             => ['required'],
-            'status'                => ['required'],
-            'title_id'              => ['required', 'string'],
-            'title_en'              => ['required', 'string'],
-            'brief_description_id'  => ['required', 'min:1'],
-            'brief_description_en'  => ['required', 'min:1'],
-            'content_id'            => ['required', 'min:1'],
-            'content_en'            => ['required', 'min:1'],
-        ];
 
         if (!$edit) {
             $rules['cover'] = ['required', 'image', 'max:1024' ];
         }
 
-        $this->validate($rules);
+        $this->validate();
+        // dd($this->validate());
 
         $news = [
             'author_id'             => $this->author_id,

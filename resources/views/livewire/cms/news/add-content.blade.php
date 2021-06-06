@@ -108,12 +108,12 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor1" id="editor1">
+                        <textarea wire:model="content_id" class="editor1" id="editor1">
                             {!! $content_id !!}
                         </textarea>
-                        @error('content_id') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
-                        @enderror
                     </div>
+                    @error('content_id') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
+                        @enderror
                 </div>
 
                 <div x-show="tab === 'en'">
@@ -143,12 +143,12 @@
                     </div>
 
                     <div class="mx-5 mt-2 bg-white" wire:ignore>
-                        <textarea class="editor2" id="editor2">
+                        <textarea wire:model="content_en" class="editor2" id="editor2">
                                 {!! $content_en !!}
                             </textarea>
-                        @error('content_en') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
-                        @enderror
                     </div>
+                    @error('content_en') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
+                        @enderror
                 </div>
 
                 <div class="mt-5 text-2xl text-right">
@@ -165,9 +165,17 @@
 @push('scripts')
 <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script>
-    CKEDITOR.replace( 'editor1' );
+    const editor1 = CKEDITOR.replace( 'editor1' );
+    editor1.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('content_id', event.editor.getData())
+    });
 
-    CKEDITOR.replace( 'editor2' );
+    const editor2 = CKEDITOR.replace( 'editor2' );
+    editor2.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('content_en', event.editor.getData())
+    });
 </script>
 @endpush
 
