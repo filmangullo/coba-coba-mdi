@@ -49,4 +49,5 @@ return [
     'news' => 'News & Updates',
     'more-news' => 'More News',
     'client' => 'Our Client',
+    'financial-performance' => 'Financial Performance',
 ];

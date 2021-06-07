@@ -28,6 +28,33 @@
         <div class="absolute w-full h-full bg-hitam lg:bg-opacity-100 bg-opacity-50"></div>
         <img class="object-cover slider2-back w-full h-full" src='{{ asset('img/slider-2.png') }}'>
     </div>
+    <div class="relative w-full h-screen">
+        <div class="absolute z-20 w-full gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
+            <div class="text-lg font-bold text-center sm:text-2xl lg:text-4xl -mb-12">Strongly Growing Fundamentals</div>
+            <div class="lg:grid grid-cols-2 justify-center items-center">
+                <img class="slider2 pl-8 lg:pl-16 mx-auto object-cover w-full h-4/6 rounded-md" src="{{ asset('img/slider-3.png') }}" alt="">
+                <div class="text-center px-4 sm:px-24 lg:pr-16 space-y-6">
+                    <div class="text-xs font-light sm:text-sm lg:text-lg">After going public, we can see a rapid growth in our financials, accompanied by a solid balance sheet.
+                    </div>
+                    <a href="{{ route('financial-highlight') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.financial-performance')</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-100 bg-opacity-50"></div>
+        <img class="object-cover slider2-back w-full h-full" src='{{ asset('img/slider-3.png') }}'>
+    </div>
+    <div class="relative w-full h-screen">
+        <div class="absolute z-20 w-full lg:grid grid-cols-2 gap-12 justify-center items-center pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
+            <div class="text-center px-4 sm:px-24 lg:pl-16 space-y-6">
+                <div class="text-lg font-bold sm:text-2xl lg:text-4xl">Awards</div>
+                <div class="text-xs font-light sm:text-sm lg:text-lg">Our excellent performance has brought us numerous prestigious recognition and awards.</div>
+                <a href="{{ route('awards') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.awards')</a>
+            </div>
+            <img class="slider2 pr-8 lg:pr-16 mx-auto object-cover w-full h-4/6 rounded-md" src="{{ asset('img/slider-4.png') }}" alt="">
+        </div>
+        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-100 bg-opacity-50"></div>
+        <img class="object-cover slider2-back w-full h-full" src='{{ asset('img/slider-4.png') }}'>
+    </div>
 </div>
 </div>
 

@@ -49,4 +49,5 @@ return [
     'news' => 'Berita',
     'more-news' => 'Berita Lainnya',
     'client' => 'Klien Kami',
+    'financial-performance' => 'Performa Keuangan',
 ];
