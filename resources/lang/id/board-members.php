@@ -15,6 +15,7 @@ return [
 
     'board_members'                 => 'Anggota Dewan',
     'board_of_commisioner'          => 'Dewan Komisaris',
+    'board_of_directors'             => 'Dewan Direksi',
     'president_commissioner'        => 'Komisaris Utama',
     'about_chin_kien_ping'          => '
         <span class="ml-12">Warga</span> negara Malaysia, 44 tahun yang berdomisili di Kuala Lumpur, diangkat sebagai Komisaris Utama berdasarkan keputusan pemegang saham pada 22 Maret 2017, sesuai dengan Akta Notaris Nomor 132 tanggal 22 Maret 2017. <br>

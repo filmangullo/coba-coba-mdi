@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
+    <div class="grid grid-cols-1 gap-4 px-12 mb-12 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/dompak-pasaribu.png') }}'>
         </div>
@@ -42,7 +42,9 @@
             </div>
         </div>
     </div>
-
+    <div class="py-24 text-4xl font-bold text-center text-black">
+        <h1>@lang('board-members.board_of_directors')</h1>
+    </div>
     <div class="grid grid-cols-1 gap-4 px-12 mb-24 md:grid-flow-col md:grid-cols-3 wow animate__animated animate__bounceInDown">
         <div class="col-span-1 md:row-span-3 ">
             <img class="w-full mx-auto" src='{{ asset('img/ridwan-goh.png') }}'>

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'title' => 'Divident Information',
+    'title' => 'Dividend Information',
 ];

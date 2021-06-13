@@ -17,7 +17,7 @@ return [
     'about-us' => 'About Us',
     'ceo-message' => 'CEO Message',
     'our-business' => 'Our Business',
-    'vision-mission' => 'Vision, Mission and Values',
+    'vision-mission' => 'Vision & Mission',
     'milestones' => 'Milestones',
     'awards' => 'Awards & Certificates',
     'products-gallery' => 'Products & Gallery',
