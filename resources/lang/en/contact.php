@@ -3,7 +3,7 @@
 return [
     'title' => 'Contact',
     'header' => 'Contact us',
-    'sub-header' => 'Feel free to ask us anything, we’ll try our best to answer your question as fast as we could.',
+    'sub-header' => 'Feel free to ask us anything, we’ll try our best to answer your question as soon as possible.',
     'name' => 'Name',
     'message' => 'Message',
     'send' => 'Send',
