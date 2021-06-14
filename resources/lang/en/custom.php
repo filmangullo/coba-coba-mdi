@@ -50,4 +50,10 @@ return [
     'more-news' => 'More News',
     'client' => 'Our Client',
     'financial-performance' => 'Financial Performance',
+    'home-title2' => 'A great oak was once a nut.',
+    'home-subtitle2' => 'Our journey started from a barely recognized company. We keep pushing ourselves to produce only the highest quality products for our customers. On the other hand, we always draw a smile on our shareholders’ faces as our business runs very efficiently.',
+    'home-title3' => 'Rapidly Growing Fundamentals',
+    'home-subtitle3' => 'After going public, we can see a rapid growth in our financials, accompanied by a solid balance sheet.',
+    'home-title4' => 'Awards',
+    'home-subtitle4' => 'Our excellent performance has brought us numerous prestigious recognition and awards.',
 ];
