@@ -17,4 +17,5 @@ return [
     'submit' => 'is Submitted',
     'not-submit' => 'is not submitted yet.',
     'upload' => 'Upload your CV',
+    'success' => 'Your form has been sent!',
 ];

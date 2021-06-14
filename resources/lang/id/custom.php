@@ -17,7 +17,7 @@ return [
     'about-us' => 'Tentang',
     'ceo-message' => 'Pesan Presiden Direktur',
     'our-business' => 'Bisnis',
-    'vision-mission' => 'Visi, Misi dan Nilai',
+    'vision-mission' => 'Visi dan Misi',
     'milestones' => 'Rekam Jejak',
     'awards' => 'Piagam & Penghargaan',
     'products-gallery' => 'Produk & Galeri',
@@ -49,4 +49,5 @@ return [
     'news' => 'Berita',
     'more-news' => 'Berita Lainnya',
     'client' => 'Klien Kami',
+    'financial-performance' => 'Performa Keuangan',
 ];
