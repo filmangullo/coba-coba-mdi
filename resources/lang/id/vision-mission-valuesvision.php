@@ -16,7 +16,7 @@ return [
     'vision-mission-valuesvision'   => 'Visi, Misi, & Nilai-Nilai Perseroan',
     'vision-mission'                => 'Visi & Misi',
     'vision'                        => 'Visi',
-    'section-vision'                => 'Mempertahankan dominasi Perseroan di pasar handformer global dan mempersembahkan ekonomi kepada semua pemangku kepentingan.',
+    'section-vision'                => 'Mempertahankan dominasi Perseroan di pasar handformer global dan mempersembahkan nilai-nilai ekonomi kepada semua pemangku kepentingan.',
     'mission'                       => 'Misi',
     'section-mission-1'             => 'Berusaha menghasilkan produk-produk dengan kualitas terbaik,',
     'section-mission-2'             => 'Berkomitmen mengurangi biaya produksi demi mencapai efisiensi,',
