@@ -30,7 +30,7 @@
     </div>
     <div class="relative w-full h-screen">
         <div class="absolute z-20 w-full gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="-mb-12 text-lg font-bold text-center sm:text-2xl lg:text-4xl">@lang('custom.home-title3')</div>
+            <div class="-mb-4 text-lg font-bold text-center sm:text-2xl lg:text-4xl">@lang('custom.home-title3')</div>
             <div class="items-center justify-center grid-cols-2 lg:grid">
                 <img class="object-cover w-full pl-8 mx-auto rounded-md slider2 lg:pl-16 h-4/6" src="{{ asset('img/slider-3.png') }}" alt="">
                 <div class="px-4 space-y-6 text-center sm:px-24 lg:pr-16">
