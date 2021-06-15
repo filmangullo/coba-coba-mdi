@@ -30,30 +30,30 @@
     </div>
     <div class="relative w-full h-screen">
         <div class="absolute z-20 w-full gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="text-lg font-bold text-center sm:text-2xl lg:text-4xl -mb-12">Strongly Growing Fundamentals</div>
-            <div class="lg:grid grid-cols-2 justify-center items-center">
-                <img class="slider2 pl-8 lg:pl-16 mx-auto object-cover w-full h-4/6 rounded-md" src="{{ asset('img/slider-3.png') }}" alt="">
-                <div class="text-center px-4 sm:px-24 lg:pr-16 space-y-6">
+            <div class="-mb-12 text-lg font-bold text-center sm:text-2xl lg:text-4xl">Strongly Growing Fundamentals</div>
+            <div class="items-center justify-center grid-cols-2 lg:grid">
+                <img class="object-cover w-full pl-8 mx-auto rounded-md slider2 lg:pl-16 h-4/6" src="{{ asset('img/slider-3.png') }}" alt="">
+                <div class="px-4 space-y-6 text-center sm:px-24 lg:pr-16">
                     <div class="text-xs font-light sm:text-sm lg:text-lg">After going public, we can see a rapid growth in our financials, accompanied by a solid balance sheet.
                     </div>
                     <a href="{{ route('financial-highlight') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.financial-performance')</a>
                 </div>
             </div>
         </div>
-        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-100 bg-opacity-50"></div>
-        <img class="object-cover slider2-back w-full h-full" src='{{ asset('img/slider-3.png') }}'>
+        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
+        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-3.png') }}'>
     </div>
     <div class="relative w-full h-screen">
-        <div class="absolute z-20 w-full lg:grid grid-cols-2 gap-12 justify-center items-center pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="text-center px-4 sm:px-24 lg:pl-16 space-y-6">
+        <div class="absolute z-20 items-center justify-center w-full grid-cols-2 gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 lg:grid top-1/2 lg:pt-24 sm:space-y-6">
+            <div class="px-4 space-y-6 text-center sm:px-24 lg:pl-16">
                 <div class="text-lg font-bold sm:text-2xl lg:text-4xl">Awards</div>
                 <div class="text-xs font-light sm:text-sm lg:text-lg">Our excellent performance has brought us numerous prestigious recognition and awards.</div>
                 <a href="{{ route('awards') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.awards')</a>
             </div>
-            <img class="slider2 pr-8 lg:pr-16 mx-auto object-cover w-full h-4/6 rounded-md" src="{{ asset('img/slider-4.png') }}" alt="">
+            <img class="object-cover w-full pr-8 mx-auto rounded-md slider2 lg:pr-16 h-4/6" src="{{ asset('img/slider-4.png') }}" alt="">
         </div>
-        <div class="absolute w-full h-full bg-hitam lg:bg-opacity-100 bg-opacity-50"></div>
-        <img class="object-cover slider2-back w-full h-full" src='{{ asset('img/slider-4.png') }}'>
+        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
+        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-4.png') }}'>
     </div>
 </div>
 </div>
@@ -118,7 +118,7 @@
 </div>
 
 
-<div class="px-4 pb-12 mx-auto sm:pb-24 max-w-7xl sm:px-6 lg:px-8">
+<div class="w-3/4 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-8">
     <div class="mb-12 text-2xl font-bold text-center wow animate__animated animate__fadeInDown lg:text-4xl text-mark-default">@lang('custom.client')</div>
     <div class="owl-carousel owl-theme wow animate__animated animate__fadeIn">
         <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
@@ -155,17 +155,18 @@ $(document).ready(function(){
     autoplayTimeout:3000,
     responsive:{
         0:{
-            items:3,
+            items:4,
             dots:true,
         },
-        600:{
-            items:5,
-            dots:true,
-        },
-        1000:{
-            items:6,
-            dots:true,
-        }
+        // Ourclient
+        // 600:{
+        //     items:5,
+        //     dots:true,
+        // },
+        // 1000:{
+        //     items:6,
+        //     dots:true,
+        // }
     }
 });
 });

@@ -14,7 +14,7 @@ return [
     */
 
     'lang'      => 'id',
-    'about-us' => 'Tentang',
+    'about-us' => 'Tentang Kami',
     'ceo-message' => 'Pesan Presiden Direktur',
     'our-business' => 'Bisnis',
     'vision-mission' => 'Visi dan Misi',
