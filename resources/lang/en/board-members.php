@@ -29,7 +29,7 @@ return [
     ',
     'president_director'            => 'President Director',
     'about_ridwan_goh'              => '
-        <span class="ml-12">A</span> 37 years old Indonesian living in Medan, appointed as President Directors based on the decision of the shareholders at the Annual General Meeting of Shareholders on 30 April 2018, in accordance with Notarial Deed Number 39 dated 30 April 2018. <br>
+        <span class="ml-12">A</span> 37 years old Indonesian living in Medan, appointed as President Director based on the decision of the shareholders at the Annual General Meeting of Shareholders on 30 April 2018, in accordance with Notarial Deed Number 39 dated 30 April 2018. <br>
         <span class="ml-12">He</span> is a graduate of the Microskil Institute, holding a Bachelor’s degree in Computer Engineering. He started his career as an International Marketing Manager at PT. Tropical Wood Indotama from 2004 to 2008. At the time, PT. Tropical Wood Indotama was the biggest wood company in North Sumatra. In 2008 he joined PT. Mark Dynamics Indonesia Tbk as Marketing Manager. <br>
         <span class="ml-12">With</span> an experience of around 15 years in the field of International Trade, he was then appointed as a Director of the Company in 2017. He then assumed the position of President Director in 2018. In July 25th, 2019 he received Indonesia Marketeers Festival 2019 Award as Industry Marketing Championship of The Year in retail sector.
     ',
@@ -40,7 +40,7 @@ return [
     'independent_director'          => 'Independent Director',
     'about_cahaya_dewi_surbakti'    => '
         <span class="ml-12">An</span> Indonesian citizen, 38 years old, domiciled in Medan, appointed as the Independent Director of the Company on 30 April 2018, based on the decision of the shareholders at the Annual General Meeting of Shareholders, in accordance with Notarial Deed Number 39 dated 30 April 2018.<br>
-        <span class="ml-12">She</span> has a Bachelor’s degree in Chemical Engineering from Universitas Sumatera Utara (USU). After graduating, she started her career in the Company as a Quality Assurance Executive in 2004. Having followed an intensive training on ceramics processing for 2 years, her passion in doing this job significantly increased. She was then entrusted as the Head of Research and Development, serving from 2011 until 2018.
+        <span class="ml-12">She</span> has a Bachelor’s degree in Chemical Engineering from Universitas Sumatera Utara (USU). After graduating, she started her career in the Company as a Quality Assurance Executive in 2004. Having followed an intensive training on ceramics processing for 2 years, her passion for doing this job significantly increased. She was then entrusted as the Head of Research and Development, serving from 2011 until 2018.
     ',
 
 ];

@@ -50,4 +50,10 @@ return [
     'more-news' => 'Berita Lainnya',
     'client' => 'Klien Kami',
     'financial-performance' => 'Performa Keuangan',
+    'home-title2' => 'Esa Hilang Dua Terbilang.',
+    'home-subtitle2' => 'Kami memulai perjalanan ini sebagai perusahaan yang hampir tidak dikenal oleh siapapun. Kami terus berusaha untuk maju dan hanya fokus untuk memproduksi produk dengan kualitas tertinggi kepada pelanggan kami. Di sisi lain, kami juga selalu membawa senyuman kepada seluruh pemegang saham kami karena kinerja bisnis kami yang sangat efisien.',
+    'home-title3' => 'Pertumbuhan Fundamental Yang Pesat',
+    'home-subtitle3' => 'Setelah IPO, kinerja operasional kami bertumbuh sangat pesat dan disertai dengan posisi neraca yang kuat.',
+    'home-title4' => 'Penghargaan',
+    'home-subtitle4' => 'Kinerja apik kami telah menghadiahkan kami beragam piagam dan penghargaan yang bergengsi.',
 ];
