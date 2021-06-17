@@ -1,6 +1,8 @@
 <?php
 
-/*
+return [
+
+    /*
     |--------------------------------------------------------------------------
     | Organization Structure Language Lines
     |--------------------------------------------------------------------------
@@ -11,6 +13,5 @@
     |
     */
 
-return [
-    'organization-structure' => 'Struktur Organisasi',
+    'organization-structure'          => 'Organization Structure',
 ];

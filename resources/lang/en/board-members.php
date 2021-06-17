@@ -14,8 +14,8 @@ return [
     */
 
     'board_members'                 => 'Board Members',
-    'board_of_commisioner'          => 'Board of Commisioner',
-    'board_of_directors'          => 'Board of Director',
+    'board_of_commisioner'          => 'Board of Commissioners',
+    'board_of_directors'            => 'Board of Directors',
     'president_commissioner'        => 'President Commissioner',
     'about_chin_kien_ping'          => '
         <span class="ml-12">A Malaysian</span> citizen, 44 years old domiciled in Kuala Lumpur, appointed as the President Commissioner based on shareholder’s decision on March 22, 2017, in accordance with Notarial Deed Number 132 dated March 22, 2017. <br>
