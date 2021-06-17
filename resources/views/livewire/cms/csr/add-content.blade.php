@@ -8,12 +8,13 @@
             <div class="items-center w-full bg-gray-200">
                 <div class="items-center px-5 py-6 space-y-3 overflow-visible">
                     <div class="flex items-center justify-center w-full bg-grey-lighter">
-                        {{-- @dump($img); --}}
+
                         <label @if ($img) style=" background-image: url('{{ $img->temporaryUrl() }}');
                                         background-size: 100%;
                                         background-repeat: no-repeat;
-                                        background-position: center" @endif @if (!$img && isset($image->img))
-                            style=" background-image: url('{{ asset( $image->img ) }}');
+                                        background-position: center" @endif
+                            @if (!$img && isset($csr->img))
+                            style=" background-image: url('{{ asset( $csr->img ) }}');
                             background-size: 100%;
                             background-repeat: no-repeat;
                             background-position: center"

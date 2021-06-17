@@ -79,6 +79,15 @@ class AddContent extends Component
         return $this->redirectRoute('cms-csr.index');
     }
 
+    private function handleEventUpload($csr)
+    {
+        if (isset($csr['img'])) {
+            Storage::disk('public')->delete(substr($this->csr->img, 8));
+        }
+
+        Csr::find($this->csr->id)
+                   ->update($csr);
+    }
 
     public function render()
     {
