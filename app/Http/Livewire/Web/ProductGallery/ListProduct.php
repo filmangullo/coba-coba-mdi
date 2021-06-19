@@ -30,7 +30,7 @@ class ListProduct extends Component
     public function render()
     {
         return view('livewire.web.product-gallery.list-product', [
-            'product'       => Gallery::where('is_product', true)->paginate(8)
+            'product'       => Gallery::where('is_product', true)->get()
         ]);
     }
 }
