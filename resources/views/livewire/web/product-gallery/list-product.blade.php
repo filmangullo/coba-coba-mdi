@@ -3,7 +3,7 @@
     <div class="container mx-auto border-b border-gray-500">
         <div class="flex items-center h-96">
             <div class="mx-auto h-96">
-                <img class="object-cover w-full mx-auto rounded-md" :src="preview" alt="Mark Dynamics Gallery & Products">
+                <img class="object-cover mx-auto rounded-md h-96" :src="preview" alt="Mark Dynamics Gallery & Products">
             </div>
         </div>
 
