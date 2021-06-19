@@ -1,9 +1,9 @@
 <div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="">
     <div class="pt-16 pb-24 text-4xl font-bold text-center lg:py-24">Products</div>
-    <div class="border-b border-gray-500 ">
-        <div class="flex items-center">
-            <div class="w-full h-3/4 ">
-                <img class="object-cover w-full rounded-md" :src="preview" alt="Mark Dynamics Gallery & Products">
+    <div class="container mx-auto border-b border-gray-500">
+        <div class="flex items-center h-96">
+            <div class="mx-auto h-96">
+                <img class="object-cover w-full mx-auto rounded-md" :src="preview" alt="Mark Dynamics Gallery & Products">
             </div>
         </div>
 
