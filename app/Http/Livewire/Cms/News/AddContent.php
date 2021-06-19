@@ -65,7 +65,7 @@ class AddContent extends Component
 
     public function save()
     {
-        
+
         $edit = $this->news ? true : false;
 
         if (!$edit) {
