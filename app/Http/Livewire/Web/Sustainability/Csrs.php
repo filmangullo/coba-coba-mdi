@@ -15,7 +15,7 @@ class Csrs extends Component
     {
         if(!$this->nowPreview)
         {
-            $this->nowPreview = Csr::orderBy('created_at', 'desc')->first();
+            $this->nowPreview = Csr::orderBy('date', 'desc')->first();
         }
     }
 
@@ -26,7 +26,7 @@ class Csrs extends Component
 
     public function render()
     {
-        $csr =  Csr::orderBy('created_at', 'desc')->paginate(10);
+        $csr =  Csr::orderBy('date', 'desc')->paginate(10);
 
         return view('livewire.web.sustainability.csrs', [
             'csr' => $csr
