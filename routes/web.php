@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\web\AboutUsController;
 use App\Http\Controllers\web\KontakController;
 use App\Http\Controllers\web\CareerController;
@@ -134,3 +135,5 @@ Route::get('/lang/{locale}', function ($locale)
 Route::get('/App/Providers/CmsServiceProvider', function () {
     return redirect('/');
 });
+
+// Route::get('/merge-db', [Controller::class, 'mergeDB'])->name('mergedb');

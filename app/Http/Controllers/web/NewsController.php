@@ -11,7 +11,7 @@ class NewsController extends Controller
     public function list()
     {
         return view('news.list', [
-            'news'      => News::where('status', 1)->orderBy('created_at', 'desc')->paginate(10)
+            'news'      => News::where('status', 1)->orderBy('created_at', 'desc')->paginate(11)
         ]);
     }
 
