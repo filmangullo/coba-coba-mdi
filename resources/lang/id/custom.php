@@ -46,6 +46,7 @@ return [
     'agriculture' => 'Agrikultur',
     'hand-former' => 'Cetakan Tangan',
     'sanitary' => 'Produk Saniter',
+    'stock_price'   => 'Harga Saham',
     'news' => 'Berita',
     'more-news' => 'Berita Lainnya',
     'client' => 'Klien Kami',

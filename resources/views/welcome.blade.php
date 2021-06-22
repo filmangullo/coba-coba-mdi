@@ -102,13 +102,13 @@
 </div>
 
 <div class="px-6 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl xl:px-0">
-    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
-    <div class="relative h-auto bg-white max-w-7xl wow animate__animated animate__fadeInUp">
+    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.stock_price')</div>
+    <div class="relative h-auto mb-12 bg-white max-w-7xl wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
 
 
-
+    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
     @livewire('web.welcome.short-list-news')
     <div class="inline-flex items-center flex-1 w-full mt-6 lg:mt-12">
         <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">
@@ -118,9 +118,9 @@
 </div>
 
 
-<div class="w-3/4 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-8">
+<div class="w-3/6 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-24">
     <div class="mb-12 text-2xl font-bold text-center wow animate__animated animate__fadeInDown lg:text-4xl text-mark-default">@lang('custom.client')</div>
-    <div class="owl-carousel owl-theme wow animate__animated animate__fadeIn">
+    <div class="justify-center owl-carousel owl-theme wow animate__animated animate__fadeIn">
         <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
         <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client"></div>
         <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client"></div>

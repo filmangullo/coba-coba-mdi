@@ -46,6 +46,7 @@ return [
     'agriculture' => 'Agriculture',
     'hand-former' => 'Hand Former',
     'sanitary' => 'Sanitary Wares',
+    'stock_price'   => 'Stock Price',
     'news' => 'News & Updates',
     'more-news' => 'More News',
     'client' => 'Our Client',
