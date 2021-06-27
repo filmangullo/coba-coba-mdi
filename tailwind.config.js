@@ -8,6 +8,8 @@ module.exports = {
     ],
 
     theme: {
+        fontFamily: {
+            'mark' : ['Maven Pro', 'sans-serif']},
         extend: {
             fontFamily: {
                 'sans': ['Montserrat', 'sans-serif'],
