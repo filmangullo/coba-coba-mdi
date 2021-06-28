@@ -77,7 +77,7 @@
         </div>
     </div>
 </div> --}}
-<div class="py-12 lg:py-24">
+<div class="container py-12 mx-auto lg:py-24">
     <div class="mb-6 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.our-products')</div>
     <div class="items-end justify-center grid-cols-3 space-y-12 sm:grid sm:space-y-0">
         <div class="mx-auto wow animate__animated animate__fadeInLeft">
@@ -118,7 +118,7 @@
 </div>
 
 
-<div class="w-3/6 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-24">
+<div class="container w-3/6 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-24">
     <div class="mb-12 text-2xl font-bold text-center wow animate__animated animate__fadeInDown lg:text-4xl text-mark-default">@lang('custom.client')</div>
     <div class="justify-center owl-carousel owl-theme wow animate__animated animate__fadeIn">
         <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
