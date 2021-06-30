@@ -57,4 +57,5 @@ return [
     'home-subtitle3' => 'After going public, we can see a rapid growth in our financials, accompanied by a solid balance sheet.',
     'home-title4' => 'Awards',
     'home-subtitle4' => 'Our excellent performance has brought us numerous prestigious recognition and awards.',
+    'extra' => 'More',
 ];
