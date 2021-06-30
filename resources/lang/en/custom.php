@@ -40,7 +40,7 @@ return [
     'environment' => 'Environment',
     'contact' => 'Contact Us',
     'career' => 'Career',
-    'home-title1' => 'World’s Leading Hand-Former<br>Manufacturer',
+    'home-title1' => 'World’s Leading Hand-Former Manufacturer',
     'home-subtitle1' => 'Serving 40% of global market share, we have been a<br>big player in helping the gloves industry.',
     'our-products' => 'Our Products',
     'agriculture' => 'Agriculture',

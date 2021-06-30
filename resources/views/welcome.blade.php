@@ -1,98 +1,111 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="relative bg-gray-50">
+<div class="relative bg-gray-50 slider">
 
 
     <main class="lg:relative">
       <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
         <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span class="block xl:inline">Data to enrich your</span>
-            <span class="block text-indigo-600 xl:inline">online business</span>
+            <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
           <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+            @lang('custom.home-subtitle1')
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                Get started
+              <a href="{{ route('our-business') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                @lang('custom.our-business')
               </a>
             </div>
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+            {{-- <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
                 Live demo
               </a>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
       <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-        <img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="">
+        <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
+
+    <main class="lg:relative">
+        <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">@lang('custom.home-title2')</span>
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              @lang('custom.home-subtitle2')
+            </p>
+            <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="{{ route('vision&mission') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  @lang('custom.vision-mission')
+                </a>
+              </div>
+              <div class="rounded-md shadow">
+                <a href="{{ route('ceo-message') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  @lang('custom.ceo-message')
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-2.png') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
+
+    <main class="lg:relative">
+        <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">@lang('custom.home-title3')</span>
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              @lang('custom.home-subtitle3')
+            </p>
+            <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="{{ route('financial-highlight') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  @lang('custom.financial-highlight')
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-3.jpg') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
+
+    <main class="lg:relative">
+        <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">@lang('custom.home-title4')</span>
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              @lang('custom.home-subtitle4')
+            </p>
+            <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="{{ route('awards') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  @lang('custom.awards')
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
   </div>
-
-
-
-
-{{-- Slider --}}
-<div class="relative w-full h-screen lg:wow lg:animate__animated lg:animate__fadeInDown">
-<div x-cloak class="relative w-full h-screen slider">
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 w-full pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="text-xl font-bold sm:text-3xl lg:text-5xl">@lang('custom.home-title1')</div>
-            <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle1')</div>
-            <a href="{{ route('our-business') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.our-business')</a>
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
-        <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
-    </div>
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 items-center justify-center w-full grid-cols-2 gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 lg:grid top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="px-4 space-y-6 text-center sm:px-24 lg:pl-16">
-                <div class="text-lg font-bold sm:text-2xl lg:text-4xl">@lang('custom.home-title2')</div>
-                <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle2')</div>
-                <div class="flex items-center justify-between">
-                    <a href="{{ route('vision&mission') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.vision-mission')</a>
-                    <a href="{{ route('ceo-message') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.ceo-message')</a>
-                </div>
-            </div>
-            <img class="object-cover w-full pr-8 mx-auto rounded-md slider2 lg:pr-16 h-4/6" src="{{ asset('img/slider-2.png') }}" alt="">
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
-        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-2.png') }}'>
-    </div>
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 w-full gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="-mb-4 text-lg font-bold text-center sm:text-2xl lg:text-4xl">@lang('custom.home-title3')</div>
-            <div class="items-center justify-center grid-cols-2 lg:grid">
-                <img class="object-cover w-full pl-8 mx-auto rounded-md slider2 lg:pl-16 h-4/6" src="{{ asset('img/slider-3.png') }}" alt="">
-                <div class="px-4 space-y-6 text-center sm:px-24 lg:pr-16">
-                    <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle3')
-                    </div>
-                    <a href="{{ route('financial-highlight') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.financial-performance')</a>
-                </div>
-            </div>
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
-        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-3.png') }}'>
-    </div>
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 items-center justify-center w-full grid-cols-2 gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 lg:grid top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="px-4 space-y-6 text-center sm:px-24 lg:pl-16">
-                <div class="text-lg font-bold sm:text-2xl lg:text-4xl">@lang('custom.home-title4')</div>
-                <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle4')</div>
-                <a href="{{ route('awards') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.awards')</a>
-            </div>
-            <img class="object-cover w-full pr-8 mx-auto rounded-md slider2 lg:pr-16 h-4/6" src="{{ asset('img/slider-4.png') }}" alt="">
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
-        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-4.png') }}'>
-    </div>
-</div>
-</div>
 
 {{-- <div class="py-12 mt-24 mb-12 bg-mark-default">
     <div class="px-4 mx-auto text-white max-w-7xl sm:px-6 lg:px-8">
