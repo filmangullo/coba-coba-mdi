@@ -321,7 +321,7 @@
                     From: "opacity-100 scale-100"
                     To: "opacity-0 scale-95"
                 -->
-                <div
+                <div x-cloak
                 x-transition:enter="duration-200 ease-out"
                 x-transition:enter-start="opacity-0 scale-95"
                 x-transition:enter-end="opacity-100 scale-100"

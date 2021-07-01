@@ -1,16 +1,17 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="relative bg-gray-50 slider">
+<div class="relative bg-gray-50 slider h-screen sm:h-auto">
 
 
-    <main class="lg:relative">
-      <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <main class="relative">
+      <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
+      <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
         <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
-          <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+          <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
             @lang('custom.home-subtitle1')
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -27,132 +28,150 @@
           </div>
         </div>
       </div>
-      <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
         <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
 
-    <main class="lg:relative">
-        <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <main class="relative" x-cloak>
+        <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
+        <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
           <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title2')</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               @lang('custom.home-subtitle2')
             </p>
-            <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
-              <div class="rounded-md shadow">
-                <a href="{{ route('vision&mission') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
-                  @lang('custom.vision-mission')
-                </a>
-              </div>
-              <div class="rounded-md shadow">
-                <a href="{{ route('ceo-message') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
-                  @lang('custom.ceo-message')
-                </a>
-              </div>
+            <div class="mt-10 sm:flex sm:justify-center gap-3 space-y-3 sm:space-y-0 lg:justify-start">
+                <div class="rounded-md shadow">
+                  <a href="{{ route('vision&mission') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.vision-mission')
+                  </a>
+                </div>
+                <div class="rounded-md shadow">
+                  <a href="{{ route('ceo-message') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.ceo-message')
+                  </a>
+                </div>
             </div>
           </div>
         </div>
-        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-2.png') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 
-    <main class="lg:relative">
-        <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <main class="relative" x-cloak>
+        <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
+        <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
           <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               @lang('custom.home-subtitle3')
             </p>
             <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
-              <div class="rounded-md shadow">
-                <a href="{{ route('financial-highlight') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
-                  @lang('custom.financial-highlight')
-                </a>
-              </div>
+                <div class="rounded-md shadow">
+                  <a href="{{ route('financial-highlight') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.financial-highlight')
+                  </a>
+                </div>
             </div>
           </div>
         </div>
-        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-3.jpg') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 
-    <main class="lg:relative">
-        <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <main class="relative" x-cloak>
+        <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
+        <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
           <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               @lang('custom.home-subtitle4')
             </p>
             <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
-              <div class="rounded-md shadow">
-                <a href="{{ route('awards') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
-                  @lang('custom.awards')
-                </a>
+                <div class="rounded-md shadow">
+                  <a href="{{ route('awards') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.awards')
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
+</div>
+<div class="relative bg-white py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.our-products')</h2>
+    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
+    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+      Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+    </p>
+    <div class="mt-12">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div class="pt-6">
+          <div class="flow-root h-full bg-gray-100 rounded-lg px-6 pb-8">
+            <div class="-mt-6">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
+              </div>
+              <div>
+                  <h3 class="mt-8 text-lg font-bold text-gray-900 tracking-tight">@lang('custom.agriculture')</h3>
+                  <p class="mt-5 text-base text-gray-500">
+                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
-        </div>
-    </main>
-  </div>
 
-{{-- <div class="py-12 mt-24 mb-12 bg-mark-default">
-    <div class="px-4 mx-auto text-white max-w-7xl sm:px-6 lg:px-8">
-        <div class="mb-12 text-2xl font-bold text-center lg:text-4xl">Our Products</div>
-        <div class="flex content-between justify-center text-center sm:gap-28 lg:gap-40">
-            <div>
-                <img class="object-cover mx-auto mb-6 rounded-full sm:w-24 sm:h-24 lg:w-48 lg:h-48" src="{{ asset('img/our-products-1.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-lg font-bold lg:text-xl">Hand Former</div>
+        <div class="pt-6">
+          <div class="flow-root h-full bg-gray-100 rounded-lg px-6 pb-8">
+            <div class="-mt-6">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
+              </div>
+              <h3 class="mt-8 text-lg font-bold text-gray-900 tracking-tight">@lang('custom.hand-former')</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
             </div>
-            <div>
-                <img class="object-cover mx-auto mb-6 rounded-full sm:w-24 sm:h-24 lg:w-48 lg:h-48" src="{{ asset('img/our-products-2.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-lg font-bold lg:text-xl">Sanitary Wares</div>
-            </div>
-            <div>
-                <img class="object-cover mx-auto mb-6 rounded-full sm:w-24 sm:h-24 lg:w-48 lg:h-48" src="{{ asset('img/our-products-3.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-lg font-bold lg:text-xl">Agriculture</div>
-            </div>
+          </div>
         </div>
+
+        <div class="pt-6">
+          <div class="flow-root h-full bg-gray-100 rounded-lg px-6 pb-8">
+            <div class="-mt-6 grid content-between">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
+              </div>
+              <h3 class="mt-8 text-lg font-bold text-gray-900 tracking-tight">@lang('custom.sanitary')</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div> --}}
-<div class="py-12 lg:py-24">
-    <div class="mb-6 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.our-products')</div>
-    <div class="items-end justify-center grid-cols-3 space-y-12 sm:grid sm:space-y-0">
-        <div class="mx-auto wow animate__animated animate__fadeInLeft">
-            <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
-                <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
-            </div>
-            <div class="mt-6 text-lg font-bold text-center text-mark-default lg:text-2xl">@lang('custom.agriculture')</div>
-        </div>
-        <div class="mx-auto wow animate__animated animate__fadeInUp">
-            <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
-                <img class="-mt-4 transition-all duration-500 transform hover:scale-125 lg:-mt-7" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
-            </div>
-            <div class="mt-6 text-lg font-bold text-center text-mark-default lg:text-2xl">@lang('custom.hand-former')</div>
-        </div>
-        <div class="mx-auto wow animate__animated animate__fadeInRight">
-            <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
-                <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Sanitary Wares">
-            </div>
-            <div class="mt-6 text-lg font-bold text-center text-mark-default lg:text-2xl">@lang('custom.sanitary')</div>
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="px-6 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl xl:px-0">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.stock_price')</div>
-    <div class="relative h-auto mb-12 bg-white max-w-7xl wow animate__animated animate__fadeInUp">
+    <div class="relative h-auto mb-12 bg-white max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl mx-auto wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
 
