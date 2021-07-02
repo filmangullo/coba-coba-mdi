@@ -1,134 +1,134 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="relative bg-gray-50 slider h-screen sm:h-auto">
+<div class="relative h-screen bg-gray-50 slider sm:h-auto">
 
 
     <main class="relative">
-      <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
-      <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
+      <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+      <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
         <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
-          <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+          <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
             @lang('custom.home-subtitle1')
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="{{ route('our-business') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+              <a href="{{ route('our-business') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
                 @lang('custom.our-business')
               </a>
             </div>
             {{-- <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+              <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
                 Live demo
               </a>
             </div> --}}
           </div>
         </div>
       </div>
-      <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-        <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Indonesia">
+      <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
 
     <main class="relative" x-cloak>
-        <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
-        <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
+        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
           <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title2')</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               @lang('custom.home-subtitle2')
             </p>
-            <div class="mt-10 sm:flex sm:justify-center gap-3 space-y-3 sm:space-y-0 lg:justify-start">
+            <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
                 <div class="rounded-md shadow">
-                  <a href="{{ route('vision&mission') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('vision&mission') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
                     @lang('custom.vision-mission')
                   </a>
                 </div>
                 <div class="rounded-md shadow">
-                  <a href="{{ route('ceo-message') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('ceo-message') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
                     @lang('custom.ceo-message')
                   </a>
                 </div>
             </div>
           </div>
         </div>
-        <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-2.png') }}" alt="Mark Dynamics Indonesia">
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2.png') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 
     <main class="relative" x-cloak>
-        <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
-        <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
+        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
           <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               @lang('custom.home-subtitle3')
             </p>
-            <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
+            <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
-                  <a href="{{ route('financial-highlight') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('financial-highlight') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
                     @lang('custom.financial-highlight')
                   </a>
                 </div>
             </div>
           </div>
         </div>
-        <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-3.jpg') }}" alt="Mark Dynamics Indonesia">
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-3.jpg') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 
     <main class="relative" x-cloak>
-        <div class="absolute w-screen h-screen bg-gray-50 bg-opacity-70 z-10 lg:hidden"></div>
-        <div class="absolute lg:static z-20 mx-auto max-w-7xl w-full text-center py-48 lg:text-left">
+        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
           <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
-            <p class="mt-3 max-w-md mx-auto text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               @lang('custom.home-subtitle4')
             </p>
-            <div class="mt-10 sm:flex sm:justify-center gap-3 lg:justify-start">
+            <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
-                  <a href="{{ route('awards') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('awards') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
                     @lang('custom.awards')
                   </a>
                 </div>
             </div>
           </div>
         </div>
-        <div class="w-screen h-screen absolute top-0 lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 </div>
-<div class="relative bg-white py-16 sm:py-24 lg:py-32">
-  <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.our-products')</h2>
-    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+<div class="relative py-16 bg-white sm:py-24 lg:py-32">
+  <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.our-products')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+    <p class="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
       Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
     </p>
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div class="pt-6">
-          <div class="flow-root h-full bg-gray-100 rounded-lg px-6 pb-8">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
                   <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
               </div>
               <div>
-                  <h3 class="mt-8 text-lg font-bold text-gray-900 tracking-tight">@lang('custom.agriculture')</h3>
+                  <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.agriculture')</h3>
                   <p class="mt-5 text-base text-gray-500">
                     Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                   </p>
@@ -138,12 +138,12 @@
         </div>
 
         <div class="pt-6">
-          <div class="flow-root h-full bg-gray-100 rounded-lg px-6 pb-8">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
                   <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
               </div>
-              <h3 class="mt-8 text-lg font-bold text-gray-900 tracking-tight">@lang('custom.hand-former')</h3>
+              <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.hand-former')</h3>
               <p class="mt-5 text-base text-gray-500">
                 Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
               </p>
@@ -152,12 +152,12 @@
         </div>
 
         <div class="pt-6">
-          <div class="flow-root h-full bg-gray-100 rounded-lg px-6 pb-8">
-            <div class="-mt-6 grid content-between">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+            <div class="grid content-between -mt-6">
               <div class="flex justify-center">
                   <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
               </div>
-              <h3 class="mt-8 text-lg font-bold text-gray-900 tracking-tight">@lang('custom.sanitary')</h3>
+              <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.sanitary')</h3>
               <p class="mt-5 text-base text-gray-500">
                 Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
               </p>
@@ -169,7 +169,7 @@
   </div>
 </div>
 
-<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl pb-6 sm:pb-12 lg:pb-24">
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
     <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.stock_price')</h2>
     <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
       Everything you need to deploy your app
@@ -177,7 +177,7 @@
     <div class="relative h-auto my-12 bg-white max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl mx-auto wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
-    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.stock_price')</h2>
+    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.news')</h2>
     <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
       Everything you need to deploy your app
     </p>
