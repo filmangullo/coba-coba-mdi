@@ -1,5 +1,5 @@
 
-    <div class="grid lg:grid-cols-2 gap-6 mt-6 lg:gap-12 lg:mt-12">
+    <div class="grid lg:grid-cols-2 text-left gap-6 mt-6 lg:gap-12 lg:mt-12">
         @forelse ($news as $i => $n)
             <div class="relative w-full overflow-hidden rounded-md h-48 lg:h-60 @if($i % 2) wow animate__animated animate__fadeInRight @else wow animate__animated animate__fadeInLeft @endif">
                 <img class="w-full" src="{{ asset($n->cover) }}" alt="Mark Dynamics News">

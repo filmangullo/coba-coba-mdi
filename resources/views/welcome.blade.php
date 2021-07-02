@@ -169,30 +169,45 @@
   </div>
 </div>
 
-<div class="px-6 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl xl:px-0">
-    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.stock_price')</div>
-    <div class="relative h-auto mb-12 bg-white max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl mx-auto wow animate__animated animate__fadeInUp">
+<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl pb-6 sm:pb-12 lg:pb-24">
+    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.stock_price')</h2>
+    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
+    <div class="relative h-auto my-12 bg-white max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl mx-auto wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
-
-
-    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
+    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.stock_price')</h2>
+    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
     @livewire('web.welcome.short-list-news')
     <div class="inline-flex items-center flex-1 w-full mt-6 lg:mt-12">
-        <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">
+        <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-md inline-block">
             @lang('custom.more-news')
         </a>
     </div>
 </div>
 
-
-<div class="w-3/6 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-24">
-    <div class="mb-12 text-2xl font-bold text-center wow animate__animated animate__fadeInDown lg:text-4xl text-mark-default">@lang('custom.client')</div>
-    <div class="justify-center owl-carousel owl-theme wow animate__animated animate__fadeIn">
-        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
-        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client"></div>
-        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client"></div>
-        <div><img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client"></div>
+<div class="bg-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
+        @lang('custom.client')
+      </p>
+      <div class="mt-6 grid grid-cols-2 gap-1 md:grid-cols-4 lg:mt-8">
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-200 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-200 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-200 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-200 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+        </div>
+      </div>
     </div>
 </div>
 
