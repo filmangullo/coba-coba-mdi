@@ -57,4 +57,5 @@ return [
     'home-subtitle3' => 'Setelah IPO, kinerja operasional kami bertumbuh sangat pesat dan disertai dengan posisi neraca yang kuat.',
     'home-title4' => 'Penghargaan',
     'home-subtitle4' => 'Kinerja apik kami telah menghadiahkan kami beragam piagam dan penghargaan yang bergengsi.',
+    'extra' => 'Lainnya',
 ];

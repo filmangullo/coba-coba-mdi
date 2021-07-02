@@ -40,7 +40,7 @@ return [
     'environment' => 'Environment',
     'contact' => 'Contact Us',
     'career' => 'Career',
-    'home-title1' => 'World’s Leading Hand-Former<br>Manufacturer',
+    'home-title1' => 'World’s Leading Hand-Former Manufacturer',
     'home-subtitle1' => 'Serving 40% of global market share, we have been a<br>big player in helping the gloves industry.',
     'our-products' => 'Our Products',
     'agriculture' => 'Agriculture',
@@ -57,4 +57,5 @@ return [
     'home-subtitle3' => 'After going public, we can see a rapid growth in our financials, accompanied by a solid balance sheet.',
     'home-title4' => 'Awards',
     'home-subtitle4' => 'Our excellent performance has brought us numerous prestigious recognition and awards.',
+    'extra' => 'More',
 ];

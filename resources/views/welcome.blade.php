@@ -1,145 +1,177 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="relative bg-gray-50">
+<div class="relative h-screen bg-gray-50 slider sm:h-auto">
 
 
-    <main class="lg:relative">
-      <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <main class="relative">
+      <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+      <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
         <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span class="block xl:inline">Data to enrich your</span>
-            <span class="block text-indigo-600 xl:inline">online business</span>
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
-          <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+          <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+            @lang('custom.home-subtitle1')
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                Get started
+              <a href="{{ route('our-business') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                @lang('custom.our-business')
               </a>
             </div>
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+            {{-- <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
                 Live demo
               </a>
+            </div> --}}
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Indonesia">
+      </div>
+    </main>
+
+    <main class="relative" x-cloak>
+        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">@lang('custom.home-title2')</span>
+            </h1>
+            <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              @lang('custom.home-subtitle2')
+            </p>
+            <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
+                <div class="rounded-md shadow">
+                  <a href="{{ route('vision&mission') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.vision-mission')
+                  </a>
+                </div>
+                <div class="rounded-md shadow">
+                  <a href="{{ route('ceo-message') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.ceo-message')
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2.png') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
+
+    <main class="relative" x-cloak>
+        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">@lang('custom.home-title3')</span>
+            </h1>
+            <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              @lang('custom.home-subtitle3')
+            </p>
+            <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
+                <div class="rounded-md shadow">
+                  <a href="{{ route('financial-highlight') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.financial-highlight')
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-3.jpg') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
+
+    <main class="relative" x-cloak>
+        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
+        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">@lang('custom.home-title4')</span>
+            </h1>
+            <p class="max-w-md mx-auto mt-3 text-lg text-gray-900 lg:text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              @lang('custom.home-subtitle4')
+            </p>
+            <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
+                <div class="rounded-md shadow">
+                  <a href="{{ route('awards') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                    @lang('custom.awards')
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
+        </div>
+    </main>
+</div>
+<div class="relative py-16 bg-white sm:py-24 lg:py-32">
+  <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.our-products')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
+    <p class="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
+      Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+    </p>
+    <div class="mt-12">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div class="pt-6">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+            <div class="-mt-6">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
+              </div>
+              <div>
+                  <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.agriculture')</h3>
+                  <p class="mt-5 text-base text-gray-500">
+                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+            <div class="-mt-6">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
+              </div>
+              <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.hand-former')</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+            <div class="grid content-between -mt-6">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
+              </div>
+              <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.sanitary')</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-        <img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="">
-      </div>
-    </main>
+    </div>
   </div>
-
-
-
-
-{{-- Slider --}}
-<div class="relative w-full h-screen lg:wow lg:animate__animated lg:animate__fadeInDown">
-<div x-cloak class="relative w-full h-screen slider">
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 w-full pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="text-xl font-bold sm:text-3xl lg:text-5xl">@lang('custom.home-title1')</div>
-            <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle1')</div>
-            <a href="{{ route('our-business') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.our-business')</a>
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam"></div>
-        <img class="object-cover w-full h-full" src='{{ asset('img/hero-1.png') }}'>
-    </div>
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 items-center justify-center w-full grid-cols-2 gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 lg:grid top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="px-4 space-y-6 text-center sm:px-24 lg:pl-16">
-                <div class="text-lg font-bold sm:text-2xl lg:text-4xl">@lang('custom.home-title2')</div>
-                <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle2')</div>
-                <div class="flex items-center justify-between">
-                    <a href="{{ route('vision&mission') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.vision-mission')</a>
-                    <a href="{{ route('ceo-message') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.ceo-message')</a>
-                </div>
-            </div>
-            <img class="object-cover w-full pr-8 mx-auto rounded-md slider2 lg:pr-16 h-4/6" src="{{ asset('img/slider-2.png') }}" alt="">
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
-        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-2.png') }}'>
-    </div>
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 w-full gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="-mb-4 text-lg font-bold text-center sm:text-2xl lg:text-4xl">@lang('custom.home-title3')</div>
-            <div class="items-center justify-center grid-cols-2 lg:grid">
-                <img class="object-cover w-full pl-8 mx-auto rounded-md slider2 lg:pl-16 h-4/6" src="{{ asset('img/slider-3.png') }}" alt="">
-                <div class="px-4 space-y-6 text-center sm:px-24 lg:pr-16">
-                    <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle3')
-                    </div>
-                    <a href="{{ route('financial-highlight') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.financial-performance')</a>
-                </div>
-            </div>
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
-        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-3.png') }}'>
-    </div>
-    <div class="relative w-full h-screen">
-        <div class="absolute z-20 items-center justify-center w-full grid-cols-2 gap-12 pt-16 mx-auto space-y-3 text-center text-white transform -translate-y-1/2 lg:grid top-1/2 lg:pt-24 sm:space-y-6">
-            <div class="px-4 space-y-6 text-center sm:px-24 lg:pl-16">
-                <div class="text-lg font-bold sm:text-2xl lg:text-4xl">@lang('custom.home-title4')</div>
-                <div class="text-xs font-light sm:text-sm lg:text-lg">@lang('custom.home-subtitle4')</div>
-                <a href="{{ route('awards') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer bg-transparent border font-semibold hover:bg-white hover:text-hitam transition-all duration-200 border-white rounded-full inline-block">@lang('custom.awards')</a>
-            </div>
-            <img class="object-cover w-full pr-8 mx-auto rounded-md slider2 lg:pr-16 h-4/6" src="{{ asset('img/slider-4.png') }}" alt="">
-        </div>
-        <div class="absolute w-full h-full bg-opacity-50 bg-hitam lg:bg-opacity-100"></div>
-        <img class="object-cover w-full h-full slider2-back" src='{{ asset('img/slider-4.png') }}'>
-    </div>
-</div>
-</div>
-
-{{-- <div class="py-12 mt-24 mb-12 bg-mark-default">
-    <div class="px-4 mx-auto text-white max-w-7xl sm:px-6 lg:px-8">
-        <div class="mb-12 text-2xl font-bold text-center lg:text-4xl">Our Products</div>
-        <div class="flex content-between justify-center text-center sm:gap-28 lg:gap-40">
-            <div>
-                <img class="object-cover mx-auto mb-6 rounded-full sm:w-24 sm:h-24 lg:w-48 lg:h-48" src="{{ asset('img/our-products-1.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-lg font-bold lg:text-xl">Hand Former</div>
-            </div>
-            <div>
-                <img class="object-cover mx-auto mb-6 rounded-full sm:w-24 sm:h-24 lg:w-48 lg:h-48" src="{{ asset('img/our-products-2.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-lg font-bold lg:text-xl">Sanitary Wares</div>
-            </div>
-            <div>
-                <img class="object-cover mx-auto mb-6 rounded-full sm:w-24 sm:h-24 lg:w-48 lg:h-48" src="{{ asset('img/our-products-3.png') }}" alt="Mark Dynamics Hand Former">
-                <div class="text-lg font-bold lg:text-xl">Agriculture</div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<div class="container py-12 mx-auto lg:py-24">
-    <div class="mb-6 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.our-products')</div>
-    <div class="items-end justify-center grid-cols-3 space-y-12 sm:grid sm:space-y-0">
-        <div class="mx-auto wow animate__animated animate__fadeInLeft">
-            <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
-                <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
-            </div>
-            <div class="mt-6 text-lg font-bold text-center text-mark-default lg:text-2xl">@lang('custom.agriculture')</div>
-        </div>
-        <div class="mx-auto wow animate__animated animate__fadeInUp">
-            <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
-                <img class="-mt-4 transition-all duration-500 transform hover:scale-125 lg:-mt-7" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
-            </div>
-            <div class="mt-6 text-lg font-bold text-center text-mark-default lg:text-2xl">@lang('custom.hand-former')</div>
-        </div>
-        <div class="mx-auto wow animate__animated animate__fadeInRight">
-            <div class="w-32 h-32 p-6 mx-auto border-4 rounded-full lg:w-52 lg:h-52 lg:p-10 border-mark">
-                <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Sanitary Wares">
-            </div>
-            <div class="mt-6 text-lg font-bold text-center text-mark-default lg:text-2xl">@lang('custom.sanitary')</div>
-        </div>
-    </div>
 </div>
 
 <div class="px-6 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl xl:px-0">
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.stock_price')</div>
-    <div class="relative h-auto mb-12 bg-white max-w-7xl wow animate__animated animate__fadeInUp">
+    <div class="relative h-auto max-w-md px-4 mx-auto mb-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
 
