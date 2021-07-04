@@ -1,7 +1,7 @@
 
     <div class="grid gap-6 mt-6 text-left lg:grid-cols-2 lg:gap-12 lg:mt-12">
         <div>
-            <img class="rounded-lg" src="{{ asset('img/in-news.jpg') }}">
+            <img class="rounded-md" src="{{ asset('img/in-news.jpg') }}">
         </div>
         <div class="grid gap-4">
             @foreach ($news ? : [] as $i => $n)

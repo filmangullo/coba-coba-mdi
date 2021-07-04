@@ -1,12 +1,15 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="px-4 pt-24 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:pt-48">
-    <div class="text-2xl font-bold text-center animate__animated animate__fadeInUp lg:text-4xl">@lang("ceo-message.ceo-message")</div>
+<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('ceo-message.ceo-message')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
     <div class="my-12 animate__animated animate__fadeInUp lg:my-24">
-        <img class="w-1/3 mx-auto" src="{{ asset('img/ceo-message.png') }}" alt="Mark Dynamics Ceo Message">
+        <img class="w-4/6 sm:w-1/2 md:w-1/3  mx-auto rounded-full" src="{{ asset('img/ceo-message.jpg') }}" alt="Mark Dynamics Ceo Message">
     </div>
-    <div class="relative w-full px-10 py-16 mb-12 rounded-md bg-mark-default sm:py-24 lg:mb-24 sm:px-16 md:px-40 lg:px-52">
+    <div class="relative w-full px-10 pt-16 rounded-lg bg-mark-default sm:py-24 sm:px-16 md:px-40 lg:px-52">
         <div class="text-xs font-semibold text-justify text-white sm:text-sm lg:text-lg">
             @lang("ceo-message.message")
         </div>

@@ -1,11 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="relative w-full h-auto pt-12 lg:pt-24">
-        <img class="2xl:w-full" src="{{ asset('img/awards-hero.png') }}" alt="Mark Dynamics Awards & Certificates">
-        <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
-        <div class="absolute w-full h-full mt-5 text-sm font-bold text-center text-white sm:text-2xl lg:text-4xl top-1/2">@lang('custom.awards')</div>
-    </div>
+<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8">
+    <h2 class="text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('custom.awards')</h2>
+    <p class="mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    Everything you need to deploy your app
+    </p>
+    <p class="mx-auto mt-5 text-xl text-gray-500 max-w-prose text-center">
+      Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+    </p>
     <div class="px-4 mx-auto my-12 divide-y lg:my-24 max-w-7xl sm:px-6 lg:px-8 divide-hitam">
         @forelse ($ac as $key => $item)
             @if ($key % 2 == 0)
@@ -41,4 +44,5 @@
 
 
     </div>
+</div>
 @endsection
