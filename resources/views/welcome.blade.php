@@ -178,11 +178,7 @@
 
     <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
     @livewire('web.welcome.short-list-news')
-    <div class="inline-flex items-center flex-1 w-full mt-6 lg:mt-12">
-        <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-full inline-block">
-            @lang('custom.more-news')
-        </a>
-    </div>
+
 </div>
 
 
