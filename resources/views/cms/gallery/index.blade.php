@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div>
                 <h2 class="text-2xl font-semibold leading-tight text-gray-800">
-                    {{ __('Gallery') }}
+                    Gallery
                 </h2>
             </div>
 

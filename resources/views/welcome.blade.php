@@ -110,7 +110,7 @@
         </div>
     </main>
 </div>
-<div class="relative py-16 bg-white sm:py-24 lg:py-32">
+<div class="relative py-16 bg-gray-100 sm:py-24 lg:py-32">
   <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
     <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.our-products')</h2>
     <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -122,7 +122,7 @@
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div class="pt-6">
-          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
                   <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
@@ -138,7 +138,7 @@
         </div>
 
         <div class="pt-6">
-          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
                   <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
@@ -152,7 +152,7 @@
         </div>
 
         <div class="pt-6">
-          <div class="flow-root h-full px-6 pb-8 bg-gray-100 rounded-lg">
+          <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="grid content-between -mt-6">
               <div class="flex justify-center">
                   <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
@@ -184,6 +184,7 @@
     @livewire('web.welcome.short-list-news')
 </div>
 
+<<<<<<< HEAD
 <div class="bg-white">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
       <p class="text-base font-semibold tracking-wider text-center text-gray-600 uppercase">
@@ -201,6 +202,25 @@
         </div>
         <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
           <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+=======
+<div class="bg-gray-100">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <p class="text-center text-base font-semibold uppercase text-mark-default tracking-wider">
+        @lang('custom.client')
+      </p>
+      <div class="mt-6 grid grid-cols-2 gap-1 md:grid-cols-4 lg:mt-8">
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
+          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+>>>>>>> 53eb39b2c8ca0dce597b8b08a3cd0abf9483bb92
         </div>
       </div>
     </div>

@@ -27,10 +27,10 @@
     </head>
     <body x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, extra : false, menu : false}">
         <div class="antialiased font-mark text-hitam">
-            <div class="relative bg-white shadow">
+            <div class="fixed z-50 w-full bg-white shadow">
                 <div class="px-4 mx-auto max-w-7xl sm:px-6">
-                  <div class="flex items-center justify-between py-6 md:justify-start md:space-x-10">
-                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                  <div class="flex items-center justify-between py-6 lg:justify-start lg:space-x-10">
+                    <div class="flex justify-between lg:w-0 lg:flex-1">
                       <a href="#">
                         <span class="sr-only">Mark Dynamics</span>
                         <img class="w-auto h-8 sm:h-10" onclick="location.href='/';" src="{{ asset('img/logo-black.svg') }}" alt="Mark Dynamics Indonesia">
@@ -574,7 +574,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
 
             @yield('content')
 

@@ -1,73 +1,57 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class='pt-24 lg:pt-48 '>
-        <div class="pt-6 text-2xl font-bold text-center lg:pt-0 lg:text-4xl">@lang('vision-mission-valuesvision.vision-mission')</div>
-        <div class="my-12 lg:my-24">
-            <div class="relative w-full h-auto lg:h-full">
-                <img class="absolute object-cover w-full h-full" src="{{ asset('img/vision.png') }}" alt="Mark Dynamics Vision">
-                <div class="w-full py-12 text-center transform">
-                    <div class="mb-6 text-2xl font-bold lg:mb-10 lg:text-4xl text-mark-default">@lang('vision-mission-valuesvision.vision')</div>
-                    <div class="mx-12 text-xs font-semibold text-white sm:text-sm lg:text-base">@lang('vision-mission-valuesvision.section-vision')</div>
+    <div class='max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8'>
+        <h2 class="text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('custom.vision-mission')</h2>
+        <p class="mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Everything you need to deploy your app
+        </p>
+        <p class="mx-auto text-center mt-5 text-xl text-gray-500 max-w-prose">
+          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+        </p>
+        <div class="divide-y-2 divide-gray-200 border rounded-lg border-gray-300 p-6 mt-12">
+            <div class="bg-white">
+                <div class="max-w-7xl mx-auto py-6 px-4 text-center sm:py-12 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-extrabold text-mark-default">@lang('vision-mission-valuesvision.vision')</h2>
+                    <p class="mt-6 text-lg text-gray-500">@lang('vision-mission-valuesvision.section-vision')</p>
                 </div>
             </div>
-        </div>
-        <div class="mb-12 lg:mb-24">
-            <div class="relative w-full h-auto lg:h-full">
-                <img class="absolute object-cover w-full h-full" src="{{ asset('img/mission.png') }}" alt="Mark Dynamics Mission">
-                <div class="w-full py-12 text-center transform">
-                    <div class="mb-12 text-2xl font-bold lg:text-4xl text-mark-default">@lang('vision-mission-valuesvision.mission')</div>
-                    <div class="space-y-12 text-sm font-semibold text-white lg:space-y-24">
-                        <div class="grid-cols-2 mx-12 space-y-12 lg:grid lg:mx-48 lg:space-y-0">
-                            <div class="mx-auto space-y-4 text-center lg:space-y-8">
-                                <div class="relative flex items-center justify-center w-full transform scale-75 lg:scale-100">
-                                    <div class="absolute flex items-center justify-center w-full">
-                                        <img src="{{ asset('img/circle.png') }}" alt="Mark Dynamics">
-                                    </div>
-                                    <div class="text-3xl text-mark-default">1</div>
-                                </div>
-                                <div class="px-4 text-xs sm:text-sm lg:text-base">@lang('vision-mission-valuesvision.section-mission-1')</div>
-                            </div>
-                            <div class="mx-auto space-y-4 text-center lg:space-y-8">
-                                <div class="relative flex items-center justify-center w-full transform scale-75 lg:scale-100">
-                                    <div class="absolute flex items-center justify-center w-full">
-                                        <img src="{{ asset('img/circle.png') }}" alt="Mark Dynamics">
-                                    </div>
-                                    <div class="text-3xl text-mark-default">2</div>
-                                </div>
-                                <div class="px-4 text-xs sm:text-sm lg:text-base">@lang('vision-mission-valuesvision.section-mission-2')</div>
-                            </div>
-                        </div>
-                        <div class="grid-cols-3 space-y-12 lg:grid lg:space-y-0">
-                            <div class="mx-auto space-y-4 text-center lg:space-y-8">
-                                <div class="relative flex items-center justify-center w-full transform scale-75 lg:scale-100">
-                                    <div class="absolute flex items-center justify-center w-full">
-                                        <img src="{{ asset('img/circle.png') }}" alt="Mark Dynamics">
-                                    </div>
-                                    <div class="text-3xl text-mark-default">3</div>
-                                </div>
-                                <div class="px-4 text-xs sm:text-sm lg:text-base">@lang('vision-mission-valuesvision.section-mission-3')</div>
-                            </div>
-                            <div class="mx-auto space-y-4 text-center lg:space-y-8">
-                                <div class="relative flex items-center justify-center w-full transform scale-75 lg:scale-100">
-                                    <div class="absolute flex items-center justify-center w-full">
-                                        <img src="{{ asset('img/circle.png') }}" alt="Mark Dynamics">
-                                    </div>
-                                    <div class="text-3xl text-mark-default">4</div>
-                                </div>
-                                <div class="px-4 text-xs sm:text-sm lg:text-base">@lang('vision-mission-valuesvision.section-mission-4')</div>
-                            </div>
-                            <div class="mx-auto space-y-4 text-center lg:space-y-8">
-                                <div class="relative flex items-center justify-center w-full transform scale-75 lg:scale-100">
-                                    <div class="absolute flex items-center justify-center w-full">
-                                        <img src="{{ asset('img/circle.png') }}" alt="Mark Dynamics">
-                                    </div>
-                                    <div class="text-3xl text-mark-default">5</div>
-                                </div>
-                                <div class="px-4 text-xs sm:text-sm lg:text-base">@lang('vision-mission-valuesvision.section-mission-5')</div>
-                            </div>
-                        </div>
+
+            <div class="bg-white">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:py-12 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-center text-mark-default">@lang('vision-mission-valuesvision.mission')</h2>
+                <div class="mt-10 grid text-center grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900">1</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            @lang('vision-mission-valuesvision.section-mission-1')
+                        </p>
                     </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900">2</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            @lang('vision-mission-valuesvision.section-mission-2')
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900">3</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            @lang('vision-mission-valuesvision.section-mission-3')
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900">4</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            @lang('vision-mission-valuesvision.section-mission-4')
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900">5</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            @lang('vision-mission-valuesvision.section-mission-5')
+                        </p>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

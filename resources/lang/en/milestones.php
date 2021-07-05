@@ -2,7 +2,7 @@
 
 return [
     'milestones' => 'Milestones',
-    '2002' => 'Establishment of PT Mark Dynamics Indonesia',
+    '2002' => 'PT. Mark Dynamics Indonesia established on 10th April 2002',
     '2003' => 'Built the first factory on an area of 3.000 m2 armed with a 50.000 pieces per month capacity.',
     '2007' => 'Acquired a 3.500 m2 land and additional capacity of 5.000 pieces per month.',
     '2008' => 'Increased total capacity to 80.000/month. Earned ISO 9001:2000 Quality Management Standard Certification',
