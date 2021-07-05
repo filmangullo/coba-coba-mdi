@@ -1,14 +1,14 @@
 
-    <div class="grid gap-6 mt-6 text-left lg:grid-cols-2 lg:gap-12 lg:mt-12">
+    <div class="grid gap-6 mt-12 text-left lg:grid-cols-2 lg:gap-12 lg:mt-12">
         <div>
             <img class="rounded-md" src="{{ asset('img/in-news.jpg') }}">
         </div>
         <div class="grid gap-4">
             @foreach ($news ? : [] as $i => $n)
-                <div class="relative w-full h-48 mx-auto overflow-hidden rounded-md ">
+                <div class="relative w-full h-52 mx-auto overflow-hidden rounded-md ">
                     <img class="object-cover w-full h-full" src="{{ asset($n->cover) }}" alt="Mark Dynamics News">
                     <div class="absolute top-0 w-full h-full bg-opacity-50 rounded-md bg-hitam"></div>
-                    <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 p-6 text-white">
+                    <div class="absolute top-0 grid content-between w-full h-full grid-cols-1 gap-y-2 p-6 text-white">
                         <div class="text-xl font-bold truncate">
                             @if (__('custom.lang') == 'id')
                             {!! $n->title_id !!}
@@ -39,7 +39,7 @@
                 </div>
             @endforeach
             <div class="mt-6 lg:mt-4 lg:-ml-6">
-                <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer  text-mark-default font-bold mx-auto hover:text-mark-dark">
+                <a href="{{ route('news.list') }}" class="text-xs lg:text-base px-6 py-1.5 cursor-pointer  text-mark-default font-bold mx-auto hover:text-mark-dark">
                     @lang('custom.more-news')
                 </a>
             </div>
