@@ -15,7 +15,13 @@ class Environments extends Component
     {
         if(!$this->nowPreview)
         {
-            $this->nowPreview = Environment::orderBy('created_at', 'desc')->first()->img;
+            $this->nowPreview = Environment::orderBy('created_at', 'desc')->first();
+
+            if($this->nowPreview) {
+                $this->nowPreview = $this->nowPreview->img;
+            } else {
+                $this->nowPreview = null;
+            }
         }
     }
 
