@@ -169,26 +169,40 @@
   </div>
 </div>
 
-<div class="px-6 pb-6 mx-auto sm:pb-12 lg:pb-24 max-w-7xl xl:px-0">
-    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.stock_price')</div>
-    <div class="relative h-auto max-w-md px-4 mx-auto mb-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl wow animate__animated animate__fadeInUp">
+<div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.stock_price')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
+    <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
-
-
-    <div class="mb-12 text-2xl font-bold text-center lg:text-4xl text-mark-default wow animate__animated animate__fadeInDown">@lang('custom.news')</div>
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.news')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      Everything you need to deploy your app
+    </p>
     @livewire('web.welcome.short-list-news')
-
 </div>
 
-
-<div class="container w-3/6 px-4 pb-12 mx-auto sm:pb-24 sm:px-6 lg:px-24">
-    <div class="mb-12 text-2xl font-bold text-center wow animate__animated animate__fadeInDown lg:text-4xl text-mark-default">@lang('custom.client')</div>
-    <div class="justify-center owl-carousel owl-theme wow animate__animated animate__fadeIn">
-        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client"></div>
-        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client"></div>
-        <div><img class="w-full transition-all duration-300 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client"></div>
-        <div><img class="hidden w-full transition-all duration-300 transform hover:scale-110 md:block" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client"></div>
+<div class="bg-white">
+    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+      <p class="text-base font-semibold tracking-wider text-center text-gray-600 uppercase">
+        @lang('custom.client')
+      </p>
+      <div class="grid grid-cols-2 gap-1 mt-6 md:grid-cols-4 lg:mt-8">
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+        </div>
+      </div>
     </div>
 </div>
 

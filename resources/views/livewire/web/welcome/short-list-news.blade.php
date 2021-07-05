@@ -1,5 +1,5 @@
 
-    <div class="grid gap-6 mt-6 lg:grid-cols-2 lg:gap-12 lg:mt-12">
+    <div class="grid gap-6 mt-6 text-left lg:grid-cols-2 lg:gap-12 lg:mt-12">
         <div>
             <img class="rounded-lg" src="{{ asset('img/in-news.jpg') }}">
         </div>

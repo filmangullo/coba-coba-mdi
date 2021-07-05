@@ -18,13 +18,18 @@ class ListProduct extends Component
         {
             $this->nowPreview = Gallery::where('is_product', true)
                                     ->orderBy('created_at', 'desc')
-                                    ->first()->img;
+                                    ->first();
+            if($this->nowPreview) {
+                $this->nowPreview = $this->nowPreview->img;
+            } else {
+                $this->nowPreview = null;
+            }
         }
     }
 
     public function preview($img)
     {
-        $this->nowPreview = $img;
+        // $this->nowPreview = $img;
     }
 
     public function render()
