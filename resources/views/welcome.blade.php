@@ -169,26 +169,40 @@
   </div>
 </div>
 
-<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
-    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.stock_price')</h2>
-    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+<div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.stock_price')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <div class="relative h-auto my-12 bg-white max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl mx-auto wow animate__animated animate__fadeInUp">
+    <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl wow animate__animated animate__fadeInUp">
         @livewire('web.welcome.chart')
     </div>
-    <h2 class="text-base font-semibold tracking-wider text-mark-default uppercase">@lang('custom.news')</h2>
-    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.news')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       Everything you need to deploy your app
     </p>
     @livewire('web.welcome.short-list-news')
-    <div class="inline-flex items-center flex-1 w-full mt-6 lg:mt-12">
-        <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer bg-mark-default text-white font-bold mx-auto hover:bg-mark-dark rounded-md inline-block">
-            @lang('custom.more-news')
-        </a>
-    </div>
 </div>
 
+<<<<<<< HEAD
+<div class="bg-white">
+    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+      <p class="text-base font-semibold tracking-wider text-center text-gray-600 uppercase">
+        @lang('custom.client')
+      </p>
+      <div class="grid grid-cols-2 gap-1 mt-6 md:grid-cols-4 lg:mt-8">
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+          <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+=======
 <div class="bg-gray-100">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <p class="text-center text-base font-semibold uppercase text-mark-default tracking-wider">
@@ -206,6 +220,7 @@
         </div>
         <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
           <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+>>>>>>> 53eb39b2c8ca0dce597b8b08a3cd0abf9483bb92
         </div>
       </div>
     </div>

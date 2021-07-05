@@ -4,25 +4,25 @@
 
             <div class="grid grid-cols-4 gap-4 p-4">
                 @forelse ($galleries as $item)
-                <div class="p-2 text-center border border-gray-400 rounded-t-md">
-                    <div class="flex items-center justify-center overflow-hidden h-52">
-                        <img src="{{ asset($item->img) }}" class="w-full m-auto">
+                    <div class="p-2 text-center border border-gray-400 rounded-t-md">
+                        <div class="flex items-center justify-center overflow-hidden h-52">
+                            <img src="{{ asset($item->img) }}" class="w-full m-auto">
+                        </div>
+                        <span class="my-1 text-xs">
+                            @if ($item->is_product == true)
+                            image of product
+                            @else
+                            non product
+                            @endif
+                        </span>
+                        <div class="py-3 text-center border-t border-gray-400">
+                            <button wire:click='openModalDelete({{$item->id}})'
+                                type="button"
+                                class="inline-block px-5 py-2 font-semibold text-white uppercase bg-red-600 rounded-lg">delete</button>
+                            <a href="{{ route('cms-gallery.update', $item->id) }}"
+                                class="inline-block px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Update</a>
+                        </div>
                     </div>
-                    <span class="my-1 text-xs">
-                        @if ($item->is_product == true)
-                        image of product
-                        @else
-                        non product
-                        @endif
-                    </span>
-                    <div class="py-3 text-center border-t border-gray-400">
-                        <button wire:click='openModalDelete({{$item->id}})'
-                            type="button"
-                            class="inline-block px-5 py-2 font-semibold text-white uppercase bg-red-600 rounded-lg">delete</button>
-                        <a href="{{ route('cms-gallery.update', $item->id) }}"
-                            class="inline-block px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Update</a>
-                    </div>
-                </div>
 
                 @empty
 

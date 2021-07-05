@@ -38,6 +38,11 @@
                     </div>
                 </div>
             @endforeach
+            <div class="mt-6 lg:mt-4 lg:-ml-6">
+                <a href="{{ route('news.list') }}" class="text-xs wow animate__animated animate__fadeInUp lg:text-base px-6 py-1.5 cursor-pointer  text-mark-default font-bold mx-auto hover:text-mark-dark">
+                    @lang('custom.more-news')
+                </a>
+            </div>
         </div>
 
 
