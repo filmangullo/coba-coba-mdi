@@ -184,43 +184,23 @@
     @livewire('web.welcome.short-list-news')
 </div>
 
-<<<<<<< HEAD
-<div class="bg-white">
+<div class="bg-gray-100">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-base font-semibold tracking-wider text-center text-gray-600 uppercase">
+      <p class="text-base font-semibold tracking-wider text-center uppercase text-mark-default">
         @lang('custom.client')
       </p>
       <div class="grid grid-cols-2 gap-1 mt-6 md:grid-cols-4 lg:mt-8">
-        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-300 rounded-md bg-gray-50">
           <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
         </div>
-        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-300 rounded-md bg-gray-50">
           <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
         </div>
-        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-300 rounded-md bg-gray-50">
           <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
         </div>
-        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-200 rounded-md bg-gray-50">
+        <div class="flex justify-center col-span-1 px-8 py-8 border border-gray-300 rounded-md bg-gray-50">
           <img class="transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
-=======
-<div class="bg-gray-100">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-center text-base font-semibold uppercase text-mark-default tracking-wider">
-        @lang('custom.client')
-      </p>
-      <div class="mt-6 grid grid-cols-2 gap-1 md:grid-cols-4 lg:mt-8">
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-        </div>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-        </div>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-        </div>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
->>>>>>> 53eb39b2c8ca0dce597b8b08a3cd0abf9483bb92
         </div>
       </div>
     </div>
