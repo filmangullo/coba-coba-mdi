@@ -1,13 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="relative w-full h-auto pt-12 lg:pt-24">
-    <img class="2xl:w-full" src="{{ asset('img/dividend-hero.png') }}" alt="Mark Dynamics Awards & Certificates">
-    <div class="absolute top-0 w-full h-full bg-opacity-50 bg-mark-default"></div>
-    <div class="absolute w-full h-full mt-5 text-sm font-bold text-center text-white sm:text-2xl lg:text-4xl top-1/2">@lang('dividend.title')</div>
-</div>
-<div class="w-full px-4 mx-auto my-24 space-y-4 sm:px-6 lg:px-8">
-    <img class="w-full" src="{{ asset('img/deviden.png') }}" alt="Mark Dynamics Dividend Information">
-
+<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+    <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('dividend.title')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Everything you need to deploy your app
+    </p>
+    <div class="w-full mt-12 lg:mt-24">
+        <img class="w-full" src="{{ asset('img/deviden.png') }}" alt="Mark Dynamics Dividend Information">
+    </div>
 </div>
 @endsection
