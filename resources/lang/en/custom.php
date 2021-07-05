@@ -58,4 +58,5 @@ return [
     'home-title4' => 'Awards',
     'home-subtitle4' => 'Our excellent performance has brought us numerous prestigious recognition and awards.',
     'extra' => 'More',
+    'other-news' => 'Latest News'
 ];

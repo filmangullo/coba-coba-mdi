@@ -7,9 +7,9 @@
             <div class="">
                 <div class="">
                     @if(App::isLocale('id'))
-                    <h1 class="pb-4 text-lg lg:text-2xl font-bold text-justify">{{ $career->job_position_id }}</h1>
+                    <h1 class="pb-4 lg:text-4xl text-2xl font-bold text-justify">{{ $career->job_position_id }}</h1>
                     @elseif(App::isLocale('en'))
-                    <h1 class="pb-4 text-lg lg:text-2xl font-bold text-justify">{{ $career->job_position_en }}</h1>
+                    <h1 class="pb-4 lg:text-4xl text-2xl font-bold text-justify">{{ $career->job_position_en }}</h1>
                     @endif
                     <div class="grid grid-cols-2 mb-4">
                         <div class="py-1 text-left text-gray-500 items-left">
