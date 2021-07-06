@@ -1,19 +1,21 @@
-<div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="">
-    <div class="pt-16 pb-24 text-4xl font-bold text-center lg:py-24">Products</div>
-    <div class="container mx-auto border-b border-gray-500">
+<div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-12 lg:px-8">
+    <h2 class="text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('custom.products')</h2>
+    <p class="mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    Everything you need to deploy your app
+    </p>
+    <div class="container mx-auto border-b pt-24 border-gray-500">
         @if ($this->nowPreview)
-            <div class="flex items-center h-96">
-                <div class="mx-auto h-96">
-                    <img class="object-cover mx-auto rounded-md h-96" :src="preview" alt="Mark Dynamics Gallery & Products">
+            <div class="flex items-center">
+                <div class="mx-auto h-48 sm:h-80 md:h-96 w-full">
+                    <img class="object-cover mx-auto rounded-xl w-full h-full" :src="preview" alt="Mark Dynamics Gallery & Products">
                 </div>
             </div>
         @endif
 
-        <div wire:ignore class="flex flex-wrap items-start w-full mx-auto -my-3 slider lg:container lg:mx-auto py-14 xsm:px-4 lg:flex-nowrap sm:px-6 lg:px-8 ">
+        <div wire:ignore class="slider">
         @foreach($product ? : [] as $item)
-        <div x-on:click="preview = '{{$item->img}}'"
-            class="w-full px-3 py-3 cursor-pointer xsm:w-6/12 lg:w-6/12 xl:w-2/12">
-            <img class="object-cover w-full h-48 rounded-md lg:h-28 " src="{{ asset( $item->img) }}" alt="Mark Dynamics Gallery & Products">
+        <div x-on:click="preview = '{{$item->img}}'" class="w-full pr-6 py-6 cursor-pointer">
+            <img class="object-cover w-full h-28 rounded-xl" src="{{ asset( $item->img) }}" alt="Mark Dynamics Gallery & Products">
         </div>
         @endforeach
         </div>

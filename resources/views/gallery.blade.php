@@ -9,22 +9,22 @@
             <img class="object-cover w-full rounded-md" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
         <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover rounded-md w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
         <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover rounded-md w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
         <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover rounded-md w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
         <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover rounded-md w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
         <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover rounded-md w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
         <div>
-            <img class="object-cover rounded-md h-28" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
+            <img class="object-cover rounded-md w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Gallery & Products">
         </div>
     </div>
     <div class="py-24 text-4xl font-bold text-center">Gallery</div>
