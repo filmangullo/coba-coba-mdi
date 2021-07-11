@@ -199,8 +199,7 @@
 </div>
 
 @push('scripts')
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="{{asset('js/owl.carousel.min.js')}}"></script>
 <script>
@@ -252,7 +251,7 @@ $(document).ready(function(){
     .slick-prev:before,
     .slick-next:before {
     color: white;
-    z-index:9999;
+    z-index:1000;
     }
 
     .slick-list, .slick-track {
@@ -261,12 +260,12 @@ $(document).ready(function(){
 
     .slick-prev {
     left: 25px;
-    z-index: 9999;
+    z-index: 1000;
     }
 
     .slick-next {
     right: 25px;
-    z-index: 9999;
+    z-index: 1000;
     }
 
     #tradingview_c56b2 {
