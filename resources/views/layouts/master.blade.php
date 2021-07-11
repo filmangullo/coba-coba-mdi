@@ -16,10 +16,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="{{asset('css/pace-theme-default.min.css')}}"/>
 
         @livewireStyles
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{{asset('js/pace.min.js')}}"></script>
         <style>
             [x-cloak] { display: none; }
         </style>
@@ -181,23 +183,23 @@
                                 x-transition:leave="transition ease-in duration-75"
                                 x-transition:leave-start="transform opacity-100 scale-100"
                                 x-transition:leave-end="transform opacity-0 scale-95"
-                                x-cloak x-show="reports === true" @click.away="reports = false" class="absolute transform grid gap-6 ring-1 ring-black ring-opacity-5 bg-white px-5 py-6 sm:gap-8 sm:p-8 rounded-lg shadow-lg z-10 w-screen max-w-xs lg:left-full lg:-top-5 lg:ml-5">
-                                    <a href="{{ route('financial-report') }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100">
+                                x-cloak x-show="reports === true" @click.away="reports = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 lg:left-full lg:-top-5 lg:ml-5">
+                                    <a href="{{ route('financial-report') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                         <p class="text-sm font-medium text-gray-900">
                                             @lang('custom.financial-report')
                                         </p>
                                     </a>
-                                    <a href="{{ route('annual') }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100">
+                                    <a href="{{ route('annual') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                         <p class="text-sm font-medium text-gray-900">
                                             @lang('custom.annual')
                                         </p>
                                     </a>
-                                    <a href="{{ route('public') }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100">
+                                    <a href="{{ route('public') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                         <p class="text-sm font-medium text-gray-900">
                                             @lang('custom.pubex')
                                         </p>
                                     </a>
-                                    <a href="{{ route('dividend') }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100">
+                                    <a href="{{ route('dividend') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                         <p class="text-sm font-medium text-gray-900">
                                             @lang('custom.dividend')
                                         </p>
