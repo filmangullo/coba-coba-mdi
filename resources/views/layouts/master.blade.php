@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="{{asset('css/pace-theme-default.min.css')}}"/>
+        {{-- <link rel="stylesheet" href="{{asset('css/pace-theme-default.min.css')}}"/> --}}
 
         @livewireStyles
         <!-- Scripts -->
@@ -593,8 +593,12 @@
                 <div class="pb-6 text-xs text-center">All Rights Reserved &copy; Mark Dynamics 2021.</div>
             </div>
         </div>
-
+        <div id="cover" style="z-index:9999" class="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-mark-dark">
+			<div id="logo" class="w-48 opacity-0"><img class="" src="{{asset('/img/logo-white.png')}}" /></div>
+        </div>
         @livewireScripts
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         @stack('scripts')
         <script src="{{asset('js/wow.min.js')}}"></script>
         <script>
@@ -608,6 +612,15 @@
                     }
                     )
                     wow.init();
+        </script>
+        <script>
+            Pace.on("done", function(){
+                $("#logo").delay(1).animate({opacity:1},500);
+                $("#logo").delay(1000).animate({opacity:0},500);
+                $("#cover").delay(2000).animate({opacity:0},500);
+                setTimeout(function(){ $("#cover").addClass('hidden'); }, 2500);
+            });
+
         </script>
     </body>
 </html>
