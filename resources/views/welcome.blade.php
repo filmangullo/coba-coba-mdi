@@ -4,10 +4,10 @@
 <div class="relative h-screen bg-gray-50 slider sm:h-auto">
 
 
-    <main class="relative">
+    <main class="relative h-full">
       <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-      <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
-        <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+      <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+        <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
@@ -35,8 +35,8 @@
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
-          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+        <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+          <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title2')</span>
             </h1>
@@ -58,14 +58,14 @@
           </div>
         </div>
         <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2.png') }}" alt="Mark Dynamics Indonesia">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2.jpg') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
-          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+        <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+          <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
@@ -88,8 +88,8 @@
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full py-48 mx-auto text-center lg:static max-w-7xl lg:text-left">
-          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+        <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+          <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
@@ -186,22 +186,14 @@
 
 <div class="bg-gray-100">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-center text-base font-semibold uppercase text-mark-default tracking-wider">
+      <p class="text-center text-2xl font-semibold uppercase text-mark-default tracking-wider">
         @lang('custom.client')
       </p>
-      <div class="mt-6 grid grid-cols-2 gap-1 md:grid-cols-4 lg:mt-8">
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-        </div>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-        </div>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-        </div>
-        <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50 border border-gray-300 rounded-md">
-          <img class="max-h-12 transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
-        </div>
+      <div class="mt-6 grid grid-cols-4 items-center justify-center gap-1 md:grid-cols-4 lg:mt-12">
+          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
       </div>
     </div>
 </div>

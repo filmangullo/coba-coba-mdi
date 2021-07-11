@@ -6,8 +6,8 @@
     <div class="container pt-24 mx-auto border-b border-gray-500">
         @if ($this->nowPreview)
             <div class="flex items-center">
-                <div class="w-full h-48 mx-auto sm:h-80 md:h-96">
-                    <img class="object-cover w-full h-full mx-auto rounded-xl" :src="preview" alt="Mark Dynamics Gallery & Products">
+                <div class="mx-auto h-48 sm:h-80 md:h-96 lg:h-100 w-full">
+                    <img class="object-cover mx-auto rounded-xl w-full h-full" :src="preview" alt="Mark Dynamics Gallery & Products">
                 </div>
             </div>
         @endif
