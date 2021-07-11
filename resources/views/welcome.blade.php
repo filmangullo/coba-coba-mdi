@@ -174,7 +174,7 @@
     <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl wow animate__animated animate__fadeInUp">
+    <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         @livewire('web.welcome.chart')
     </div>
     <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.news')</h2>

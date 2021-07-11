@@ -1,15 +1,18 @@
-<div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="">
-    <div class="pt-16 pb-24 text-4xl font-bold text-center lg:py-24">Products</div>
-    <div class="container mx-auto border-b border-gray-500">
+<div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="px-4 pt-12 pb-12 mx-auto max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
+    <h2 class="text-base font-semibold tracking-wider text-center uppercase text-mark-default">@lang('custom.products')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl">
+    Everything you need to deploy your app
+    </p>
+    <div class="container pt-24 mx-auto border-b border-gray-500">
         @if ($this->nowPreview)
-            <div class="flex items-center h-96">
-                <div class="mx-auto h-96">
-                    <img class="object-cover mx-auto rounded-md h-96" :src="preview" alt="Mark Dynamics Gallery & Products">
+            <div class="flex items-center">
+                <div class="w-full h-48 mx-auto sm:h-80 md:h-96">
+                    <img class="object-cover w-full h-full mx-auto rounded-xl" :src="preview" alt="Mark Dynamics Gallery & Products">
                 </div>
             </div>
         @endif
 
-        <div wire:ignore class="flex flex-wrap items-start w-full mx-auto -my-3 slider lg:container lg:mx-auto py-14 xsm:px-4 lg:flex-nowrap sm:px-6 lg:px-8 ">
+        <div wire:ignore class="slider">
         @foreach($product ? : [] as $item)
         <div x-on:click="preview = '{{$item->img}}'" class="gap-5 hover:opacity-75 lg:mx-4"
             class="w-full px-3 py-3 cursor-pointer xsm:w-6/12 lg:w-6/12 xl:w-2/12">
