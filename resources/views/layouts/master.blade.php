@@ -31,7 +31,7 @@
                 <div class="px-4 mx-auto max-w-7xl sm:px-6">
                   <div class="flex items-center justify-between py-6 lg:justify-start lg:space-x-10">
                     <div class="flex justify-between lg:w-0 lg:flex-1">
-                      <a href="#">
+                      <a href="#" class="outline-none">
                         <span class="sr-only">Mark Dynamics</span>
                         <img class="w-auto h-8 sm:h-10" onclick="location.href='/';" src="{{ asset('img/logo-black.svg') }}" alt="Mark Dynamics Indonesia">
                       </a>
