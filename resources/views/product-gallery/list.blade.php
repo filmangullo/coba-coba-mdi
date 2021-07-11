@@ -17,8 +17,8 @@
 $(document).ready(function(){
   $('.slider').slick({
     infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,

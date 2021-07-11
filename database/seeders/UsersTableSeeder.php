@@ -15,9 +15,9 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-              
+
         \DB::table('users')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'Testing',
@@ -33,7 +33,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2021-05-29 12:21:55',
             ),
         ));
-        
-        
+
+
     }
 }
