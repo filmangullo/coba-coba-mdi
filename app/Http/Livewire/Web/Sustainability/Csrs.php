@@ -9,20 +9,6 @@ use App\Models\Csr;
 class Csrs extends Component
 {
     use WithPagination;
-    public $nowPreview;
-
-    public function mount()
-    {
-        if(!$this->nowPreview)
-        {
-            $this->nowPreview = Csr::orderBy('date', 'desc')->first();
-        }
-    }
-
-    public function preview($id)
-    {
-        $this->nowPreview = Csr::findOrFail($id);
-    }
 
     public function render()
     {
