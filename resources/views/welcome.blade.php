@@ -6,8 +6,8 @@
 
     <main class="relative h-full">
       <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-      <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
-        <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+      <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+        <div class="px-4 lg:w-2/5 lg:pr-6 2xl:w-2/3 sm:px-8 xl:pr-16">
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
@@ -28,14 +28,14 @@
           </div>
         </div>
       </div>
-      <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/hero-1.png') }}" alt="Mark Dynamics Indonesia">
+      <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:h-full">
+        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-1.jpg') }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+        <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
           <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title2')</span>
@@ -64,7 +64,7 @@
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+        <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
           <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
@@ -88,7 +88,7 @@
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full transform -translate-y-1/2 left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
+        <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
           <div class="px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
@@ -105,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-full lg:h-full">
           <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
