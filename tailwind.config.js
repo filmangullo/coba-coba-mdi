@@ -46,8 +46,8 @@ module.exports = {
                 '10.5': '2.625rem',
             },
             screens: {
-                'xssm': {'min': '300px'},
-                'xsm': {'min': '475px'}
+                'xssm': {'min': '300px', 'max': '474px'},
+                'xsm': {'min': '475px', 'max': '639px'}
             },
             height: {
                 '100' : '48rem',
