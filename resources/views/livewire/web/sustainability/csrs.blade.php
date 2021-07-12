@@ -13,7 +13,7 @@
                         <div class="z-10 h-auto p-4 m-auto bg-white rounded-lg">
                             <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" :src="imgModalSrc">
                         </div>
-                        <p x-text="imgModalDesc" class="mt-5 text-lg font-semibold text-center text-mark-default"></p>
+                        <p x-text="imgModalDesc" class="mt-5 text-lg font-semibold text-center text-white"></p>
                     </div>
                     <div class="absolute left-0 w-full font-bold text-center cursor-default text-mark-dark bottom-12">
                         click orange area to close
