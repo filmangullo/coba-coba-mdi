@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:h-full">
-        <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-1.jpg') }}" alt="Mark Dynamics Indonesia">
+        <img class=" absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-1.jpg') }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
 

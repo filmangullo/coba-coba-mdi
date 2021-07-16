@@ -1,4 +1,4 @@
-<div>
+<div class="mx-auto max-w-7xl">
     <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
         <template
             @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;"
@@ -9,15 +9,15 @@
                 x-transition:leave="transition ease-in duration-300"
                 x-transition:leave-start="opacity-100 transform "
                 x-transition:leave-end="opacity-0 transform" x-on:click.away="imgModalSrc = ''"
-                class="fixed inset-0 z-50 flex items-center justify-center w-full h-screen p-2 overflow-hidden bg-opacity-50 bg-mark-default">
+                class="fixed inset-0 z-50 flex items-center justify-centerm p-6 w-full h-full overflow-hidden bg-opacity-60 bg-mark-default">
                 <div class="relative flex items-center w-full h-full">
                     <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full mx-auto overflow-auto">
-                        <div class="z-10 h-auto p-4 m-auto bg-white rounded-lg">
-                            <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" :src="imgModalSrc">
+                        <div class="z-10 h-auto p-4 m-auto bg-white rounded-md">
+                            <img :alt="imgModalSrc" class="object-cover w-full rounded-md" :src="imgModalSrc">
                         </div>
-                        <p x-text="imgModalDesc" class="mt-5 text-lg font-semibold text-center text-mark-default"></p>
+                        <p x-text="imgModalDesc" class="mt-5 text-lg font-semibold text-center text-black"></p>
                     </div>
-                    <div class="absolute left-0 w-full font-bold text-center cursor-default text-mark-dark bottom-12">
+                    <div class="absolute left-0 w-full font-bold text-center cursor-default text-white bottom-6 sm:bottom-12">
                         click orange area to close
                     </div>
                 </div>
