@@ -1,4 +1,4 @@
-<div class="px-4 pt-24 pb-12 mx-auto lg:pt-48 lg:pb-24 max-w-7xl sm:px-6 lg:px-8">
+<div class="px-4 mx-auto pt-24 max-w-7xl sm:px-6 lg:px-8">
     @if ($this->nowPreview)
         <div class="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-4 lg:grid-cols-6">
             <div class="col-span-2 sm:col-span-4 lg:col-span-6 h-3/4">
