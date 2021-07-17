@@ -1,21 +1,24 @@
 <div>
-    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalTitle : '',imgModalDesc : '' }">
         <template
-            @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;"
+            @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalTitle = $event.detail.imgModalTitle; imgModalDesc = $event.detail.imgModalDesc;"
             x-if="imgModal">
             <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform"
                 x-transition:enter-end="opacity-100 transform " x-transition:leave="transition ease-in duration-300"
                 x-transition:leave-start="opacity-100 transform " x-transition:leave-end="opacity-0 transform"
                 x-on:click.away="imgModalSrc = ''"
                 class="fixed inset-0 z-50 flex items-center justify-center w-full h-screen p-2 overflow-hidden bg-opacity-50 bg-mark-default">
-                <div class="relative flex items-center w-full h-full">
+                <div class="relative flex items-center w-full h-full mb-3">
                     <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full mx-auto overflow-auto">
                         <div class="z-10 h-auto p-4 m-auto bg-white rounded-lg">
                             <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" :src="imgModalSrc">
                         </div>
-                        <p x-text="imgModalDesc" class="mt-5 text-lg font-semibold text-center text-white"></p>
+                        <div class="mt-2 bg-white border border-gray-300 rounded-md">
+                            <p x-text="imgModalTitle" class="mt-1 text-lg font-semibold text-center text-gray-800 uppercase"></p>
+                            <p x-text="imgModalDesc" class="mt-1 text-xs text-center text-gray-800"></p>
+                        </div>
                     </div>
-                    <div class="absolute left-0 w-full font-bold text-center cursor-default text-mark-dark bottom-12">
+                    <div class="absolute left-0 w-full font-bold text-center cursor-default top-3 text-mark-dark bottom-12">
                         click orange area to close
                     </div>
                 </div>
@@ -32,7 +35,7 @@
 
                     <li>
                         <div class="space-y-4">
-                            <div @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset($item->img) }}', imgModalDesc: '{!! (__('custom.lang') == 'id') ? $item->title_id : $item->title_en !!}' })"
+                            <div @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset($item->img) }}', imgModalTitle: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}', imgModalDesc: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}',  })"
                                 class="aspect-w-3 aspect-h-2">
                                 <img class="object-cover rounded-lg shadow-lg cursor-pointer pointer-events-auto hover:opacity-75"
                                     src="{{ asset($item->img) }}" alt="">

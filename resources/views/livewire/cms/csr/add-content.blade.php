@@ -108,7 +108,7 @@
     </div>
 </div>
 
-@push('scripts')
+{{-- @push('scripts')
 <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script>
     const editor1 = CKEDITOR.replace( 'editor1' );
@@ -122,5 +122,5 @@
         console.log(event.editor.getData());
         @this.set('description_en', event.editor.getData());
     });
-</script>
-@endpush
+</script> --}}
+{{-- @endpush --}}
