@@ -2,14 +2,14 @@
 
 @section('content')
     <div class='max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8'>
-        <h2 class="text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('custom.vision-mission')</h2>
-        <p class="mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 class="animate__fadeInDown animate__animated text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('custom.vision-mission')</h2>
+        <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Everything you need to deploy your app
         </p>
-        <p class="mx-auto text-center mt-5 text-xl text-gray-500 max-w-prose">
+        <p class="animate__fadeInDown animate__animated mx-auto text-center mt-5 text-xl text-gray-500 max-w-prose">
           Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
         </p>
-        <div class="p-6 mt-12 relative">
+        <div class="animate__fadeInUp animate__animated p-6 mt-12 relative">
             <div class="h-52 md:h-96">
                 <img class="w-full h-full object-cover rounded-2xl" src="{{ asset('img/vision.png') }}" alt="Mark Dynamics Vision">
             </div>
@@ -22,7 +22,7 @@
 
         </div>
 
-        <div class="p-6 mt-12 relative">
+        <div class="animate__fadeInUp animate__animated p-6 mt-12 relative">
             <div class="h-52 md:h-96">
                 <img class="w-full h-full object-cover rounded-2xl" src="{{ asset('img/mission.png') }}" alt="Mark Dynamics Mission">
             </div>

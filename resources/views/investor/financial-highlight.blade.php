@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="px-4 pt-32 pb-12 mx-auto text-center max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
-    <div class="text-2xl font-bold text-mark-default lg:text-4xl">
+    <div class="animate__fadeInDown animate__animated text-2xl font-bold text-mark-default lg:text-4xl">
         <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang('financial-highlight.financial')</h2>
         <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             @lang('financial-highlight.kinerja')

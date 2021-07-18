@@ -1,6 +1,6 @@
 <div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="px-4 pt-12 pb-12 mx-auto max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
-    <h2 class="text-base font-semibold tracking-wider text-center uppercase text-mark-default">@lang('custom.products')</h2>
-    <p class="mt-2 text-3xl font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider text-center uppercase text-mark-default">@lang('custom.products')</h2>
+    <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl">
     Everything you need to deploy your app
     </p>
     <div class="container pt-24 mx-auto border-b border-gray-500">

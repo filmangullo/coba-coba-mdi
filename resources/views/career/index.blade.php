@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto pb-24 px-4 sm:px-6 pt-32 lg:px-8">
-    <h2 class="text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('career.title')</h2>
-    <p class="mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown animate__animated text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('career.title')</h2>
+    <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
     Everything you need to deploy your app
     </p>
 
@@ -33,7 +33,7 @@
     </div>
 
 </div>
-<div class="text-center bg-mark-default">
+<div class="animate__fadeInUp animate__animated  text-center bg-mark-default">
     <div class="container py-12 mx-auto text-white sm:px-0 px-4">
         <h1 class="mb-1 text-3xl font-bold">@lang('career.header')</h1>
         <p>@lang('career.sub-header')</p>

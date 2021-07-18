@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8">
-    <h2 class="text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('contact.title')</h2>
-    <p class="mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown animate__animated text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('contact.title')</h2>
+    <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
     Everything you need to deploy your app
     </p>
 
     <div class="lg:grid space-y-6 lg:space-y-0 grid-cols-2 items-start w-full pt-24">
-        <div>
+        <div class="animate__fadeInLeft animate__animated ">
             <div class="sm:mx-8">
                 <div class="text-4xl font-bold">
                     @lang('contact.header')
@@ -17,7 +17,7 @@
                 @livewire('web.kontak.forms')
             </div>
         </div>
-        <div>
+        <div class="animate__fadeInRight animate__animated ">
             <div class="p-10 space-y-12 sm:mx-8 rounded-xl bg-mark-default">
                 <div class="text-2xl font-bold text-white">
                     @lang('contact.our-information')
