@@ -596,7 +596,7 @@
             </div>
         </div>
         <div id="cover" style="z-index:9999" class="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-mark-default">
-			<div id="logo" class="w-48 opacity-0"><img class="" src="{{asset('/img/logo-white.png')}}" /></div>
+			    <div id="logo" class="w-48 opacity-0"><img class="" src="{{asset('/img/logo-white.png')}}" /></div>
         </div>
         @livewireScripts
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
