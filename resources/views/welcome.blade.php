@@ -6,8 +6,8 @@
 
     <main class="relative h-full">
       <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-      <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
-        <div class="animate__fadeInLeft animate__animated px-4 lg:w-2/5 lg:pr-6 2xl:w-2/3 sm:px-8 xl:pr-16">
+      <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
+        <div class="px-4 animate__fadeInLeft wow animate__animated lg:w-2/5 lg:pr-6 2xl:w-2/3 sm:px-8 xl:pr-16">
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
@@ -29,14 +29,14 @@
         </div>
       </div>
       <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:h-full">
-        <img class=" absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-1.jpg') }}" alt="Mark Dynamics Indonesia">
+        <img class="absolute inset-0 object-cover w-full h-full " src="{{ asset('img/slider-1.jpg') }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
-          <div class="animate__fadeInLeft animate__animated px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+        <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
+          <div class="px-4 animate__fadeInLeft wow animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title2')</span>
             </h1>
@@ -64,8 +64,8 @@
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
-          <div class="animate__fadeInLeft animate__animated px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+        <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
+          <div class="px-4 wow animate__fadeInLeft animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
@@ -88,8 +88,8 @@
 
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full transform -translate-y-1/2 lg:left-12 mt-12 top-1/2 mx-auto text-center xl:max-w-7xl lg:text-left">
-          <div class="animate__fadeInLeft animate__animated px-4 lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+        <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
+          <div class="px-4 wow animate__fadeInLeft animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
@@ -112,14 +112,14 @@
 </div>
 <div class="relative py-16 bg-gray-100 sm:py-24 lg:py-32">
   <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-    <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.our-products')</h2>
-    <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="text-base font-semibold tracking-wider uppercase wow animate__fadeInDown animate__animated text-mark-default">@lang('custom.our-products')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <p class="animate__fadeInDown animate__animated mx-auto mt-5 text-xl text-gray-500 max-w-prose">
+    <p class="mx-auto mt-5 text-xl text-gray-500 animate__fadeInDown wow animate__animated max-w-prose">
       Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
     </p>
-    <div class="animate__fadeInUp animate__animated mt-12">
+    <div class="mt-12 animate__fadeInUp wow animate__animated">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div class="pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
@@ -170,30 +170,30 @@
 </div>
 
 <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-    <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.stock_price')</h2>
-    <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="text-base font-semibold tracking-wider uppercase animate__fadeInDown wow animate__animated text-mark-default">@lang('custom.stock_price')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <div class="animate__fadeInUp animate__animated relative h-auto max-w-md px-4 mx-auto my-12 bg-white sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white animate__fadeInUp wow animate__animated sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         @livewire('web.welcome.chart')
     </div>
-    <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang('custom.news')</h2>
-    <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="text-base font-semibold tracking-wider uppercase animate__fadeInDown wow animate__animated text-mark-default">@lang('custom.news')</h2>
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
       Everything you need to deploy your app
     </p>
     @livewire('web.welcome.short-list-news')
 </div>
 
-<div class="bg-gray-100 animate__fadeInUp animate__animated">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-center text-2xl font-semibold uppercase text-mark-default tracking-wider">
+<div class="bg-gray-100 animate__fadeInUp wow animate__animated">
+    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+      <p class="text-2xl font-semibold tracking-wider text-center uppercase text-mark-default">
         @lang('custom.client')
       </p>
-      <div class="mt-6 grid grid-cols-4 items-center justify-center gap-1 md:grid-cols-4 lg:mt-12">
-          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-          <img class="max-h-12 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+      <div class="grid items-center justify-center grid-cols-4 gap-1 mt-6 md:grid-cols-4 lg:mt-12">
+          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
       </div>
     </div>
 </div>
