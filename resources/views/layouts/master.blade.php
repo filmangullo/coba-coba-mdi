@@ -23,7 +23,6 @@
         @livewireStyles
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="{{asset('js/pace.min.js')}}"></script>
         <style>
             [x-cloak] { display: none; }
         </style>
@@ -595,9 +594,6 @@
                 <div class="pb-6 text-xs text-center">All Rights Reserved &copy; Mark Dynamics 2021.</div>
             </div>
         </div>
-        <div id="cover" style="z-index:9999" class="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-mark-default">
-			<div id="logo" class="w-48 opacity-0"><img class="" src="{{asset('/img/logo-white.png')}}" /></div>
-        </div>
         @livewireScripts
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -614,14 +610,6 @@
                     }
                     )
                     wow.init();
-        </script>
-        <script>
-            Pace.on("done", function(){
-                $("#logo").delay(1).animate({opacity:1},500);
-                $("#logo").delay(1000).animate({opacity:0},500);
-                $("#cover").delay(2000).animate({opacity:0},500);
-                setTimeout(function(){ $("#cover").addClass('hidden'); }, 2500);
-            });
         </script>
     </body>
 </html>
