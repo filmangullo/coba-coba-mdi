@@ -7,7 +7,7 @@
     <main class="relative h-full">
       <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
       <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-        <div class="px-4 animate__fadeInLeft wow animate__animated lg:w-2/5 lg:pr-6 2xl:w-2/3 sm:px-8 xl:pr-16">
+        <div class="px-4 animate__fadeInDown wow animate__animated lg:w-2/5 lg:pr-6 2xl:w-2/3 sm:px-8 xl:pr-16">
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
@@ -36,7 +36,7 @@
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
         <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-          <div class="px-4 animate__fadeInLeft wow animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+          <div class="px-4 animate__fadeInDown wow animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title2')</span>
             </h1>
@@ -65,7 +65,7 @@
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
         <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-          <div class="px-4 wow animate__fadeInLeft animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+          <div class="px-4 wow animate__fadeInDown animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
@@ -89,7 +89,7 @@
     <main class="relative" x-cloak>
         <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
         <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-          <div class="px-4 wow animate__fadeInLeft animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
+          <div class="px-4 wow animate__fadeInDown animate__animated lg:w-1/2 2xl:w-2/3 sm:px-8 xl:pr-16">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
