@@ -12,7 +12,7 @@ class Csrs extends Component
 
     public function render()
     {
-        $csr =  Csr::orderBy('date', 'desc')->paginate(12);
+        $csr =  Csr::orderBy('created_at', 'desc')->paginate(12);
 
         return view('livewire.web.sustainability.csrs', [
             'csr' => $csr
