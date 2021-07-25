@@ -5,17 +5,22 @@ namespace App\Http\Livewire\Web\Sustainability;
 use Livewire\WithPagination;
 use Livewire\Component;
 use App\Models\Csr;
+use PhpParser\Node\Expr\FuncCall;
 
 class Csrs extends Component
 {
     use WithPagination;
 
+    public $shw;
+
+    public function show($id)
+    {
+        $this->shw = Csr::findOrFail($id);
+    }
     public function render()
     {
-        $csr =  Csr::orderBy('created_at', 'desc')->paginate(12);
-
         return view('livewire.web.sustainability.csrs', [
-            'csr' => $csr
+            'dataCSR' => Csr::paginate(12),
         ]);
     }
 }

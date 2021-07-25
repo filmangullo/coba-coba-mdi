@@ -1,5 +1,5 @@
 <div>
-    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalTitle : '',imgModalDesc : '' }">
+    <div x-data="{ imgModal : false }">
         <template
             @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalTitle = $event.detail.imgModalTitle; imgModalDesc = $event.detail.imgModalDesc;"
             x-if="imgModal">
@@ -11,12 +11,15 @@
                 <div class="relative flex items-center w-full h-full mb-3">
                     <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full mx-auto overflow-auto">
                         <div class="z-10 h-auto p-4 m-auto bg-white rounded-lg">
-                            <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" :src="imgModalSrc">
+                            <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" src="{{ !empty($shw) ? asset($shw->img) : '' }}">
                         </div>
                         <div class="mt-2 bg-white border border-gray-300 rounded-md">
-                            <p x-text="imgModalTitle"
-                                class="mt-1 text-lg font-semibold text-center text-gray-800 uppercase"></p>
-                            <p x-text="imgModalDesc" class="mt-1 text-xs text-center text-gray-800"></p>
+                            <p class="mt-1 text-lg font-semibold text-center text-gray-800 uppercase">
+                                {!! !empty($shw) ? (__('custom.lang') == 'id') ? $shw->title_id : $shw->title_en : '' !!}
+                            </p>
+                            <p class="mt-1 text-xs text-center text-gray-800">
+                                {!! !empty($shw) ? (__('custom.lang') == 'id') ? $shw->description_id : $shw->description_en : '' !!}
+                            </p>
                         </div>
                     </div>
                     <div
@@ -33,12 +36,11 @@
             <div class="space-y-12">
                 <ul
                     class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
-                    @foreach ($csr ? : [] as $item)
-
+                    @forelse ($dataCSR as $item)
+{{-- @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset($item->img) }}', imgModalTitle: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}', imgModalDesc: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}',  })"  --}}
                     <li>
-                        <div class="space-y-4 ">
-                            <div @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset($item->img) }}', imgModalTitle: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}', imgModalDesc: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}',  })"
-                                class="h-40 overflow-hidden">
+                        <div class="space-y-4 " >
+                            <div  @click="$dispatch('img-modal')" class="h-40 overflow-hidden" wire:click="show('{{$item->id}}')">
                                 <img class="object-cover w-full h-full mx-auto rounded-lg shadow-lg cursor-pointer pointer-events-auto hover:opacity-75"
                                     src="{{ asset($item->img) }}" alt="">
                             </div>
@@ -57,16 +59,18 @@
                             </div>
                         </div>
                     </li>
-                    @endforeach
+                    @empty
+                    @endforelse
                     <!-- More people... -->
                 </ul>
             </div>
 
             <div class="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-4 lg:grid-cols-6">
                 <div class="col-span-2 sm:col-span-4 lg:col-span-6 h-3/4">
-                    {{ $csr->links() }}
+                    {{ $dataCSR->links() }}
                 </div>
             </div>
+
         </div>
     </div>
 </div>
