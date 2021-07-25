@@ -14,11 +14,13 @@
                             <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" :src="imgModalSrc">
                         </div>
                         <div class="mt-2 bg-white border border-gray-300 rounded-md">
-                            <p x-text="imgModalTitle" class="mt-1 text-lg font-semibold text-center text-gray-800 uppercase"></p>
+                            <p x-text="imgModalTitle"
+                                class="mt-1 text-lg font-semibold text-center text-gray-800 uppercase"></p>
                             <p x-text="imgModalDesc" class="mt-1 text-xs text-center text-gray-800"></p>
                         </div>
                     </div>
-                    <div class="absolute left-0 w-full font-bold text-center cursor-default top-3 text-mark-dark bottom-12">
+                    <div
+                        class="absolute left-0 w-full font-bold text-center cursor-default top-3 text-mark-dark bottom-12">
                         click orange area to close
                     </div>
                 </div>
@@ -30,14 +32,14 @@
         <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
             <div class="space-y-12">
                 <ul
-                    class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
+                    class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
                     @foreach ($csr ? : [] as $item)
 
                     <li>
-                        <div class="space-y-4">
+                        <div class="space-y-4 ">
                             <div @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset($item->img) }}', imgModalTitle: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}', imgModalDesc: '{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en !!}',  })"
-                                class="aspect-w-3 aspect-h-2">
-                                <img class="object-cover rounded-lg shadow-lg cursor-pointer pointer-events-auto hover:opacity-75"
+                                class="h-40 overflow-hidden">
+                                <img class="object-cover w-full h-full mx-auto rounded-lg shadow-lg cursor-pointer pointer-events-auto hover:opacity-75"
                                     src="{{ asset($item->img) }}" alt="">
                             </div>
 
@@ -49,23 +51,22 @@
                                     @if (__('custom.lang') == 'id')
                                     {{ Str::limit($item->title_id, 25, '...') }}
                                     @else
-                                    {{ Str::limit($item->title_id, 25, '...') }}
+                                    {{ Str::limit($item->title_en, 25, '...') }}
                                     @endif
                                 </p>
                             </div>
                         </div>
+                    </li>
+                    @endforeach
+                    <!-- More people... -->
+                </ul>
             </div>
-            </li>
-            @endforeach
-            <!-- More people... -->
-            </ul>
-        </div>
 
-        <div class="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-4 lg:grid-cols-6">
-            <div class="col-span-2 sm:col-span-4 lg:col-span-6 h-3/4">
-                {{ $csr->links() }}
+            <div class="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-4 lg:grid-cols-6">
+                <div class="col-span-2 sm:col-span-4 lg:col-span-6 h-3/4">
+                    {{ $csr->links() }}
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>

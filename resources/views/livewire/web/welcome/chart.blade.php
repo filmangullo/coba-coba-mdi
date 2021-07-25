@@ -1,7 +1,7 @@
 <div>
     <!-- TradingView Widget BEGIN -->
 <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container">
+  <div class="w-32 tradingview-widget-container">
     <div id="tradingview_c56b2"></div>
   </div>
   <!-- TradingView Widget END -->
