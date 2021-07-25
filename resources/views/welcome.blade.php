@@ -121,7 +121,7 @@
     </p>
     <div class="mt-12 animate__fadeInUp wow animate__animated">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div class="pt-6">
+        <a href="https://agrodynamicsindo.com/" class="block pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
@@ -135,7 +135,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </a>
 
         <div class="pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
@@ -151,7 +151,7 @@
           </div>
         </div>
 
-        <div class="pt-6">
+        <a href="https://berjayadynamicsindonesia.web.indotrading.com/" class="block pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="grid content-between -mt-6">
               <div class="flex justify-center">
@@ -163,7 +163,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

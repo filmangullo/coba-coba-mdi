@@ -6,10 +6,10 @@
     <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <div class="my-12 animate__animated animate__fadeInUp lg:my-24">
+    <div class="mt-12 animate__animated animate__fadeInUp border border-b-none border-gray-300 bg-gray-100 rounded-t-lg py-20 lg:mt-24">
         <img class="w-4/6 sm:w-1/2 md:w-1/3  mx-auto rounded-full" src="{{ asset('img/ceo-message.jpg') }}" alt="Mark Dynamics Ceo Message">
     </div>
-    <div class="relative w-full px-10 py-20 animate__fadeInUp animate__animated rounded-lg bg-mark-default sm:py-24 sm:px-16 md:px-40 lg:px-52">
+    <div class="relative w-full px-10 py-20 animate__fadeInUp animate__animated rounded-b-lg bg-mark-default sm:py-24 sm:px-16 md:px-40 lg:px-52">
         <div class="text-xs font-semibold text-justify text-white sm:text-sm lg:text-lg">
             @lang("ceo-message.message")
         </div>
