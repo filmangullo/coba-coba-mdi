@@ -10,10 +10,7 @@ class SustainabilityController extends Controller
 {
     public function csr()
     {
-        $csr    = Csr::orderBy('created_at', 'desc')->paginate(5);
-        return view('sustainability.csr', [
-            'csr'       => $csr
-        ]);
+        return view('sustainability.csr');
     }
 
     public function environment()
