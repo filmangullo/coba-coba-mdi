@@ -582,7 +582,7 @@
             @yield('content')
 
             {{-- Footer --}}
-            <div class="bottom-0 bg-white border-t border-gray-300">
+            <div class="bottom-0 bg-gray-100 border-t border-gray-300">
                 <img class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo.png') }}">
                 <div class="grid items-center grid-cols-2 gap-6 px-4 py-10 mx-auto text-xs font-medium md:gap-0 md:grid-cols-5 justify-items-center max-w-7xl sm:px-6 lg:px-8">
                     <a class="text-center" href="{{ route('prospectus') }}">@lang('custom.prospectus')</a>

@@ -7,9 +7,9 @@
     Everything you need to deploy your app
     </p>
 
-    <div class="lg:grid space-y-6 lg:space-y-0 grid-cols-2 items-start w-full pt-24">
-        <div class="animate__fadeInLeft animate__animated ">
-            <div class="sm:mx-8">
+    <div class="lg:grid space-y-6 mt-12 lg:space-y-0 grid-cols-2 items-start w-full border border-gray-300 rounded-xl">
+        <div class="animate__fadeInLeft animate__animated p-10">
+            <div class="h-full">
                 <div class="text-4xl font-bold">
                     @lang('contact.header')
                 </div>
@@ -17,8 +17,8 @@
                 @livewire('web.kontak.forms')
             </div>
         </div>
-        <div class="animate__fadeInRight animate__animated ">
-            <div class="p-10 space-y-12 sm:mx-8 rounded-xl bg-mark-default">
+        <div class="animate__fadeInRight h-full animate__animated">
+            <div class="p-10 space-y-12 h-full bg-mark-default rounded-r-xl">
                 <div class="text-2xl font-bold text-white">
                     @lang('contact.our-information')
                 </div>

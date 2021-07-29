@@ -18,7 +18,11 @@
                         </div>
                         <div class="content-end text-right text-gray-500 items-right">
                             <img class="inline-block w-4 opacity-60" src="{{ asset('icon/user.svg') }}">
+                            @if(empty($careers->authors['name']))
+                            <span class="m-2 text-xs font-semibold">Mark Dynamics</span>
+                            @else
                             <span class="m-2 text-xs font-semibold">{{ $career->authors['name'] }}</span>
+                            @endif
                         </div>
                     </div>
                     <div class="py-1 md:text-sm text-xs lg:text-base text-justify">
