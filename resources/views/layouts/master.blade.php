@@ -306,9 +306,10 @@
                     </nav>
                     {{-- Language --}}
                     <div class="hidden lg:block">
-                        <div class="flex items-center w-20 rounded-md">
+                        <div class="flex items-center rounded-md w-28">
                             <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
-                            <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>
+                            <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none">ID</a>
+                            <a href="{{ url('lang/zh') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('zh')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ZH</a>
                         </div>
                     </div>
                   </div>
