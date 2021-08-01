@@ -19,7 +19,7 @@ return [
     'our-business' => 'Our Business',
     'vision-mission' => 'Vision & Mission',
     'milestones' => 'Milestones',
-    'awards' => 'Awards & Certificates',
+    'awards' => 'Awards',
     'products-gallery' => 'Products & Gallery',
     'investor' => 'Investor Relations',
     'corporate' => 'Corporate Governance',

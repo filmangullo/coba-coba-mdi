@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\cms\AwardsCertificatesController;
+use App\Http\Controllers\cms\AwardController;
+use App\Http\Controllers\cms\CertificatesController;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\EnvironmentController;
 use App\Http\Controllers\cms\NewsController;
@@ -54,10 +55,16 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/{id}/show', [CsrController::class, 'show'])->name('show');
     });
 
-    Route::prefix('awards-certificates')->name('cms-awards-certificates.')->group(function () {
-        Route::get('/', [AwardsCertificatesController::class, 'index'])->name('index');
-        Route::get('/create', [AwardsCertificatesController::class, 'create'])->name('create');
-        Route::get('/{id}/update', [AwardsCertificatesController::class, 'update'])->name('update');
+    Route::prefix('awards')->name('cms-awards.')->group(function () {
+        Route::get('/', [AwardController::class, 'index'])->name('index');
+        Route::get('/create', [AwardController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [AwardController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('certificates')->name('cms-certificates.')->group(function () {
+        Route::get('/', [CertificateController::class, 'index'])->name('index');
+        Route::get('/create', [CertificateController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [CertificateController::class, 'update'])->name('update');
     });
 
     Route::prefix('environment')->name('cms-environment.')->group(function () {

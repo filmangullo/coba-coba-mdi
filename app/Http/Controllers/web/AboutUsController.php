@@ -4,13 +4,14 @@ namespace App\Http\Controllers\web;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\AwardsCertificates;
+use App\Models\Award;
+use App\Models\Certificate;
 
 class AboutUsController extends Controller
 {
-    public function awardsCertificates()
+    public function awards()
     {
-        $ac = AwardsCertificates::orderBy('created_at', 'desc')->paginate(5);
+        $ac = Award::orderBy('created_at', 'desc')->get();
         return view('aboutus.awards', [
             'ac'        => $ac
         ]);

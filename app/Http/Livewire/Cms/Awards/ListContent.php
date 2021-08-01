@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Livewire\Cms\AwardsCertificates;
+namespace App\Http\Livewire\Cms\Awards;
 
-use App\Models\AwardsCertificates;
+use App\Models\Award;
 use Livewire\WithPagination;
 use Livewire\Component;
 
@@ -12,10 +12,10 @@ class ListContent extends Component
 
     public function render()
     {
-        $list  = AwardsCertificates::orderBy('created_at', 'desc')
+        $list  = Award::orderBy('created_at', 'desc')
                                    ->paginate(6);
 
-        return view('livewire.cms.awards-certificates.list-content', [
+        return view('livewire.cms.awards.list-content', [
             'list'       => $list
         ]);
     }
