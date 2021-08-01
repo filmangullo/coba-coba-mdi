@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:px-8 text-center">
     <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang('annual-meeting.title')</h2>
     <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Everything you need to deploy your app
@@ -33,7 +33,7 @@
             @endforeach
             </div>
         </div>
-        <div class="py-24 space-y-24">
+        <div class="py-24 space-y-24 bg-gray-100">
             <div class="text-center">
                 <div class="text-4xl font-bold">2020</div>
                 <div class="h-1 mx-auto bg-mark-default w-28"></div>
@@ -85,7 +85,7 @@
             @endforeach
             </div>
         </div>
-        <div class="pt-24 space-y-24">
+        <div class="py-24 space-y-24 bg-gray-100">
             <div class="text-center">
                 <div class="text-4xl font-bold">2018</div>
                 <div class="h-1 mx-auto bg-mark-default w-28"></div>

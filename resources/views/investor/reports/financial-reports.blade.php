@@ -30,7 +30,7 @@
             @endforeach
             </div>
         </div>
-        <div class="space-y-24 py-24">
+        <div class="space-y-24 py-24 bg-gray-100">
             <div class="text-center">
                 <div class="font-bold text-4xl">2020</div>
                 <div class="mx-auto bg-mark-default w-28 h-1"></div>
@@ -87,7 +87,7 @@
             @endforeach
             </div>
         </div>
-        <div class="space-y-24 py-24">
+        <div class="space-y-24 py-24 bg-gray-100">
             <div class="text-center">
                 <div class="font-bold text-4xl">2018</div>
                 <div class="mx-auto bg-mark-default w-28 h-1"></div>

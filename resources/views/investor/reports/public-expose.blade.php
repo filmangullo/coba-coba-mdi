@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:px-8 text-center">
     <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang('public-expose.title')</h2>
     <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Everything you need to deploy your app
@@ -33,7 +33,7 @@
             @endforeach
             </div>
         </div>
-        <div class="space-y-24 py-24">
+        <div class="space-y-24 py-24 bg-gray-100">
             <div class="text-center">
                 <div class="font-bold text-4xl">2020</div>
                 <div class="mx-auto bg-mark-default w-28 h-1"></div>
@@ -84,7 +84,7 @@
             @endforeach
             </div>
         </div>
-        <div class="space-y-24 pt-24">
+        <div class="space-y-24 py-24 bg-gray-100">
             <div class="text-center">
                 <div class="font-bold text-4xl">2018</div>
                 <div class="mx-auto bg-mark-default w-28 h-1"></div>

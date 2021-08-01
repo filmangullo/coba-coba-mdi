@@ -1,4 +1,4 @@
-<div class="pt-5">
+<div>
     @if ($alert == true)
 
     <div class="px-4 py-3 text-blue-900 bg-blue-100 border-t-4 border-blue-500 rounded-b shadow-md" role="alert">
@@ -39,7 +39,7 @@
         </div>
 
         <div>
-            <button wire:click="save()" class="w-full p-3 font-bold transition-all duration-300 border-2 rounded-md text-mark-default hover:bg-mark-default hover:text-white border-mark">
+            <button wire:click="save()" class="w-full block p-3 font-bold transition-all duration-300 border-2 rounded-md text-mark-default hover:bg-mark-default hover:text-white border-mark">
                 @lang('contact.send')
             </button>
         </div>
