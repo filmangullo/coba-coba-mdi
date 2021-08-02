@@ -16,4 +16,12 @@ class AboutUsController extends Controller
             'ac'        => $ac
         ]);
     }
+
+    public function certificates()
+    {
+        $ac = Certificate::orderBy('created_at', 'desc')->get();
+        return view('aboutus.certificates', [
+            'ac'        => $ac
+        ]);
+    }
 }

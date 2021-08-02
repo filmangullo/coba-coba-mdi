@@ -20,6 +20,7 @@ return [
     'vision-mission' => 'Visi dan Misi',
     'milestones' => 'Rekam Jejak',
     'awards' => 'Piagam & Penghargaan',
+    'certificate' => 'Sertifikat',
     'products-gallery' => 'Produk & Galeri',
     'investor' => 'Relasi Investor',
     'corporate' => 'Tata Kelola Perusahaan',

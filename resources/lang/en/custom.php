@@ -20,6 +20,7 @@ return [
     'vision-mission' => 'Vision & Mission',
     'milestones' => 'Milestones',
     'awards' => 'Awards',
+    'certificate' => 'Certificates',
     'products-gallery' => 'Products & Gallery',
     'investor' => 'Investor Relations',
     'corporate' => 'Corporate Governance',

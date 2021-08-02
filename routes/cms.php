@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\AwardController;
-use App\Http\Controllers\cms\CertificatesController;
+use App\Http\Controllers\cms\CertificateController;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\EnvironmentController;
 use App\Http\Controllers\cms\NewsController;

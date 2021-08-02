@@ -46,6 +46,7 @@ Route::get('milestones', function () {
 
 Route::prefix('about-us')->group(function () {
     Route::get('/awards', [AboutUsController::class, 'awards'])->name('awards');
+    Route::get('/certificates', [AboutUsController::class, 'certificates'])->name('certificates');
 });
 
 

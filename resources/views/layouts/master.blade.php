@@ -102,6 +102,12 @@
                                     @lang('custom.awards')
                                   </p>
                               </a>
+
+                              <a href="{{ route('certificates') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
+                                <p class="text-sm font-medium text-gray-900">
+                                  @lang('custom.certificate')
+                                </p>
+                            </a>
                             </div>
                           </div>
                         </div>
@@ -397,6 +403,12 @@
                                 @lang('custom.awards')
                               </span>
                             </a>
+                            <a href="{{ route('certificates') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+                                <!-- Heroicon name: outline/chart-bar -->
+                                <span class="text-base font-medium text-gray-900">
+                                  @lang('custom.certificates')
+                                </span>
+                              </a>
                           </div>
 
                           <a x-on:click="investor = !investor" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
