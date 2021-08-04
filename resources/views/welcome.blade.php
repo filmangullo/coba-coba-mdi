@@ -174,9 +174,9 @@
     <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
       Everything you need to deploy your app
     </p>
-    <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white animate__fadeInUp wow animate__animated sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    {{-- <div class="relative h-auto max-w-md px-4 mx-auto my-12 bg-white animate__fadeInUp wow animate__animated sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         @livewire('web.welcome.chart')
-    </div>
+    </div> --}}
     <h2 class="text-base font-semibold tracking-wider uppercase animate__fadeInDown wow animate__animated text-mark-default">@lang('custom.news')</h2>
     <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
       Everything you need to deploy your app
