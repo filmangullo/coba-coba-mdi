@@ -1,6 +1,6 @@
 
     <div class="grid grid-cols-1 gap-6 mt-12 text-left animate__fadeInUp animate__animated lg:grid-cols-2 lg:gap-12 lg:mt-12">
-        <div class="hidden w-full lg:block lg:h-full">
+        <div class="flex items-center w-full">
             @livewire('web.welcome.chart')
         </div>
         <div class="grid gap-4">
@@ -38,12 +38,15 @@
                     </div>
                 </div>
             @endforeach
-            <div class="mt-6 lg:mt-4 lg:-ml-6">
+        </div>
+        <div>
+        </div>
+        <div>
+            <div>
                 <a href="{{ route('news.list') }}" class="lg:text-base px-6 py-1.5 cursor-pointer  text-mark-default font-bold mx-auto hover:text-mark-dark">
                     @lang('custom.more-news')
                 </a>
             </div>
         </div>
-
 
     </div>

@@ -1,4 +1,4 @@
-<div>
+<div class="w-full">
     <!-- TradingView Widget BEGIN -->
 <!-- TradingView Widget BEGIN -->
   <div class="w-full tradingview-widget-container">
