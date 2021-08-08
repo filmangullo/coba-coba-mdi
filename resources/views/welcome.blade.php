@@ -189,11 +189,18 @@
       <p class="text-2xl font-semibold tracking-wider text-center uppercase text-mark-default">
         @lang('custom.client')
       </p>
-      <div class="grid items-center justify-center grid-cols-4 gap-1 mt-6 md:grid-cols-4 lg:mt-12">
-          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform max-h-12 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+      <div class="grid items-center owl-carousel justify-center grid-cols-4 gap-1 mt-6 md:grid-cols-4 lg:mt-12">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-5.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-6.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-7.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-8.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-9.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-10.png') }}" alt="Mark Dynamics Client">
+          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-11.png') }}" alt="Mark Dynamics Client">
       </div>
     </div>
 </div>
@@ -218,24 +225,29 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:50,
-    dots:true,
+    margin:0,
+    dots:false,
     autoplay:true,
     autoplayTimeout:3000,
+    autowidth:true,
     responsive:{
         0:{
-            items:4,
-            dots:true,
+            items:1,
+            dots:false,
+        },
+        400:{
+            items:2,
+            dots:false,
         },
         // Ourclient
-        // 600:{
-        //     items:5,
-        //     dots:true,
-        // },
-        // 1000:{
-        //     items:6,
-        //     dots:true,
-        // }
+        600:{
+            items:3,
+            dots:true,
+        },
+        1000:{
+            items:4,
+            dots:true,
+        }
     }
 });
 });
