@@ -12,7 +12,7 @@ class ListContent extends Component
 
     public function render()
     {
-        $list  = Award::orderBy('created_at', 'desc')
+        $list  = Award::orderBy('year', 'desc')
                                    ->paginate(6);
 
         return view('livewire.cms.awards.list-content', [
