@@ -20,7 +20,7 @@
                             <div x-data="{ tab: 'foo' }" class="h-96 animate__animated animate__backInUp">
                                 <div x-show="tab === 'foo'" class="h-80">
                                     <div class="h-40 overflow-hidden">
-                                    <img class="w-auto mx-auto rounded-t-md min-h-40"
+                                    <img class="w-auto mx-auto rounded-t-md max-h-40"
                                         src="{{ asset($item->img) }}"
                                         alt="">
                                     </div>

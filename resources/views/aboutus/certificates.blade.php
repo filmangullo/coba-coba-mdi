@@ -48,22 +48,24 @@
                 </div>
                 <ul
                     class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
+                    @foreach ($ac as $item)
                     <li>
                         <div class="space-y-4 border border-gray-400 rounded-lg">
                             <div class="aspect-w-3 aspect-h-2">
                                 <img class="object-cover h-48 mx-auto"
-                                    src="https://hartalega.com.my/wp-content/uploads/2020/11/ISO-90012015-1.jpg"
+                                    src="{{ asset("$item->img") }}"
                                     alt="">
                             </div>
 
                             <div class="space-y-2">
                                 <div class="space-y-1 text-lg font-bold leading-6 text-center h-44">
-                                    <h3>EN ISO 13485:2016
-                                        Medical Device - Quality Management Systems</h3>
+                                    <h3>{!! (__('custom.lang') == 'id') ? $item->title_id : $item->title_en!!}</h3>
                                 </div>
                             </div>
                         </div>
                     </li>
+                    @endforeach
+
 
                     <!-- More people... -->
                 </ul>
