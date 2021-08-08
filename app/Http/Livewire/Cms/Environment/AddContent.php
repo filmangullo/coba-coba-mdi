@@ -12,23 +12,46 @@ class AddContent extends Component
     use WithFileUploads;
 
     public $env;
-    public $img;
+
+    public $title_id;
+    public $description_id      = '';
+    public $title_en;
+    public $description_en      = '';
+
+    public function mount($env)
+    {
+        $this->env = null;
+
+        if($env)
+        {
+            $this->env      = $env;
+
+            $this->title_id                 = $this->env->title_id;
+            $this->description_id           = $this->env->description_id;
+            $this->title_en                 = $this->env->title_en;
+            $this->description_en           = $this->env->description_en;
+        }
+    }
 
     public function save()
     {
         $edit = $this->env ? true : false;
 
-        if (!$edit) {
-            $rules['img'] = ['required', 'image', 'max:1024' ];
-        }
+        $rules = [
+            'title_id'                  => ['required'],
+            'description_id'            => ['required'],
+            'title_en'                  => ['required'],
+            'description_en'            => ['required'],
+        ];
 
         $this->validate($rules);
 
-        $env = [];
-
-        if ($this->img) {
-            $env['img'] = 'storage/'. $this->img->store('', 'public');
-        }
+        $env = [
+            'title_id'                  => $this->title_id,
+            'description_id'            => $this->description_id,
+            'title_en'                  => $this->title_en,
+            'description_en'            => $this->description_en,
+        ];
 
         if ($edit) {
             $this->handleEventUpload($env);
@@ -42,10 +65,6 @@ class AddContent extends Component
 
     private function handleEventUpload($env)
     {
-        if (isset($env['img'])) {
-            Storage::disk('public')->delete(substr($this->env->img, 8));
-        }
-
         Environment::find($this->env->id)
                    ->update($env);
     }

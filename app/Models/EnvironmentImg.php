@@ -4,22 +4,24 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\EnvironmentImg;
+use App\Models\Environment;
 
-class Environment extends Model
+class EnvironmentImg extends Model
 {
+    use HasFactory;
+
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'environments';
+    protected $table = 'environment_imgs';
     protected $guarded = [];
 
     use HasFactory;
 
-    public function environmentImgs()
+    public function environments()
     {
-        return $this->hasMany(EnvironmentImg::class, 'environment_id', 'id');
+        return $this->belongsTo(Environment::class, 'environment_id', 'id');
     }
 }

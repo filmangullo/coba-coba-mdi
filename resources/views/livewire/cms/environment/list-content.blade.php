@@ -1,18 +1,22 @@
 <div class="py-12">
-    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="container px-4 mx-auto overflow-hidden bg-white shadow-xl sm:rounded-lg">
-
+    @forelse ($env as $item)
+    <div class="mx-auto mb-2 max-w-7xl sm:px-6 lg:px-8">
+        <div class="container px-4 mx-auto overflow-hidden text-center bg-white shadow-xl sm:rounded-lg">
+            <h1 class="py-2 text-2xl font-bold">{{$item->title_id }}</h1>
+            <h1 class="py-2 text-xl italic font-semibold">{{$item->title_en }}</h1>
+            <p class="py-1 ">{!!$item->description_id !!}</p>
+            <p class="py-1 italic">{!!$item->description_en !!}</p>
             <div class="grid grid-cols-4 gap-4 p-4">
-                @forelse ($env as $item)
+                @forelse ($item->environmentImgs as $value)
                 <div class="p-2 text-center border border-gray-400 rounded-t-md">
                     <div class="flex items-center justify-center overflow-hidden h-52">
-                        <img src="{{ asset($item->img) }}" class="w-full m-auto">
+                        <img src="{{ asset($value->img) }}" class="w-full m-auto">
                     </div>
                     <div class="py-3 text-center border-t border-gray-400">
-                        <button wire:click='openModalDelete({{$item->id}})'
+                        <button wire:click='openModalDelete({{$value->id}})'
                             type="button"
                             class="inline-block px-5 py-2 font-semibold text-white uppercase bg-red-600 rounded-lg">delete</button>
-                        <a href="{{ route('cms-environment.update', $item->id) }}"
+                        <a href="{{ route('cms-environment.update', $value->id) }}"
                             class="inline-block px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Update</a>
                     </div>
                 </div>
@@ -22,9 +26,26 @@
                     Environment is empty !
                 </div>
                 @endforelse
+                <div class="p-2 text-center border border-gray-400 rounded-t-md">
+                    <div class="flex items-center justify-center overflow-hidden h-52">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </div>
+                    <div class="py-3 text-center border-t border-gray-400">
+                        <a href="{{ route('cms-environment.img.create', $item->id) }}"
+                            class="inline-block px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Add Picture</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    @empty
+    <div class="w-full col-span-4 p-2 my-3 text-center border border-red-500 rounded-md">
+        Environment is empty !
+    </div>
+
+    @endforelse
 
     @if($modalDelete == true)
     <div class="fixed inset-0 z-10 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">

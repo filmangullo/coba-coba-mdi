@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEnvironmentsTable extends Migration
+class CreateEnvironmentImgsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateEnvironmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('environments', function (Blueprint $table) {
+        Schema::create('environment_imgs', function (Blueprint $table) {
             $table->id();
-            $table->string('title_id')->nullable();
-            $table->string('title_en')->nullable();
-            $table->text('description_id')->nullable();
-            $table->text('description_en')->nullable();
+            $table->unsignedBigInteger('environment_id');
+            $table->text('img');
             $table->timestamps();
+
+            $table->foreign('environment_id')->references('id')->on('environments')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
@@ -30,6 +30,6 @@ class CreateEnvironmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('environments');
+        Schema::dropIfExists('environment_imgs');
     }
 }

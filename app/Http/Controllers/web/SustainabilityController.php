@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\web;
 
 use App\Http\Controllers\Controller;
+use App\Models\Environment;
 use Illuminate\Http\Request;
 use App\Models\Csr;
 
@@ -15,6 +16,7 @@ class SustainabilityController extends Controller
 
     public function environment()
     {
-        return view('sustainability.environment');
+        $dataEnv = Environment::get();
+        return view('sustainability.environment', compact('dataEnv'));
     }
 }
