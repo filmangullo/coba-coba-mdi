@@ -15,9 +15,9 @@ class AddContent extends Component
 
     public $date;
     public $slug;
-    public $title_id;
+
     public $description_id      = '';
-    public $title_en;
+
     public $description_en      = '';
     public $img;
 
@@ -31,9 +31,9 @@ class AddContent extends Component
 
             $this->date                     = $this->csr->date;
             $this->slug                     = $this->csr->slug;
-            $this->title_id                 = $this->csr->title_id;
+
             $this->description_id           = $this->csr->description_id;
-            $this->title_en                 = $this->csr->title_en;
+
             $this->description_en           = $this->csr->description_en;
         } else {
             $this->date                     = date("Y-m-d");
@@ -46,9 +46,9 @@ class AddContent extends Component
 
         $rules = [
             'date'                      => ['required'],
-            'title_id'                  => ['required'],
+
             'description_id'            => ['required'],
-            'title_en'                  => ['required'],
+
             'description_en'            => ['required'],
         ];
 
@@ -58,11 +58,11 @@ class AddContent extends Component
         $this->validate($rules);
 
         $csr = [
-            'slug'                      => date("Y-m-d", strtotime($this->date)).'-'.Str::slug($this->title_id, '-'),
+            'slug'                      => date("Y-m-d", strtotime($this->date)).'-'.Str::random(40),
             'date'                      => $this->date,
-            'title_id'                  => $this->title_id,
+
             'description_id'            => $this->description_id,
-            'title_en'                  => $this->title_en,
+
             'description_en'            => $this->description_en,
         ];
 

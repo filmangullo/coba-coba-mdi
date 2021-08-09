@@ -14,9 +14,6 @@
                             <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" src="{{ !empty($shw) ? asset($shw->img) : '' }}">
                         </div>
                         <div class="mt-2 bg-white border border-gray-300 rounded-md">
-                            <p class="mt-1 text-lg font-semibold text-center text-gray-800 uppercase">
-                                {!! !empty($shw) ? (__('custom.lang') == 'id') ? $shw->title_id : $shw->title_en : '' !!}
-                            </p>
                             <p class="mt-1 text-xs text-center text-gray-800">
                                 {!! !empty($shw) ? (__('custom.lang') == 'id') ? $shw->description_id : $shw->description_en : '' !!}
                             </p>
@@ -47,13 +44,14 @@
 
                         </div>
                         <div class="mt-2 space-y-2 text-center">
-                            <div class="space-y-1 text-lg font-medium leading-6">
-                                <h3>{{ date('F, d Y', strtotime($item->date)) }}</h3>
+                            <div class="space-y-1 text-lg font-medium leading-6 h-42">
+                                <h3>{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
+                                </h3>
                                 <p class="text-indigo-600">
                                     @if (__('custom.lang') == 'id')
-                                    {{ Str::limit($item->title_id, 25, '...') }}
+                                    {{ Str::limit($item->description_id, 100, '...') }}
                                     @else
-                                    {{ Str::limit($item->title_en, 25, '...') }}
+                                    {{ Str::limit($item->description_en, 100, '...') }}
                                     @endif
                                 </p>
                             </div>
