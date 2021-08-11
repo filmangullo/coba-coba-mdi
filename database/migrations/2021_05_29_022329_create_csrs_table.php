@@ -17,8 +17,6 @@ class CreateCsrsTable extends Migration
             $table->id();
             $table->date('date');
             $table->string('slug')->unique();
-            $table->string('title_id')->nullable();
-            $table->string('title_en')->nullable();
             $table->text('description_id')->nullable();
             $table->text('description_en')->nullable();
             $table->text('img');

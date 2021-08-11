@@ -19,8 +19,9 @@
 
     </x-slot>
 
-    @livewire('cms.environment.add-content', [
-        'env'     => $query
+    @livewire('cms.environment.img.add-content', [
+        'idEnv'      => $idEnv,
+        'envImg'     => null
     ])
 
 </x-app-layout>

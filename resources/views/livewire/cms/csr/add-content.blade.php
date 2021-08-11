@@ -53,14 +53,6 @@
                     </div>
 
                     <div x-show="tab === 'id'">
-                        <div class="relative w-full h-10 mb-5 ">
-                            <input wire:model="title_id" type="text"
-                                class="w-full h-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">
-
-                            <label for="title_id" class="absolute px-1 text-xs transition-all bg-gray-200 left-2">
-                                Judul
-                            </label>
-                        </div>
 
                         <div class="relative w-full h-5">
                             <label for="title_id" class="absolute px-1 text-xs transition-all bg-gray-200 left-2">
@@ -74,14 +66,6 @@
                     </div>
 
                     <div x-show="tab === 'en'" x-cloak>
-                        <div class="relative w-full h-10 mb-5 ">
-                            <input wire:model="title_en" type="text"
-                                class="w-full h-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue">
-
-                            <label for="title_id" class="absolute px-1 text-xs transition-all bg-gray-200 left-2">
-                                Title
-                            </label>
-                        </div>
 
                         <div class="relative w-full h-5">
                             <label for="title_id" class="absolute px-1 text-xs transition-all bg-gray-200 left-2">

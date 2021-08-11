@@ -4,18 +4,19 @@ namespace App\Http\Livewire\Web\Sustainability;
 
 use Livewire\WithPagination;
 use Livewire\Component;
-use App\Models\Environment;
+use App\Models\EnvironmentImg;
 
 class Environments extends Component
 {
     use WithPagination;
+    public $itemId;
     public $nowPreview;
 
     public function mount()
     {
         if(!$this->nowPreview)
         {
-            $this->nowPreview = Environment::orderBy('created_at', 'desc')->first();
+            $this->nowPreview = EnvironmentImg::where('environment_id', $this->itemId)->orderBy('created_at', 'desc')->first();
 
             if($this->nowPreview) {
                 $this->nowPreview = $this->nowPreview->img;
@@ -32,8 +33,7 @@ class Environments extends Component
 
     public function render()
     {
-        $env =  Environment::orderBy('created_at', 'desc')->paginate(10);
-
+        $env =  EnvironmentImg::where('environment_id', $this->itemId)->orderBy('created_at', 'desc')->paginate(10);
         return view('livewire.web.sustainability.environments', [
             'env' => $env
         ]);
