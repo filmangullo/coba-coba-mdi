@@ -41,7 +41,7 @@
 
         <div class="grid grid-cols-1 gap-y-4 md:gap-4 md:grid-flow-col md:grid-cols-3">
             <div class="col-span-1 md:row-span-3 ">
-                <img class="w-full mx-auto rounded-xl" src='{{ asset('img/septony-b.-siahaan.png') }}'>
+                <img class="w-full mx-auto rounded-xl" src='{{ asset('img/septony-b-siahaan.png') }}'>
             </div>
             <div class="col-span-2">
                 <div class="col-span-1 mb-6 text-left md:ml-5 md:col-span-4">

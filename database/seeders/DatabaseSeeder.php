@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AwardsTableSeeder::class);
         $this->call(CertificatesTableSeeder::class);
         $this->call(EnvironmentsTableSeeder::class);
+        $this->call(GalleriesTableSeeder::class);
     }
 }

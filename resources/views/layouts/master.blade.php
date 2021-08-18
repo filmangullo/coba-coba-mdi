@@ -70,7 +70,7 @@
                         x-transition:leave="transition-all ease-in duration-150"
                         x-transition:leave-start="opacity-100 translate-y-0"
                         x-transition:leave-end="opacity-0 translate-y-1"
-                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 right-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                               <a href="{{ route('ceo-message') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
@@ -131,7 +131,7 @@
                         x-transition:leave="transition-all ease-in duration-150"
                         x-transition:leave-start="opacity-100 translate-y-0"
                         x-transition:leave-end="opacity-0 translate-y-1"
-                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 right-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                             <div class="relative grid gap-6 px-5 py-6 bg-white rounded-lg sm:gap-8 sm:p-8">
                                 <div x-on:click="corporate = !corporate" class="relative flex items-center justify-between p-3 -m-3 rounded-lg cursor-pointer hover:bg-gray-100">
@@ -147,7 +147,7 @@
                                     x-transition:leave="transition ease-in duration-75"
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
-                                    x-cloak x-show="corporate === true" @click.away="corporate = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 lg:left-full lg:-top-5 lg:ml-5">
+                                    x-cloak x-show="corporate === true" @click.away="corporate = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 right-full mr-5 lg:left-full -top-5 lg:ml-5">
                                         <a href="{{ route('corporate-governanc.board-members') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                             <p class="text-sm font-medium text-gray-900">
                                                 @lang('custom.board-members')
@@ -190,7 +190,7 @@
                                 x-transition:leave="transition ease-in duration-75"
                                 x-transition:leave-start="transform opacity-100 scale-100"
                                 x-transition:leave-end="transform opacity-0 scale-95"
-                                x-cloak x-show="reports === true" @click.away="reports = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 lg:left-full lg:-top-5 lg:ml-5">
+                                x-cloak x-show="reports === true" @click.away="reports = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 right-full mr-5 lg:left-full -top-5 lg:ml-5">
                                     <a href="{{ route('financial-report') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                         <p class="text-sm font-medium text-gray-900">
                                             @lang('custom.financial-report')
@@ -244,7 +244,7 @@
                         x-transition:leave="transition-all ease-in duration-150"
                         x-transition:leave-start="opacity-100 translate-y-0"
                         x-transition:leave-end="opacity-0 translate-y-1"
-                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 right-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                               <a href="{{ route('csr') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
@@ -277,7 +277,7 @@
                         x-transition:leave="transition-all ease-in duration-150"
                         x-transition:leave-start="opacity-100 translate-y-0"
                         x-transition:leave-end="opacity-0 translate-y-1"
-                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                        class="absolute z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 right-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                               <a href="{{ route('gallery') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
