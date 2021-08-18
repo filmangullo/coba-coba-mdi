@@ -113,12 +113,6 @@
 <div class="relative py-16 bg-gray-100 sm:py-24 lg:py-32">
   <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
     <h2 class="text-base font-semibold tracking-wider uppercase wow animate__fadeInDown animate__animated text-mark-default">@lang('custom.our-products')</h2>
-    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
-      Everything you need to deploy your app
-    </p>
-    <p class="mx-auto mt-5 text-xl text-gray-500 animate__fadeInDown wow animate__animated max-w-prose">
-      Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-    </p>
     <div class="mt-12 animate__fadeInUp wow animate__animated">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <a href="https://agrodynamicsindo.com/" class="block pt-6">
@@ -130,14 +124,14 @@
               <div>
                   <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.agriculture')</h3>
                   <p class="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                    @lang('custom.agriculture-desc')
                   </p>
               </div>
             </div>
           </div>
         </a>
 
-        <div class="pt-6">
+        <a href="{{ route('gallery') }}" class="pt-6 block">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
@@ -145,11 +139,11 @@
               </div>
               <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.hand-former')</h3>
               <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                @lang('custom.hand-former-desc')
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
         <a href="https://berjayadynamicsindonesia.web.indotrading.com/" class="block pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
@@ -159,7 +153,7 @@
               </div>
               <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.sanitary')</h3>
               <p class="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                @lang('custom.sanitary-desc')
               </p>
             </div>
           </div>
