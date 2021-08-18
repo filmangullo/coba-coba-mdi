@@ -7,13 +7,13 @@
     }
 </style>
 <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8">
-    <h2 class="animate__fadeInDown animate__animated text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('milestones.milestones')</h2>
-    <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('milestones.milestones')</h2>
+    {{-- <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
     Everything you need to deploy your app
     </p>
     <p class="animate__fadeInDown animate__animated mx-auto mt-5 text-xl text-gray-500 max-w-prose text-center">
       Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-    </p>
+    </p> --}}
 
     <div class="animate__fadeInLeft animate__animated relative w-full sm:w-2/3 lg:w-2/3 mt-24 mx-auto">
         <div class="border-r-2 border-gray-200 border-dotted absolute h-full top-0 z-10 left-2 sm:left-32 lg:left-60 sm:-ml-2"></div>

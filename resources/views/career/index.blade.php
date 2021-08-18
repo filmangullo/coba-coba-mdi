@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="pt-32">
-    <h2 class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto animate__fadeInDown animate__animated text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('career.title')</h2>
-    <p class="ax-w-7xl px-4 sm:px-6 lg:px-8 mx-auto animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('career.title')</h2>
+    {{-- <p class="ax-w-7xl px-4 sm:px-6 lg:px-8 mx-auto animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
     Everything you need to deploy your app
-    </p>
+    </p> --}}
 
     <div class="px-4 sm:px-6 lg:px-8 mx-auto py-12 mt-12 bg-gray-100">
         <div class="max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-2 gap-12 items-center -mx-4">

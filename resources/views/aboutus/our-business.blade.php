@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8">
-    <h2 class="animate__fadeInDown animate__animated text-base text-center font-semibold tracking-wider uppercase text-mark-default">@lang('our-business.our-business')</h2>
-    <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('our-business.our-business')</h2>
+    {{-- <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
     Everything you need to deploy your app
-    </p>
+    </p> --}}
     <div class="animate__fadeInUp animate__animated px-4 mx-auto max-w-7xl lg:grid gap-7 sm:px-6 lg:px-8 mt-12">
         <div>
             <img class="object-cover w-full h-48 rounded-md sm:h-96 lg:h-full" src="{{ asset('img/our-business-pic.png') }}" alt="Mark Dynamics Indonesia">

@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
-    <h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang('ceo-message.ceo-message')</h2>
-    <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <h2 class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('ceo-message.ceo-message')</h2>
+    {{-- <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
       Everything you need to deploy your app
-    </p>
+    </p> --}}
     <div class="mt-12 animate__animated animate__fadeInUp border border-b-none border-gray-300 bg-gray-100 rounded-t-lg py-20 lg:mt-24">
         <img class="w-4/6 sm:w-1/2 md:w-1/3  mx-auto rounded-full" src="{{ asset('img/ceo-message.jpg') }}" alt="Mark Dynamics Ceo Message">
     </div>
