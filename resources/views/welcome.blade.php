@@ -16,7 +16,7 @@
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="{{ route('our-business') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+              <a href="{{ route('our-business') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-lg md:px-8">
                 @lang('custom.our-business')
               </a>
             </div>
@@ -45,12 +45,12 @@
             </p>
             <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
                 <div class="rounded-md shadow">
-                  <a href="{{ route('vision&mission') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('vision&mission') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-sm font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-base md:px-8">
                     @lang('custom.vision-mission')
                   </a>
                 </div>
                 <div class="rounded-md shadow">
-                  <a href="{{ route('ceo-message') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('ceo-message') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-sm font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-base md:px-8">
                     @lang('custom.ceo-message')
                   </a>
                 </div>
@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2.jpg') }}" alt="Mark Dynamics Indonesia">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2e.png') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 
@@ -74,7 +74,7 @@
             </p>
             <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
-                  <a href="{{ route('financial-highlight') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
+                  <a href="{{ route('financial-highlight') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-lg md:px-8">
                     @lang('custom.financial-highlight')
                   </a>
                 </div>
@@ -178,9 +178,9 @@
     @livewire('web.welcome.short-list-news')
 </div>
 
-<div class="bg-gray-100 animate__fadeInUp wow animate__animated">
+<div class="bg-hitam animate__fadeInUp wow animate__animated">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-2xl font-semibold tracking-wider text-center uppercase text-mark-default">
+      <p class="text-2xl font-semibold tracking-wider text-center uppercase text-green-500">
         @lang('custom.client')
       </p>
       <div class="grid items-center owl-carousel justify-center grid-cols-4 gap-1 mt-6 md:grid-cols-4 lg:mt-12">

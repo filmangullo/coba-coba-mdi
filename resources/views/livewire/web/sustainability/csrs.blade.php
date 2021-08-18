@@ -38,16 +38,16 @@
                     <li>
                         <div class="space-y-4 " >
                             <div  @click="$dispatch('img-modal')" class="h-40 overflow-hidden" wire:click="show('{{$item->id}}')">
-                                <img class="object-cover w-full h-full mx-auto rounded-lg shadow-lg cursor-pointer pointer-events-auto hover:opacity-75"
+                                <img class="object-cover w-full h-full mx-auto rounded-md shadow-lg cursor-pointer pointer-events-auto hover:opacity-75"
                                     src="{{ asset($item->img) }}" alt="">
                             </div>
 
                         </div>
                         <div class="mt-2 space-y-2 text-center">
                             <div class="space-y-1 text-lg font-medium leading-6 h-42">
-                                <h3>{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
+                                <h3 class="font-bold">{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
                                 </h3>
-                                <p class="text-indigo-600">
+                                <p class="text-hitam">
                                     @if (__('custom.lang') == 'id')
                                     {{ Str::limit($item->description_id, 100, '...') }}
                                     @else

@@ -595,12 +595,16 @@
             @yield('content')
 
             {{-- Footer --}}
-            <div class="bottom-0 bg-gray-100 border-t border-gray-300">
-                <img class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo.png') }}">
+            <div class="bottom-0 bg-hitam border-t border-gray-300 text-white">
+                <a href="/" class="block">
+                    <img  class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo.png') }}">
+                </a>
                 <div class="grid items-center grid-cols-2 gap-6 px-4 py-10 mx-auto text-xs font-medium md:gap-0 md:grid-cols-5 justify-items-center max-w-7xl sm:px-6 lg:px-8">
                     <a class="text-center" href="{{ route('prospectus') }}">@lang('custom.prospectus')</a>
                     <a class="text-center" href="{{ route('financial-report') }}">@lang('custom.financial-report')</a>
-                    <img class="hidden w-24 md:block" src="{{ asset('img/logo.png') }}">
+                    <a href="/" class="block">
+                        <img class="hidden w-24 md:block" src="{{ asset('img/logo.png') }}">
+                    </a>
                     <a class="text-center" href="{{ route('career') }}">@lang('custom.career')</a>
                     <a class="text-center" href="{{ route('kontak')}}">@lang('custom.contact')</a>
                 </div>
