@@ -11,7 +11,7 @@
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
-          <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
+          <p class="max-w-md mx-auto lg:mx-0 mt-3 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
             @lang('custom.home-subtitle1')
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -40,7 +40,7 @@
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <div class="block xl:inline">@lang('custom.home-title2')</div>
             </h1>
-            <p class="max-w-md mt-3 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-xl pr-8">
+            <p class="max-w-md mt-3 mx-auto lg:mx-0 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-xl pr-8">
               @lang('custom.home-subtitle2')
             </p>
             <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
@@ -69,7 +69,7 @@
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
-            <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
+            <p class="max-w-md mt-3 mx-auto lg:mx-0 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
               @lang('custom.home-subtitle3')
             </p>
             <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -93,7 +93,7 @@
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
-            <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
+            <p class="max-w-md mt-3 mx-auto lg:mx-0 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
               @lang('custom.home-subtitle4')
             </p>
             <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
