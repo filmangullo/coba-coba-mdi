@@ -8,12 +8,12 @@
     </p> --}}
 
     <div class="px-4 sm:px-6 lg:px-8 mx-auto py-12 mt-12 bg-gray-100">
-        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-2 gap-12 items-center -mx-4">
+        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mx-auto">
 
             @foreach ($career as $item)
                 <div class="w-full rounded-md p-6 bg-white">
                     <div class="text-3xl font-bold mb-4">
-                        <div class="truncate md:text-3xl text-2xl">
+                        <div class="lg:truncate md:text-3xl text-2xl">
                             {{ $item->job_position_id}}
                         </div>
                         <div class="text-sm font-semibold text-gray-500">{{ date('D, d F Y', strtotime($item->publish_date))}}</div>
