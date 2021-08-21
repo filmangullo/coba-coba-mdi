@@ -11,7 +11,7 @@
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span class="block xl:inline">@lang('custom.home-title1')</span>
           </h1>
-          <p class="max-w-md mx-auto lg:mx-0 mt-3 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
+          <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
             @lang('custom.home-subtitle1')
           </p>
           <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -40,7 +40,7 @@
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <div class="block xl:inline">@lang('custom.home-title2')</div>
             </h1>
-            <p class="max-w-md mt-3 mx-auto lg:mx-0 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-xl pr-8">
+            <p class="max-w-md pr-8 mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-xl">
               @lang('custom.home-subtitle2')
             </p>
             <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
@@ -69,7 +69,7 @@
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title3')</span>
             </h1>
-            <p class="max-w-md mt-3 mx-auto lg:mx-0 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
+            <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
               @lang('custom.home-subtitle3')
             </p>
             <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -93,7 +93,7 @@
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span class="block xl:inline">@lang('custom.home-title4')</span>
             </h1>
-            <p class="max-w-md mt-3 mx-auto lg:mx-0 text-base text-gray-900 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
+            <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
               @lang('custom.home-subtitle4')
             </p>
             <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -131,7 +131,7 @@
           </div>
         </a>
 
-        <a href="{{ route('gallery') }}" class="pt-6 block">
+        <a href="{{ route('gallery') }}" class="block pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
@@ -180,21 +180,21 @@
 
 <div class="bg-hitam animate__fadeInUp wow animate__animated">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-2xl font-semibold tracking-wider text-center uppercase text-green-500">
+      <p class="text-2xl font-semibold tracking-wider text-center text-green-500 uppercase">
         @lang('custom.client')
       </p>
-      <div class="grid items-center owl-carousel justify-center grid-cols-4 gap-1 mt-6 md:grid-cols-4 lg:mt-12">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-5.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-6.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-7.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-8.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-9.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-10.png') }}" alt="Mark Dynamics Client">
-          <img class="mx-auto transition-all duration-200 transform h-16 p-2 hover:scale-110" src="{{ asset('img/client-11.png') }}" alt="Mark Dynamics Client">
+      <div class="grid items-center justify-center grid-cols-4 gap-1 mt-6 owl-carousel md:grid-cols-4 lg:mt-12">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-1.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-2.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-3.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-4.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-5.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-6.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-7.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-8.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-9.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-10.png') }}" alt="Mark Dynamics Client">
+          <img class="h-16 p-2 mx-auto transition-all duration-200 transform hover:scale-110" src="{{ asset('img/client-11.png') }}" alt="Mark Dynamics Client">
       </div>
     </div>
 </div>

@@ -1,24 +1,23 @@
-<div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="px-4 pt-12 pb-12 mx-auto max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
-    <h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('custom.products')</h2>
-    {{-- <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl">
-    Everything you need to deploy your app
-    </p> --}}
-    <div class="container pt-24 mx-auto border-b border-gray-500">
-        @if ($this->nowPreview)
-            <div class="flex items-center">
-                <div class="mx-auto h-48 xsm:h-72 sm:h-80 md:h-96 lg:h-100 w-full">
-                    <img class="object-cover mx-auto rounded-xl w-full h-full" :src="preview" alt="Mark Dynamics Gallery & Products">
-                </div>
-            </div>
-        @endif
+<div x-data="{preview:'{{ asset( $nowPreview ) }}'}" class="px-4 pt-5 pb-5 mx-auto max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
+    <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-center animate__fadeInDown animate__animated text-mark-default sm:text-4xl">@lang('product-gallery.types-of-products')</h2>
 
-        <div wire:ignore class="slider">
-        @foreach($product ? : [] as $item)
-        <div x-on:click="preview = '{{$item->img}}'" class="w-full pr-6 py-6 cursor-pointer"
-            class="w-full px-3 py-3 cursor-pointer xsm:w-6/12 lg:w-6/12 xl:w-2/12">
-            <img class="object-cover w-full h-28 rounded-md lg:h-32 " src="{{ asset( $item->img) }}" alt="Mark Dynamics Gallery & Products">
+        <div class="container pt-24 mx-auto border-b border-gray-500">
+            @if ($this->nowPreview)
+                <div class="flex items-center">
+                    <div class="w-full h-48 mx-auto xsm:h-72 sm:h-80 md:h-96 lg:h-100">
+                        <img class="object-cover w-full h-full mx-auto rounded-xl" :src="preview" alt="Mark Dynamics Gallery & Products">
+                    </div>
+                </div>
+            @endif
+
+            <div wire:ignore class="slider">
+            @foreach($product ? : [] as $item)
+            <div x-on:click="preview = '{{$item->img}}'" class="w-full py-6 pr-6 cursor-pointer"
+                class="w-full px-3 py-3 cursor-pointer xsm:w-6/12 lg:w-6/12 xl:w-2/12">
+                <img class="object-cover w-full rounded-md h-28 lg:h-32 " src="{{ asset( $item->img) }}" alt="Mark Dynamics Gallery & Products">
+            </div>
+            @endforeach
+            </div>
         </div>
-        @endforeach
-        </div>
-    </div>
+
 </div>
