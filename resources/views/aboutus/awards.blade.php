@@ -1,16 +1,17 @@
 @extends('layouts.master')
 
 @section('content')
+<div class="relative overflow-hidden lg:h-100">
+
+    <img class="absolute w-full" src="{{ asset('img/award-me.png')}}">
+    <div class="relative mx-auto text-left max-w-7xl top-1/2">
+        <h2 class="relative z-20 mt-2 text-3xl font-extrabold tracking-tight text-white animate__fadeInDown animate__animated sm:text-4xl">A testament to our dedication</h2>
+    </div>
+
+</div>
 <div class="px-4 pt-32 pb-12 mx-auto animate__animated animate__fadeInDown max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
-    <h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('custom.awards')
+    <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-center animate__fadeInDown animate__animated text-mark-default sm:text-4xl">@lang('custom.awards')
     </h2>
-    {{-- <p class="mt-2 text-3xl font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl">
-        Everything you need to deploy your app
-    </p>
-    <p class="mx-auto mt-5 text-xl text-center text-gray-500 max-w-prose">
-        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-        malesuada. Eleifend condimentum id viverra nulla.
-    </p> --}}
     <div class="px-4 mx-auto divide-y lg:my-24 max-w-7xl sm:px-6 lg:px-8 divide-hitam">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-0 lg:py-2">
             <div class="space-y-2">
