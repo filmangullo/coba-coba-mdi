@@ -3,11 +3,7 @@
 @section('content')
 <div class="relative overflow-hidden lg:h-100">
 
-<<<<<<< HEAD
     <img class="absolute w-full" src="{{ asset('img/award-me.png')}}">
-=======
-    <img class="absolute w-full" src="{{ asset('img/award-me.webp')}}">
->>>>>>> 6083e51be18aef4554348afe2fb7550c134b8ea1
     <div class="relative mx-auto text-left max-w-7xl top-1/2">
         <h2 class="relative z-20 mt-2 text-3xl font-extrabold tracking-tight text-white animate__fadeInDown animate__animated sm:text-4xl">A testament to our dedication</h2>
     </div>
