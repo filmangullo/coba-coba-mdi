@@ -10,7 +10,7 @@ return [
     '2009' => 'Capacity was up to <span class="font-bold">110.000</span> pieces per month. ISO 9001 period extension and upgrade to ISO 9001:2008.',
     '2011' => 'Production capacity reached <span class="font-bold">220.000</span> pieces per month',
     '2014' => 'Another upgrade to <span class="font-bold">300.000</span> pieces per month',
-    '2016' => 'Acquired 2.400 m<sup>2</sup> of land to increase capacity and 30.000 m<sup>2</sup of land for future expansion.. <br>Extension of 9001 and upgrade to ISO 9001:2015.',
+    '2016' => 'Acquired 2.400 m<sup>2</sup> of land to increase capacity and 30.000 m<sup>2</sup> of land for future expansion. <br>Extension of 9001 and upgrade to ISO 9001:2015.',
     '2017' => 'Conducted an IPO and listed its shares on the Indonesia Stock Exchange',
     '2018' => 'Acquired a 90.000 m2 of land. A 1:5 stock split. Capacity was up to <span class="font-bold">540.000</span> pcs/month.',
     '2019' => 'New factory inauguration at Jalan Utama, Desa Dalu. Capacity was up to <span class="font-bold">610.000</span> pcs/month.',
