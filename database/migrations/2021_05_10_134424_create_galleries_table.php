@@ -17,6 +17,7 @@ class CreateGalleriesTable extends Migration
             $table->id();
             $table->boolean('is_product');
             $table->text('img');
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

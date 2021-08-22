@@ -32,7 +32,7 @@
 </div>
 
 
-<div class="pt-20">
+<div class="pt-8">
     @livewire('web.product-gallery.list-product')
 
     @livewire('web.product-gallery.list-gallery')

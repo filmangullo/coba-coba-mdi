@@ -17,4 +17,10 @@ return [
     'equipped_with'     => 'Equipped with the largest capacity in the world, we offer only high-quality products of various types.
                             Our specialty lies in producing hand formers for Nitrile Gloves that weigh 2.8 grams, 3.2 grams, and 3.5 grams. Glove manufacturers with ultra-thin products and Force at Break above 6N are suitable to use our hand formers.',
     'types-of-products' => 'Types of Products',
+    'competitive-advantages'    => 'Competitive Advantages',
+    'high-endurance-against...' => 'High Endurance against Chemical Solutions',
+    'high-alumina-content'      => 'High Alumina Content',
+    'suitable-for-high-speed...'=> 'Suitable for High Speed Machines of AQL 1.0',
+    'products-finishing-with...'=> 'Products Finishing with Special Coating.',
+    'quick-adjustments-for...'  => 'Quick adjustments for machines.',
 ];
