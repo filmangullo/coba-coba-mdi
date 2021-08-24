@@ -6,9 +6,9 @@
     <div class="relative overflow-hidden">
 
             <!-- CTA Section -->
-            <div class="relative bg-gray-900">
+            <div class="relative bg-gradient-to-r from-green-400 to-blue-500">
                 <div class="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-                    <img class="object-cover w-full h-full"
+                    <img class="z-30 object-cover w-full h-full"
                         src="{{asset('img/prod_gall.jpg')}}"
                         alt="">
                     <div aria-hidden="true"

@@ -48,7 +48,12 @@
         </div>
     </div>
 </div>
+<div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+    <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
+      @lang('product-gallery.competitive-advantages')
+    </p>
 
+</div>
 <div class="bg-white">
     <div class="max-w-2xl px-4 py-16 mx-auto text-center sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="grid grid-cols-1 gap-6 mt-6 gap-y-10 sm:grid-cols-5 lg:grid-cols-6 xl:gap-y-24">
