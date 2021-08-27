@@ -50,7 +50,9 @@ module.exports = {
                 'xsm': {'min': '475px', 'max': '639px'}
             },
             height: {
+                '98' :  '28rem',
                 '100' : '48rem',
+                '120' : '53rem',
             }
         }
     },
