@@ -26,9 +26,9 @@
                                         alt="">
                                     </div>
                                     <div class="px-2 space-y-4">
-                                        <div class="h-48 space-y-1 text-base font-medium leading-6">
+                                        <div class="h-48 space-y-1 text-base leading-6">
                                             <h3 class="font-bold text-blue-700">{!! $item->year !!}</h3>
-                                            <p class="text-gray-700">{!! (__('custom.lang') == 'id') ? $item->title_id : $item->title_en!!}</p>
+                                            <p class="font-semibold text-gray-700">{!! (__('custom.lang') == 'id') ? $item->title_id : $item->title_en!!}</p>
                                             <p class="font-normal text-justify">{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en!!}</p>
                                         </div>
                                     </div>
