@@ -64,4 +64,5 @@ return [
     'extra' => 'More',
     'other-news' => 'Latest News',
     'products' => 'Products',
+    'copyright' => 'All Rights Reserved &copy; Mark Dynamics 2021.'
 ];

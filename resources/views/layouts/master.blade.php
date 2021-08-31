@@ -315,7 +315,7 @@
                         <div class="flex items-center rounded-md w-28">
                             <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
                             <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none">ID</a>
-                            <a href="{{ url('lang/cn') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('zh')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">中文</a>
+                            <a href="{{ url('lang/cn') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('cn')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">中文</a>
                         </div>
                     </div>
                   </div>
@@ -584,6 +584,7 @@
                             <div class="flex items-center w-20 rounded-md">
                                 <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
                                 <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>
+                                <a href="{{ url('lang/cn') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('cn')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">中文</a>
                             </div>
                         </div>
                       </div>
@@ -608,7 +609,7 @@
                     <a class="text-center" href="{{ route('career') }}">@lang('custom.career')</a>
                     <a class="text-center" href="{{ route('kontak')}}">@lang('custom.contact')</a>
                 </div>
-                <div class="pb-6 text-xs text-center">All Rights Reserved &copy; Mark Dynamics 2021.</div>
+                <div class="pb-6 text-xs text-center"></div>
             </div>
         </div>
         @livewireScripts

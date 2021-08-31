@@ -178,9 +178,9 @@
     @livewire('web.welcome.short-list-news')
 </div>
 
-<div class="bg-hitam animate__fadeInUp wow animate__animated">
+<div class="bg-gray-100 animate__fadeInUp wow animate__animated">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-2xl font-semibold tracking-wider text-center text-green-500 uppercase">
+      <p class="text-2xl font-semibold tracking-wider text-center text-mark-default uppercase">
         @lang('custom.client')
       </p>
       <div class="grid items-center justify-center grid-cols-4 gap-1 mt-6 owl-carousel md:grid-cols-4 lg:mt-12">
