@@ -26,11 +26,11 @@
 
 </div> --}}
 
-<div class="bg-white border-b border-gray-800">
-    <div class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+{{-- <div class="bg-white border-b border-gray-800">
+    <div class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"> --}}
         {{-- <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">@lang('product-gallery.types-of-products')</h2> --}}
 
-        <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+        {{-- <div class="grid grid-cols-1 mt-6 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
             @foreach($product ? : [] as $item)
             <div class="relative group">
                 <div
@@ -47,7 +47,7 @@
             <!-- More products... -->
         </div>
     </div>
-</div>
+</div> --}}
 <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
     <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 animate__fadeInDown wow animate__animated sm:text-4xl">
       @lang('product-gallery.competitive-advantages')

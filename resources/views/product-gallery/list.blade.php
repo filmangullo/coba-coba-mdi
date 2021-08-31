@@ -30,7 +30,8 @@
                     </div>
 
                 </div>
-                <div class="max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-10 xl:py-25">
+                <div
+                    class="max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-10 xl:py-25">
                     <div class="md:ml-auto md:w-1/2 md:pl-10">
                         <p class="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                             @lang('product-gallery.high-quality')
@@ -60,32 +61,31 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $('.slider').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  arrows: false,
-  autoplay: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
+        centerPadding: '60px',
+        slidesToShow: 3,
         arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+        autoplay: true,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 </script>
 @endpush
 
