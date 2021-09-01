@@ -3,24 +3,31 @@
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             @forelse ($csr as $n)
                 <div class="mb-4 overflow-hidden bg-white shadow-xl sm:rounded-lg">
-                    <div class="p-6 bg-white border-b border-gray-200 sm:px-20">
-
-                        <div class="mt-5 text-2xl">
-                            {{ $n->title_id }}
-                        </div>
+                    <div class="grid grid-cols-1 p-6 bg-white border-b border-gray-200 md:grid-cols-4 sm:px-20">
 
                         <div class="mt-6 text-gray-500">
-                            {!! $n->description_id !!}
+                            <img class="object-contain w-full h-48" src="{{asset($n->img)}}">
                         </div>
-                        <div class="mt-5 text-2xl text-right">
 
-                                {{-- <a href="{{ route('cms-news.show', $n->id) }}" class="px-5 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-gray-50">Show</a> --}}
-
-                                <a href="{{ route('cms-csr.update', $n->id) }}" type="button" class="py-2 text-sm text-green-600 border border-green-600 rounded-md focus:outline-none px-7 hover:bg-green-50">Edit</a>
-
-                                <button wire:click='openModalDelete({{$n->id}})'
-                                    type="button" class="px-5 py-2 text-sm text-red-600 border border-red-600 rounded-md focus:outline-none hover:bg-red-50">Delete</button>
+                        <div class="items-center col-span-1 px-2 mt-6 font-bold text-gray-500 md:col-span-3 justify-items-start">
+                            <div class="mb-2 text-left">
+                                {!! $n->description_id !!}
+                            </div>
+                            <div class="mb-2 italic font-normal text-right">
+                                {!! $n->description_en !!}
+                            </div>
+                            <div class="mb-2 font-normal text-right">
+                                {!! $n->description_cn !!}
+                            </div>
                         </div>
+
+                    </div>
+                    <div class="px-6 mt-5 mb-3 text-2xl text-right">
+
+                        <a href="{{ route('cms-csr.update', $n->id) }}" type="button" class="py-2 text-sm text-green-600 border border-green-600 rounded-md focus:outline-none px-7 hover:bg-green-50">Edit</a>
+
+                        <button wire:click='openModalDelete({{$n->id}})'
+                            type="button" class="px-5 py-2 text-sm text-red-600 border border-red-600 rounded-md focus:outline-none hover:bg-red-50">Delete</button>
                     </div>
                 </div>
             @empty
