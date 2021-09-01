@@ -73,11 +73,15 @@
                 <div class="grid grid-cols-2 md:grid-cols-6 gap-4 px-6 mt-3 py-1.5">
                     <div @click="tab = 'id'"
                         :class="{'bg-gray-300' : tab === 'id', 'bg-gray-200 text-gray-400' : tab !== 'id'}"
-                        class="col-span-3 py-4 font-semibold text-center uppercase cursor-pointer">ID ( INDONESIAN
+                        class="col-span-2 py-4 font-semibold text-center uppercase cursor-pointer">ID ( INDONESIAN
                         LANGUAGE ) </div>
                     <div @click="tab = 'en'"
                         :class="{'bg-gray-300' : tab === 'en', 'bg-gray-200 text-gray-400' : tab !== 'en'}"
-                        class="col-span-3 py-4 font-semibold text-center uppercase cursor-pointer">EN ( ENGLISH
+                        class="col-span-2 py-4 font-semibold text-center uppercase cursor-pointer">EN ( ENGLISH
+                        LANGUAGE )</div>
+                    <div @click="tab = 'cn'"
+                        :class="{'bg-gray-300' : tab === 'cn', 'bg-gray-200 text-gray-400' : tab !== 'cn'}"
+                        class="col-span-2 py-4 font-semibold text-center uppercase cursor-pointer">CN ( Chinese
                         LANGUAGE )</div>
                 </div>
 
@@ -151,6 +155,41 @@
                         @enderror
                 </div>
 
+                <div x-show="tab === 'cn'">
+                    <div class="grid grid-cols-3 gap-4 px-6 mt-3 md:grid-cols-6">
+                        <div class="md:px-5 py-1.5 text-left md:text-right">
+                            <label>标题</label>
+                        </div>
+                        <div class="col-span-2 md:col-span-3">
+                            <input wire:model="title_cn" type="text"
+                                class="w-full px-3 py-2 leading-tight text-gray-700 border border-gray-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+                            @error('title_cn') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 md:grid-cols-6 gap-4 px-6 mt-3 py-1.5">
+                        <div class="md:px-5 text-left md:text-right py-1.5">
+                            简要描述;简介
+                        </div>
+                        <div class="col-span-2 md:col-span-5">
+                            <textarea wire:model="brief_description_cn"
+                                class="w-full px-3 py-2 leading-tight text-gray-700 border border-gray-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                rows="4"></textarea>
+                            @error('brief_description_cn') <span
+                                class="block mb-2 text-sm text-red-700">{{ $message }}</span> @enderror
+                        </div>
+                    </div>
+
+                    <div class="mx-5 mt-2 bg-white" wire:ignore>
+                        <textarea wire:model="content_cn" class="editor3" id="editor3">
+                                {!! $content_cn !!}
+                        </textarea>
+                    </div>
+                    @error('content_en') <span class="block mb-2 text-sm text-red-700">{{ $message }}</span>
+                        @enderror
+                </div>
+
                 <div class="mt-5 text-2xl text-right">
 
                     <button type="button"
@@ -175,6 +214,12 @@
     editor2.on('change', function(event) {
         console.log(event.editor.getData());
         @this.set('content_en', event.editor.getData());
+    });
+
+    const editor3 = CKEDITOR.replace( 'editor3' );
+    editor3.on('change', function(event) {
+        console.log(event.editor.getData());
+        @this.set('content_cn', event.editor.getData());
     });
 </script>
 @endpush
