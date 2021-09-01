@@ -16,6 +16,8 @@ class AddContent extends Component
     public $description_id      = '';
     public $title_en;
     public $description_en      = '';
+    public $title_cn;
+    public $description_cn      = '';
     public $year;
     public $img;
 
@@ -31,6 +33,8 @@ class AddContent extends Component
             $this->description_id           = $this->awards->description_id;
             $this->title_en                 = $this->awards->title_en;
             $this->description_en           = $this->awards->description_en;
+            $this->title_cn                 = $this->awards->title_cn;
+            $this->description_cn           = $this->awards->description_cn;
             $this->year                     = $this->awards->year;
         }
     }
@@ -44,6 +48,8 @@ class AddContent extends Component
             'description_id'            => ['required'],
             'title_en'                  => ['required'],
             'description_en'            => ['required'],
+            'title_cn'                  => ['required'],
+            'description_cn'            => ['required'],
             'year'                      => ['required'],
         ];
 
@@ -57,6 +63,8 @@ class AddContent extends Component
             'description_id'            => $this->description_id,
             'title_en'                  => $this->title_en,
             'description_en'            => $this->description_en,
+            'title_cn'                  => $this->title_cn,
+            'description_cn'            => $this->description_cn,
             'year'                      => $this->year,
         ];
 

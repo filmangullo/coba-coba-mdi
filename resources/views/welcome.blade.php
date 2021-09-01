@@ -180,7 +180,7 @@
 
 <div class="bg-gray-100 animate__fadeInUp wow animate__animated">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-      <p class="text-2xl font-semibold tracking-wider text-center text-mark-default uppercase">
+      <p class="text-2xl font-semibold tracking-wider text-center uppercase text-mark-default">
         @lang('custom.client')
       </p>
       <div class="grid items-center justify-center grid-cols-4 gap-1 mt-6 owl-carousel md:grid-cols-4 lg:mt-12">

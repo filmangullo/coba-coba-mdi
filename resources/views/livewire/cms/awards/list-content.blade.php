@@ -14,12 +14,18 @@
                         <div class="mt-5 font-bold text-gray-500 text-1xl">
                             {{ $n->title_en }}
                         </div>
+                        <div class="mt-5 font-bold text-gray-500 text-1xl">
+                            {{ $n->title_cn }}
+                        </div>
 
                         <div class="mt-6 text-left text-gray-500">
                             {!! $n->description_id !!}
                         </div>
                         <div class="mt-6 italic text-right text-gray-500">
                             {!! $n->description_en !!}
+                        </div>
+                        <div class="mt-6 italic text-right text-gray-500">
+                            {!! $n->description_cn !!}
                         </div>
                         <div class="mt-5 text-2xl text-right">
 
