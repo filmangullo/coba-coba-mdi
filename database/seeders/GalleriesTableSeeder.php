@@ -32,7 +32,7 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'is_product' => 1,
-                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.31 PM.jpeg',
+                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.40 PM.jpeg',
                 'title' => 'Surgical Former',
                 'created_at' => '2021-08-18 08:07:09',
                 'updated_at' => '2021-08-18 08:07:09',
@@ -41,7 +41,7 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id' => 5,
                 'is_product' => 1,
-                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.37 PM.jpeg',
+                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.31 PM.jpeg',
                 'title' => 'Household Former',
                 'created_at' => '2021-08-18 08:07:22',
                 'updated_at' => '2021-08-18 08:07:22',
@@ -50,7 +50,7 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id' => 8,
                 'is_product' => 1,
-                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.44 PM.jpeg',
+                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.43 PM.jpeg',
                 'title' => 'Custom Made Former',
                 'created_at' => '2021-08-18 08:07:47',
                 'updated_at' => '2021-08-18 08:07:47',
@@ -59,7 +59,7 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id' => 10,
                 'is_product' => 1,
-                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.46 PM.jpeg',
+                'img' => 'img/product/WhatsApp Image 2021-08-21 at 9.44.48 PM.jpeg',
                 'title' => 'Industrial Former',
                 'created_at' => '2021-08-18 08:07:59',
                 'updated_at' => '2021-08-18 08:07:59',

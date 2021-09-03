@@ -9,24 +9,13 @@
             <div class="relative mt-20 bg-blue-500">
                 <div class="relative bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
                     <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                        @foreach ($product as $item)
                         <div class="mx-2">
-                            <img class="z-30 object-cover w-full h-full" src="{{asset('img/prod_gall.jpg')}}" alt="">
+                            <img class="z-30 object-cover w-full h-full" src="{{asset($item->img)}}" alt="">
                         </div>
-                        <div class="mx-2">
-                            <img class="z-30 object-cover w-full h-full" src="{{asset('img/prod_gall.jpg')}}" alt="">
-                        </div>
-                        <div class="mx-2">
-                            <img class="z-30 object-cover w-full h-full" src="{{asset('img/prod_gall.jpg')}}" alt="">
-                        </div>
-                        <div class="mx-2">
-                            <img class="z-30 object-cover w-full h-full" src="{{asset('img/prod_gall.jpg')}}" alt="">
-                        </div>
-                        <div class="mx-2">
-                            <img class="z-30 object-cover w-full h-full" src="{{asset('img/prod_gall.jpg')}}" alt="">
-                        </div>
-                        <div class="mx-2">
-                            <img class="z-30 object-cover w-full h-full" src="{{asset('img/prod_gall.jpg')}}" alt="">
-                        </div>
+                        @endforeach
+
+
                     </div>
 
                 </div>
