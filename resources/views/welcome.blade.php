@@ -106,7 +106,7 @@
           </div>
         </div>
         <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-full lg:h-full">
-          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-4.png') }}" alt="Mark Dynamics Indonesia">
+          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-4.jpg') }}" alt="Mark Dynamics Indonesia">
         </div>
     </main>
 </div>
