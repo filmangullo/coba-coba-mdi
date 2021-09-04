@@ -17,6 +17,8 @@ class AddContent extends Component
     public $description_id      = '';
     public $title_en;
     public $description_en      = '';
+    public $title_cn;
+    public $description_cn      = '';
 
     public function mount($env)
     {
@@ -30,6 +32,8 @@ class AddContent extends Component
             $this->description_id           = $this->env->description_id;
             $this->title_en                 = $this->env->title_en;
             $this->description_en           = $this->env->description_en;
+            $this->title_cn                 = $this->env->title_cn;
+            $this->description_cn           = $this->env->description_cn;
         }
     }
 
@@ -42,6 +46,8 @@ class AddContent extends Component
             'description_id'            => ['required'],
             'title_en'                  => ['required'],
             'description_en'            => ['required'],
+            'title_cn'                  => ['required'],
+            'description_cn'            => ['required'],
         ];
 
         $this->validate($rules);
@@ -51,6 +57,8 @@ class AddContent extends Component
             'description_id'            => $this->description_id,
             'title_en'                  => $this->title_en,
             'description_en'            => $this->description_en,
+            'title_cn'                  => $this->title_cn,
+            'description_cn'            => $this->description_cn,
         ];
 
         if ($edit) {

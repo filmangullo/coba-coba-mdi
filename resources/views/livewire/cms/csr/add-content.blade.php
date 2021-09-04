@@ -44,12 +44,16 @@
                     <div class="grid grid-cols-2 md:grid-cols-6 gap-4 px-6 mt-3 py-1.5">
                         <div @click="tab = 'id'"
                             :class="{'bg-gray-300' : tab === 'id', 'bg-gray-200 text-gray-400' : tab !== 'id'}"
-                            class="col-span-3 py-4 font-semibold text-center uppercase cursor-pointer">ID ( INDONESIAN
-                            LANGUAGE ) </div>
+                            class="col-span-2 py-4 font-semibold text-center uppercase cursor-pointer">ID ( {{ Str::limit('INDONESIAN
+                            LANGUAGE', 8) }} ) </div>
                         <div @click="tab = 'en'"
                             :class="{'bg-gray-300' : tab === 'en', 'bg-gray-200 text-gray-400' : tab !== 'en'}"
-                            class="col-span-3 py-4 font-semibold text-center uppercase cursor-pointer">EN ( ENGLISH
-                            LANGUAGE )</div>
+                            class="col-span-2 py-4 font-semibold text-center uppercase cursor-pointer">EN ( {{ Str::limit('ENGLISH
+                            LANGUAGE', 8) }} )</div>
+                        <div @click="tab = 'cn'"
+                            :class="{'bg-gray-300' : tab === 'cn', 'bg-gray-200 text-gray-400' : tab !== 'cn'}"
+                            class="col-span-2 py-4 font-semibold text-center uppercase cursor-pointer">CN ( {{ Str::limit('CHINESE
+                            LANGUAGE', 8) }} )</div>
                     </div>
 
                     <div x-show="tab === 'id'">
@@ -74,6 +78,19 @@
                         </div>
                         <div class="w-full mb-5" wire:ignore>
                             <textarea wire:model="description_en" id="editor2" rows="4"
+                                class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue"></textarea>
+                        </div>
+                    </div>
+
+                    <div x-show="tab === 'cn'" x-cloak>
+
+                        <div class="relative w-full h-5">
+                            <label for="title_cn" class="absolute px-1 text-xs transition-all bg-gray-200 left-2">
+                                描述
+                            </label>
+                        </div>
+                        <div class="w-full mb-5" wire:ignore>
+                            <textarea wire:model="description_cn" id="editor3" rows="4"
                                 class="w-full mt-2 transition-all bg-gray-200 border-indigo-300 rounded-sm border-blue"></textarea>
                         </div>
                     </div>

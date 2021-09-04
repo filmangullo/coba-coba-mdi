@@ -1,31 +1,47 @@
+@php
+    $img = ["jpg", "JPG", "bmp", "BMP", "gif", "GIF", "jpeg", "JPEG", "png", "PNG"];
+    $video = ["MP4", "mp4"];
+@endphp
+
 <div class="py-12">
     @forelse ($env as $item)
     <div class="mx-auto mb-2 max-w-7xl sm:px-6 lg:px-8">
         <div class="container px-4 mx-auto overflow-hidden text-center bg-white shadow-xl sm:rounded-lg">
             <h1 class="py-2 text-2xl font-bold">{{$item->title_id }}</h1>
-            <h1 class="py-2 text-xl italic font-semibold">{{$item->title_en }}</h1>
             <p class="py-1 ">{!!$item->description_id !!}</p>
+            <h1 class="py-2 text-xl italic font-semibold">{{$item->title_en }}</h1>
             <p class="py-1 italic">{!!$item->description_en !!}</p>
+            <h1 class="py-2 text-xl italic font-semibold">{{$item->title_cn }}</h1>
+            <p class="py-1 italic">{!!$item->description_cn !!}</p>
+
+            <div class="mt-6">
+                <a href="{{ route('cms-environment.update', $item->id) }}"
+                    class="inline-block w-1/5 px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Update Content</a>
+            </div>
             <div class="grid grid-cols-4 gap-4 p-4">
-                @forelse ($item->environmentImgs as $value)
+                @foreach ($item->environmentImgs ? : [] as $value)
                 <div class="p-2 text-center border border-gray-400 rounded-t-md">
                     <div class="flex items-center justify-center overflow-hidden h-52">
-                        <img src="{{ asset($value->img) }}" class="w-full m-auto">
+
+                        @if(in_array(substr($value->img, strpos($value->img, '.') + 1), $img ))
+                            <img src="{{ asset($value->img) }}" class="w-full m-auto">
+                        @elseif (in_array(substr($value->img, strpos($value->img, '.') + 1), $video ))
+                            <video width="900" controls class="mx-auto">
+                                <source src="{{ asset($value->img) }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        @endif
                     </div>
                     <div class="py-3 text-center border-t border-gray-400">
                         <button wire:click='openModalDelete({{$value->id}})'
                             type="button"
                             class="inline-block px-5 py-2 font-semibold text-white uppercase bg-red-600 rounded-lg">delete</button>
-                        <a href="{{ route('cms-environment.update', $value->id) }}"
+                        <a href="{{ route('cms-environment.img.update', [ 'index' => $item->id, 'id' => $value->id ]) }}"
                             class="inline-block px-5 py-2 font-semibold text-white uppercase bg-green-600 rounded-lg">Update</a>
                     </div>
                 </div>
 
-                @empty
-                <div class="w-full col-span-4 p-2 my-3 text-center border border-red-500 rounded-md">
-                    Environment is empty !
-                </div>
-                @endforelse
+                @endforeach
                 <div class="p-2 text-center border border-gray-400 rounded-t-md">
                     <div class="flex items-center justify-center overflow-hidden h-52">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">

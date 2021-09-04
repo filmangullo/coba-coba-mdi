@@ -15,10 +15,9 @@ class AddContent extends Component
 
     public $date;
     public $slug;
-
     public $description_id      = '';
-
     public $description_en      = '';
+    public $description_cn      = '';
     public $img;
 
     public function mount($csr)
@@ -33,8 +32,8 @@ class AddContent extends Component
             $this->slug                     = $this->csr->slug;
 
             $this->description_id           = $this->csr->description_id;
-
             $this->description_en           = $this->csr->description_en;
+            $this->description_cn           = $this->csr->description_cn;
         } else {
             $this->date                     = date("Y-m-d");
         }
@@ -48,8 +47,8 @@ class AddContent extends Component
             'date'                      => ['required'],
 
             'description_id'            => ['required'],
-
             'description_en'            => ['required'],
+            'description_cn'            => ['required'],
         ];
 
         if (!$edit) {
@@ -62,8 +61,8 @@ class AddContent extends Component
             'date'                      => $this->date,
 
             'description_id'            => $this->description_id,
-
             'description_en'            => $this->description_en,
+            'description_cn'            => $this->description_cn,
         ];
 
         if ($this->img) {

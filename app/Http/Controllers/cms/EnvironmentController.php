@@ -33,10 +33,10 @@ class EnvironmentController extends Controller
         ]);
     }
 
-    public function updateImg($id)
+    public function updateImg($index, $id)
     {
         $query  = EnvironmentImg::where('id', $id)->firstOrFail();
 
-        return view('cms.environment.img.update', compact('query'))->render();
+        return view('cms.environment.img.update', compact('index', 'query'))->render();
     }
 }

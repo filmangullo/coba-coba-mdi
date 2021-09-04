@@ -14,12 +14,12 @@ class CsrsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('csrs')->delete();
-        
+
         \DB::table('csrs')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'date' => '2020-12-31',
@@ -30,18 +30,18 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:08',
                 'updated_at' => '2021-08-09 13:50:50',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 3,
                 'date' => '2020-10-15',
                 'slug' => '2020-10-15-AZBibUB0erigVuZL12FLJ82DgMm4r3vAnsv7T3XW',
                 'description_id' => 'MARK memberikan bantuan dana Bedah Rumah 2020 kepada pemerintah Kabupaten Deli Serdang.',
-            'description_en' => 'MARK provided fund to aid the Home Renovation Program (Bedah Rumah 2020) to the Local Government of Deli Serdang Regency.',
-            'img' => 'img/CSR/12. CSR Bedah Rumah 2020 (15 Okt 2020).JPG',
+                'description_en' => 'MARK provided fund to aid the Home Renovation Program (Bedah Rumah 2020) to the Local Government of Deli Serdang Regency.',
+                'img' => 'img/CSR/12. CSR Bedah Rumah 2020 (15 Okt 2020).JPG',
                 'created_at' => '2021-07-16 13:20:09',
                 'updated_at' => '2021-08-09 13:53:58',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 4,
                 'date' => '2020-08-30',
@@ -52,7 +52,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:10',
                 'updated_at' => '2021-08-09 13:54:31',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 5,
                 'date' => '2020-05-18',
@@ -63,7 +63,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:11',
                 'updated_at' => '2021-08-09 14:07:55',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 6,
                 'date' => '2019-12-23',
@@ -74,7 +74,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:12',
                 'updated_at' => '2021-08-09 14:09:15',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 7,
                 'date' => '2019-09-03',
@@ -85,7 +85,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:13',
                 'updated_at' => '2021-08-09 14:10:00',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 8,
                 'date' => '2019-09-01',
@@ -96,7 +96,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:14',
                 'updated_at' => '2021-07-16 13:29:42',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 9,
                 'date' => '2019-03-08',
@@ -107,7 +107,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:15',
                 'updated_at' => '2021-08-09 14:11:57',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 10,
                 'date' => '2019-03-08',
@@ -118,7 +118,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:16',
                 'updated_at' => '2021-08-09 13:49:35',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 11,
                 'date' => '2018-07-13',
@@ -129,7 +129,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:17',
                 'updated_at' => '2021-08-09 13:49:08',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 12,
                 'date' => '2018-05-30',
@@ -140,7 +140,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:18',
                 'updated_at' => '2021-08-09 13:48:30',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 13,
                 'date' => '2018-03-26',
@@ -151,7 +151,7 @@ class CsrsTableSeeder extends Seeder
                 'created_at' => '2021-07-16 13:20:19',
                 'updated_at' => '2021-08-09 13:47:38',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 14,
                 'date' => '2018-02-08',
@@ -163,7 +163,7 @@ class CsrsTableSeeder extends Seeder
                 'updated_at' => '2021-08-09 13:40:40',
             ),
         ));
-        
-        
+
+
     }
 }

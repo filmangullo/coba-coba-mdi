@@ -70,7 +70,7 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
     Route::prefix('environment')->name('cms-environment.')->group(function () {
         Route::prefix('img')->name('img.')->group(function () {
             Route::get('/{id}/create', [EnvironmentController::class, 'createImg'])->name('create');
-            Route::get('/{id}/update', [EnvironmentController::class, 'updateImg'])->name('update');
+            Route::get('/{index}/{id}/update', [EnvironmentController::class, 'updateImg'])->name('update');
         });
 
         Route::get('/', [EnvironmentController::class, 'index'])->name('index');
