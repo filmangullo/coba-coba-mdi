@@ -17,19 +17,34 @@
             <div class="space-y-2">
                 <ul class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4 lg:gap-8">
                     @forelse ($ac as $key => $item)
-                        <li class="px-1 py-10 text-center bg-white rounded-t-lg shadow-lg xl:px-1 xl:text-left">
-                            <div x-data="" class="h-98 animate__animated animate__backInUp">
-                                <div x-show="tab === 'foo'" class="h-120">
+                        <li class="p-4 text-center bg-white border border-gray-300 rounded-md shadow-lg xl:px-1 xl:text-left">
+                            <div x-data="" class="h-auto animate__animated animate__backInUp">
+                                <div x-show="tab === 'foo'" class="h-100">
                                     <div class="h-40 overflow-hidden">
                                     <img class="w-auto mx-auto rounded-t-md max-h-40"
                                         src="{{ asset($item->img) }}"
                                         alt="">
                                     </div>
-                                    <div class="px-2 space-y-4">
-                                        <div class="h-48 space-y-1 text-base leading-6">
+                                    <div class="px-4 pt-4 space-y-4">
+                                        <div class="space-y-2 text-base leading-tight">
                                             <h3 class="font-bold text-blue-700">{!! $item->year !!}</h3>
-                                            <p class="font-semibold text-gray-700">{!! (__('custom.lang') == 'id') ? $item->title_id : $item->title_en!!}</p>
-                                            <p class="font-normal text-justify">{!! (__('custom.lang') == 'id') ? $item->description_id : $item->description_en!!}</p>
+
+                                            @if( App::isLocale('id'))
+                                            <p class="font-semibold text-gray-700">{!! $item->title_id !!}</p>
+                                            @elseif( App::isLocale('en') )
+                                            <p class="font-semibold text-gray-700">{!! $item->title_en !!}</p>
+                                            @elseif( App::isLocale('cn') )
+                                            <p class="font-semibold text-gray-700">{!! $item->title_cn !!}</p>
+                                            @endif
+
+                                            @if( App::isLocale('id') )
+                                            <p class="font-normal">{!! $item->description_id !!}</p>
+                                            @elseif( App::isLocale('en') )
+                                            <p class="font-normal">{!! $item->description_en !!}</p>
+                                            @elseif( App::isLocale('cn') )
+                                            <p class="font-normal">{!! $item->description_cn !!}</p>
+                                            @endif
+
                                         </div>
                                     </div>
 

@@ -15,7 +15,15 @@
                         </div>
                         <div class="mt-2 bg-white border border-gray-300 rounded-md">
                             <p class="mt-1 text-xs text-center text-gray-800">
-                                {!! !empty($shw) ? (__('custom.lang') == 'id') ? $shw->description_id : $shw->description_en : '' !!}
+                                @if(!empty($shw))
+                                    @if(App::isLocale('id'))
+                                        {{ $shw->descripion_id }}
+                                    @elseif(App::isLocale('en'))
+                                        {{ $shw->descripion_en }}
+                                    @elseif(App::isLocale('cn'))
+                                        {{ $shw->descripion_cn }}
+                                    @endif
+                                @endif
                             </p>
                         </div>
                     </div>
@@ -48,10 +56,12 @@
                                 <h3 class="font-bold">{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
                                 </h3>
                                 <p class="text-hitam">
-                                    @if (__('custom.lang') == 'id')
+                                    @if (App::isLocale('id'))
                                     {{ Str::limit($item->description_id, 100, '...') }}
-                                    @else
+                                    @elseif(App::isLocale('en'))
                                     {{ Str::limit($item->description_en, 100, '...') }}
+                                    @elseif(App::isLocale('cn'))
+                                    {{ Str::limit($item->description_cn, 100, '...') }}
                                     @endif
                                 </p>
                             </div>
