@@ -2,5 +2,5 @@
 
 return [
     'title' => '招股说明书',
-    'word' => 'PT. Mark Dynamics Indonesia Tbk is listed in Indonesia Stock Exchange with ticker code of MARK. Please click on the following link to download.'
+    'word' => 'Mark Dynamics Indonesia Tbk 有限公司在印度尼西亚证券交易所上市，股票代码为 MARK。 请点击以下链接下载。'
 ];

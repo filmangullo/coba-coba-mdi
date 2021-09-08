@@ -60,7 +60,7 @@ return [
     'home-subtitle3' => '上市后，我们的财务状况持续改善，资产负债表也基本稳定。',
     'home-title4' => '里程碑',
     'home-subtitle4' => '我们的卓越表现给我们带来了无数奖项和认可。',
-    'extra' => 'Lainnya',
+    'extra' => '其他',
     'other-news' => 'Berita Terbaru',
     'products' => 'Produk',
     'copyright' => '星河陶瓷2021 © 版权所有'
