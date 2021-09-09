@@ -28,7 +28,7 @@
         </style>
         @stack('styles')
     </head>
-    <body x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, extra : false, menu : false}">
+    <body class="relative" x-data="{ about: false, investor: false, sustain: false, corporate: false, reports : false, extra : false, menu : false}">
         <div class="antialiased font-mark text-hitam">
             <div class="fixed z-50 w-full bg-white shadow">
                 <div class="px-4 mx-auto max-w-7xl sm:px-6">
@@ -593,7 +593,9 @@
                 </div>
             </div>
 
-            @yield('content')
+            <div class="min-h-screen">
+                @yield('content')
+            </div>
 
             {{-- Footer --}}
             <div class="bottom-0 text-white border-t border-gray-300 bg-hitam">

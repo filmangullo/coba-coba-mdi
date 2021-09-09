@@ -8,6 +8,8 @@
     </p> --}}
     @if(App::isLocale('id'))
     <img class="mt-12 lg:mt-24" src="{{ asset('img/shareholders.png') }}" alt="Mark Dynamics Shareholders">
+    @elseif(App::isLocale('en'))
+    <img class="mt-12 lg:mt-24" src="{{ asset('img/shareholders.png') }}" alt="Mark Dynamics Shareholders">
     @elseif(App::isLocale('cn'))
     <img class="mt-12 lg:mt-24" src="{{ asset('img/shareholders-cn.png') }}" alt="Mark Dynamics Shareholders">
     @endif
