@@ -55,7 +55,7 @@
                             <div class="space-y-1 text-lg font-medium leading-6 h-42">
                                 <h3 class="font-bold">{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
                                 </h3>
-                                <p class="text-hitam text-sm">
+                                <p class="text-sm text-hitam">
                                     @if (App::isLocale('id'))
                                     {{ $item->description_id }}
                                     @elseif(App::isLocale('en'))
