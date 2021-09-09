@@ -19,7 +19,7 @@
                     @forelse ($ac as $key => $item)
                         <li class="p-4 text-center bg-white border border-gray-300 rounded-md shadow-lg xl:px-1 xl:text-left">
                             <div x-data="" class="h-auto animate__animated animate__backInUp">
-                                <div x-show="tab === 'foo'" class="h-100">
+                                <div x-show="tab === 'foo'" class="h-auto">
                                     <div class="h-40 overflow-hidden">
                                     <img class="w-auto mx-auto rounded-t-md max-h-40"
                                         src="{{ asset($item->img) }}"

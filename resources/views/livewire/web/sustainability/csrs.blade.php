@@ -55,13 +55,13 @@
                             <div class="space-y-1 text-lg font-medium leading-6 h-42">
                                 <h3 class="font-bold">{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
                                 </h3>
-                                <p class="text-hitam">
+                                <p class="text-hitam text-sm">
                                     @if (App::isLocale('id'))
-                                    {{ Str::limit($item->description_id, 100, '...') }}
+                                    {{ $item->description_id }}
                                     @elseif(App::isLocale('en'))
-                                    {{ Str::limit($item->description_en, 100, '...') }}
+                                    {{ $item->description_en }}
                                     @elseif(App::isLocale('cn'))
-                                    {{ Str::limit($item->description_cn, 100, '...') }}
+                                    {{ $item->description_cn }}
                                     @endif
                                 </p>
                             </div>
