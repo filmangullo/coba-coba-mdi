@@ -17,9 +17,9 @@
                             <p class="py-2 mt-1 text-xs text-center text-gray-800">
                                 @if(!empty($shw))
                                     @if(App::isLocale('id'))
-                                        {{ $shw->description_cn }}
+                                        {{ $shw->description_id }}
                                     @elseif(App::isLocale('en'))
-                                        {{ $shw->description_cn }}
+                                        {{ $shw->description_en }}
                                     @elseif(App::isLocale('cn'))
                                         {{ $shw->description_cn }}
                                     @endif
