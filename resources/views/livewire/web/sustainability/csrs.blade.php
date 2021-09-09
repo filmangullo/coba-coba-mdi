@@ -14,14 +14,14 @@
                             <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" src="{{ !empty($shw) ? asset($shw->img) : '' }}">
                         </div>
                         <div class="mt-2 bg-white border border-gray-300 rounded-md">
-                            <p class="mt-1 text-xs text-center text-gray-800">
+                            <p class="py-2 mt-1 text-xs text-center text-gray-800">
                                 @if(!empty($shw))
                                     @if(App::isLocale('id'))
-                                        {{ $shw->descripion_id }}
+                                        {{ $shw->description_cn }}
                                     @elseif(App::isLocale('en'))
-                                        {{ $shw->descripion_en }}
+                                        {{ $shw->description_cn }}
                                     @elseif(App::isLocale('cn'))
-                                        {{ $shw->descripion_cn }}
+                                        {{ $shw->description_cn }}
                                     @endif
                                 @endif
                             </p>
