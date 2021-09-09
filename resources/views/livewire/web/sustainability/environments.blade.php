@@ -1,4 +1,4 @@
-<div class="px-4 pt-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div class="px-4 mt-10 pb-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
     @php
     $img = ["jpg", "JPG", "bmp", "BMP", "gif", "GIF", "jpeg", "JPEG", "png", "PNG"];
     $video = ["MP4", "mp4"];
@@ -42,7 +42,7 @@
     <div class="cursor-pointer mx-3.5">
 
         @if(in_array(substr($item->img, strpos($item->img, '.') + 1), $img ))
-            <img class="object-cover w-full rounded-md h-96" src="{{ asset($item->img) }}" alt="Mark Dynamics Gallery & Products">
+            <img class="w-full rounded-md" src="{{ asset($item->img) }}" alt="Mark Dynamics Gallery & Products">
         @elseif (in_array(substr($item->img, strpos($item->img, '.') + 1), $video ))
             <video width="900" controls class="mx-auto">
                 <source src="{{ asset($item->img) }}" type="video/mp4">
