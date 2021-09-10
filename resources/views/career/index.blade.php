@@ -7,7 +7,7 @@
     Everything you need to deploy your app
     </p> --}}
 
-    <div class="px-4 sm:px-6 lg:px-8 mx-auto py-12 mt-12 bg-gray-100">
+    <div class="px-4 sm:px-6 lg:px-8 mx-auto py-12 mt-12 bg-gray-100 min-h-screen">
         <div class="max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mx-auto">
 
             @foreach ($career as $item)
@@ -37,7 +37,7 @@
     </div>
 
 </div>
-<div class="animate__fadeInUp animate__animated  text-center bg-mark-default">
+<div class="animate__fadeInUp animate__animated bottom-0  text-center bg-mark-default">
     <div class="container py-12 mx-auto text-white sm:px-0 px-4">
         <h1 class="mb-1 text-3xl font-bold">@lang('career.header')</h1>
         <p>@lang('career.sub-header')</p>

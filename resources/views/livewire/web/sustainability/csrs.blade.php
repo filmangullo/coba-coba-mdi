@@ -14,14 +14,14 @@
                             <img :alt="imgModalSrc" class="object-cover w-full rounded-lg" src="{{ !empty($shw) ? asset($shw->img) : '' }}">
                         </div>
                         <div class="mt-2 bg-white border border-gray-300 rounded-md">
-                            <p class="mt-1 text-xs text-center text-gray-800">
+                            <p class="py-2 mt-1 text-xs text-center text-gray-800">
                                 @if(!empty($shw))
                                     @if(App::isLocale('id'))
-                                        {{ $shw->descripion_id }}
+                                        {{ $shw->description_id }}
                                     @elseif(App::isLocale('en'))
-                                        {{ $shw->descripion_en }}
+                                        {{ $shw->description_en }}
                                     @elseif(App::isLocale('cn'))
-                                        {{ $shw->descripion_cn }}
+                                        {{ $shw->description_cn }}
                                     @endif
                                 @endif
                             </p>
@@ -55,13 +55,13 @@
                             <div class="space-y-1 text-lg font-medium leading-6 h-42">
                                 <h3 class="font-bold">{!! !empty($item) ? (__('custom.lang') == 'id') ? date('d F Y', strtotime($item->date)) : date('F d, Y', strtotime($item->date)) : '' !!}
                                 </h3>
-                                <p class="text-hitam">
+                                <p class="text-sm text-hitam">
                                     @if (App::isLocale('id'))
-                                    {{ Str::limit($item->description_id, 100, '...') }}
+                                    {{ $item->description_id }}
                                     @elseif(App::isLocale('en'))
-                                    {{ Str::limit($item->description_en, 100, '...') }}
+                                    {{ $item->description_en }}
                                     @elseif(App::isLocale('cn'))
-                                    {{ Str::limit($item->description_cn, 100, '...') }}
+                                    {{ $item->description_cn }}
                                     @endif
                                 </p>
                             </div>

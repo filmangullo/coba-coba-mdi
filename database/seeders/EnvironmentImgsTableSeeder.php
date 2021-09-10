@@ -131,14 +131,14 @@ class EnvironmentImgsTableSeeder extends Seeder
             //     'created_at' => '2021-08-20 13:10:05',
             //     'updated_at' => '2021-08-20 13:10:05',
             // ),
-            // 14 =>
-            // array (
-            //     'id' => 15,
-            //     'environment_id' => 2,
-            //     'img' => 'img/env-bridge/dea668d5-d336-4a37-851d-35c6def08265.jpg',
-            //     'created_at' => '2021-08-20 13:10:05',
-            //     'updated_at' => '2021-08-20 13:10:05',
-            // ),
+            14 =>
+            array (
+                'id' => 15,
+                'environment_id' => 1,
+                'img' => 'img/enviroment.png',
+                'created_at' => '2021-08-20 13:10:05',
+                'updated_at' => '2021-08-20 13:10:05',
+            ),
             15 =>
             array (
                 'id' => 16,
