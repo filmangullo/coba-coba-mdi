@@ -10,10 +10,22 @@
     </div>
     <div class="grid pt-12 sm:pt-24 md:pt-12 grid-cols-1 md:grid-cols-2 gap-12 sm:gap-24 md:gap-6 items-center justify-center">
         <div class="sm:px-24 md:p-12">
+            @if(App::isLocale('id'))
             <img class="w-full h-full" src="{{ asset('img/graphic-1.png') }}" alt="Mark Dynamics Financial Highlight">
+            @elseif(App::isLocale('en'))
+            <img class="w-full h-full" src="{{ asset('img/graphic-1-en.png') }}" alt="Mark Dynamics Financial Highlight">
+            @elseif(App::isLocale('cn'))
+            <img class="w-full h-full" src="{{ asset('img/graphic-1-cn.png') }}" alt="Mark Dynamics Financial Highlight">
+            @endif
         </div>
         <div class="sm:px-12 md:p-6">
+            @if(App::isLocale('id'))
             <img class="w-full h-full" src="{{ asset('img/graphic-2.png') }}" alt="Mark Dynamics Financial Highlight">
+            @elseif(App::isLocale('en'))
+            <img class="w-full h-full" src="{{ asset('img/graphic-2-en.png') }}" alt="Mark Dynamics Financial Highlight">
+            @elseif(App::isLocale('cn'))
+            <img class="w-full h-full" src="{{ asset('img/graphic-2-cn.png') }}" alt="Mark Dynamics Financial Highlight">
+            @endif
         </div>
     </div>
     {{-- @if(App::isLocale('id'))
@@ -29,7 +41,13 @@
         </p>
     </div>
     <div class="w-full pt-12 sm:pt-24 md:pt-12 pb-12 sm:pb-0 md:h-screen sm:p-10 md:p-20">
+        @if(App::isLocale('id'))
         <img class="md:h-full mx-auto" src="{{ asset('img/graphic-3.png') }}" alt="Mark Dynamics Financial Highlight">
+        @elseif(App::isLocale('en'))
+        <img class="md:h-full mx-auto" src="{{ asset('img/graphic-3-en.png') }}" alt="Mark Dynamics Financial Highlight">
+        @elseif(App::isLocale('cn'))
+        <img class="md:h-full mx-auto" src="{{ asset('img/graphic-3-cn.png') }}" alt="Mark Dynamics Financial Highlight">
+        @endif
     </div>
 </div>
 @endsection

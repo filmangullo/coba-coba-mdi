@@ -9,5 +9,5 @@ return [
     'send' => '发送',
     'our-information' => '我们的信息',
     'success' => '成功',
-    'success-alert' => 'Your message will be replied to via the attached email, please monitor your email.',
+    'success-alert' => '我们会通过邮件回复您，请查看您的邮箱。',
 ];
