@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\cms\AnnualGeneralMeetingController;
 use App\Http\Controllers\cms\AwardController;
 use App\Http\Controllers\cms\CertificateController;
 use App\Http\Controllers\cms\DashboardController;
@@ -76,6 +77,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [EnvironmentController::class, 'index'])->name('index');
         Route::get('/create', [EnvironmentController::class, 'create'])->name('create');
         Route::get('/{id}/update', [EnvironmentController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('annual-general-meeting')->name('cms-agm.')->group(function () {
+        Route::get('/', [AnnualGeneralMeetingController::class, 'index'])->name('index');
+        Route::get('/create', [AnnualGeneralMeetingController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [AnnualGeneralMeetingController::class, 'update'])->name('update');
     });
 
 });

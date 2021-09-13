@@ -1,4 +1,4 @@
-<div class="px-4 mt-10 pb-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div class="px-4 pb-20 mx-auto mt-10 max-w-7xl sm:px-6 lg:px-8">
     @php
     $img = ["jpg", "JPG", "bmp", "BMP", "gif", "GIF", "jpeg", "JPEG", "png", "PNG"];
     $video = ["MP4", "mp4"];

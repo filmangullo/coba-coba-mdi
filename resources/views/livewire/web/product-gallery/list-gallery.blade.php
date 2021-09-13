@@ -9,7 +9,7 @@
                 x-transition:leave="transition ease-in duration-300"
                 x-transition:leave-start="opacity-100 transform "
                 x-transition:leave-end="opacity-0 transform" x-on:click.away="imgModalSrc = ''"
-                class="fixed inset-0 z-50 flex items-center justify-centerm p-6 w-full h-full overflow-hidden bg-opacity-60 bg-mark-default">
+                class="fixed inset-0 z-50 flex items-center w-full h-full p-6 overflow-hidden justify-centerm bg-opacity-60 bg-mark-default">
                 <div class="relative flex items-center w-full h-full">
                     <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full mx-auto overflow-auto">
                         <div class="z-10 h-auto p-4 m-auto bg-white rounded-md">
@@ -17,7 +17,7 @@
                         </div>
                         <p x-text="imgModalDesc" class="mt-5 text-lg font-semibold text-center text-black"></p>
                     </div>
-                    <div class="absolute left-0 w-full font-bold text-center cursor-default text-white bottom-6 sm:bottom-12">
+                    <div class="absolute left-0 w-full font-bold text-center text-white cursor-default bottom-6 sm:bottom-12">
                         click orange area to close
                     </div>
                 </div>
