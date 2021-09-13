@@ -9,34 +9,39 @@
         </div>
 
         <!-- Navigation Links -->
-        <div class="flex px-5 py-4 m-auto space-x-8">
+        <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 <img src="{{ asset('icon/speedometer.svg') }}" alt="dashboard" class="w-7" >
             </x-jet-nav-link>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Dashboard</div>
         </div>
 
-        <div class="flex px-5 py-4 m-auto space-x-8 mt-100">
+        <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-csr.index') }}" :active="request()->routeIs(['cms-csr.index', 'cms-awards.index', 'cms-certificates.index', 'cms-environment.index'])">
                 <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">C M S</div>
         </div>
 
-        <div class="flex px-5 py-4 m-auto space-x-8 mt-100">
+        <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-gallery.index') }}" :active="request()->routeIs(['cms-gallery.index'])">
                 <img src="{{ asset('icon/gallery.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Gallery</div>
         </div>
 
-        <div class="flex px-5 py-4 m-auto space-x-8">
+        <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-news.index') }}" :active="request()->routeIs(['cms-news.index'])">
                 <img src="{{ asset('icon/newspaper.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">News</div>
         </div>
 
-        <div class="flex px-5 py-4 m-auto space-x-8 mt-100">
+        <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-career.index') }}" :active="request()->routeIs(['cms-career.index'])">
                 <img src="{{ asset('icon/curriculum-vitae.svg') }}" alt="career" class="m-auto w-7" >
             </x-jet-nav-link>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Career</div>
         </div>
 
         <div class="px-5 py-4 m-auto space-x-8 flex-end">
