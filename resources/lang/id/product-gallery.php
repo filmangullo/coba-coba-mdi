@@ -14,7 +14,7 @@ return [
     */
 
     'high-quality'      => 'Kualitas Tinggi Kapasitas Besar untuk Kebutuhan Anda',
-    'equipped_with'     => 'Dengan kapasitas produksi terbesar di dunia, kami memberikan produk dengan kualitas tinggi dengan berbagai jenis. Keahlian kami terletak di pembuatan cetakan tangan untuk sarung tangan Nitril dengan berat 2.8 gram, 3.2 gram, dan 3.5 gram. Produsen sarung tangan yang mencetak produk yang sangat tipis dengan FAB diatas 6N sangat cocok menggunakan cetakan kami.',
+    'equipped_with'     => 'Dengan kapasitas produksi terbesar di dunia, kami memberikan produk dengan kualitas tinggi dengan berbagai jenis. Keahlian kami terletak di pembuatan cetakan sarung tangan untuk sarung tangan Nitril dengan berat 2.8 gram, 3.2 gram, dan 3.5 gram. Produsen sarung tangan yang mencetak produk yang sangat tipis dengan FAB diatas 6N sangat cocok menggunakan cetakan kami.',
     'types-of-products' => 'Tipe Produk',
     'competitive-advantages'    => 'Keunggulan Kompetitif',
     'high-endurance-against...' => 'Daya tahan tinggi terhadap larutan kimia.',

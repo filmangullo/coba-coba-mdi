@@ -143,7 +143,7 @@ class EnvironmentImgsTableSeeder extends Seeder
             array (
                 'id' => 16,
                 'environment_id' => 2,
-                'img' => 'img/env-bridge/Draft 2_2.mp4',
+                'img' => 'img/env-bridge/daai.mp4',
                 'created_at' => '2021-08-20 13:10:05',
                 'updated_at' => '2021-08-20 13:10:05',
             ),
