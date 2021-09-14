@@ -63,7 +63,16 @@ class ListContent extends Component
     {
         $query = AnnualGeneralMeeting::findOrFail($this->deleteAgmId);
 
-        Storage::delete($query->file);
+        if (substr($query->file, 0, 8) == 'storage/'){
+            Storage::delete('public/'.substr($query->file, 8));
+        } else {
+            Storage::delete('public/'.$query->file);
+        }
+
+        $query->delete();
+
+        $this->deleteAgmId = null;
+        $this->closeDeleteAgmModal();
     }
 
     public function render()

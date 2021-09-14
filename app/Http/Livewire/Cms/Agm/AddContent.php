@@ -52,7 +52,7 @@ class AddContent extends Component
         $query->title_en    = $this->title_en;
         $query->title_cn    = $this->title_cn;
         $query->year_id     = $this->year;
-        $query->file        = $file;
+        $query->file        = 'storage/'.$file;
 
         $query->save();
         $this->file->storeAs('public', $file);

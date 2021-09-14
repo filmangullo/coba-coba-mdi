@@ -28,7 +28,7 @@
                         <div class="flow-root px-6 pb-8 rounded-lg shadow-md bg-gray-50">
                             <div class="-mt-6">
                                 <div>
-                                    <span
+                                    <a href="{{ asset($a->file) }}" target="blank"
                                         class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
                                         <!-- Heroicon name: outline/cloud-upload -->
                                         <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -36,12 +36,13 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                                         </svg>
-                                    </span>
+                                    </a>
                                 </div>
                                 <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">{{ $a->title_id }}
                                 </h3>
-                                <p class="text-right font-1xs">{{ $a->title_id }}</p>
-                                <p class="text-right font-1xs">{{ $a->title_cn }}</p>
+                                <p class="mt-2 text-right font-1xs">{{ $a->title_id }}</p>
+                                <hr>
+                                <p class="mt-2 text-left font-1xs">{{ $a->title_cn }}</p>
                             </div>
                             <button wire:click="openDeleteAgmModal({{$a->id}})" type="button"
                                 class="inline-flex items-center mt-2 px-3 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
