@@ -22,5 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(EnvironmentsTableSeeder::class);
         $this->call(GalleriesTableSeeder::class);
         $this->call(EnvironmentImgsTableSeeder::class);
+        $this->call(AnnualGeneralMeetingYearsTableSeeder::class);
+        $this->call(AnnualGeneralMeetingsTableSeeder::class);
     }
 }

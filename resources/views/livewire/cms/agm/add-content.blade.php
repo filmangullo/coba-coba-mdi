@@ -51,13 +51,17 @@
                             </label>
                         </div>
                     </div>
-
+                    <div>
+                        @error('title_id') <span class="text-xs text-red-500">{{ $message }}</span> <br>@enderror
+                        @error('title_en') <span class="text-xs text-red-500">{{ $message }}</span> <br>@enderror
+                        @error('title_cn') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
+                    </div>
                     <div>
                         <div class="relative w-full h-10 mb-5 ">
                             <select wire:model="year" type="text"
                                 class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
                             @foreach ($years as $item)
-                                <option>{{ $item->year }}</option>
+                                <option value="{{ $item->id }}">{{ $item->year }}</option>
                             @endforeach
 
                             </select>
@@ -92,7 +96,9 @@
                             </div>
                             <div class="flex items-center justify-between text-gray-400"> <span>Accepted file type:.doc, .pdf, img only</span> <span class="flex items-center "><i class="mr-1 fa fa-lock"></i> secure</span> </div>
                         </div>
-                        <div class="pb-3 mt-3 text-center"> <button class="w-full h-12 text-lg text-white bg-blue-600 rounded hover:bg-blue-700">Create</button> </div>
+                        <div class="pb-3 mt-3 text-center">
+                            <button wire:click="save" class="w-full h-12 text-lg text-white bg-blue-600 rounded hover:bg-blue-700">Create</button>
+                        </div>
                     </div>
                 </div>
             </div>

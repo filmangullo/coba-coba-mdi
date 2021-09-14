@@ -14,13 +14,16 @@ module.exports = {
             fontFamily: {
                 'sans': ['Montserrat', 'sans-serif'],
             },
+            fontSize: {
+                '1xs': '.50rem',
+            },
             backgroundColor: {
                 chart: {
                     default: '#131722'
                 }
             },
             borderRadius: {
-                'none': '0',
+            'none': '0',
                'sm': '0.125rem',
                'md': '0.375rem',
                'lg': '2rem',
