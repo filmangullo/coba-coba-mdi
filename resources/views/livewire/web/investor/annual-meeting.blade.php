@@ -1,5 +1,5 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:px-8 text-center">
-    <h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('annual-meeting.title')</h2>
+    <h2 class="animate__fadeInDown text-center animate__animated mt-2 mb-12 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('annual-meeting.title')</h2>
     {{-- <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Everything you need to deploy your app
     </p> --}}

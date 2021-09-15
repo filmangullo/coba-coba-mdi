@@ -25,6 +25,8 @@ class AnnualMeeting extends Component
             }
         }
 
+        krsort($annualdata);
+
         return view('livewire.web.investor.annual-meeting', ['annual' => $annualdata]);
     }
 }
