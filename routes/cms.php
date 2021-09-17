@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\AnnualGeneralMeetingController;
+use App\Http\Controllers\cms\AnnualReportController;
 use App\Http\Controllers\cms\AwardController;
 use App\Http\Controllers\cms\CertificateController;
 use App\Http\Controllers\cms\DashboardController;
@@ -90,6 +91,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [FinancialReportController::class, 'index'])->name('index');
         Route::get('/create', [FinancialReportController::class, 'create'])->name('create');
         Route::get('/{id}/update', [FinancialReportController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('annual-report')->name('cms-ar.')->group(function () {
+        Route::get('/', [AnnualReportController::class, 'index'])->name('index');
+        Route::get('/create', [AnnualReportController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [AnnualReportController::class, 'update'])->name('update');
     });
 
 });

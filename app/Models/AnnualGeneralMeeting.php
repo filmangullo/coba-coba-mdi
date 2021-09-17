@@ -22,6 +22,4 @@ class AnnualGeneralMeeting extends Model
     {
         return $this->belongsTo(AnnualGeneralMeetingYear::class, 'year_id', 'id');
     }
-
-
 }
