@@ -6,6 +6,7 @@ use App\Http\Controllers\cms\AwardController;
 use App\Http\Controllers\cms\CertificateController;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\EnvironmentController;
+use App\Http\Controllers\cms\FinancialReportController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\CareerController;
 use App\Http\Controllers\cms\GalleryController;
@@ -83,6 +84,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [AnnualGeneralMeetingController::class, 'index'])->name('index');
         Route::get('/create', [AnnualGeneralMeetingController::class, 'create'])->name('create');
         Route::get('/{id}/update', [AnnualGeneralMeetingController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('financial-report')->name('cms-fr.')->group(function () {
+        Route::get('/', [FinancialReportController::class, 'index'])->name('index');
+        Route::get('/create', [FinancialReportController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [FinancialReportController::class, 'update'])->name('update');
     });
 
 });
