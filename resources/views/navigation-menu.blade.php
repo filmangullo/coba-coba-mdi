@@ -17,7 +17,7 @@
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
-            <x-jet-nav-link href="{{ route('cms-csr.index') }}" :active="request()->routeIs(['cms-csr.index', 'cms-awards.index', 'cms-certificates.index', 'cms-environment.index', 'cms-agm.index', 'cms-fr.index'])">
+            <x-jet-nav-link href="{{ route('cms-agm.index') }}" :active="request()->routeIs(['cms-fe.index', 'cms-csr.index', 'cms-awards.index', 'cms-certificates.index', 'cms-environment.index', 'cms-agm.index', 'cms-fr.index'])">
                 <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">C M S</div>

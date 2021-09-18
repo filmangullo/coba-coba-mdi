@@ -4,14 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\cms\AnnualGeneralMeetingController;
 use App\Http\Controllers\cms\AnnualReportController;
 use App\Http\Controllers\cms\AwardController;
+use App\Http\Controllers\cms\CareerController;
 use App\Http\Controllers\cms\CertificateController;
+use App\Http\Controllers\cms\CsrController;
 use App\Http\Controllers\cms\DashboardController;
 use App\Http\Controllers\cms\EnvironmentController;
 use App\Http\Controllers\cms\FinancialReportController;
-use App\Http\Controllers\cms\NewsController;
-use App\Http\Controllers\cms\CareerController;
 use App\Http\Controllers\cms\GalleryController;
-use App\Http\Controllers\cms\CsrController;
+use App\Http\Controllers\cms\NewsController;
+use App\Http\Controllers\cms\PublicExposeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -99,4 +101,9 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/{id}/update', [AnnualReportController::class, 'update'])->name('update');
     });
 
+    Route::prefix('public-expose')->name('cms-pe.')->group(function () {
+        Route::get('/', [PublicExposeController::class, 'index'])->name('index');
+        Route::get('/create', [PublicExposeController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [PublicExposeController::class, 'update'])->name('update');
+    });
 });

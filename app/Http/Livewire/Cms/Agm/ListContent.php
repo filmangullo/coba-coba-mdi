@@ -46,7 +46,6 @@ class ListContent extends Component
         $this->closeAddYearModal();
     }
 
-
     public function openDeleteAgmModal($id)
     {
         $this->deleteAgmId = $id;
