@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="fixed w-20 h-full bg-purple-800 border-b border-gray-100 rounded-l-lg">
+<nav x-data="{ open: false }" class="fixed w-20 h-full bg-gray-800 border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="grid-cols-1 m-auto text-center">
         <!-- Logo -->
@@ -17,10 +17,17 @@
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
+            <x-jet-nav-link href="{{ route('cms.index') }}" :active="request()->routeIs(['cms.index'])">
+                <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
+            </x-jet-nav-link>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">CMS</div>
+        </div>
+
+        <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-agm.index') }}" :active="request()->routeIs(['cms-fe.index', 'cms-csr.index', 'cms-awards.index', 'cms-certificates.index', 'cms-environment.index', 'cms-agm.index', 'cms-fr.index'])">
                 <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
             </x-jet-nav-link>
-            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">C M S</div>
+            <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Upload</div>
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\cms\CMSController;
 use App\Http\Controllers\cms\AnnualGeneralMeetingController;
 use App\Http\Controllers\cms\AnnualReportController;
 use App\Http\Controllers\cms\AwardController;
@@ -31,6 +32,11 @@ Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+	Route::get('/index', [CMSController::class, 'index'])->name('cms.index');
+	Route::get('/create', [CMSController::class, 'create'])->name('cms.create');
+	Route::get('/{id}/update', [CMSController::class, 'update'])->name('cms.update');
+	Route::get('/{slug}/show', [CMSController::class, 'show'])->name('cms.show');
 
     Route::prefix('gallery')->name('cms-gallery.')->group(function () {
         Route::get('/index', [GalleryController::class, 'index'])->name('index');
