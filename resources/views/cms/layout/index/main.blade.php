@@ -49,6 +49,11 @@
 				<td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
 				  <a href="#" class="text-indigo-600 hover:text-indigo-900">Delete</a>
 				</td>
+				<td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+				@if($m->type == 'page')
+					@dump($m->page)
+				@endif
+				</td>
 			  </tr>
 			  	@foreach($m->child as $sm)
 				<tr>

@@ -18,4 +18,9 @@ class Menu extends Model
     {
         return $this->hasOne(Menu::class, 'id', 'parent');
     }
+
+	public function page()
+    {
+        return $this->hasOne(Menu::class, 'id', 'menu');
+    }
 }

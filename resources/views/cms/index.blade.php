@@ -9,7 +9,7 @@
 
             <div class="grid grid-cols-1">
                 <div>
-                    <a href="{{ route('cms.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add new menu</a>
+                    <a href="{{ route('cms.create') }}" class="float-right px-5 py-2 text-sm text-blue-600 border border-blue-600 rounded-md focus:outline-none hover:bg-blue-50">Add new item</a>
                 </div>
             </div>
         </div>
