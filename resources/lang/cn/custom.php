@@ -15,7 +15,7 @@ return [
 
     'lang'      => 'cn',
     'about-us' => '关于公司',
-    'ceo-message' => '关于公司',
+    'ceo-message' => '总裁致辞',
     'our-business' => '业务',
     'vision-mission' => '愿景和使命',
     'milestones' => '里程碑',

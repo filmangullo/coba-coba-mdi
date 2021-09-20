@@ -17,11 +17,14 @@
 							Type
 						</label>
 						<div class="mt-1">
-							<select wire:model="type" id="type" name="type" autocomplete="type" class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-								<option @if($disable) disabled @endif value="main">Main Menu</option>
-								<option value="page">Page</option>
-								<option @if($aboutdisable) disabled wire:click="define_about @endif value="about">About Us Page</option>
-							</select>
+                            @php
+                                use App\Services\CMSService;
+                                $main = collect([
+                                    'type' => $type
+                                ]);
+                                $main = (object)$main->all();
+                            @endphp
+							{{ CMSService::type($main) }}
 						</div>
 					</div>
 
