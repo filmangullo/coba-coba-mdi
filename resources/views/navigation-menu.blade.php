@@ -11,42 +11,54 @@
         <!-- Navigation Links -->
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                <img src="{{ asset('icon/speedometer.svg') }}" alt="dashboard" class="w-7" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Dashboard</div>
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms.index') }}" :active="request()->routeIs(['cms.index'])">
-                <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="m-auto w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">CMS</div>
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-agm.index') }}" :active="request()->routeIs(['cms-fe.index', 'cms-csr.index', 'cms-awards.index', 'cms-certificates.index', 'cms-environment.index', 'cms-agm.index', 'cms-fr.index', 'cms-op'])">
-                <img src="{{ asset('icon/cms.svg') }}" alt="newspaper" class="m-auto w-7" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="m-auto w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Upload</div>
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-gallery.index') }}" :active="request()->routeIs(['cms-gallery.index'])">
-                <img src="{{ asset('icon/gallery.svg') }}" alt="newspaper" class="m-auto w-7" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="m-auto w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Gallery</div>
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-news.index') }}" :active="request()->routeIs(['cms-news.index'])">
-                <img src="{{ asset('icon/newspaper.svg') }}" alt="newspaper" class="m-auto w-7" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="m-auto w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">News</div>
         </div>
 
         <div class="relative flex justify-center px-5 pt-4 m-auto text-center pb-9">
             <x-jet-nav-link href="{{ route('cms-career.index') }}" :active="request()->routeIs(['cms-career.index'])">
-                <img src="{{ asset('icon/curriculum-vitae.svg') }}" alt="career" class="m-auto w-7" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="m-auto w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
             </x-jet-nav-link>
             <div class="absolute inset-x-0 bottom-0 mb-3 text-xs font-semibold text-center text-white">Career</div>
         </div>
