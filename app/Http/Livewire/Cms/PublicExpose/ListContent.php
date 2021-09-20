@@ -5,6 +5,7 @@ namespace App\Http\Livewire\Cms\PublicExpose;
 use Illuminate\Support\Facades\Storage;
 use App\Models\PublicExposeYear;
 use Livewire\WithPagination;
+use App\Models\PublicExpose;
 use Livewire\Component;
 
 class ListContent extends Component
@@ -45,8 +46,39 @@ class ListContent extends Component
         $this->closeAddYearModal();
     }
 
+    public function openDeletePeModal($id)
+    {
+        $this->deletePeId = $id;
+        $this->deletePeModal = true;
+    }
+
+    public function closeDeletePeModal()
+    {
+        $this->deletePeId = null;
+        $this->deletePeModal = false;
+    }
+
+    public function deletePe()
+    {
+        $query = PublicExpose::findOrFail($this->deletePeId);
+
+        if (substr($query->file, 0, 8) == 'storage/'){
+            Storage::delete('public/'.substr($query->file, 8));
+        } else {
+            Storage::delete('public/'.$query->file);
+        }
+
+        $query->delete();
+
+        $this->deletePeId = null;
+        $this->closeDeletePeModal();
+    }
+
     public function render()
     {
-        return view('livewire.cms.public-expose.list-content');
+        $years = PublicExposeYear::orderBy('year', 'desc')->paginate(2);
+        return view('livewire.cms.public-expose.list-content', [
+            'years'         => $years
+        ]);
     }
 }

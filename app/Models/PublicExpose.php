@@ -4,22 +4,22 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\PublicExpose;
+use App\Models\PublicExposeYear;
 
-class PublicExposeYear extends Model
+class PublicExpose extends Model
 {
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'public_expose_years';
+    protected $table = 'public_exposes';
     protected $guarded = [];
 
     use HasFactory;
 
-    public function publicExposes()
+    public function publicExposeYears()
     {
-        return $this->hasMany(PublicExpose::class, 'year_id', 'id');
+        return $this->belongsTo(PublicExposeYear::class, 'year_id', 'id');
     }
 }

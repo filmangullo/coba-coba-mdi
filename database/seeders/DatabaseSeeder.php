@@ -28,5 +28,7 @@ class DatabaseSeeder extends Seeder
         $this->call(FinancialReportsTableSeeder::class);
 
         $this->call(AnnualReportsTableSeeder::class);
+        $this->call(PublicExposeYearsTableSeeder::class);
+        $this->call(PublicExposesTableSeeder::class);
     }
 }

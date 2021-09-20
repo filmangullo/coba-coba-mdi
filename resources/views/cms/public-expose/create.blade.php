@@ -20,7 +20,7 @@
     </x-slot>
 
     @livewire('cms.public-expose.add-content', [
-        'agm'     => null
+        'pe'     => null
     ])
 </x-app-layout>
 
