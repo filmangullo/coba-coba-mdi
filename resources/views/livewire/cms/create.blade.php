@@ -34,9 +34,13 @@
 								<option wire:click="disable(false, false)" value="null">== No Parent ==</option>
                                 @if($type != 'about')
                                     @foreach($menu as $m)
+                                        @if($m->type == 'main')
                                         <option wire:click="disable(false, true)" value="{{$m->id}}">{{$m->name_en}}</option>
+                                        @endif
                                         @foreach($m->child as $sm)
+                                            @if($sm->type == 'main')
                                             <option wire:click="disable()" value="{{$sm->id}}">{{$m->name_en}} > {{$sm->name_en}}</option>
+                                            @endif
                                         @endforeach
                                     @endforeach
                                 @endif

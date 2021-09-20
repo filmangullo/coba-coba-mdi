@@ -14,12 +14,12 @@ class CMSController extends Controller
 	}
 
 	public function create() {
-		$menu = Menu::where('parent',null)->orderBy('name_en', 'asc')->get();
+		$menu = Menu::where('parent',null)->where('type','=','main')->orderBy('name_en', 'asc')->get();
 		return view('cms.create', compact('menu'));
 	}
 
     public function update($id) {
-        $menu = Menu::where('parent',null)->orderBy('name_en', 'asc')->get();
+        $menu = Menu::where('parent',null)->where('type','=','main')->orderBy('name_en', 'asc')->get();
         $edit = Menu::where('id',$id)->first();
         return view('cms.update', compact('menu', 'edit'));
     }
