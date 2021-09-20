@@ -4,6 +4,7 @@ namespace App\Http\Controllers\cms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\OurProduct;
 
 class OurProductController extends Controller
 {
@@ -36,6 +37,9 @@ class OurProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return view('cms.our-product.update');
+        $op = OurProduct::findOrFail($id);
+        return view('cms.our-product.update', [
+            'op' => $op,
+        ]);
     }
 }
