@@ -11,6 +11,58 @@
         </button>
     </div>
 
+    <div class="my-10 ">
+
+        <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            @foreach ($years as $y)
+            {{-- Year --}}
+            <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                {{ $y->year }}
+            </p>
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                    @foreach ($y->publicExposes as $a)
+                    {{-- Annual General Meeting --}}
+                    <div class="pt-6">
+                        <div class="flow-root px-6 pb-8 rounded-lg shadow-md bg-gray-50">
+                            <div class="-mt-6">
+                                <div>
+                                    <a href="{{ asset($a->file) }}" target="blank"
+                                        class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <!-- Heroicon name: outline/cloud-upload -->
+                                        <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">{{ $a->title_id }}
+                                </h3>
+                                <p class="mt-2 text-right font-1xs">{{ $a->title_id }}</p>
+                                <hr>
+                                <p class="mt-2 text-left font-1xs">{{ $a->title_cn }}</p>
+                            </div>
+                            <button wire:click="openDeletePeModal({{$a->id}})" type="button"
+                                class="inline-flex items-center mt-2 px-3 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    @endforeach
+
+                </div>
+            </div>
+
+            @endforeach
+            <div class="px-4 py-2">
+                {{ $years->links() }}
+            </div>
+
+        </div>
+    </div>
+
     {{-- Modal Add Year --}}
     @if($addYearModal)
     <div class="fixed inset-0 z-10 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
