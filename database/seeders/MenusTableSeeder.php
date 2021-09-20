@@ -71,6 +71,32 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:38:32',
                 'updated_at' => '2021-09-20 09:12:14',
             ),
+            4 => 
+            array (
+                'id' => 16,
+                'type' => 'main',
+                'parent' => 13,
+                'slug' => 'reports-publication',
+                'name_en' => 'Reports / Publication',
+                'name_id' => 'Laporan / Publikasi',
+                'name_cn' => '报告与刊物',
+                'active' => 1,
+                'created_at' => '2021-09-20 15:07:12',
+                'updated_at' => '2021-09-20 15:07:12',
+            ),
+            5 => 
+            array (
+                'id' => 17,
+                'type' => 'main',
+                'parent' => NULL,
+                'slug' => 'sustainability',
+                'name_en' => 'Sustainability',
+                'name_id' => 'Keberlanjutan',
+                'name_cn' => '可持续发展',
+                'active' => 1,
+                'created_at' => '2021-09-20 15:15:13',
+                'updated_at' => '2021-09-20 15:15:13',
+            ),
         ));
         
         
