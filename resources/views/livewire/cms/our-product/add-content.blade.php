@@ -105,15 +105,22 @@
                             <div class="relative flex items-center justify-center h-40 bg-white border-2 border-gray-400 border-dashed rounded-lg hover:cursor-pointer">
                                 <div class="absolute">
                                     <div wire:loading.remove wire:target="file" class="flex flex-col items-center ">
-                                        @if ($file == null)
+                                        @if ($file == null && !isset($op->file))
                                         <span class="block font-normal text-gray-400">Attach you files here</span>
                                         <span class="block font-normal text-gray-400">or</span>
                                         <span class="block font-normal text-blue-400">Browse files</span>
                                         @else
-                                        <span class="block font-normal text-gray-400">Has Attach</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                        </svg>
+                                            @if (isset($op->file))
+                                            <span class="block font-normal text-gray-400">Has Attach</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                            </svg>
+                                            @else
+                                            <span class="block font-normal text-gray-400">Has Attach</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                            </svg>
+                                            @endif
                                         @endif
 
                                     </div>

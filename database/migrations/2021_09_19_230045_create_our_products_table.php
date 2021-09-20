@@ -15,7 +15,6 @@ class CreateOurProductsTable extends Migration
     {
         Schema::create('our_products', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('year_id')->nullable();
             $table->string('title_id');
             $table->string('title_en');
             $table->string('title_cn');

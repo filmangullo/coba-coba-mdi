@@ -1,59 +1,106 @@
 <div>
-    <div class="relative py-16 bg-gray-100 sm:py-24 lg:py-24">
+    <div class="relative py-16 bg-gray-100 sm:py-24 lg:py-6">
         <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <div class="mt-12 animate__fadeInUp wow animate__animated">
                 <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                    <a href="https://agrodynamicsindo.com/" class="block pt-6">
+                    @foreach ($ops as $item)
+                    <div class="block pt-6">
                         <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
                             <div class="-mt-6">
                                 <div class="flex justify-center">
                                     <img class="transition-all duration-500 transform hover:scale-125"
-                                        src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
+                                        src="{{ asset($item->file) }}" alt="Mark Dynamics Agriculture">
                                 </div>
                                 <div>
                                     <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">
-                                        @lang('custom.agriculture')</h3>
+                                        {{ $item->title_id }}</h3>
                                     <p class="mt-5 text-base text-gray-500">
-                                        @lang('custom.agriculture-desc')
+                                        {{ $item->description_id }}
                                     </p>
                                 </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="{{ route('gallery') }}" class="block pt-6">
-                        <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
-                            <div class="-mt-6">
-                                <div class="flex justify-center">
-                                    <img class="transition-all duration-500 transform hover:scale-125"
-                                        src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
+                                <div>
+                                    <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">
+                                        {{ $item->title_en }}</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        {{ $item->description_en }}
+                                    </p>
                                 </div>
-                                <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">
-                                    @lang('custom.hand-former')</h3>
-                                <p class="mt-5 text-base text-gray-500">
-                                    @lang('custom.hand-former-desc')
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="https://berjayadynamicsindonesia.web.indotrading.com/" class="block pt-6">
-                        <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
-                            <div class="grid content-between -mt-6">
-                                <div class="flex justify-center">
-                                    <img class="transition-all duration-500 transform hover:scale-125"
-                                        src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
+                                <div>
+                                    <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">
+                                        {{ $item->title_cn }}</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        {{ $item->description_cn }}
+                                    </p>
                                 </div>
-                                <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.sanitary')
-                                </h3>
-                                <p class="mt-5 text-base text-gray-500">
-                                    @lang('custom.sanitary-desc')
-                                </p>
+                                <div>
+
+                                    <a href="{{ $item->url }}" class="mt-5 text-base text-gray-500">
+                                        {{ $item->url }}
+                                    </a>
+                                </div>
+                                <div class="flex between-center">
+                                    <button wire:click="updateOp({{$item->id}})"
+                                        class="items-center w-full mt-2 px-3 text-center  py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        Update
+                                    </button>
+                                    <button wire:click="openDeleteOpModal({{$item->id}})" type="button"
+                                        class="items-center w-full mt-2 px-3 text-center  py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        Delete
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
+
+    {{-- Modal Delete Op --}}
+    @if($deleteOpModal)
+    <div class="fixed inset-0 z-10 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" aria-hidden="true"></div>
+
+
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div
+                class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                <div class="sm:flex sm:items-start">
+                    <div
+                        class="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-red-100 rounded-full sm:mx-0 sm:h-10 sm:w-10">
+                        <!-- Heroicon name: outline/exclamation -->
+                        <svg class="w-6 h-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <h3 class="text-lg font-medium leading-6 text-gray-900" id="modal-title">
+                            Delete
+                        </h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500">
+                                Are you sure you want to delete this? All of your data will be permanently
+                                removed from our servers forever. This action cannot be undone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                    <button wire:click='deleteOp' type="button"
+                        class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        Delete
+                    </button>
+                    <button wire:click='closeDeleteOpModal' type="button"
+                        class="inline-flex justify-center w-full px-4 py-2 mt-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endIf
 </div>
