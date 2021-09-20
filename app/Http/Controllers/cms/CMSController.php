@@ -9,17 +9,17 @@ use App\Models\Menu;
 class CMSController extends Controller
 {
     public function index() {
-		$menu = Menu::where('parent',null)->paginate(20);
+		$menu = Menu::where('parent',null)->orderBy('name_en', 'asc')->paginate(20);
 		return view('cms.index', compact('menu'));
 	}
 
 	public function create() {
-		$menu = Menu::where('parent',null)->get();
+		$menu = Menu::where('parent',null)->orderBy('name_en', 'asc')->get();
 		return view('cms.create', compact('menu'));
 	}
 
     public function update($id) {
-        $menu = Menu::where('parent',null)->get();
+        $menu = Menu::where('parent',null)->orderBy('name_en', 'asc')->get();
         $edit = Menu::where('id',$id)->first();
         return view('cms.update', compact('menu', 'edit'));
     }

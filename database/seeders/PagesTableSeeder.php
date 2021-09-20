@@ -82,6 +82,259 @@ Ridwan Goh</div>
                 'created_at' => '2021-09-20 05:02:08',
                 'updated_at' => '2021-09-20 07:15:47',
             ),
+            1 => 
+            array (
+                'id' => 6,
+                'menu' => 15,
+                'content_en' => '<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+<h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang(&#39;board-members.board_members&#39;)</h2>
+
+<p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@lang(&#39;board-members.board_of_commisioner&#39;)</p>
+
+<div class="pt-24 mx-auto">
+<div class="grid grid-cols-1 gap-4 mb-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3"><img class="w-full mx-auto rounded-xl" src="../../img/chin-kien-ping.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Chin Kien Ping</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.president_commissioner&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_chin_kien_ping&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 mb-12 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/dompak-pasaribu.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Dompak Pasaribu</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.independent_commissioner&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_dompak_pasaribu&#39;)</div>
+</div>
+</div>
+
+<h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang(&#39;board-members.board_members&#39;)</h2>
+
+<p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@lang(&#39;board-members.board_of_directors&#39;)</p>
+
+<div class="grid grid-cols-1 gap-4 my-12 lg:my-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/ridwan-goh.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Ridwan Goh</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.president_director&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_ridwan_goh&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 mb-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/sutiyoso-bin-risman.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Sutiyoso Bin Risman</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.direktur&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_sutiyoso_bin_risman&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/cahaya-dewi-surbakti.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Cahaya Dewi Surbakti</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.independent_director&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_cahaya_dewi_surbakti&#39;)</div>
+</div>
+</div>
+</div>
+</div>
+',
+                'content_id' => '<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+<h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang(&#39;board-members.board_members&#39;)</h2>
+
+<p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@lang(&#39;board-members.board_of_commisioner&#39;)</p>
+
+<div class="pt-24 mx-auto">
+<div class="grid grid-cols-1 gap-4 mb-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3"><img class="w-full mx-auto rounded-xl" src="../../img/chin-kien-ping.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Chin Kien Ping</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.president_commissioner&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_chin_kien_ping&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 mb-12 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/dompak-pasaribu.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Dompak Pasaribu</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.independent_commissioner&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_dompak_pasaribu&#39;)</div>
+</div>
+</div>
+
+<h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang(&#39;board-members.board_members&#39;)</h2>
+
+<p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@lang(&#39;board-members.board_of_directors&#39;)</p>
+
+<div class="grid grid-cols-1 gap-4 my-12 lg:my-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/ridwan-goh.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Ridwan Goh</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.president_director&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_ridwan_goh&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 mb-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/sutiyoso-bin-risman.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Sutiyoso Bin Risman</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.direktur&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_sutiyoso_bin_risman&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/cahaya-dewi-surbakti.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Cahaya Dewi Surbakti</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.independent_director&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_cahaya_dewi_surbakti&#39;)</div>
+</div>
+</div>
+</div>
+</div>
+',
+                'content_cn' => '<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
+<h2 class="animate__fadeInDown animate__animated text-base font-semibold tracking-wider uppercase text-mark-default">@lang(&#39;board-members.board_members&#39;)</h2>
+
+<p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@lang(&#39;board-members.board_of_commisioner&#39;)</p>
+
+<div class="pt-24 mx-auto">
+<div class="grid grid-cols-1 gap-4 mb-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3"><img class="w-full mx-auto rounded-xl" src="../../img/chin-kien-ping.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Chin Kien Ping</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.president_commissioner&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_chin_kien_ping&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 mb-12 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/dompak-pasaribu.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Dompak Pasaribu</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.independent_commissioner&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_dompak_pasaribu&#39;)</div>
+</div>
+</div>
+
+<h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">@lang(&#39;board-members.board_members&#39;)</h2>
+
+<p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@lang(&#39;board-members.board_of_directors&#39;)</p>
+
+<div class="grid grid-cols-1 gap-4 my-12 lg:my-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/ridwan-goh.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Ridwan Goh</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.president_director&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_ridwan_goh&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 mb-24 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/sutiyoso-bin-risman.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Sutiyoso Bin Risman</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.direktur&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_sutiyoso_bin_risman&#39;)</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-4 md:grid-flow-col md:grid-cols-3">
+<div class="col-span-1 md:row-span-3 "><img class="w-full mx-auto rounded-xl" src="../../img/cahaya-dewi-surbakti.png" /></div>
+
+<div class="col-span-2">
+<div class="col-span-1 text-left mb-6 md:ml-5 md:col-span-4">
+<h1 class="text-2xl font-bold">Cahaya Dewi Surbakti</h1>
+
+<p class="italic font-semibold text-mark-default">@lang(&#39;board-members.independent_director&#39;)</p>
+</div>
+
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5">@lang(&#39;board-members.about_cahaya_dewi_surbakti&#39;)</div>
+</div>
+</div>
+</div>
+</div>
+',
+                'created_at' => '2021-09-20 08:38:32',
+                'updated_at' => '2021-09-20 09:12:14',
+            ),
         ));
         
         

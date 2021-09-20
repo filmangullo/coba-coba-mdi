@@ -261,7 +261,8 @@
 <script>
     var options = {
         extraPlugins: 'htmlwriter,div',
-        format_tags = 'p;h1;h2;h3;h4;h5;h6;pre;address;div',
+        allowedContent: true,
+        format_tags: 'p;h1;h2;h3;h4;h5;h6;pre;address;div',
         filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
         filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
         filebrowserBrowseUrl: '/laravel-filemanager?type=Files',

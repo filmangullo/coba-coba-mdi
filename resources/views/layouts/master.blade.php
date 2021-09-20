@@ -76,7 +76,7 @@
                             @php
                                 use App\Models\Menu;
                             @endphp
-                              @foreach (Menu::where('type', 'about')->get() as $body)
+                              @foreach (Menu::where('type', 'about')->orderBy('name_en', 'asc')->where('active', true)->get() as $body)
                                 <a href="{{ url('/about/' . $body->slug) }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                     <p class="text-sm font-medium text-gray-900">
                                         @if(App::isLocale('en'))
@@ -127,6 +127,100 @@
                       <a href="{{ route('gallery') }}" class="hidden text-sm font-medium text-gray-500 xl:block hover:text-gray-900">
                         @lang('custom.products-gallery')
                       </a>
+
+                      @foreach (Menu::where('type', '!=','about')->where('parent',null)->orderBy('name_en', 'asc')->where('active', true)->get() as $body)
+                        @if($body->type == 'page')
+                        <a href="{{ url($body->slug) }}" class="hidden text-sm font-medium text-gray-500 xl:block hover:text-gray-900">
+                            @lang('custom.products-gallery')
+                        </a>
+                        @else
+                        <div x-data="{open: false}" class="relative">
+                            <button x-on:click="open = !open" type="button" class="inline-flex items-center text-sm font-medium text-gray-500 truncate bg-white rounded-md group hover:text-gray-900 focus:outline-none" aria-expanded="false">
+                              <span>
+                                @if(App::isLocale('en'))
+                                    {!! $body->name_en !!}
+                                @elseif(App::isLocale('id'))
+                                    {!! $body->name_id !!}
+                                @elseif(App::isLocale('cn'))
+                                    {!! $body->name_cn !!}
+                                @endif
+                              </span>
+                              <svg :class="{ 'text-mark-default -rotate-180' : open === true, 'text-gray-400 group-hover:text-gray-500' : open === false }" class="w-5 h-5 ml-2 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                              </svg>
+                            </button>
+                            <div x-show="open === true" x-on:click.away="open = false" x-cloak
+                            x-transition:enter="transition-all ease-out duration-200"
+                            x-transition:enter-start="opacity-0 translate-y-1"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition-all ease-in duration-150"
+                            x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-1"
+                            class="absolute right-0 z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                                <div class="relative grid gap-6 px-5 py-6 bg-white rounded-lg sm:gap-8 sm:p-8">
+                                    @foreach($body->child as $m)
+                                        @if($m->type == 'page')
+                                            <a href="{{ url($body->slug .'/'. $m->slug) }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
+                                                <p class="text-sm font-medium text-gray-900">
+                                                    @if(App::isLocale('en'))
+                                                        {!! $m->name_en !!}
+                                                    @elseif(App::isLocale('id'))
+                                                        {!! $m->name_id !!}
+                                                    @elseif(App::isLocale('cn'))
+                                                        {!! $m->name_cn !!}
+                                                    @endif
+                                                </p>
+                                            </a>
+                                        @else
+                                            <div x-data="{open:false}" x-on:click="open = !open" class="relative flex items-center justify-between p-3 -m-3 rounded-lg cursor-pointer hover:bg-gray-100">
+                                                <p class="text-sm font-medium text-gray-900">
+                                                    @if(App::isLocale('en'))
+                                                        {!! $m->name_en !!}
+                                                    @elseif(App::isLocale('id'))
+                                                        {!! $m->name_id !!}
+                                                    @elseif(App::isLocale('cn'))
+                                                        {!! $m->name_cn !!}
+                                                    @endif
+                                                </p>
+
+                                                <svg :class="{ 'text-mark-default' : open === true, 'text-gray-400 group-hover:text-gray-500' : open === false }" class="w-3 h-3 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"/></svg>
+                                                <div
+                                                x-transition:enter="transition ease-out duration-100"
+                                                x-transition:enter-start="transform opacity-0 scale-95"
+                                                x-transition:enter-end="transform opacity-100 scale-100"
+                                                x-transition:leave="transition ease-in duration-75"
+                                                x-transition:leave-start="transform opacity-100 scale-100"
+                                                x-transition:leave-end="transform opacity-0 scale-95"
+                                                x-cloak x-show="open === true" @click.away="open = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 mr-5 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 right-full lg:left-full -top-5 lg:ml-5">
+                                                    @foreach($m->child as $sm)
+                                                        <a href="{{ url($body->slug .'/'. $m->slug .'/'. $sm->slug) }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
+                                                            <p class="text-sm font-medium text-gray-900">
+                                                                @if(App::isLocale('en'))
+                                                                    {!! $sm->name_en !!}
+                                                                @elseif(App::isLocale('id'))
+                                                                    {!! $sm->name_id !!}
+                                                                @elseif(App::isLocale('cn'))
+                                                                    {!! $sm->name_cn !!}
+                                                                @endif
+                                                            </p>
+                                                        </a>
+                                                    @endforeach
+
+                                                </div>
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                </div>
+
+                                </div>
+                              </div>
+                            </div>
+                        @endif
+
+
+                      @endforeach
+
 
                       <div class="relative">
                         <button x-on:click="investor = !investor" type="button" class="inline-flex items-center text-sm font-medium text-gray-500 truncate bg-white rounded-md group hover:text-gray-900 focus:outline-none" aria-expanded="false">
