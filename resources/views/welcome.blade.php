@@ -50,7 +50,7 @@
                   </a>
                 </div>
                 <div class="rounded-md shadow">
-                  <a href="{{ route('ceo-message') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-sm font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-base md:px-8">
+                  <a href="{{ url('about/ceo-message') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-sm font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-base md:px-8">
                     @lang('custom.ceo-message')
                   </a>
                 </div>

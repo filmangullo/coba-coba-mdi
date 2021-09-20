@@ -90,7 +90,7 @@
                                 </a>
                               @endforeach
 
-                              <a href="{{ route('our-business') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
+                              {{-- <a href="{{ route('our-business') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                   <p class="text-sm font-medium text-gray-900">
                                     @lang('custom.our-business')
                                   </p>
@@ -112,7 +112,7 @@
                                   <p class="text-sm font-medium text-gray-900">
                                     @lang('custom.awards')
                                   </p>
-                              </a>
+                              </a> --}}
 
                               {{-- <a href="{{ route('certificates') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                 <p class="text-sm font-medium text-gray-900">
