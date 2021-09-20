@@ -1,6 +1,12 @@
 <div class="py-12">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="overflow-hidden bg-white shadow-xl sm:rounded-lg">
+			<div class="p-6 px-16">
+                <div class="mb-2 font-medium">Career is {{ $active ? 'Active' : 'Unactive'}} now. {{ $active ? 'Deactive to hide from main website.' : 'Activate to show career menu at main website.'}}</div>
+                <button wire:click='career' type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-white border border-transparent rounded-md shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 @if($active) bg-red-600 focus:ring-red-500 hover:bg-red-700 @else bg-indigo-600 focus:ring-indigo-500 hover:bg-indigo-700 @endif">
+                    {{$active ? 'Deactive' : 'Active'}}
+                </button>
+			</div>
             <div class="grid grid-cols-1 p-6 bg-white border-b border-gray-200 sm:px-20 md:grid-cols-3">
                 @forelse ($listCareer as $lC)
                     <div class="border border-gray-200">
@@ -27,7 +33,7 @@
                         </div>
                     </div>
                 @empty
-
+					No Career has been added.
                 @endforelse
 
 

@@ -31,5 +31,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AnnualReportsTableSeeder::class);
         $this->call(MenusTableSeeder::class);
         $this->call(PagesTableSeeder::class);
+        $this->call(SettingsTableSeeder::class);
     }
 }
