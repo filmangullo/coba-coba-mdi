@@ -23,8 +23,8 @@
       <a href="{{ route('cms-csr.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-0">CSR</a>
       <a href="{{ route('cms-environment.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-1">Environment</a>
       <a href="{{ route('cms-fr.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Financial Report</a>
+      <a href="{{ route('cms-op.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Our Product</a>
       <a href="{{ route('cms-pe.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Public Expose</a>
-
     </div>
   </div>
 </div>

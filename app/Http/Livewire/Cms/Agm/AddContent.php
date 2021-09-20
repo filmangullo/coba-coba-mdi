@@ -21,9 +21,9 @@ class AddContent extends Component
     public $file;
 
     protected $rules = [
-        'title_id' => 'required|min:6',
-        'title_en' => 'required|min:6',
-        'title_cn' => 'required|min:6',
+        'title_id' => 'required|min:1',
+        'title_en' => 'required|min:1',
+        'title_cn' => 'required|min:1',
         'year'     => 'required',
         'file'     => 'required',
     ];

@@ -13,6 +13,7 @@ use App\Http\Controllers\cms\EnvironmentController;
 use App\Http\Controllers\cms\FinancialReportController;
 use App\Http\Controllers\cms\GalleryController;
 use App\Http\Controllers\cms\NewsController;
+use App\Http\Controllers\cms\OurProductController;
 use App\Http\Controllers\cms\PublicExposeController;
 
 
@@ -105,6 +106,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [AnnualReportController::class, 'index'])->name('index');
         Route::get('/create', [AnnualReportController::class, 'create'])->name('create');
         Route::get('/{id}/update', [AnnualReportController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('our-product')->name('cms-op.')->group(function () {
+        Route::get('/', [OurProductController::class, 'index'])->name('index');
+        Route::get('/create', [OurProductController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [OurProductController::class, 'update'])->name('update');
     });
 
     Route::prefix('public-expose')->name('cms-pe.')->group(function () {
