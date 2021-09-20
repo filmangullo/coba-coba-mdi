@@ -256,8 +256,12 @@
 
 @push('scripts')
 <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ asset('js/ckeditor/htmlwriter/plugin.js') }}"></script>
+<script src="{{ asset('js/ckeditor/div/plugin.js') }}"></script>
 <script>
     var options = {
+        extraPlugins: 'htmlwriter,div',
+        format_tags = 'p;h1;h2;h3;h4;h5;h6;pre;address;div',
         filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
         filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
         filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
@@ -267,13 +271,13 @@
     const editor1 = CKEDITOR.replace( 'editor1', options );
     editor1.on('change', function(event) {
         console.log(event.editor.getData());
-        @this.set('description_id', event.editor.getData())
+        @this.set('description_en', event.editor.getData())
     });
 
     const editor2 = CKEDITOR.replace( 'editor2',options );
     editor2.on('change', function(event) {
         console.log(event.editor.getData());
-        @this.set('description_en', event.editor.getData())
+        @this.set('description_id', event.editor.getData())
     });
 
     const editor3 = CKEDITOR.replace( 'editor3',options );

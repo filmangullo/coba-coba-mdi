@@ -30,7 +30,7 @@ class Update extends Component
         $this->name_id = $this->edit->name_id;
         $this->name_cn = $this->edit->name_cn;
         $this->slug = $this->edit->slug;
-        if($this->type == 'page') {
+        if($this->type != 'main') {
             $this->description_en = $this->edit->page->content_en;
             $this->description_id = $this->edit->page->content_id;
             $this->description_cn = $this->edit->page->content_cn;
@@ -56,14 +56,14 @@ class Update extends Component
                 'description_en' => ['required'],
                 'description_id' => ['required'],
                 'description_cn' => ['required'],
-                'slug' => ['required', 'unique:menus,slug,'. $this->menu->id],
+                'slug' => ['required', 'unique:menus,slug,'. $this->edit->id],
             ]);
         } else {
             $this->validate([
                 'name_en' => ['required'],
                 'name_id' => ['required'],
                 'name_cn' => ['required'],
-                'slug' => ['required', 'unique:menus,slug,'. $this->menu->id],
+                'slug' => ['required', 'unique:menus,slug,'. $this->edit->id],
             ]);
         }
 
