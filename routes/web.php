@@ -141,6 +141,12 @@ Route::get('/App/Providers/CmsServiceProvider', function () {
 
 // Route::get('/merge-db', [Controller::class, 'mergeDB'])->name('mergedb');
 
+Route::get('about/{slug}', function($slug) {
+    $body = Menu::where('type', 'about')->where('slug', $slug)->first();
+    return view('layouts.body', compact('body'));
+});
+
+
 Route::get('{slug}', function($slug) {
     $body = Menu::where('type', 'page')->where('slug', $slug)->first();
     if(isset($body))
@@ -171,7 +177,3 @@ Route::get('{slug}/{slug2}/{slug3}', function($slug, $slug2, $slug3) {
         abort(404);
 });
 
-Route::get('about/{slug}', function($slug) {
-    $body = Menu::where('type', 'about')->where('slug', $slug)->first();
-    return view('layouts.body', compact('body'));
-});
