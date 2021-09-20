@@ -258,11 +258,9 @@
                               </div>
                             </div>
                         @endif
-
-
                       @endforeach
 
-
+{{-- 
                       <div class="relative">
                         <button x-on:click="investor = !investor" type="button" class="inline-flex items-center text-sm font-medium text-gray-500 truncate bg-white rounded-md group hover:text-gray-900 focus:outline-none" aria-expanded="false">
                           <span>@lang('custom.investor')</span>
@@ -407,7 +405,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> --}}
 
                       <div class="relative xl:hidden">
                         <button x-on:click="extra = !extra" type="button" class="inline-flex items-center text-sm font-medium text-gray-500 bg-white rounded-md group hover:text-gray-900 focus:outline-none" aria-expanded="false">
