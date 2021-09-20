@@ -17,4 +17,21 @@ class CMSController extends Controller
 		$menu = Menu::where('parent',null)->get();
 		return view('cms.create', compact('menu'));
 	}
+
+    public function update($id) {
+        $menu = Menu::where('parent',null)->get();
+        $edit = Menu::where('id',$id)->first();
+        return view('cms.update', compact('menu', 'edit'));
+    }
+
+    public function delete(Request $request) {
+        $menu = Menu::where('id', $request->id)->first();
+        if($menu->child->count()) {
+            session()->flash('fail', 'Menu ini punya turunan, tidak bisa di hapus hingga turunannya sudah di hapus terlebih dahulu.');
+            return redirect()->back();
+        }
+        session()->flash('success', 'Anda telah berhasil menghapus '. $menu->name_en . '!');
+        $menu->delete();
+        return redirect()->back();
+    }
 }

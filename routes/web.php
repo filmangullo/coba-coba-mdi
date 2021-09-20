@@ -11,6 +11,8 @@ use App\Http\Controllers\web\NewsController;
 use App\Http\Controllers\web\ProductGalleryController;
 use App\Http\Controllers\web\SustainabilityController;
 use App\Http\Controllers\web\TradingViewController;
+use App\Models\Menu;
+use App\Models\Page;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,9 +30,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('ceo-message', function () {
-    return view('aboutus.ceo-message');
-})->name('ceo-message');
+// Route::get('ceo-message', function () {
+//     return view('aboutus.ceo-message');
+// })->name('ceo-message');
 
 Route::get('our-business', function () {
     return view('aboutus.our-business');
@@ -138,3 +140,13 @@ Route::get('/App/Providers/CmsServiceProvider', function () {
 });
 
 // Route::get('/merge-db', [Controller::class, 'mergeDB'])->name('mergedb');
+
+Route::get('{slug}', function($slug) {
+    $body = Menu::where('type', 'page')->where('slug', $slug)->first();
+    return view('layouts.body', compact('body'));
+});
+
+Route::get('about/{slug}', function($slug) {
+    $body = Menu::where('type', 'about')->where('slug', $slug)->first();
+    return view('layouts.body', compact('body'));
+});

@@ -21,6 +21,12 @@ class Menu extends Model
 
 	public function page()
     {
-        return $this->hasOne(Menu::class, 'id', 'menu');
+        return $this->hasOne(Page::class, 'menu', 'id');
+    }
+
+    public function delete()
+    {
+        $this->page()->delete();
+        return parent::delete();
     }
 }

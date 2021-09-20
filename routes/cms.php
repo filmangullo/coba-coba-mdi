@@ -37,7 +37,7 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
 	Route::get('/index', [CMSController::class, 'index'])->name('cms.index');
 	Route::get('/create', [CMSController::class, 'create'])->name('cms.create');
 	Route::get('/{id}/update', [CMSController::class, 'update'])->name('cms.update');
-	Route::get('/{slug}/show', [CMSController::class, 'show'])->name('cms.show');
+	Route::post('/delete', [CMSController::class, 'delete'])->name('cms.delete');
 
     Route::prefix('gallery')->name('cms-gallery.')->group(function () {
         Route::get('/index', [GalleryController::class, 'index'])->name('index');
@@ -119,4 +119,8 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/create', [PublicExposeController::class, 'create'])->name('create');
         Route::get('/{id}/update', [PublicExposeController::class, 'update'])->name('update');
     });
+});
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
 });

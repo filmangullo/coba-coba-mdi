@@ -73,11 +73,22 @@
                         class="absolute right-0 z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-                              <a href="{{ route('ceo-message') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
-                                  <p class="text-sm font-medium text-gray-900">
-                                    @lang('custom.ceo-message')
-                                  </p>
-                              </a>
+                            @php
+                                use App\Models\Menu;
+                            @endphp
+                              @foreach (Menu::where('type', 'about')->get() as $body)
+                                <a href="{{ url('/about/' . $body->slug) }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
+                                    <p class="text-sm font-medium text-gray-900">
+                                        @if(App::isLocale('en'))
+                                        {!! $body->name_en !!}
+                                    @elseif(App::isLocale('id'))
+                                        {!! $body->name_id !!}
+                                    @elseif(App::isLocale('cn'))
+                                        {!! $body->name_cn !!}
+                                    @endif
+                                    </p>
+                                </a>
+                              @endforeach
 
                               <a href="{{ route('our-business') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                   <p class="text-sm font-medium text-gray-900">
@@ -373,12 +384,12 @@
                             x-transition:leave-start="opacity-100 translate-y-0"
                             x-transition:leave-end="opacity-0 translate-y-1"
                           x-cloak x-show="about === true" x-on:click.away="about = false" class="grid px-5 gap-y-8">
-                            <a href="{{ route('ceo-message') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+                            {{-- <a href="{{ route('ceo-message') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
                               <!-- Heroicon name: outline/chart-bar -->
                               <span class="text-base font-medium text-gray-900">
                                 @lang('custom.ceo-message')
                               </span>
-                            </a>
+                            </a> --}}
                             <a href="{{ route('our-business') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
                               <!-- Heroicon name: outline/chart-bar -->
                               <span class="text-base font-medium text-gray-900">

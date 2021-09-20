@@ -28,13 +28,29 @@ class Create extends Component
 		$this->type = $w ? 'page' : $this->type;
 	}
 
+    public function define_about() {
+        $this->parent = 'null';
+    }
+
 	public function save() {
-		$this->validate([
-			'name_en' => ['required'],
-			'name_id' => ['required'],
-			'name_cn' => ['required'],
-			'slug' => ['required', 'unique:menus'],
-		]);
+        if($this->type != 'main') {
+            $this->validate([
+                'name_en' => ['required'],
+                'name_id' => ['required'],
+                'name_cn' => ['required'],
+                'description_en' => ['required'],
+                'description_id' => ['required'],
+                'description_cn' => ['required'],
+                'slug' => ['required', 'unique:menus,slug'],
+            ]);
+        } else {
+            $this->validate([
+                'name_en' => ['required'],
+                'name_id' => ['required'],
+                'name_cn' => ['required'],
+                'slug' => ['required', 'unique:menus,slug'],
+            ]);
+        }
 
 		$parent = $this->parent == 'null' ? null : $this->parent;
 
@@ -48,7 +64,7 @@ class Create extends Component
 		$menu->active = $this->active;
 		$menu->save();
 
-		if($menu->type == 'page') {
+		if($menu->type != 'main') {
 			$page = new Page;
 			$page->menu = $menu->id;
 			$page->content_en = $this->description_en;
@@ -59,11 +75,12 @@ class Create extends Component
 
 		redirect()->route('cms.index');
 	}
-	
+
 	public function updated($field) {
-		if($field = 'name_en')	{
+		if($field == 'name_en')	{
 			$w = $this->name_en;
 			$w = str_replace(" ","-",$w);
+            $w = strtolower($w);
 			while(Menu::where('slug',$w)->first()) {
 				$w .= rand(0,9);
 			}
