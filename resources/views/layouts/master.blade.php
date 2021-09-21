@@ -429,13 +429,13 @@
                                     @lang('custom.products-gallery')
                                   </p>
                               </a>
-
+                              @if(\App\Models\Setting::where('name','career')->first()->active)
                               <a href="{{ route('career') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                   <p class="text-sm font-medium text-gray-900">
                                     @lang('custom.career')
                                   </p>
                               </a>
-
+                              @endif
                               <a href="{{ route('kontak') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                   <p class="text-sm font-medium text-gray-900">
                                     @lang('custom.contact')
@@ -445,10 +445,11 @@
                           </div>
                         </div>
                       </div>
-
+                      @if(\App\Models\Setting::where('name','career')->first()->active)
                       <a href="{{ route('career') }}" class="hidden text-sm font-medium text-gray-500 xl:block hover:text-gray-900">
                         @lang('custom.career')
                       </a>
+                      @endif
 
                       <a href="{{ route('kontak') }}" class="hidden text-sm font-medium text-gray-500 xl:block hover:text-gray-900">
                         @lang('custom.contact')
@@ -795,10 +796,11 @@
                         <a href="{{ route('gallery') }}" class="text-base font-medium text-gray-900 hover:text-gray-700">
                           @lang('custom.products-gallery')
                         </a>
-
-                        <a href="{{ route('career') }}" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                          @lang('custom.career')
-                        </a>
+                        @if(\App\Models\Setting::where('name','career')->first()->active)
+                            <a href="{{ route('career') }}" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                                @lang('custom.career')
+                            </a>
+                        @endif
 
                         <a href="{{ route('kontak') }}" class="text-base font-medium text-gray-900 hover:text-gray-700">
                           @lang('custom.contact')
@@ -832,7 +834,9 @@
                     <a href="/" class="block">
                         <img class="hidden w-24 md:block" src="{{ asset('img/logo.png') }}">
                     </a>
+                    @if(\App\Models\Setting::where('name','career')->first()->active)
                     <a class="text-center" href="{{ route('career') }}">@lang('custom.career')</a>
+                    @endif
                     <a class="text-center" href="{{ route('kontak')}}">@lang('custom.contact')</a>
                 </div>
                 <div class="pb-6 text-xs text-center"></div>
