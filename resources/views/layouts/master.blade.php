@@ -260,7 +260,7 @@
                         @endif
                       @endforeach
 
-{{-- 
+{{--
                       <div class="relative">
                         <button x-on:click="investor = !investor" type="button" class="inline-flex items-center text-sm font-medium text-gray-500 truncate bg-white rounded-md group hover:text-gray-900 focus:outline-none" aria-expanded="false">
                           <span>@lang('custom.investor')</span>
@@ -535,7 +535,7 @@
                           </div>
 
 
-                          @foreach (Menu::where('type', '!=','about')->where('parent',null)->orderBy('name_en', 'asc')->where('active', true)->get() as $body)
+                          {{-- @foreach (Menu::where('type', '!=','about')->where('parent',null)->orderBy('name_en', 'asc')->where('active', true)->get() as $body)
                           @if($body->type == 'page')
                           <a href="{{ url($body->slug) }}" class="hidden text-sm font-medium text-gray-500 xl:block hover:text-gray-900">
                               @lang('custom.products-gallery')
@@ -667,7 +667,7 @@
                           @endif
 
 
-                        @endforeach
+                        @endforeach --}}
 
 
 
