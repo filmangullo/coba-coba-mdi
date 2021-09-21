@@ -25,6 +25,7 @@
       <a href="{{ route('cms-fr.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Financial Report</a>
       <a href="{{ route('cms-op.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Our Product</a>
       <a href="{{ route('cms-pe.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Public Expose</a>
+      <a href="{{ route('cms-slider.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Slider</a>
     </div>
   </div>
 </div>

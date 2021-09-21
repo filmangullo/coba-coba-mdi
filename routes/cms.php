@@ -15,6 +15,7 @@ use App\Http\Controllers\cms\GalleryController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\OurProductController;
 use App\Http\Controllers\cms\PublicExposeController;
+use App\Http\Controllers\cms\SliderController;
 
 
 /*
@@ -118,6 +119,12 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/', [PublicExposeController::class, 'index'])->name('index');
         Route::get('/create', [PublicExposeController::class, 'create'])->name('create');
         Route::get('/{id}/update', [PublicExposeController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('slider')->name('cms-slider.')->group(function () {
+        Route::get('/', [SliderController::class, 'index'])->name('index');
+        Route::get('/create', [SliderController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [SliderController::class, 'update'])->name('update');
     });
 });
 
