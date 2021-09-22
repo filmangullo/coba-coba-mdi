@@ -40,10 +40,10 @@
 
                         <div>
                             <div class="relative w-full h-10 mb-5 ">
-                                <input wire:model.debounce.700ms="btn_id" type="text"
+                                <input wire:model.debounce.700ms="button_id" type="text"
                                     class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
 
-                                <label for="btn_id" class="absolute px-1 text-xs transition-all bg-white left-2">
+                                <label for="button_id" class="absolute px-1 text-xs transition-all bg-white left-2">
                                     Nama Tombol
                                 </label>
                             </div>
@@ -51,10 +51,10 @@
 
                         <div>
                             <div class="relative w-full h-10 mb-5 ">
-                                <input wire:model.debounce.700ms="btn1_id" type="text"
+                                <input wire:model.debounce.700ms="button1_id" type="text"
                                     class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
 
-                                <label for="btn1_id" class="absolute px-1 text-xs transition-all bg-white left-2">
+                                <label for="button1_id" class="absolute px-1 text-xs transition-all bg-white left-2">
                                     Nama Tombol 1
                                 </label>
                             </div>
@@ -82,10 +82,10 @@
 
                         <div>
                             <div class="relative w-full h-10 mb-5 ">
-                                <input wire:model.debounce.700ms="btn_en" type="text"
+                                <input wire:model.debounce.700ms="button_en" type="text"
                                     class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
 
-                                <label for="btn_en" class="absolute px-1 text-xs transition-all bg-white left-2">
+                                <label for="button_en" class="absolute px-1 text-xs transition-all bg-white left-2">
                                     Button Name
                                 </label>
                             </div>
@@ -93,10 +93,10 @@
 
                         <div>
                             <div class="relative w-full h-10 mb-5 ">
-                                <input wire:model.debounce.700ms="btn1_en" type="text"
+                                <input wire:model.debounce.700ms="button1_en" type="text"
                                     class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
 
-                                <label for="btn1_en" class="absolute px-1 text-xs transition-all bg-white left-2">
+                                <label for="button1_en" class="absolute px-1 text-xs transition-all bg-white left-2">
                                     Button Name 1
                                 </label>
                             </div>
@@ -124,10 +124,10 @@
 
                         <div>
                             <div class="relative w-full h-10 mb-5 ">
-                                <input wire:model.debounce.700ms="btn_cn" type="text"
+                                <input wire:model.debounce.700ms="button_cn" type="text"
                                     class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
 
-                                <label for="btn_cn" class="absolute px-1 text-xs transition-all bg-white left-2">
+                                <label for="button_cn" class="absolute px-1 text-xs transition-all bg-white left-2">
                                     按钮名称
                                 </label>
                             </div>
@@ -135,10 +135,10 @@
 
                         <div>
                             <div class="relative w-full h-10 mb-5 ">
-                                <input wire:model.debounce.700ms="btn1_cn" type="text"
+                                <input wire:model.debounce.700ms="button1_cn" type="text"
                                     class="w-full h-full mt-2 transition-all bg-white border-indigo-300 rounded-sm border-blue">
 
-                                <label for="btn1_cn" class="absolute px-1 text-xs transition-all bg-white left-2">
+                                <label for="button1_cn" class="absolute px-1 text-xs transition-all bg-white left-2">
                                     按钮名称 1
                                 </label>
                             </div>
