@@ -27,7 +27,7 @@ return [
         <span class="ml-12">Memiliki</span> Gelar Doktor Akuntansi dari Universitas Sumatera Utara (USU) pada tahun 2018, gelar Magister Ilmu Akuntansi dari Fakultas Ekonomi dan Bisnis USU pada tahun 2003 dan gelar Sarjana Ekonomi dalam Program Studi Akuntansi di Fakultas Ekonomi, Methodist University of Indonesia (UMI) pada tahun 1998. Memiliki Akuntan Publik Bersertifikat (BPA) dari Institut Akuntan Publik Bersertifikat Indonesia pada tahun 2017. Aktif sebagai staf pengajar di Program Studi Akuntansi Fakultas Ekonomi dan Program Studi Sistem Informasi Fakultas Ilmu Komputer UMI. <br><br>
         <span class="ml-12">Dompak</span> Pasaribu pernah menjabat sebagai Wakil Dekan II Bidang Sistem Informasi di Fakultas Ilmu Komputer UMI. Sekretaris Badan Penjaminan Mutu UMI tahun 2012-2016, kemudian diangkat sebagai Ketua Badan Penjaminan Mutu UMI tahun 2016 hingga hari ini. Selain itu, ia juga menjadi Ketua Dewan Manajemen Koperasi Pegawai UMI sejak 2018. Beliau menjabat sebagai Branch Manager di PT. Etrading Securities di Medan dari tahun 2007 hingga 2013. Sejak 2015, beliau menjabat sebagai Komite Audit di PT. ATMINDO, Tbk.
     ',
-    'president_director'            => 'President Director',
+    'president_director'            => 'Presiden Direktur',
     'about_ridwan_goh'              => '
         <span class="ml-12">Seorang</span> WNI berusia 37 tahun yang tinggal di Medan, diangkat sebagai Direktur Utama berdasarkan keputusan pemegang saham pada Rapat Umum Pemegang Saham Tahunan pada tanggal 30 April 2018, sesuai dengan Akta Notaris Nomor 39 tanggal 30 April 2018. <br><br>
         <span class="ml-12">Merupakan</span> lulusan Microskil Institute, memegang gelar Sarjana Teknik Komputer. Beliau memulai karirnya sebagai International Marketing Manager di PT. Tropical Wood Indotama dari tahun 2004 hingga 2008. Saat itu, PT. Tropical Wood Indotama adalah perusahaan kayu terbesar di Sumatera Utara. Pada tahun 2008 beliau bergabung dengan PT. Mark Dynamics Indonesia Tbk sebagai Marketing Manager. <br><br>
@@ -37,7 +37,7 @@ return [
     'about_sutiyoso_bin_risman'     => '
         <span class="ml-12">Warga</span> Negara Indonesia, berusia 50 tahun berdomisili di Medan, diangkat sebagai Direktur Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris Nomor 132 tanggal 22 Maret 2017. Beliau telah bekerja di Perseroan sejak tahun 2002 dengan jabatan sebagai General Manager antara tahun 2002 – 2009, sebelum diangkat sebagai Komisaris hingga tahun 2014.
     ',
-    'independent_director'          => 'Independent Director',
+    'independent_director'          => 'Direktur Independen',
     'about_cahaya_dewi_surbakti'    => '
         <span class="ml-12">Warga</span> Negara Indonesia, 38 tahun, berdomisili di Medan, diangkat sebagai Direktur Independen Perseroan pada tanggal 30 April 2018, berdasarkan keputusan pemegang saham pada Rapat Umum Pemegang Saham Tahunan, sesuai dengan Akta Notaris Nomor 39 tanggal 30 April 2018. <br><br>
         <span class="ml-12">Telah</span> memiliki gelar Sarjana Teknik Kimia dari Universitas Sumatera Utara (USU). Setelah lulus, ia memulai karirnya di Perseroan sebagai Eksekutif Jaminan Mutu pada tahun 2004. Setelah mengikuti pelatihan intensif tentang pengolahan keramik selama 2 tahun, hasratnya dalam melakukan pekerjaan ini meningkat secara signifikan. Dia kemudian dipercaya sebagai Kepala Penelitian dan Pengembangan, menjabat dari 2011 hingga 2018.
