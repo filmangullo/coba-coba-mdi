@@ -483,7 +483,7 @@
                 x-transition:leave="duration-100 ease-in"
                 x-transition:leave-start="opacity-100 scale-100"
                 x-transition:leave-end="opacity-0 scale-95"
-                x-show="menu === true" x-on:click.away="menu = false" class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform lg:hidden">
+                x-show="menu === true" x-on:click.away="menu = false" class="absolute inset-x-0 top-0 z-50 p-2 transition origin-top-right transform lg:hidden">
                   <div class="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
                     <div class="px-5 pt-5 pb-6">
                       <div class="flex items-center justify-between">
@@ -500,6 +500,7 @@
                           </button>
                         </div>
                       </div>
+
                       <div class="mt-6">
                         <nav class="grid gap-y-8">
                           <a x-on:click="about = !about" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
@@ -517,167 +518,154 @@
                             x-transition:leave="transition-all ease-in duration-150"
                             x-transition:leave-start="opacity-100 translate-y-0"
                             x-transition:leave-end="opacity-0 translate-y-1"
-                          x-cloak x-show="about === true" x-on:click.away="about = false" class="grid px-5 gap-y-8">
-                            {{-- <a href="{{ route('ceo-message') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.ceo-message')
-                              </span>
-                            </a> --}}
-                            <a href="{{ route('our-business') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.our-business')
-                              </span>
-                            </a>
-                            <a href="{{ route('vision&mission') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.vision-mission')
-                              </span>
-                            </a>
-                            <a href="{{ route('milestones') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.milestones')
-                              </span>
-                            </a>
-                            <a href="{{ route('awards') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.awards')
-                              </span>
-                            </a>
-                            <a href="{{ route('certificates') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                  @lang('custom.certificates')
-                                </span>
-                              </a>
+                            x-cloak x-show="about === true" x-on:click.away="about = false" class="grid px-5 gap-y-8">
+                            @foreach (Menu::where('type', 'about')->orderBy('name_en', 'asc')->where('active', true)->get() as $body)
+                             <a href="{{ url('/about/' . $body->slug) }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+                                 <p class="text-base font-medium text-gray-900">
+                                     @if(App::isLocale('en'))
+                                     {!! $body->name_en !!}
+                                 @elseif(App::isLocale('id'))
+                                     {!! $body->name_id !!}
+                                 @elseif(App::isLocale('cn'))
+                                     {!! $body->name_cn !!}
+                                 @endif
+                                 </p>
+                             </a>
+                           @endforeach
+
                           </div>
 
-                          <a x-on:click="investor = !investor" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <span class="text-base font-medium text-gray-900">
-                              @lang('custom.investor')
-                            </span>
-                            <svg :class="{ 'text-mark-default -rotate-180' : investor === true, 'text-gray-400 group-hover:text-gray-500' : investor === false }" class="w-5 h-5 ml-2 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                          </a>
-                          <div
-                          x-transition:enter="transition-all ease-out duration-200"
-                            x-transition:enter-start="opacity-0 translate-y-1"
-                            x-transition:enter-end="opacity-100 translate-y-0"
-                            x-transition:leave="transition-all ease-in duration-150"
-                            x-transition:leave-start="opacity-100 translate-y-0"
-                            x-transition:leave-end="opacity-0 translate-y-1"
-                          x-cloak x-show="investor === true" x-on:click.away="investor = false" class="grid px-5 gap-y-8">
-                              <a x-on:click="corporate = !corporate" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <span class="text-base font-medium text-gray-900">
-                                  @lang('custom.corporate')
-                                </span>
-                                <svg :class="{ 'text-mark-default -rotate-180' : corporate === true, 'text-gray-400 group-hover:text-gray-500' : corporate === false }" class="w-5 h-5 ml-2 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                              </a>
+							@foreach (Menu::where('type', '!=','about')->where('parent',null)->orderBy('name_en', 'asc')->where('active', true)->get() as $body)
+							@if($body->type == 'page')
+							<a href="{{ url($body->slug) }}" class="hidden text-base font-medium text-gray-900">
+								@lang('custom.products-gallery')
+							</a>
+							@else
+							<div x-data="{open: false}" class="relative w-full space-y-8">
+								<div x-on:click="open = !open" class="w-full flex items-center py-3 -my-3 justify-between rounded-md hover:bg-gray-50">
+									<span class="text-base font-medium text-gray-900">
+										@if(App::isLocale('en'))
+											{!! $body->name_en !!}
+										@elseif(App::isLocale('id'))
+											{!! $body->name_id !!}
+										@elseif(App::isLocale('cn'))
+											{!! $body->name_cn !!}
+										@endif
+									</span>
+									<svg :class="{ 'text-mark-default -rotate-180' : open === true, 'text-gray-400 group-hover:text-gray-500' : open === false }" class="w-5 h-5 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+										<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+									</svg>
+								</div>
+								<div x-show="open === true" x-on:click.away="open = false" x-cloak
+								x-transition:enter="transition-all ease-out duration-200"
+								x-transition:enter-start="opacity-0 translate-y-1"
+								x-transition:enter-end="opacity-100 translate-y-0"
+								x-transition:leave="transition-all ease-in duration-150"
+								x-transition:leave-start="opacity-100 translate-y-0"
+								x-transition:leave-end="opacity-0 translate-y-1"
+								class="grid px-5 gap-y-8">
+									@foreach($body->child as $m)
+										@if($m->type == 'page')
+											<a href="{{ url($body->slug .'/'. $m->slug) }}" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
+												<p class="text-base font-medium text-gray-900">
+													@if(App::isLocale('en'))
+														{!! $m->name_en !!}
+													@elseif(App::isLocale('id'))
+														{!! $m->name_id !!}
+													@elseif(App::isLocale('cn'))
+														{!! $m->name_cn !!}
+													@endif
+												</p>
+											</a>
+										@else
+											<div x-data="{open:false}" class="space-y-8">
+												<div x-on:click="open = !open" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
+													<p class="text-base font-medium text-gray-900">
+														@if(App::isLocale('en'))
+															{!! $m->name_en !!}
+														@elseif(App::isLocale('id'))
+															{!! $m->name_id !!}
+														@elseif(App::isLocale('cn'))
+															{!! $m->name_cn !!}
+														@endif
+													</p>
 
-                            <div
-                            x-transition:enter="transition-all ease-out duration-200"
-                                x-transition:enter-start="opacity-0 translate-y-1"
-                                x-transition:enter-end="opacity-100 translate-y-0"
-                                x-transition:leave="transition-all ease-in duration-150"
-                                x-transition:leave-start="opacity-100 translate-y-0"
-                                x-transition:leave-end="opacity-0 translate-y-1"
-                            x-cloak x-show="corporate === true" x-on:click.away="corporate = false" class="grid px-5 gap-y-8">
-                                <a href="{{ route('corporate-governanc.board-members') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.board-members')
-                                </span>
-                                </a>
-                                <a href="{{ route('corporate-governanc.organization-structure') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.organization')
-                                </span>
-                                </a>
-                                <a href="{{ route('corporate-governanc.audit-comittee') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.audit')
-                                </span>
-                                </a>
-                            </div>
+													<svg :class="{ 'text-mark-default -rotate-180' : open === true, 'text-gray-400 group-hover:text-gray-500' : open === false }" class="w-5 h-5 ml-2 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+														<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+													</svg>
+												</div>
+												<div
+												x-transition:enter="transition-all ease-out duration-200"
+												x-transition:enter-start="opacity-0 translate-y-1"
+												x-transition:enter-end="opacity-100 translate-y-0"
+												x-transition:leave="transition-all ease-in duration-150"
+												x-transition:leave-start="opacity-100 translate-y-0"
+												x-transition:leave-end="opacity-0 translate-y-1"
+												x-cloak x-show="open === true" @click.away="open = false" class="grid px-5 gap-y-8">
+													@foreach($m->child as $sm)
+														<a href="{{ url($body->slug .'/'. $m->slug .'/'. $sm->slug) }}" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
+															<p class="text-base font-medium text-gray-900">
+																@if(App::isLocale('en'))
+																	{!! $sm->name_en !!}
+																@elseif(App::isLocale('id'))
+																	{!! $sm->name_id !!}
+																@elseif(App::isLocale('cn'))
+																	{!! $sm->name_cn !!}
+																@endif
+															</p>
+														</a>
+													@endforeach
+													@if($m->name_en == 'Reports / Publication')
+														<a href="{{ route('financial-report') }}" class="flex items-center rounded-md hover:bg-gray-50">
+														<!-- Heroicon name: outline/chart-bar -->
+														<span class="text-base font-medium text-gray-900">
+															@lang('custom.financial-report')
+														</span>
+														</a>
+														<a href="{{ route('annual') }}" class="flex items-center rounded-md hover:bg-gray-50">
+														<!-- Heroicon name: outline/chart-bar -->
+														<span class="text-base font-medium text-gray-900">
+															@lang('custom.annual')
+														</span>
+														</a>
+														<a href="{{ route('public') }}" class="flex items-center rounded-md hover:bg-gray-50">
+														<!-- Heroicon name: outline/chart-bar -->
+														<span class="text-base font-medium text-gray-900">
+															@lang('custom.pubex')
+														</span>
+														</a>
+													@endif
+												</div>
+											</div>
+										@endif
+									@endforeach
+									@if($body->name_en == 'Investor Relation')
+										<a href="{{ route('annual-meeting') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+											<!-- Heroicon name: outline/chart-bar -->
+											<span class="text-base font-medium text-gray-900">
+											@lang('custom.annual-general')
+											</span>
+										</a>
+									@endif
+									@if($body->name_en == 'Sustainability')
+									<a href="{{ route('csr') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+										<!-- Heroicon name: outline/chart-bar -->
+										<span class="text-base font-medium text-gray-900">
+										@lang('custom.csr')
+										</span>
+									</a>
+									<a href="{{ route('environment') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+										<!-- Heroicon name: outline/chart-bar -->
+										<span class="text-base font-medium text-gray-900">
+										@lang('custom.environment')
+										</span>
+									</a>
+									@endif
 
-                            <a href="{{ route('shareholders') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.shareholders')
-                              </span>
-                            </a>
-                            <a href="{{ route('financial-highlight') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.financial-highlight')
-                              </span>
-                            </a>
-
-                            <a x-on:click="reports = !reports" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <span class="text-base font-medium text-gray-900">
-                                  @lang('custom.report')
-                                </span>
-                                <svg :class="{ 'text-mark-default -rotate-180' : reports === true, 'text-gray-400 group-hover:text-gray-500' : reports === false }" class="w-5 h-5 ml-2 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                              </a>
-
-                            <div
-                            x-transition:enter="transition-all ease-out duration-200"
-                                x-transition:enter-start="opacity-0 translate-y-1"
-                                x-transition:enter-end="opacity-100 translate-y-0"
-                                x-transition:leave="transition-all ease-in duration-150"
-                                x-transition:leave-start="opacity-100 translate-y-0"
-                                x-transition:leave-end="opacity-0 translate-y-1"
-                            x-cloak x-show="reports === true" x-on:click.away="reports = false" class="grid px-5 gap-y-8">
-                                <a href="{{ route('financial-report') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.financial-report')
-                                </span>
-                                </a>
-                                <a href="{{ route('annual') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.annual')
-                                </span>
-                                </a>
-                                <a href="{{ route('public') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.pubex')
-                                </span>
-                                </a>
-                                <a href="{{ route('dividend') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                                <!-- Heroicon name: outline/chart-bar -->
-                                <span class="text-base font-medium text-gray-900">
-                                    @lang('custom.dividend')
-                                </span>
-                                </a>
-                            </div>
-
-                            <a href="{{ route('annual-meeting') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.annual-general')
-                              </span>
-                            </a>
-                            <a href="{{ route('prospectus') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.prospectus')
-                              </span>
-                            </a>
-                          </div>
+								</div>
+								</div>
+							@endif
+						@endforeach
 
                           <a x-on:click="sustain = !sustain" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
                             <span class="text-base font-medium text-gray-900">
