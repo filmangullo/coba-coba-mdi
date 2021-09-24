@@ -45,30 +45,3 @@
     </div>
 </div>
 @endsection
-
-
-<div class="px-4 pt-32 pb-12 mx-auto text-center max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
-    <div class="animate__fadeInDown animate__animated text-2xl font-bold text-mark-default lg:text-4xl">
-        <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">财务亮点</h2>
-        <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            经营业绩
-        </p>
-    </div>
-    <div class="grid pt-12 sm:pt-24 md:pt-12 grid-cols-1 md:grid-cols-2 gap-12 sm:gap-24 md:gap-6 items-center justify-center">
-        <div class="sm:px-24 md:p-12">
-            <img class="w-full h-full" src="../../img/graphic-1-cn.png" alt="Mark Dynamics Financial Highlight">
-        </div>
-        <div class="sm:px-12 md:p-6">
-            <img class="w-full h-full" src="../../img/graphic-2-cn.png" alt="Mark Dynamics Financial Highlight">
-        </div>
-    </div>
-    <div class="pt-12 mb-5 text-2xl font-bold text-mark-default lg:pt-24 lg:text-4xl">
-        <h2 class="text-base font-semibold tracking-wider uppercase text-mark-default">财务亮点</h2>
-        <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            资产负债表
-        </p>
-    </div>
-    <div class="w-full pt-12 sm:pt-24 md:pt-12 pb-12 sm:pb-0 md:h-screen sm:p-10 md:p-20">
-        <img class="md:h-full mx-auto" src="../../img/graphic-3-cn.png" alt="Mark Dynamics Financial Highlight">
-    </div>
-</div>

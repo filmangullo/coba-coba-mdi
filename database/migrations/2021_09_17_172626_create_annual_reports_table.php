@@ -19,6 +19,7 @@ class CreateAnnualReportsTable extends Migration
             $table->string('title_id');
             $table->string('title_en');
             $table->string('title_cn');
+            $table->text('img');
             $table->text('file');
             $table->timestamps();
         });

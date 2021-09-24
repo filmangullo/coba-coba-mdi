@@ -14,34 +14,34 @@ class PublicExposesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('public_exposes')->delete();
-        
+
         \DB::table('public_exposes')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'year_id' => 1,
                 'title_id' => 'Pubex MARK 2018',
                 'title_en' => 'Pubex MARK 2018',
                 'title_cn' => 'Pubex MARK 2018',
-                'file' => 'pubex-qna-mark-2019.pdf',
+                'file' => 'pubex-mark-2018.pdf',
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'year_id' => 1,
                 'title_id' => 'Pubex QnA MARK 2018',
                 'title_en' => 'Pubex QnA MARK 2018',
                 'title_cn' => 'Pubex QnA MARK 2018',
-                'file' => 'pubex-qna-mark-2019.pdf',
+                'file' => 'pubex-qna-mark-2018.pdf',
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'year_id' => 2,
@@ -52,7 +52,7 @@ class PublicExposesTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'year_id' => 2,
@@ -63,7 +63,7 @@ class PublicExposesTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'year_id' => 3,
@@ -74,7 +74,7 @@ class PublicExposesTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'year_id' => 3,
@@ -85,7 +85,7 @@ class PublicExposesTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'year_id' => 4,
@@ -96,7 +96,7 @@ class PublicExposesTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:01:43',
                 'updated_at' => '2021-09-20 08:01:43',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'year_id' => 4,
@@ -108,7 +108,7 @@ class PublicExposesTableSeeder extends Seeder
                 'updated_at' => '2021-09-20 08:01:43',
             ),
         ));
-        
-        
+
+
     }
 }

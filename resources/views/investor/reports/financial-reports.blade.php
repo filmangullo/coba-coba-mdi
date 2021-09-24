@@ -1,147 +1,59 @@
 @extends('layouts.master')
 
 @section('content')
+@php
+    use App\Models\FinancialReport;
+    use App\Models\FinancialReportYear;
+
+    $report = FinancialReport::all();
+    $year = FinancialReportYear::all();
+
+        $reportdata = [];
+        foreach($year as $y){
+            foreach($report as $key => $r){
+                if($y->id == $r->year_id){
+                    $reportdata[$y->year][$key]['title_id'] = $r->title_id;
+                    $reportdata[$y->year][$key]['title_en'] = $r->title_en;
+                    $reportdata[$y->year][$key]['title_cn'] = $r->title_cn;
+                    $reportdata[$y->year][$key]['file'] = $r->file;
+                    $reportdata[$y->year][$key]['month'] = $r->month;
+                }
+            }
+        }
+
+        krsort($reportdata);
+@endphp
 <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
-    <h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('financial-reports.title')</h2>
+    <h2 class="animate__fadeInDown text-center animate__animated mt-2 mb-12 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('financial-reports.title')</h2>
     {{-- <p class="animate__fadeInDown animate__animated mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Everything you need to deploy your app
     </p> --}}
     <div class="divide-y divide-hitam">
-        <div class="space-y-24 py-24">
+        @foreach($reportdata as $year => $r)
+        <div class="space-y-24 py-24 @if($year%2 == 1) bg-gray-100 @endif">
             <div class="text-center">
-                <div class="font-bold text-4xl">2021</div>
+                <div class="font-bold text-4xl">{{ $year }}</div>
                 <div class="mx-auto bg-mark-default w-28 h-1"></div>
             </div>
 
-            @php $data = ['March']; @endphp
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full items-start -my-6 ">
-            @foreach($data as $key => $val)
-                @php
-                    if($key === 0){
-                        $_2021 = 'fs-mark-1q21.pdf';
-                    }
-                @endphp
+            @foreach($r as $sr)
                 <div class="text-center w-full space-y-4 xsm:px-4 py-6 ">
-                    <a href="{{ asset($_2021) }}" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
-                        <div class="text-4xl font-bold text-white">Q{{$key+1}}</div>
+                    <a href="{{ asset( $sr['file'] ) }}" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
+                        @if(App::isLocale('id'))
+                        <div class="text-4xl font-bold text-white">{{ $sr['title_id'] }}</div>
+                        @elseif(App::isLocale('en'))
+                        <div class="text-4xl font-bold text-white">{{ $sr['title_en'] }}</div>
+                        @elseif(App::isLocale('cn'))
+                        <div class="text-4xl font-bold text-white">{{ $sr['title_cn'] }}</div>
+                        @endif
                     </a>
-                    <div class="text-lg font-bold">{{$val}} 2020</div>
+                    <div class="text-lg font-bold">{{ date('F', strtotime($sr['month'])) }} {{ $year }}</div>
                 </div>
             @endforeach
             </div>
         </div>
-        <div class="space-y-24 py-24 bg-gray-100">
-            <div class="text-center">
-                <div class="font-bold text-4xl">2020</div>
-                <div class="mx-auto bg-mark-default w-28 h-1"></div>
-            </div>
-
-            @php $data = ['March', 'June', 'September', 'December']; @endphp
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full items-start -my-6 ">
-            @foreach($data as $key => $val)
-                @php
-                    if($key === 0){
-                        $_2020 = 'fs-mark-1q20.pdf';
-                    } elseif($key === 1){
-                        $_2020 = 'fs-mark-2q20.pdf';
-                    } elseif($key === 2){
-                        $_2020 = 'fs-mark-3q20.pdf';
-                    } elseif($key === 3){
-                        $_2020 = 'fs-mark-4q20.pdf';
-                    }
-                @endphp
-                <div class="text-center w-full space-y-4 xsm:px-4 py-6 ">
-                    <a href="{{ asset($_2020) }}" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
-                        <div class="text-4xl font-bold text-white">Q{{$key+1}}</div>
-                    </a>
-                    <div class="text-lg font-bold">{{$val}} 2020</div>
-                </div>
-            @endforeach
-            </div>
-        </div>
-        <div class="space-y-24 py-24">
-            <div class="text-center">
-                <div class="font-bold text-4xl">2019</div>
-                <div class="mx-auto bg-mark-default w-28 h-1"></div>
-            </div>
-            @php $data2 = ['March', 'June', 'September', 'December']; @endphp
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full items-start -my-6 ">
-            @foreach($data2 as $key => $val)
-                @php
-                    if($key === 0){
-                        $_2019 = 'fs-mark-1q19.pdf';
-                    } elseif($key === 1){
-                        $_2019 = 'fs-mark-2q19.pdf';
-                    } elseif($key === 2){
-                        $_2019 = 'fs-mark-3q19.pdf';
-                    } elseif($key === 3){
-                        $_2019 = 'fs-mark-4q19.pdf';
-                    }
-                @endphp
-                <div class="text-center w-full space-y-4 xsm:px-4 py-6 ">
-                    <a href="{{ asset($_2019) }}" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
-                        <div class="text-4xl font-bold text-white">Q{{$key+1}}</div>
-                    </a>
-                    <div class="text-lg font-bold">{{$val}} 2019</div>
-                </div>
-            @endforeach
-            </div>
-        </div>
-        <div class="space-y-24 py-24 bg-gray-100">
-            <div class="text-center">
-                <div class="font-bold text-4xl">2018</div>
-                <div class="mx-auto bg-mark-default w-28 h-1"></div>
-            </div>
-            @php $data3 = ['March', 'June', 'September', 'December']; @endphp
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full items-start -my-6 ">
-            @foreach($data3 as $key => $val)
-                @php
-                    if($key === 0){
-                        $_2018 = 'fs-mark-1q18.pdf';
-                    } elseif($key === 1){
-                        $_2018 = 'fs-mark-2q18.pdf';
-                    } elseif($key === 2){
-                        $_2018 = 'fs-mark-3q18.pdf';
-                    } elseif($key === 3){
-                        $_2018 = 'fs-mark-4q18.pdf';
-                    }
-                @endphp
-                <div class="text-center w-full space-y-4 xsm:px-4 py-6 ">
-                    <a href="{{ asset($_2018) }}" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
-                        <div class="text-4xl font-bold text-white">Q{{$key+1}}</div>
-                    </a>
-                    <div class="text-lg font-bold">{{$val}} 2018</div>
-                </div>
-            @endforeach
-            </div>
-        </div>
-        <div class="space-y-24 pt-24">
-            <div class="text-center">
-                <div class="font-bold text-4xl">2017</div>
-                <div class="mx-auto bg-mark-default w-28 h-1"></div>
-            </div>
-            @php $data4 = ['June', 'September', 'December']; @endphp
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full items-start -my-6 ">
-            @foreach($data4 as $key => $val)
-                @php
-                    if($key === 0){
-                        // return Storage::disk('public')->download(public_path('fs-mark-2q17.pdf'), 'FS Mark 2Q17.pdf');
-                        $_2017 = 'fs-mark-2q17.pdf';
-                    } elseif($key === 1){
-                        $_2017 = 'fs-mark-3q17.pdf';
-                    } elseif($key === 2){
-                        $_2017 = 'fs-mark-4q17.pdf';
-                    }
-                @endphp
-                <div class="text-center w-full space-y-4 xsm:px-4 py-6 ">
-                    <a href="{{ asset($_2017) }}" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
-                        <div class="text-4xl font-bold text-white">Q{{$key+2}}</div>
-                    </a>
-                    <div class="text-lg font-bold">{{$val}} 2017</div>
-                </div>
-            @endforeach
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
