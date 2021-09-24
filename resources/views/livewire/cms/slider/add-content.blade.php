@@ -178,17 +178,16 @@
                     </div>
 
                     <div class="p-3">
-
                         <div class="mb-2"> <span>Attachments</span>
                             <div class="relative flex items-center justify-center h-40 bg-white border-2 border-gray-400 border-dashed rounded-lg hover:cursor-pointer">
                                 <div class="absolute">
                                     <div wire:loading.remove wire:target="file" class="flex flex-col items-center ">
-                                        @if ($file == null && !isset($op->file))
+                                        @if ($file == null && !isset($slider->file))
                                         <span class="block font-normal text-gray-400">Attach you files here</span>
                                         <span class="block font-normal text-gray-400">or</span>
                                         <span class="block font-normal text-blue-400">Browse files</span>
                                         @else
-                                            @if (isset($op->file))
+                                            @if (isset($slider->file))
                                             <span class="block font-normal text-gray-400">Has Attach</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -209,6 +208,22 @@
                             </div>
                             <div class="flex items-center justify-between text-gray-400"> <span>Accepted file type:.jpg, .svg, img only</span> <span class="flex items-center "><i class="mr-1 fa fa-lock"></i> secure</span> </div>
                         </div>
+
+                    </div>
+
+                    <div class="">
+						<div class="relative flex items-start">
+							<div class="flex items-center h-5">
+								<input wire:model="active" id="active" name="active" type="checkbox" class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+							</div>
+							<div class="ml-3 text-sm">
+								<label for="active" class="font-medium text-gray-700">Active</label>
+								<p class="text-gray-500">Apakah page ini aktif atau tidak.</p>
+							</div>
+						</div>
+					</div>
+
+                    <div class="p-3">
                         <div class="pb-3 mt-3 text-center">
                             <button wire:click="save" class="w-full h-12 text-lg text-white bg-blue-600 rounded hover:bg-blue-700">Create</button>
                         </div>

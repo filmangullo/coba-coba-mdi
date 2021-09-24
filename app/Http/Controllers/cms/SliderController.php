@@ -4,6 +4,7 @@ namespace App\Http\Controllers\cms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Slider;
 
 class SliderController extends Controller
 {
@@ -36,6 +37,9 @@ class SliderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $slider = Slider::findOrFail($id);
+        return view('cms.slider.update', [
+            'slider' => $slider,
+        ]);
     }
 }

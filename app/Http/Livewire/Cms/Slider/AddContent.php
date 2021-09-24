@@ -27,6 +27,7 @@ class AddContent extends Component
     public $url;
     public $url1;
     public $file;
+    public $active = true;
 
     protected $rules = [
         'title_id'          => 'required|min:1',
@@ -36,6 +37,31 @@ class AddContent extends Component
         'description_en'    => 'required|min:1',
         'description_cn'    => 'required|min:1',
     ];
+
+    public function mount($slider)
+    {
+        $this->slider = null;
+
+        if($slider)
+        {
+            $this->slider = $slider;
+
+            $this->title_id         = $this->slider->title_id;
+            $this->title_en         = $this->slider->title_en;
+            $this->title_cn         = $this->slider->title_cn;
+            $this->description_id   = $this->slider->description_id;
+            $this->description_en   = $this->slider->description_en;
+            $this->description_cn   = $this->slider->description_cn;
+            $this->button_id        = $this->slider->button_id;
+            $this->button_en        = $this->slider->button_en;
+            $this->button_cn        = $this->slider->button_cn;
+            $this->button1_id       = $this->slider->button1_id;
+            $this->button1_en       = $this->slider->button1_en;
+            $this->button1_cn       = $this->slider->button1_cn;
+            $this->url              = $this->slider->url;
+            $this->url1             = $this->slider->url1;
+        }
+    }
 
     public function save()
     {
@@ -82,15 +108,15 @@ class AddContent extends Component
 
     private function handleEventUpload($query)
     {
-        if (isset($query['img'])) {
-            if (substr($this->op->file, 0, 8) == 'storage/'){
-                Storage::delete('public/'.substr($this->op->file, 8));
+        if (isset($query['file'])) {
+            if (substr($this->slider->file, 0, 8) == 'storage/'){
+                Storage::delete('public/'.substr($this->slider->file, 8));
             } else {
-                Storage::delete('public/'.$this->op->file);
+                Storage::delete('public/'.$this->slider->file);
             }
         }
 
-        Slider::find($this->op->id)
+        Slider::find($this->slider->id)
                           ->update($query);
     }
 

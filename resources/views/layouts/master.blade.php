@@ -89,6 +89,11 @@
                                     </p>
                                 </a>
                               @endforeach
+							  <a href="{{ route('awards') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
+								<p class="text-sm font-medium text-gray-900">
+								  @lang('custom.awards')
+								</p>
+							</a>
 
                               {{-- <a href="{{ route('our-business') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                   <p class="text-sm font-medium text-gray-900">
@@ -532,6 +537,11 @@
                                  </p>
                              </a>
                            @endforeach
+						   	<a href="{{ route('awards') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+								<p class="text-base font-medium text-gray-900">
+									@lang('custom.awards')
+								</p>
+							</a>
 
                           </div>
 
@@ -542,7 +552,7 @@
 							</a>
 							@else
 							<div x-data="{open: false}" class="relative w-full space-y-8">
-								<div x-on:click="open = !open" class="w-full flex items-center py-3 -my-3 justify-between rounded-md hover:bg-gray-50">
+								<div x-on:click="open = !open" class="flex items-center justify-between w-full py-3 -my-3 rounded-md hover:bg-gray-50">
 									<span class="text-base font-medium text-gray-900">
 										@if(App::isLocale('en'))
 											{!! $body->name_en !!}
