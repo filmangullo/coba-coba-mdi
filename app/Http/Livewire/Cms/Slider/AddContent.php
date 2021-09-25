@@ -27,6 +27,7 @@ class AddContent extends Component
     public $url;
     public $url1;
     public $file;
+    public $imgWidth = 'full';
     public $active = true;
 
     protected $rules = [
@@ -60,6 +61,7 @@ class AddContent extends Component
             $this->button1_cn       = $this->slider->button1_cn;
             $this->url              = $this->slider->url;
             $this->url1             = $this->slider->url1;
+            $this->imgWidth         = $this->slider->imgwidth;
         }
     }
 
@@ -88,6 +90,7 @@ class AddContent extends Component
             'button1_cn'            => $this->button1_cn,
             'url'                   => $this->url,
             'url1'                  => $this->url1,
+            'imgwitdth'             => $this->imgWidth,
         ];
 
         if ($this->file) {

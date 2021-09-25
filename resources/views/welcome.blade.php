@@ -1,114 +1,96 @@
 @extends('layouts.master')
 
 @section('content')
+
+@php
+    use App\Models\Slider;
+
+    $slider = Slider::all();
+
+    $sliderdata = [];
+
+    foreach($slider as $key => $s){
+        $sliderdata[$key]['title_id'] = $s['title_id'];
+        $sliderdata[$key]['title_en'] = $s['title_en'];
+        $sliderdata[$key]['title_cn'] = $s['title_cn'];
+        $sliderdata[$key]['description_id'] = $s['description_id'];
+        $sliderdata[$key]['description_en'] = $s['description_en'];
+        $sliderdata[$key]['description_cn'] = $s['description_cn'];
+        $sliderdata[$key]['button_id'] = $s['button_id'];
+        $sliderdata[$key]['button_en'] = $s['button_en'];
+        $sliderdata[$key]['button_cn'] = $s['button_cn'];
+        $sliderdata[$key]['button1_id'] = $s['button1_id'];
+        $sliderdata[$key]['button1_en'] = $s['button1_en'];
+        $sliderdata[$key]['button1_cn'] = $s['button1_cn'];
+        $sliderdata[$key]['url'] = $s['url'];
+        $sliderdata[$key]['url1'] = $s['url1'];
+        $sliderdata[$key]['img'] = $s['file'];
+        $sliderdata[$key]['imgwidth'] = $s['imgwidth'];
+    }
+
+@endphp
+{{-- @dump($sliderdata) --}}
 <div class="relative h-screen bg-gray-50 slider sm:h-auto">
-
-
+    @foreach($sliderdata as $s)
     <main class="relative h-full">
       <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
       <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
         <div class="px-4 animate__fadeInDown wow animate__animated lg:w-4/12 lg:pr-6 2xl:w-1/2 sm:px-8 xl:pr-16">
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span class="block xl:inline">@lang('custom.home-title1')</span>
+            @if(App::isLocale('id'))
+            <span class="block xl:inline">{{ $s['title_id'] }}</span>
+            @elseif(App::isLocale('en'))
+            <span class="block xl:inline">{{ $s['title_en'] }}</span>
+            @elseif(App::isLocale('cn'))
+            <span class="block xl:inline">{{ $s['title_cn'] }}</span>
+            @endif
           </h1>
           <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
-            @lang('custom.home-subtitle1')
+            @if(App::isLocale('id'))
+            {{ $s['description_id'] }}
+            @elseif(App::isLocale('en'))
+            {{ $s['description_en'] }}
+            @elseif(App::isLocale('cn'))
+            {{ $s['description_cn'] }}
+            @endif
           </p>
-          <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+          <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
+            {{-- Button 1 --}}
+            @if(!empty($s['button_id']))
             <div class="rounded-md shadow">
-              <a href="{{ route('our-business') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-lg md:px-8">
-                @lang('custom.our-business')
+              <a href="{{ $s['url'] }}" class="flex items-center justify-center w-full px-4 py-1.5 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-lg md:px-8">
+                @if(App::isLocale('id'))
+                {{ $s['button_id'] }}
+                @elseif(App::isLocale('en'))
+                {{ $s['button_en'] }}
+                @elseif(App::isLocale('cn'))
+                {{ $s['button_cn'] }}
+                @endif
               </a>
             </div>
-            {{-- <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
-                Live demo
-              </a>
-            </div> --}}
+            @endif
+            {{-- Button 2 --}}
+            @if(!empty($s['button1_id']))
+            <div class="rounded-md shadow">
+                <a href="{{ $s['url1'] }}" class="flex items-center justify-center w-full px-4 py-1.5 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-lg md:px-8">
+                  @if(App::isLocale('id'))
+                  {{ $s['button1_id'] }}
+                  @elseif(App::isLocale('en'))
+                  {{ $s['button1_en'] }}
+                  @elseif(App::isLocale('cn'))
+                  {{ $s['button1_cn'] }}
+                  @endif
+                </a>
+            </div>
+            @endif
           </div>
         </div>
       </div>
-      <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:h-full">
-        <img class="absolute inset-0 object-cover w-full h-full " src="{{ asset('img/slider-1.jpg') }}" alt="Mark Dynamics Indonesia">
+      <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 @if($s['imgwidth'] == 'half') lg:w-1/2 @elseif($s['imgwidth'] == 'full') lg:w-full @endif lg:h-full">
+        <img class="absolute inset-0 object-cover w-full h-full " src="{{ asset($s['img']) }}" alt="Mark Dynamics Indonesia">
       </div>
     </main>
-
-    <main class="relative" x-cloak>
-        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-          <div class="px-4 animate__fadeInDown wow animate__animated lg:w-5/12 2xl:w-2/3 sm:px-8 xl:pr-16">
-            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-              <div class="block xl:inline">@lang('custom.home-title2')</div>
-            </h1>
-            <p class="max-w-md pr-8 mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-xl">
-              @lang('custom.home-subtitle2')
-            </p>
-            <div class="gap-3 mt-10 space-y-3 sm:flex sm:justify-center sm:space-y-0 lg:justify-start">
-                <div class="rounded-md shadow">
-                  <a href="{{ route('vision&mission') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-sm font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-base md:px-8">
-                    @lang('custom.vision-mission')
-                  </a>
-                </div>
-                <div class="rounded-md shadow">
-                  <a href="{{ url('about/ceo-message') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-sm font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-base md:px-8">
-                    @lang('custom.ceo-message')
-                  </a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-2e.png') }}" alt="Mark Dynamics Indonesia">
-        </div>
-    </main>
-
-    <main class="relative" x-cloak>
-        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-          <div class="px-4 wow animate__fadeInDown animate__animated lg:w-4/12 2xl:w-2/3 sm:px-8 xl:pr-16">
-            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-              <span class="block xl:inline">@lang('custom.home-title3')</span>
-            </h1>
-            <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
-              @lang('custom.home-subtitle3')
-            </p>
-            <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
-                <div class="rounded-md shadow">
-                  <a href="{{ route('financial-highlight') }}" class="flex items-center justify-center w-full px-4 py-1.5 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-3 md:text-lg md:px-8">
-                    @lang('custom.financial-highlight')
-                  </a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-3.jpg') }}" alt="Mark Dynamics Indonesia">
-        </div>
-    </main>
-
-    <main class="relative" x-cloak>
-        <div class="absolute z-10 w-screen h-screen bg-gray-50 bg-opacity-70 lg:hidden"></div>
-        <div class="absolute z-20 w-full mx-auto mt-12 text-center transform -translate-y-1/2 lg:left-12 top-1/2 xl:max-w-7xl lg:text-left">
-          <div class="px-4 wow animate__fadeInDown animate__animated lg:w-1/3 2xl:w-2/3 sm:px-8 xl:pr-16">
-            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-              <span class="block xl:inline">@lang('custom.home-title4')</span>
-            </h1>
-            <p class="max-w-md mx-auto mt-3 text-base text-gray-900 lg:mx-0 lg:text-gray-500 sm:text-lg md:mt-5 md:max-w-2xl">
-              @lang('custom.home-subtitle4')
-            </p>
-            <div class="gap-3 mt-10 sm:flex sm:justify-center lg:justify-start">
-                <div class="rounded-md shadow">
-                  <a href="{{ route('awards') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-mark-default hover:bg-mark-dark md:py-4 md:text-lg md:px-10">
-                    @lang('custom.awards')
-                  </a>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute top-0 w-screen h-screen lg:inset-y-0 lg:right-0 lg:w-full lg:h-full">
-          <img class="absolute inset-0 object-cover w-full h-full" src="{{ asset('img/slider-4.jpg') }}" alt="Mark Dynamics Indonesia">
-        </div>
-    </main>
+    @endforeach
 </div>
 <div class="relative py-16 bg-gray-100 sm:py-24 lg:py-32">
   <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
@@ -178,7 +160,7 @@
     @livewire('web.welcome.short-list-news')
 </div>
 
-<div class="bg-gray-100 animate__fadeInUp wow animate__animated">
+<div class="bg-gray-100">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
       <p class="text-2xl font-semibold tracking-wider text-center uppercase text-mark-default">
         @lang('custom.client')
