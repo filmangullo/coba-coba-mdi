@@ -211,7 +211,33 @@
 
                     </div>
 
-                    <div class="">
+                    <div class="py-6 border-b space-y-4 border-gray-300">
+                        <div>
+                            <div class="font-bold">Panjang Foto</div>
+                        </div>
+                        <div class="flex items-center justify-around">
+                            <div class="relative flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input wire:model="imgWidth" id="penuh" value="full" type="radio" class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="penuh" class="font-medium text-gray-700">Penuh</label>
+                                    <p class="text-gray-500">Foto yang ditampilin penuh</p>
+                                </div>
+                            </div>
+                            <div class="relative flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input wire:model="imgWidth" id="setengah" value="half" type="radio" class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="setengah" class="font-medium text-gray-700">Setengah</label>
+                                    <p class="text-gray-500">Foto yang ditampilin setengah</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
 						<div class="relative flex items-start">
 							<div class="flex items-center h-5">
 								<input wire:model="active" id="active" name="active" type="checkbox" class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">

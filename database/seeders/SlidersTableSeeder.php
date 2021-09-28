@@ -14,12 +14,12 @@ class SlidersTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('sliders')->delete();
-        
+
         \DB::table('sliders')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'title_id' => 'Produsen Cetakan Sarung Tangan Terkemuka di Dunia',
@@ -36,12 +36,13 @@ class SlidersTableSeeder extends Seeder
                 'button1_cn' => '',
                 'url' => 'https://markdynamicsindo.com/our-business',
                 'url1' => '',
+                'imgwidth' => 'full',
                 'file' => 'img/slider-1.jpg',
                 'created_at' => '2021-09-22 09:16:07',
                 'updated_at' => '2021-09-23 09:49:53',
                 'active' => 1,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'title_id' => 'Esa Hilang Dua Terbilang.',
@@ -58,12 +59,13 @@ class SlidersTableSeeder extends Seeder
                 'button1_cn' => '总裁致辞',
                 'url' => 'https://markdynamicsindo.com/vision-mission',
                 'url1' => 'https://markdynamicsindo.com/about/ceo-message',
+                'imgwidth' => 'half',
                 'file' => 'img/slider-2e.png',
                 'created_at' => '2021-09-22 09:16:07',
                 'updated_at' => '2021-09-23 09:55:34',
                 'active' => 1,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'title_id' => 'Pertumbuhan Fundamental Yang Pesat',
@@ -80,12 +82,13 @@ class SlidersTableSeeder extends Seeder
                 'button1_cn' => '',
                 'url' => 'https://markdynamicsindo.com/financial-highlight',
                 'url1' => '',
+                'imgwidth' => 'half',
                 'file' => 'img/slider-3.jpg',
                 'created_at' => '2021-09-22 09:16:07',
                 'updated_at' => '2021-09-24 08:39:36',
                 'active' => 1,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'title_id' => 'Penghargaan',
@@ -102,13 +105,14 @@ class SlidersTableSeeder extends Seeder
                 'button1_cn' => '',
                 'url' => 'https://markdynamicsindo.com/about-us/awards',
                 'url1' => '',
+                'imgwidth' => 'full',
                 'file' => 'img/slider-4.jpg',
                 'created_at' => '2021-09-22 09:16:07',
                 'updated_at' => '2021-09-24 08:43:43',
                 'active' => 1,
             ),
         ));
-        
-        
+
+
     }
 }

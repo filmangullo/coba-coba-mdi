@@ -134,7 +134,7 @@ class MenusTableSeeder extends Seeder
                 'name_cn' => '里程碑',
                 'active' => 1,
                 'created_at' => '2021-09-22 09:58:24',
-                'updated_at' => '2021-09-22 10:01:56',
+                'updated_at' => '2021-09-28 06:29:46',
             ),
             9 => 
             array (
