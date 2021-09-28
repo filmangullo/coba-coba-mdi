@@ -15,6 +15,8 @@ class AddContent extends Component
     public $img;
     public $is_product = 'false';
 
+    protected $rules = [];
+
     public function mount($image)
     {
         $this->image = null;
@@ -31,13 +33,15 @@ class AddContent extends Component
     {
         $edit = $this->image ? true : false;
 
-        $rules = [
-            'author_id'             => ['required'],
+        $this->rules = [
+            'is_product'             => ['required'],
         ];
 
         if (!$edit) {
-            $rules['img'] = ['required', 'image', 'max:1024' ];
+            $this->rules['img'] = ['required', 'image', 'max:1024' ];
         }
+
+        $this->validate();
 
         $image = [
             'is_product'        => $this->is_product == 'true' ? true : false,
