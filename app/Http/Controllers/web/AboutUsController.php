@@ -11,7 +11,7 @@ class AboutUsController extends Controller
 {
     public function awards()
     {
-        $ac = Award::orderBy('year', 'asc')->get();
+        $ac = Award::orderBy('year', 'desc')->get();
         return view('aboutus.awards', [
             'ac'        => $ac
         ]);
