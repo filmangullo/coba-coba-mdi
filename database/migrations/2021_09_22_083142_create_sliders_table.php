@@ -30,6 +30,7 @@ class CreateSlidersTable extends Migration
             $table->text('url')->nullable();
             $table->text('url1')->nullable();
             $table->text('file')->nullable();
+            $table->text('imgwidth')->nullable();
             $table->timestamps();
         });
     }
