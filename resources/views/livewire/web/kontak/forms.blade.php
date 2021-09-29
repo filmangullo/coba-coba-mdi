@@ -38,10 +38,23 @@
             @error('message') <span class="text-xs text-red-600">{{ $message }}</span> @enderror
         </div>
 
+        <div class="mb-5">
+            <label class="font-semibold text-gray-900 text-md">@lang('contact.captcha')</label></br>
+            <div class="flex items-center mb-2">
+                <span>{!! $captcha_img !!}</span>
+                <button wire:click.prevent="reloadCaptcha" type="button" class="inline-block px-3 py-1 ml-4 bg-gray-200 hover:bg-gray-500" class="reload" id="reload">
+                    &#x21bb; Reload
+                </button>
+            </div>
+            <input wire:model='captcha' type="text" class="w-full p-2 mt-1 text-sm border border-gray-500 rounded-md focus:ring-0 focus:border-mark" name="title" id="title" value="" required></input>
+            @error('captcha') <span class="text-xs text-red-600">{{ $message }}</span> @enderror
+        </div>
+
         <div>
-            <button wire:click="save()" class="w-full block p-3 font-bold transition-all duration-300 border-2 rounded-md text-mark-default hover:bg-mark-default hover:text-white border-mark">
+            <button wire:click="save()" class="block w-full p-3 font-bold transition-all duration-300 border-2 rounded-md text-mark-default hover:bg-mark-default hover:text-white border-mark">
                 @lang('contact.send')
             </button>
         </div>
     </div>
 </div>
+

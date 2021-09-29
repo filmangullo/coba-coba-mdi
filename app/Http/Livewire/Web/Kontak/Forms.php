@@ -5,22 +5,30 @@ namespace App\Http\Livewire\Web\Kontak;
 use Illuminate\Support\Facades\Validator;
 use Livewire\Component;
 use App\Models\Message;
+use Captcha;
 
 class Forms extends Component
 {
-    public $alert = false;
+    public $alert = true;
 
     public $name;
     public $email;
     public $subject;
     public $message;
+    public $captcha;
+    public $captcha_img;
 
     protected $rules = [
         'name'              => ['required'],
-        'email'             => ['required'],
+        'email'             => ['required','email'],
         'subject'           => ['required'],
         'message'           => ['required'],
+        'captcha'           => ['required', 'captcha'],
     ];
+
+    public function reloadCaptcha() {
+        $this->captcha_img = Captcha::img();
+    }
 
     public function save()
     {
@@ -41,6 +49,10 @@ class Forms extends Component
         $this->message  = '';
         $this->alert    = true;
 
+    }
+
+    public function mount() {
+        $this->captcha_img = Captcha::img();
     }
 
     public function render()
