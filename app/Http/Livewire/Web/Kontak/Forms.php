@@ -9,7 +9,7 @@ use Captcha;
 
 class Forms extends Component
 {
-    public $alert = true;
+    public $alert = false;
 
     public $name;
     public $email;
