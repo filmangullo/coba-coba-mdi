@@ -9,5 +9,6 @@ return [
     'send' => 'Send',
     'our-information' => 'Our Information',
     'success' => 'Success',
+    'captcha' => 'Captcha',
     'success-alert' => 'Your message will be replied to via the attached email, please monitor your email.',
 ];
