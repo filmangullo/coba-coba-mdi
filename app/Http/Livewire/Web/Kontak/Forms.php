@@ -3,6 +3,8 @@
 namespace App\Http\Livewire\Web\Kontak;
 
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 use Livewire\Component;
 use App\Models\Message;
 use Captcha;
@@ -35,12 +37,16 @@ class Forms extends Component
 
         $this->validate();
 
-        Message::create([
+        $data = [
             'name' => $this->name,
             'email' => $this->email,
             'subject' => $this->subject,
             'message' => $this->message,
-        ]);
+        ];
+        Message::create($data);
+
+
+        Mail::to('seindoweb@gmail.com')->send(new ContactMail($data));
 
         session()->flash('success', 'success');
         redirect($this->currentUrl);

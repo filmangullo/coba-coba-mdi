@@ -52,7 +52,9 @@
 
         <div>
             <button wire:click="save()" class="block w-full p-3 font-bold transition-all duration-300 border-2 rounded-md text-mark-default hover:bg-mark-default hover:text-white border-mark">
-                @lang('contact.send')
+                <span wire:loading.remove wire:target='save'>@lang('contact.send')</span>
+
+                <img width="20" wire:loading wire:target='save' src="{{ asset('loading.gif')}}">
             </button>
         </div>
     </div>
