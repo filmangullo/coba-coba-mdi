@@ -8,12 +8,11 @@ use App\Models\Message;
 
 class Forms extends Component
 {
-    public $alert = false;
-
     public $name;
     public $email;
     public $subject;
     public $message;
+    public $currentUrl;
 
     protected $rules = [
         'name'              => ['required'],
@@ -39,8 +38,13 @@ class Forms extends Component
         $this->email    = '';
         $this->subject  = '';
         $this->message  = '';
-        $this->alert    = true;
 
+        session()->flash('success', 'success');
+        redirect($this->currentUrl);
+    }
+
+    public function mount() {
+        $this->currentUrl = url()->current();
     }
 
     public function render()
