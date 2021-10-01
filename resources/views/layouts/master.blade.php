@@ -754,6 +754,8 @@
                     </a>
                     @if(\App\Models\Setting::where('name','career')->first()->active)
                     <a class="text-center" href="{{ route('career') }}">@lang('custom.career')</a>
+                    @else
+                    <a class="text-center" href="{{ route('environment') }}">@lang('custom.environment')</a>
                     @endif
                     <a class="text-center" href="{{ route('kontak')}}">@lang('custom.contact')</a>
                 </div>

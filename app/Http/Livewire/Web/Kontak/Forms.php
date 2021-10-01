@@ -42,20 +42,12 @@ class Forms extends Component
             'message' => $this->message,
         ]);
 
-        $this->name     = '';
-        $this->email    = '';
-        $this->subject  = '';
-        $this->message  = '';
-
         session()->flash('success', 'success');
         redirect($this->currentUrl);
     }
 
     public function mount() {
         $this->currentUrl = url()->current();
-    }
-
-    public function mount() {
         $this->captcha_img = Captcha::img();
     }
 
