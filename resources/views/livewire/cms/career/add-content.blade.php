@@ -37,6 +37,17 @@
                     </div>
                 </div>
 
+                <div class="grid grid-cols-3 gap-4 px-6 mt-3 md:grid-cols-6">
+                    <div class="md:px-5 py-1.5 text-left md:text-right">
+                        <label>Status</label>
+                    </div>
+                    <div class="col-span-2 md:col-span-3">
+                        <div class="flex items-center h-5">
+                            <input wire:model="active" id="active" name="active" type="checkbox" class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="grid grid-cols-2 md:grid-cols-6 gap-4 px-6 mt-3 py-1.5">
                     <div @click="tab = 'id'" :class="{'bg-gray-300' : tab === 'id', 'bg-gray-200 text-gray-400' : tab !== 'id'}" class="col-span-3 py-4 font-semibold text-center uppercase cursor-pointer">ID ( INDONESIAN LANGUAGE ) </div>
                     <div @click="tab = 'en'" :class="{'bg-gray-300' : tab === 'en', 'bg-gray-200 text-gray-400' : tab !== 'en'}" class="col-span-3 py-4 font-semibold text-center uppercase cursor-pointer">EN ( ENGLISH LANGUAGE )</div>

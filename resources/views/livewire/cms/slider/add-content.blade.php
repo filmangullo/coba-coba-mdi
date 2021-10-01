@@ -211,7 +211,7 @@
 
                     </div>
 
-                    <div class="py-6 border-b space-y-4 border-gray-300">
+                    <div class="py-6 space-y-4 border-b border-gray-300">
                         <div>
                             <div class="font-bold">Panjang Foto</div>
                         </div>
