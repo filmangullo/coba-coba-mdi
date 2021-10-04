@@ -46,7 +46,7 @@ class Forms extends Component
         Message::create($data);
 
 
-        Mail::to('seindoweb@gmail.com')->send(new ContactMail($data));
+        Mail::to('webmailmarkd@gmail.com')->cc(['daniel@dynamics.co.id'])->send(new ContactMail($data));
 
         session()->flash('success', 'success');
         redirect($this->currentUrl);

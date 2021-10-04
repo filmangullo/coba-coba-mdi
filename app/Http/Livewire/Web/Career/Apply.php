@@ -51,7 +51,7 @@ class Apply extends Component
             'filecv' => $this->filecv->getRealPath(),
         ];
 
-        Mail::to('jouwineliepangi@gmail.com')->send(new CareerMail($details));
+        Mail::to('webmailmarkd@gmail.com')->cc(['daniel@dynamics.co.id'])->send(new CareerMail($details));
 
         $details = [
             'text'       => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.'
