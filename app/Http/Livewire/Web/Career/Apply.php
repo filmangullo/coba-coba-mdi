@@ -60,6 +60,7 @@ class Apply extends Component
         Mail::to($this->email)->send(new NotificationMail($details));
 
         $this->success = true;
+
     }
 
     public function render()
