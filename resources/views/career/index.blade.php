@@ -3,9 +3,15 @@
 @section('content')
 <div class="pt-32">
     <h2 class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('career.title')</h2>
-    {{-- <p class="ax-w-7xl px-4 sm:px-6 lg:px-8 mx-auto animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-    Everything you need to deploy your app
-    </p> --}}
+    <p class="mt-4 max-w-5xl px-4 sm:px-6 lg:px-8 text-center leading-tight text-xs xsm:text-sm sm:text-lg lg:text-xl text-gray-500 lg:mx-auto">
+    @if(App::isLocale('id'))
+    Kami memiliki peran penting dalam melindungi jutaan jiwa setiap hari. Pertumbuhan pesat kita telah memacu kita untuk menjadi produsen cetakan sarung tangan terbesar di dunia. Bangunlah masa depanmu di Mark Dynamics dan mari bertumbuh bersama untuk memberikan nilai tambah kepada masyarakat!
+    @elseif(App::isLocale('en'))
+    We play a vital role in protecting millions of lives every day. Our rapid growth has pushed us beyond the limits to be the largest hand former manufacturer in the world. So what are you waiting for? Create your future in Mark Dynamics and let's grow together to bring value to the society!
+    @elseif(App::isLocale('cn'))
+    我们每天在保护数百万人的生命方面发挥着至关重要的作用。 我们的快速增长使我们超越了极限，成为世界上最大的手工成型机制造商。 你还在等什么？ 在马克动力创造您的未来，让我们共同成长，为社会带来价值！
+    @endif
+    </p>
 
     <div class="px-4 sm:px-6 lg:px-8 mx-auto py-12 mt-12 bg-gray-100 min-h-screen">
         <div class="max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mx-auto">

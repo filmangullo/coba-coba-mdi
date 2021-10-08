@@ -36,7 +36,11 @@
                     <div class="flex justify-between lg:w-0 lg:flex-1">
                       <a href="#" class="outline-none">
                         <span class="sr-only">Mark Dynamics</span>
+                        @if(App::isLocale('cn'))
+                        <img class="w-auto h-8 sm:h-10" onclick="location.href='/';" src="{{ asset('img/logo-cn-black-header.svg') }}" alt="Mark Dynamics Indonesia">
+                        @else
                         <img class="w-auto h-8 sm:h-10" onclick="location.href='/';" src="{{ asset('img/logo-black.svg') }}" alt="Mark Dynamics Indonesia">
+                        @endif
                       </a>
                     </div>
                     {{-- Language Mobile --}}
@@ -744,16 +748,26 @@
             {{-- Footer --}}
             <div class="bottom-0 text-white border-t border-gray-300 bg-hitam">
                 <a href="/" class="block">
-                    <img  class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo.png') }}">
+                    @if(App::isLocale('cn'))
+                    <img  class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo-cn-white.png') }}">
+                    @else
+                    <img  class="w-24 pt-5 mx-auto md:hidden" src="{{ asset('img/logo-white.png') }}">
+                    @endif
                 </a>
                 <div class="grid items-center grid-cols-2 gap-6 px-4 py-10 mx-auto text-xs font-medium md:gap-0 md:grid-cols-5 justify-items-center max-w-7xl sm:px-6 lg:px-8">
                     <a class="text-center" href="{{ route('prospectus') }}">@lang('custom.prospectus')</a>
                     <a class="text-center" href="{{ route('financial-report') }}">@lang('custom.financial-report')</a>
-                    <a href="/" class="block">
-                        <img class="hidden w-24 md:block" src="{{ asset('img/logo.png') }}">
+                    <a href="/" class="hidden md:block">
+                        @if(App::isLocale('cn'))
+                        <img class="w-24" src="{{ asset('img/logo-cn-white.png') }}">
+                        @else
+                        <img  class="w-24" src="{{ asset('img/logo-white.png') }}">
+                        @endif
                     </a>
                     @if(\App\Models\Setting::where('name','career')->first()->active)
                     <a class="text-center" href="{{ route('career') }}">@lang('custom.career')</a>
+                    @else
+                    <a class="text-center" href="{{ route('gallery') }}">@lang('custom.products-gallery')</a>
                     @endif
                     <a class="text-center" href="{{ route('kontak')}}">@lang('custom.contact')</a>
                 </div>
