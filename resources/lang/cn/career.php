@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => '关于职业',
+    'title' => '工作机会',
     'header' => '想与我们合作？',
     'sub-header' => '请点击下面按键填写表格',
     'career-button' => '工作申请表格',

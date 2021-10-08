@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Career',
+    'title' => 'Career Opportunities',
     'header' => 'Interested in working with us?',
     'sub-header' => 'Press the button below and fill the form to get the chance to work with us.',
     'career-button' => 'Career Form',

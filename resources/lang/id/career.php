@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Karir',
+    'title' => 'Peluang Karir',
     'header' => 'Tertarik bekerja dengan kami?',
     'sub-header' => 'Klik tombol dibawah dan isi formnya untuk berkesempatan bekerja dengan kami.',
     'career-button' => 'Form Karir',
