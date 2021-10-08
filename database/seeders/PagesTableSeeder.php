@@ -102,7 +102,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">President Commissioner</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">A Malaysian</span> citizen, 44 years old domiciled in Kuala Lumpur, appointed as the President Commissioner based on shareholder&rsquo;s decision on March 22, 2017, in accordance with Notarial Deed Number 132 dated March 22, 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">A Malaysian</span> citizen, born in 1974&nbsp;domiciled in Kuala Lumpur, appointed as the President Commissioner based on shareholder&rsquo;s decision on March 22, 2017, in accordance with Notarial Deed Number 132 dated March 22, 2017.<br />
 <br />
 <span class="ml-12">He</span> holds a diploma in Animal and Veterinary Science from the National Pingtung Polytechnic Institute, Taiwan in 1995, and an MBA from the West Coast Institute of Management and Technology, Australia in 2000. He began his career in the company since 2002 as a Director. After 12 years, he was then appointed as the President Director, serving from 2014 to 2015 before returning to being a Director until 2017. Since 2017, he has been the President Commissioner of the Company.</div>
 </div>
@@ -118,7 +118,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Independent Commissioner</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Indonesian citizen</span>, 46 years old residing in Medan. He was appointed as an Independent Commissioner of the Company based on the decision of the shareholders on 22 March 2017, in accordance with Notarial Deed No. 132 dated 22 March 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Indonesian citizen</span>, born in 1973 residing in Medan. He was appointed as an Independent Commissioner of the Company based on the decision of the shareholders on 22 March 2017, in accordance with Notarial Deed No. 132 dated 22 March 2017.<br />
 <br />
 <span class="ml-12">A</span> holder of the Doctorate Degree in Accounting from the University of North Sumatra (USU) in 2018, a Masteral Degree of Accounting Science from the USU Faculty of Economics and Business in 2003 and a Bachelor of Economics in Accounting Study Program at the Faculty of Economics, Methodist University of Indonesia (UMI) in 1998. Having a Certified Public Accountant (CPA) from the Indonesian Institute of Certified Public Accountants in 2017. Active as a teaching staff in the Accounting Study Program of the Faculty of Economics and the Information Systems Study Program of the Faculty of Computer Science UMI.<br />
 <br />
@@ -140,7 +140,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">President Director</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">A</span> 37 years old Indonesian living in Medan, appointed as President Director based on the decision of the shareholders at the Annual General Meeting of Shareholders on 30 April 2018, in accordance with Notarial Deed Number 39 dated 30 April 2018.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span>&nbsp;Indonesian born in 1983 living in Medan, appointed as President Director based on the decision of the shareholders at the Annual General Meeting of Shareholders on 30 April 2018, in accordance with Notarial Deed Number 39 dated 30 April 2018.<br />
 <br />
 <span class="ml-12">He</span> is a graduate of the Microskil Institute, holding a Bachelor&rsquo;s degree in Computer Engineering. He started his career as an International Marketing Manager at PT. Tropical Wood Indotama from 2004 to 2008. At the time, PT. Tropical Wood Indotama was the biggest wood company in North Sumatra. In 2008 he joined PT. Mark Dynamics Indonesia Tbk as Marketing Manager.<br />
 <br />
@@ -158,7 +158,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Director</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, aged 50 years domiciled in Medan, appointed as a Director of the Company based on shareholder decisions on March 22, 2017, in accordance with Notarial Deed Number 132 dated March 22, 2017. He has worked in the Company since 2002 with a position as General Manager between 2002 &ndash; 2009, before being appointed as Commissioner until 2014.</div>
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, born in 1968 domiciled in Medan, appointed as a Director of the Company based on shareholder decisions on March 22, 2017, in accordance with Notarial Deed Number 132 dated March 22, 2017. He has worked in the Company since 2002 with a position as General Manager between 2002 &ndash; 2009, before being appointed as Commissioner until 2014.</div>
 </div>
 </div>
 
@@ -172,7 +172,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Independent Director</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, 38 years old, domiciled in Medan, appointed as the Independent Director of the Company on 30 April 2018, based on the decision of the shareholders at the Annual General Meeting of Shareholders, in accordance with Notarial Deed Number 39 dated 30 April 2018.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, born in 1980&nbsp;domiciled in Medan, appointed as the Independent Director of the Company on 30 April 2018, based on the decision of the shareholders at the Annual General Meeting of Shareholders, in accordance with Notarial Deed Number 39 dated 30 April 2018.<br />
 <br />
 <span class="ml-12">She</span> has a Bachelor&rsquo;s degree in Chemical Engineering from Universitas Sumatera Utara (USU). After graduating, she started her career in the Company as a Quality Assurance Executive in 2004. Having followed an intensive training on ceramics processing for 2 years, her passion for doing this job significantly increased. She was then entrusted as the Head of Research and Development, serving from 2011 until 2018.</div>
 </div>
@@ -196,7 +196,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Komisaris Utama</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> negara Malaysia, 44 tahun yang berdomisili di Kuala Lumpur, diangkat sebagai Komisaris Utama berdasarkan keputusan pemegang saham pada 22 Maret 2017, sesuai dengan Akta Notaris Nomor 132 tanggal 22 Maret 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> negara Malaysia, lahir pada tahun 1974 yang berdomisili di Kuala Lumpur, diangkat sebagai Komisaris Utama berdasarkan keputusan pemegang saham pada 22 Maret 2017, sesuai dengan Akta Notaris Nomor 132 tanggal 22 Maret 2017.<br />
 <br />
 <span class="ml-12">Beliau</span> memegang ijazah ilmu hewan dan hewan dari National Pingtung Polytechnic Institute, Taiwan pada tahun 1995, dan gelar MBA dari West Coast Institute of Management and Technology, Australia pada tahun 2000. Beliau memulai karirnya di perusahaan sejak tahun 2002 sebagai Direktur. Setelah 12 tahun, ia kemudian diangkat sebagai Direktur Utama, menjabat dari 2014 hingga 2015 sebelum kembali menjadi Direktur hingga 2017. Sejak 2017, beliau telah menjadi Komisaris Utama Perseroan.</div>
 </div>
@@ -212,7 +212,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Komisaris Independen</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, 46 tahun bermukim di Medan. Beliau diangkat sebagai Komisaris Independen Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris No. 132 tanggal 22 Maret 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, lahir pada tahun 1973&nbsp;bermukim di Medan. Beliau diangkat sebagai Komisaris Independen Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris No. 132 tanggal 22 Maret 2017.<br />
 <br />
 <span class="ml-12">Memiliki</span> Gelar Doktor Akuntansi dari Universitas Sumatera Utara (USU) pada tahun 2018, gelar Magister Ilmu Akuntansi dari Fakultas Ekonomi dan Bisnis USU pada tahun 2003 dan gelar Sarjana Ekonomi dalam Program Studi Akuntansi di Fakultas Ekonomi, Methodist University of Indonesia (UMI) pada tahun 1998. Memiliki Akuntan Publik Bersertifikat (BPA) dari Institut Akuntan Publik Bersertifikat Indonesia pada tahun 2017. Aktif sebagai staf pengajar di Program Studi Akuntansi Fakultas Ekonomi dan Program Studi Sistem Informasi Fakultas Ilmu Komputer UMI.<br />
 <br />
@@ -234,7 +234,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Presiden Direktur</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Seorang</span> WNI berusia 37 tahun yang tinggal di Medan, diangkat sebagai Direktur Utama berdasarkan keputusan pemegang saham pada Rapat Umum Pemegang Saham Tahunan pada tanggal 30 April 2018, sesuai dengan Akta Notaris Nomor 39 tanggal 30 April 2018.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Seorang</span> WNI lahir pada tahun 1983&nbsp;yang tinggal di Medan, diangkat sebagai Direktur Utama berdasarkan keputusan pemegang saham pada Rapat Umum Pemegang Saham Tahunan pada tanggal 30 April 2018, sesuai dengan Akta Notaris Nomor 39 tanggal 30 April 2018.<br />
 <br />
 <span class="ml-12">Merupakan</span> lulusan Microskil Institute, memegang gelar Sarjana Teknik Komputer. Beliau memulai karirnya sebagai International Marketing Manager di PT. Tropical Wood Indotama dari tahun 2004 hingga 2008. Saat itu, PT. Tropical Wood Indotama adalah perusahaan kayu terbesar di Sumatera Utara. Pada tahun 2008 beliau bergabung dengan PT. Mark Dynamics Indonesia Tbk sebagai Marketing Manager.<br />
 <br />
@@ -252,7 +252,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Direktur</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, berusia 50 tahun berdomisili di Medan, diangkat sebagai Direktur Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris Nomor 132 tanggal 22 Maret 2017. Beliau telah bekerja di Perseroan sejak tahun 2002 dengan jabatan sebagai General Manager antara tahun 2002 &ndash; 2009, sebelum diangkat sebagai Komisaris hingga tahun 2014.</div>
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, lahir pada tahun 1968&nbsp;berdomisili di Medan, diangkat sebagai Direktur Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris Nomor 132 tanggal 22 Maret 2017. Beliau telah bekerja di Perseroan sejak tahun 2002 dengan jabatan sebagai General Manager antara tahun 2002 &ndash; 2009, sebelum diangkat sebagai Komisaris hingga tahun 2014.</div>
 </div>
 </div>
 
@@ -266,7 +266,7 @@ Ridwan Goh</div>
 <p class="italic font-semibold text-mark-default">Direktur Independen</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, 38 tahun, berdomisili di Medan, diangkat sebagai Direktur Independen Perseroan pada tanggal 30 April 2018, berdasarkan keputusan pemegang saham pada Rapat Umum Pemegang Saham Tahunan, sesuai dengan Akta Notaris Nomor 39 tanggal 30 April 2018.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, lahir pada tahun 1980&nbsp;berdomisili di Medan, diangkat sebagai Direktur Independen Perseroan pada tanggal 30 April 2018, berdasarkan keputusan pemegang saham pada Rapat Umum Pemegang Saham Tahunan, sesuai dengan Akta Notaris Nomor 39 tanggal 30 April 2018.<br />
 <br />
 <span class="ml-12">Telah</span> memiliki gelar Sarjana Teknik Kimia dari Universitas Sumatera Utara (USU). Setelah lulus, ia memulai karirnya di Perseroan sebagai Eksekutif Jaminan Mutu pada tahun 2004. Setelah mengikuti pelatihan intensif tentang pengolahan keramik selama 2 tahun, hasratnya dalam melakukan pekerjaan ini meningkat secara signifikan. Dia kemudian dipercaya sebagai Kepala Penelitian dan Pengembangan, menjabat dari 2011 hingga 2018.</div>
 </div>
@@ -369,7 +369,7 @@ Ridwan Goh</div>
 </div>
 ',
                 'created_at' => '2021-09-20 08:38:32',
-                'updated_at' => '2021-09-22 10:46:37',
+                'updated_at' => '2021-10-08 04:31:15',
             ),
             2 => 
             array (
@@ -1140,7 +1140,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <p class="italic font-semibold text-mark-default">Independent Commissioner</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Indonesian</span> citizen, 46 years old residing in Medan. He was appointed as an Independent Commissioner of the Company based on the decision of the shareholders on 22 March 2017, in accordance with Notarial Deed No. 132 dated 22 March 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Indonesian</span> citizen, born in 1973&nbsp;residing in Medan. He was appointed as an Independent Commissioner of the Company based on the decision of the shareholders on 22 March 2017, in accordance with Notarial Deed No. 132 dated 22 March 2017.<br />
 <br />
 <span class="ml-12">A</span> holder of the Doctorate Degree in Accounting from the University of North Sumatra (USU) in 2018, a Masteral Degree of Accounting Science from the USU Faculty of Economics and Business in 2003 and a Bachelor of Economics in Accounting Study Program at the Faculty of Economics, Methodist University of Indonesia (UMI) in 1998. Having a Certified Public Accountant (CPA) from the Indonesian Institute of Certified Public Accountants in 2017. Active as a teaching staff in the Accounting Study Program of the Faculty of Economics and the Information Systems Study Program of the Faculty of Computer Science UMI. Dompak Pasaribu has served as Vice Dean II of Information Systems at the Faculty of Computer Science at UMI.<br />
 <br />
@@ -1158,7 +1158,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <p class="italic font-semibold text-mark-default">Members</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, domiciled in Medan, 64 years old, holding a position as a member of the Audit Committee since March 22, 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, domiciled in Medan, born in 1973&nbsp;holding a position as a member of the Audit Committee since March 22, 2017.<br />
 <br />
 <span class="ml-12">He</span> completed his education with a Bachelor&rsquo;s degree in Accounting from the Faculty of Economics, University of North Sumatra (USU) in 1984 and a Masteral degree in Accounting from Post Bachelor of University of North Sumatra (USU) in 2008.<br />
 <br />
@@ -1176,7 +1176,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <p class="italic font-semibold text-mark-default">Members</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, domiciled in Medan, currently 48 years old and holding a position as a member of the Audit Committee since March 22, 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">An</span> Indonesian citizen, domiciled in Medan, born in 1955&nbsp;holding a position as a member of the Audit Committee since March 22, 2017.<br />
 <br />
 <span class="ml-12">He</span> completed his education with a Bachelor&rsquo;s degree in Accounting from the Faculty of Economics, University of North Sumatra, Medan in 1998 and a Masters in Accounting from the Post-Graduate University of North Sumatra Medan in 2008.<br />
 <br />
@@ -1204,7 +1204,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <p class="italic font-semibold text-mark-default">Komisaris Independen</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, 46 tahun bermukim di Medan. Beliau diangkat sebagai Komisaris Independen Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris No. 132 tanggal 22 Maret 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Warga</span> Negara Indonesia, lahir pada tahun 1973 bermukim di Medan. Beliau diangkat sebagai Komisaris Independen Perseroan berdasarkan keputusan pemegang saham pada tanggal 22 Maret 2017, sesuai dengan Akta Notaris No. 132 tanggal 22 Maret 2017.<br />
 <br />
 <span class="ml-12">Memiliki</span> Gelar Doktor Akuntansi dari Universitas Sumatera Utara (USU) pada tahun 2018, gelar Magister Ilmu Akuntansi dari Fakultas Ekonomi dan Bisnis USU pada tahun 2003 dan gelar Sarjana Ekonomi dalam Program Studi Akuntansi di Fakultas Ekonomi, Methodist University of Indonesia (UMI) pada tahun 1998. Memiliki Akuntan Publik Bersertifikat (BPA) dari Institut Akuntan Publik Bersertifikat Indonesia pada tahun 2017. Aktif sebagai staf pengajar di Program Studi Akuntansi Fakultas Ekonomi dan Program Studi Sistem Informasi Fakultas Ilmu Komputer UMI. Dompak Pasaribu pernah menjabat sebagai Wakil Dekan II Bidang Sistem Informasi di Fakultas Ilmu Komputer UMI.<br />
 <br />
@@ -1222,7 +1222,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <p class="italic font-semibold text-mark-default">Anggota</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Seorang</span> warga negara Indonesia, yang berdomisili di Medan, 64 tahun, memegang jabatan sebagai anggota Komite Audit sejak 22 Maret 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Seorang</span> warga negara Indonesia, yang berdomisili di Medan, lahir pada tahun 1955&nbsp;memegang jabatan sebagai anggota Komite Audit sejak 22 Maret 2017.<br />
 <br />
 <span class="ml-12">Beliau</span> menyelesaikan pendidikannya dengan gelar Sarjana Akuntansi dari Fakultas Ekonomi Universitas Sumatera Utara (USU) pada tahun 1984 dan gelar Masteral Akuntansi dari Post Bachelor of University of North Sumatra (USU) pada tahun 2008.<br />
 <br />
@@ -1240,7 +1240,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <p class="italic font-semibold text-mark-default">Anggota</p>
 </div>
 
-<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Seorang</span> warga negara Indonesia, yang berdomisili di Medan, saat ini berusia 48 tahun dan memegang jabatan sebagai anggota Komite Audit sejak 22 Maret 2017.<br />
+<div class="col-span-1 text-justify md:col-span-4 md:row-span-2 md:ml-5"><span class="ml-12">Seorang</span> warga negara Indonesia, yang berdomisili di Medan, lahir pada tahun 1971 memegang jabatan sebagai anggota Komite Audit sejak 22 Maret 2017.<br />
 <br />
 <span class="ml-12">Beliau</span> menyelesaikan pendidikannya dengan gelar Sarjana Akuntansi dari Fakultas Ekonomi Universitas Sumatera Utara, Medan pada tahun 1998 dan magister Akuntansi dari Universitas Pasca Sarjana Sumatera Utara Medan pada tahun 2008.<br />
 <br />
@@ -1317,7 +1317,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 </div>
 ',
             'created_at' => '2021-09-22 11:24:35',
-            'updated_at' => '2021-09-22 11:26:20',
+            'updated_at' => '2021-10-08 04:34:00',
         ),
         7 => 
         array (
