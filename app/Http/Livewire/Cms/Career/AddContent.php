@@ -20,6 +20,7 @@ class AddContent extends Component
     public $position_en;
     public $brief_description_en;
     public $description_en      = '';
+    public $active;
 
     public function mount($career)
     {
@@ -37,6 +38,7 @@ class AddContent extends Component
             $this->position_en              = $this->career->job_position_en;
             $this->brief_description_en     = $this->career->brief_description_en;
             $this->description_en           = $this->career->description_en;
+            $this->active                   = $this->career->active;
         } else {
             $this->publish_date             = date("Y-m-d");
         }
@@ -55,6 +57,7 @@ class AddContent extends Component
             'position_en'           => ['required','min:1'],
             'brief_description_en'  => ['required', 'min:1'],
             'description_en'        => ['required'],
+            'active'                => ['required']
         ];
 
         // dd($this->validate($rules);
@@ -69,6 +72,7 @@ class AddContent extends Component
             'job_position_en'           => $this->position_en,
             'brief_description_en'      => $this->brief_description_en,
             'description_en'            => $this->description_en,
+            'active'                    => $this->active
         ];
         // dd($career);
         if ($edit) {

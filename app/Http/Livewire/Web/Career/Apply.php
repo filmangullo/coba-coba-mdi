@@ -7,6 +7,7 @@ use Livewire\WithFileUploads;
 use App\Mail\CareerMail;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\NotificationMail;
+use App\Models\Career;
 
 class Apply extends Component
 {
@@ -38,7 +39,7 @@ class Apply extends Component
     }
 
     public function submit() {
-        
+
         $details = [
             'name' => $this->name,
             'email' => $this->email,
@@ -50,7 +51,7 @@ class Apply extends Component
             'filecv' => $this->filecv->getRealPath(),
         ];
 
-        Mail::to('jouwineliepangi@gmail.com')->send(new CareerMail($details));
+        Mail::to('webmailmarkd@gmail.com')->cc(['daniel@dynamics.co.id'])->send(new CareerMail($details));
 
         $details = [
             'text'       => 'Hi, '.$this->name.', thank you for submit your job application to us, We will process your application shortly.<br>We will inform you soon for your application updates.'
@@ -64,6 +65,9 @@ class Apply extends Component
 
     public function render()
     {
-        return view('livewire.web.career.apply');
+        $job = Career::where('active', true)->orderBy('publish_date', 'desc')->get();
+        return view('livewire.web.career.apply', [
+            'job' => $job
+        ]);
     }
 }

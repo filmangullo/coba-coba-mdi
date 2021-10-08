@@ -767,7 +767,11 @@
                     @if(\App\Models\Setting::where('name','career')->first()->active)
                     <a class="text-center" href="{{ route('career') }}">@lang('custom.career')</a>
                     @else
+<<<<<<< HEAD
                     <a class="text-center" href="{{ route('gallery') }}">@lang('custom.products-gallery')</a>
+=======
+                    <a class="text-center" href="{{ route('environment') }}">@lang('custom.environment')</a>
+>>>>>>> 8266cddd45fd5d081eeb1b36d0c50abd30fbc2db
                     @endif
                     <a class="text-center" href="{{ route('kontak')}}">@lang('custom.contact')</a>
                 </div>

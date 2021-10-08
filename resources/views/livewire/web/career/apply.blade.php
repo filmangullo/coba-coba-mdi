@@ -30,7 +30,7 @@
                 @error('filecv')
                 {{$message}}
                 @else
-                CV @if(!empty($filecv)) @lang('career.submit') @else @lang('career.not-submit') @endif 
+                CV @if(!empty($filecv)) @lang('career.submit') @else @lang('career.not-submit') @endif
                 @enderror
                 </label>
             </div>
@@ -42,9 +42,11 @@
                 </label>
                 <select wire:model="apply" class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:border-mark focus:ring-0 focus:outline-none focus:shadow-outline">
                     <option value="">Select</option>
-                    <option>IT Programmer</option>
-                    <option>Manager</option>
-                    <option>Accounting</option>
+                    @forelse ($job as $item)
+                        <option value="{{ $item->job_position_en }}">{{$item->job_position_en}}</option>
+                    @empty
+                    <option value="">No recruitment</option>
+                    @endforelse
                 </select>
             </div>
 
