@@ -60,7 +60,7 @@ class SlidersTableSeeder extends Seeder
                 'url' => 'https://markdynamicsindo.com/vision-mission',
                 'url1' => 'https://markdynamicsindo.com/about/ceo-message',
                 'imgwidth' => 'half',
-                'file' => 'img/slider-2e.png',
+                'file' => 'img/slider-2e.jpg',
                 'created_at' => '2021-09-22 09:16:07',
                 'updated_at' => '2021-09-23 09:55:34',
                 'active' => 1,
