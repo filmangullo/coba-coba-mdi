@@ -8,6 +8,8 @@ use App\Models\Gallery;
 
 class ListGallery extends Component
 {
+    use WithPagination;
+
     public function render()
     {
         return view('livewire.web.product-gallery.list-gallery', [
