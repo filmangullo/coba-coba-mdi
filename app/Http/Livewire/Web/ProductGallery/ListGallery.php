@@ -11,7 +11,7 @@ class ListGallery extends Component
     public function render()
     {
         return view('livewire.web.product-gallery.list-gallery', [
-            'gallery'       => Gallery::where('is_product', false)->orderBy('created_at', 'asc')->paginate(8)
+            'gallery'       => Gallery::where('is_product', false)->orderBy('created_at', 'desc')->paginate(8)
         ]);
     }
 }
