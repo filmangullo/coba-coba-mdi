@@ -14,7 +14,7 @@
   <div x-show="open"
        @click.away="open = false"
        x-cloak
-    class="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    class="absolute right-0 z-40 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
     <div class="py-1" role="none">
       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
       <a href="{{ route('cms-agm.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Annual General Meeting</a>
@@ -25,7 +25,9 @@
       <a href="{{ route('cms-fr.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Financial Report</a>
       <a href="{{ route('cms-op.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Our Product</a>
       <a href="{{ route('cms-pe.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Public Expose</a>
+      <a href="{{ route('cms-sh.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Shareholder Information</a>
       <a href="{{ route('cms-slider.index') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-400" role="menuitem" tabindex="-1" id="menu-item-2">Slider</a>
+
     </div>
   </div>
 </div>

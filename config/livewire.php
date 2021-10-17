@@ -92,6 +92,7 @@ return [
             'jpg', 'jpeg', 'mpga', 'webp', 'wma',
         ],
         'max_upload_time' => 5, // Max duration (in minutes) before an upload gets invalidated.
+        'rules' => 'file|mimes:png,jpg,pdf,mp4,doc,|max:102400'
     ],
 
     /*

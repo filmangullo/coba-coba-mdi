@@ -15,6 +15,7 @@ use App\Http\Controllers\cms\GalleryController;
 use App\Http\Controllers\cms\NewsController;
 use App\Http\Controllers\cms\OurProductController;
 use App\Http\Controllers\cms\PublicExposeController;
+use App\Http\Controllers\cms\ShareholderInformationController;
 use App\Http\Controllers\cms\SliderController;
 
 
@@ -126,6 +127,14 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function (
         Route::get('/create', [SliderController::class, 'create'])->name('create');
         Route::get('/{id}/update', [SliderController::class, 'update'])->name('update');
     });
+
+    Route::prefix('shareholder-information')->name('cms-sh.')->group(function () {
+        Route::get('/', [ShareholderInformationController::class, 'index'])->name('index');
+        Route::get('/create', [ShareholderInformationController::class, 'create'])->name('create');
+        Route::get('/{id}/update', [ShareholderInformationController::class, 'edit'])->name('update');
+    });
+
+
 });
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
