@@ -42,7 +42,7 @@ class ListContent extends Component
     public function render()
     {
         return view('livewire.cms.gallery.list-content', [
-            'galleries' => Gallery::orderBy('created_at', 'desc')->paginate(10),
+            'galleries' => Gallery::orderBy('created_at', 'desc')->paginate(12),
         ]);
     }
 }
