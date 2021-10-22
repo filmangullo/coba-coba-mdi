@@ -157,10 +157,11 @@ Route::get('{slug}', function($slug) {
 
 Route::get('{slug}/{slug2}', function($slug, $slug2) {
     $body =  Menu::where('type', 'page')->where('slug', $slug2)->where('active', true)->first();
-    if($body->parents->slug != $slug)
-        abort(404);
-    if(isset($body))
+    if(isset($body)) {
+        if($body->parents->slug != $slug)
+            abort(404);
         return view('layouts.body', compact('body'));
+    }
     else
         abort(404);
 });
