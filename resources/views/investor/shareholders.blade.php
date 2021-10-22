@@ -10,26 +10,29 @@
     @elseif(App::isLocale('cn'))
     <img class="mt-12 lg:mt-24" src="{{ asset('img/shareholders-cn.png') }}" alt="Mark Dynamics Shareholders">
     @endif
-    <div class="pt-12 lg:pt-24 space-y-12 text-left lg:space-y-24">
-        <div class="space-y-3">
-            <div class="font-bold lg:text-base sm:text-sm text-xs">@lang('shareholders.title-1')</div>
-            @if(App::isLocale('id'))
-            <img src="{{ asset('img/shareholders-table-1.png') }}" alt="Mark Dynamics Shareholders">
-            @elseif(App::isLocale('en'))
-            <img src="{{ asset('img/shareholders-table-1-eng.png') }}" alt="Mark Dynamics Shareholders">
-            @elseif(App::isLocale('cn'))
-            <img src="{{ asset('img/shareholders-table-1-cn.png') }}" alt="Mark Dynamics Shareholders">
-            @endif
-        </div>
-        <div class="space-y-3">
-            <div class="font-bold lg:text-base sm:text-sm text-xs">@lang('shareholders.title-2')</div>
-            @if(App::isLocale('id'))
-            <img src="{{ asset('img/shareholders-table-2.png') }}" alt="Mark Dynamics Shareholders">
-            @elseif(App::isLocale('en'))
-            <img src="{{ asset('img/shareholders-table-2-eng.png') }}" alt="Mark Dynamics Shareholders">
-            @elseif(App::isLocale('cn'))
-            <img src="{{ asset('img/shareholders-table-2-cn.png') }}" alt="Mark Dynamics Shareholders">
-            @endif
+    <div class="pt-6 lg:pt-12 lg:mt-12 mt-6 space-y-12 text-left lg:space-y-24 border-t border-hitam">
+        <div>
+            <div class="space-y-24">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full items-start ">
+                @for($j = 1; $j <= 7; $j++)
+                    <div class="text-center w-full space-y-4 xsm:px-4 py-6 ">
+                        <a href="#" download class="rounded-full mx-auto w-28 h-28 bg-mark-default hover:bg-mark-dark cursor-pointer flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 mx-auto text-white" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="text-sm sm:text-lg font-bold">Informasi Pemegang Saham Januari 2021</div>
+                        {{-- @if(App::isLocale('id'))
+                        <div class="text-sm sm:text-lg font-bold">{{ $sp['title_id'] }}</div>
+                        @elseif(App::isLocale('en'))
+                        <div class="text-sm sm:text-lg font-bold">{{ $sp['title_en'] }}</div>
+                        @elseif(App::isLocale('cn'))
+                        <div class="text-sm sm:text-lg font-bold">{{ $sp['title_cn'] }}</div>
+                        @endif --}}
+                    </div>
+                @endfor
+                </div>
+            </div>
         </div>
     </div>
 </div>
