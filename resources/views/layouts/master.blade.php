@@ -168,7 +168,7 @@
                             class="absolute right-0 z-10 w-screen max-w-xs px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                               <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                 <div class="relative grid gap-6 px-5 py-6 bg-white rounded-lg sm:gap-8 sm:p-8">
-                                    @foreach($body->child as $m)
+                                    @foreach($body->child->where('active', true) as $m)
                                         @if($m->type == 'page')
                                             <a href="{{ url($body->slug .'/'. $m->slug) }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                                 <p class="text-sm font-medium text-gray-900">
@@ -202,7 +202,7 @@
                                                 x-transition:leave-start="transform opacity-100 scale-100"
                                                 x-transition:leave-end="transform opacity-0 scale-95"
                                                 x-cloak x-show="open === true" @click.away="open = false" class="absolute z-10 grid w-screen max-w-xs gap-6 px-5 py-6 mr-5 transform bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 sm:gap-8 sm:p-8 right-full lg:left-full -top-5 lg:ml-5">
-                                                    @foreach($m->child as $sm)
+                                                    @foreach($m->child->where('active', true) as $sm)
                                                         <a href="{{ url($body->slug .'/'. $m->slug .'/'. $sm->slug) }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
                                                             <p class="text-sm font-medium text-gray-900">
                                                                 @if(App::isLocale('en'))
