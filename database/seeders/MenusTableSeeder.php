@@ -14,12 +14,12 @@ class MenusTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('menus')->delete();
-        
+
         \DB::table('menus')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 12,
                 'type' => 'about',
@@ -32,7 +32,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 05:02:08',
                 'updated_at' => '2021-09-20 07:45:21',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 13,
                 'type' => 'main',
@@ -45,7 +45,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 07:42:38',
                 'updated_at' => '2021-09-20 07:42:38',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 14,
                 'type' => 'main',
@@ -58,7 +58,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:29:03',
                 'updated_at' => '2021-09-20 08:29:03',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 15,
                 'type' => 'page',
@@ -71,7 +71,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 08:38:32',
                 'updated_at' => '2021-09-22 10:46:37',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 16,
                 'type' => 'main',
@@ -84,7 +84,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 15:07:12',
                 'updated_at' => '2021-09-20 15:07:12',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 17,
                 'type' => 'main',
@@ -97,7 +97,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-20 15:15:13',
                 'updated_at' => '2021-09-20 15:15:13',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 18,
                 'type' => 'about',
@@ -110,7 +110,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 08:55:54',
                 'updated_at' => '2021-09-22 09:00:12',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 19,
                 'type' => 'about',
@@ -123,7 +123,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 09:30:47',
                 'updated_at' => '2021-09-22 09:30:47',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 20,
                 'type' => 'about',
@@ -136,7 +136,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 09:58:24',
                 'updated_at' => '2021-09-28 06:29:46',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 21,
                 'type' => 'page',
@@ -149,7 +149,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 11:19:06',
                 'updated_at' => '2021-09-22 11:25:14',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 22,
                 'type' => 'page',
@@ -162,20 +162,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 11:24:35',
                 'updated_at' => '2021-09-22 11:26:20',
             ),
-            11 => 
-            array (
-                'id' => 23,
-                'type' => 'page',
-                'parent' => 13,
-                'slug' => 'shareholders-information',
-                'name_en' => 'Shareholders Information',
-                'name_id' => 'Informasi Pemegang Saham',
-                'name_cn' => '关于股东的信息',
-                'active' => 1,
-                'created_at' => '2021-09-22 14:33:15',
-                'updated_at' => '2021-09-22 14:33:15',
-            ),
-            12 => 
+            11 =>
             array (
                 'id' => 24,
                 'type' => 'page',
@@ -188,7 +175,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 15:25:32',
                 'updated_at' => '2021-09-22 15:26:53',
             ),
-            13 => 
+            12 =>
             array (
                 'id' => 26,
                 'type' => 'page',
@@ -201,7 +188,7 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2021-09-22 15:59:51',
                 'updated_at' => '2021-09-22 16:06:39',
             ),
-            14 => 
+            13 =>
             array (
                 'id' => 27,
                 'type' => 'page',
@@ -215,7 +202,7 @@ class MenusTableSeeder extends Seeder
                 'updated_at' => '2021-09-22 16:09:47',
             ),
         ));
-        
-        
+
+
     }
 }

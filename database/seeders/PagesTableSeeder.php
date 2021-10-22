@@ -14,12 +14,12 @@ class PagesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('pages')->delete();
-        
+
         \DB::table('pages')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 5,
                 'menu' => 12,
@@ -82,7 +82,7 @@ Ridwan Goh</div>
                 'created_at' => '2021-09-20 05:02:08',
                 'updated_at' => '2021-09-20 07:15:47',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 6,
                 'menu' => 15,
@@ -371,7 +371,7 @@ Ridwan Goh</div>
                 'created_at' => '2021-09-20 08:38:32',
                 'updated_at' => '2021-10-08 04:31:15',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 7,
                 'menu' => 18,
@@ -445,7 +445,7 @@ Ridwan Goh</div>
             'created_at' => '2021-09-22 08:55:54',
             'updated_at' => '2021-09-22 09:00:12',
         ),
-        3 => 
+        3 =>
         array (
             'id' => 8,
             'menu' => 19,
@@ -611,7 +611,7 @@ Ridwan Goh</div>
             'created_at' => '2021-09-22 09:30:47',
             'updated_at' => '2021-09-22 09:30:47',
         ),
-        4 => 
+        4 =>
         array (
             'id' => 9,
             'menu' => 20,
@@ -929,7 +929,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
 <div class="flex-1 ml-4 sm:ml-12 font-bold text-2xl">2002</div>
 </div>
 
-<div class="ml-8 sm:ml-16">PT Mark Dynamics Indonesia Tbk berdiri pada 10 April 2020.</div>
+<div class="ml-8 sm:ml-16">PT Mark Dynamics Indonesia Tbk berdiri pada 10 April 2002.</div>
 </li>
 </ul>
 </div>
@@ -1095,7 +1095,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
             'created_at' => '2021-09-22 09:58:24',
             'updated_at' => '2021-09-28 06:29:46',
         ),
-        5 => 
+        5 =>
         array (
             'id' => 10,
             'menu' => 21,
@@ -1120,7 +1120,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
             'created_at' => '2021-09-22 11:19:06',
             'updated_at' => '2021-09-22 11:25:14',
         ),
-        6 => 
+        6 =>
         array (
             'id' => 11,
             'menu' => 22,
@@ -1319,56 +1319,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
             'created_at' => '2021-09-22 11:24:35',
             'updated_at' => '2021-10-08 04:34:00',
         ),
-        7 => 
-        array (
-            'id' => 12,
-            'menu' => 23,
-            'content_en' => '<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
-<h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">Shareholders Information</h2>
-<img alt="Mark Dynamics Shareholders" class="mt-12 lg:mt-24" src="../../img/shareholders.png" />
-<div class="pt-12 lg:pt-24 space-y-12 text-left lg:space-y-24">
-<div class="space-y-3">
-<div class="font-bold lg:text-base sm:text-sm text-xs">Controlling Shareholders Composition of Mark as of 31 December 2020</div>
-<img alt="Mark Dynamics Shareholders" src="../../img/shareholders-table-1-eng.png" /></div>
-
-<div class="space-y-3">
-<div class="font-bold lg:text-base sm:text-sm text-xs">Board Members Share Ownership as of 31 December 2020</div>
-<img alt="Mark Dynamics Shareholders" src="../../img/shareholders-table-2-eng.png" /></div>
-</div>
-</div>
-',
-            'content_id' => '<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
-<h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">Informasi Pemegang Saham</h2>
-<img alt="Mark Dynamics Shareholders" class="mt-12 lg:mt-24" src="../../img/shareholders.png" />
-<div class="pt-12 lg:pt-24 space-y-12 text-left lg:space-y-24">
-<div class="space-y-3">
-<div class="font-bold lg:text-base sm:text-sm text-xs">Komposisi Pemegang Saham Pengendali Mark per 31 Desember 2020</div>
-<img alt="Mark Dynamics Shareholders" src="../../img/shareholders-table-1.png" /></div>
-
-<div class="space-y-3">
-<div class="font-bold lg:text-base sm:text-sm text-xs">Komposisi Pemegang Saham oleh Dewan Komisaris dan Direksi Per 31 Desember 2020</div>
-<img alt="Mark Dynamics Shareholders" src="../../img/shareholders-table-2.png" /></div>
-</div>
-</div>
-',
-            'content_cn' => '<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 pt-32 lg:pb-16 lg:px-8 text-center">
-<h2 class="animate__fadeInDown text-center animate__animated mt-2 text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">关于股东的信息</h2>
-<img alt="Mark Dynamics Shareholders" class="mt-12 lg:mt-24" src="../../img/shareholders-cn.png" />
-<div class="pt-12 lg:pt-24 space-y-12 text-left lg:space-y-24">
-<div class="space-y-3">
-<div class="font-bold lg:text-base sm:text-sm text-xs">2020 年 12 月 31 日公司控股股东构成</div>
-<img alt="Mark Dynamics Shareholders" src="../../img/shareholders-table-1-cn.png" /></div>
-
-<div class="space-y-3">
-<div class="font-bold lg:text-base sm:text-sm text-xs">2020 年 12 月 31 日委员会和董事股东构成</div>
-<img alt="Mark Dynamics Shareholders" src="../../img/shareholders-table-2-cn.png" /></div>
-</div>
-</div>
-',
-            'created_at' => '2021-09-22 14:33:15',
-            'updated_at' => '2021-09-22 14:33:15',
-        ),
-        8 => 
+        7 =>
         array (
             'id' => 13,
             'menu' => 24,
@@ -1441,7 +1392,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
             'created_at' => '2021-09-22 15:25:32',
             'updated_at' => '2021-09-22 15:25:32',
         ),
-        9 => 
+        8 =>
         array (
             'id' => 14,
             'menu' => 26,
@@ -1484,7 +1435,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
             'created_at' => '2021-09-22 15:59:51',
             'updated_at' => '2021-09-22 16:06:39',
         ),
-        10 => 
+        9 =>
         array (
             'id' => 15,
             'menu' => 27,
@@ -1510,7 +1461,7 @@ Memperoleh ISO 9001:2000 Sertifikasi Standar Manajemen Mutu.</div>
             'updated_at' => '2021-09-22 16:09:47',
         ),
     ));
-        
-        
+
+
     }
 }
