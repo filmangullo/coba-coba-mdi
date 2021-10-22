@@ -148,7 +148,7 @@ Route::get('about/{slug}', function($slug) {
 
 
 Route::get('{slug}', function($slug) {
-    $body = Menu::where('type', 'page')->where('slug', $slug)->first();
+    $body = Menu::where('type', 'page')->where('slug', $slug)->where('active', true)->first();
     if(isset($body))
         return view('layouts.body', compact('body'));
     else
@@ -156,7 +156,7 @@ Route::get('{slug}', function($slug) {
 });
 
 Route::get('{slug}/{slug2}', function($slug, $slug2) {
-    $body =  Menu::where('type', 'page')->where('slug', $slug2)->first();
+    $body =  Menu::where('type', 'page')->where('slug', $slug2)->where('active', true)->first();
     if($body->parents->slug != $slug)
         abort(404);
     if(isset($body))
@@ -166,7 +166,7 @@ Route::get('{slug}/{slug2}', function($slug, $slug2) {
 });
 
 Route::get('{slug}/{slug2}/{slug3}', function($slug, $slug2, $slug3) {
-    $body =  Menu::where('type', 'page')->where('slug', $slug3)->first();
+    $body =  Menu::where('type', 'page')->where('slug', $slug3)->where('active', true)->first();
     if($body->parents->slug != $slug2)
         abort(404);
     if($body->parents->parents->slug != $slug)
