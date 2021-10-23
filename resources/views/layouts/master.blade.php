@@ -239,11 +239,6 @@
                                             </div>
                                         @endif
                                     @endforeach
-                                    <a href="{{ route('shareholders') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
-                                        <p class="text-sm font-medium text-gray-900">
-                                            @lang('custom.shareholders')
-                                        </p>
-                                    </a>
 									@if($body->name_en == 'Investor Relation')
 										<a href="{{ route('annual-meeting') }}" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-100">
 											<!-- Heroicon name: outline/chart-bar -->
