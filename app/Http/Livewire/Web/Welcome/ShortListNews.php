@@ -11,7 +11,7 @@ class ShortListNews extends Component
     {
         $this->news = News::where('status', 1)
                             ->orderBy('news_date', 'desc')
-                            ->limit(4)
+                            ->limit(3)
                             ->get();
     }
 
