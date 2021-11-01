@@ -18,8 +18,8 @@
                         </div>
                         <div class="grid items-center grid-cols-5 gap-4 text-base font-light">
                             <div class="justify-center hidden w-24 h-20 py-2 text-center rounded-md sm:block bg-mark-default">
-                                <div class="text-sm">{{ date('M', strtotime($n->created_at)) }}</div>
-                                <div class="text-3xl font-semibold">{{ date('d', strtotime($n->created_at)) }}</div>
+                                <div class="text-sm">{{ date('M', strtotime($n->news_date)) }}</div>
+                                <div class="text-3xl font-semibold">{{ date('d', strtotime($n->news_date)) }}</div>
                             </div>
                             <div class="col-span-5 sm:col-span-4">
                                 @if (__('custom.lang') == 'id')

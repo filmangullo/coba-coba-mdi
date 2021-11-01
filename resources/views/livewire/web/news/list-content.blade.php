@@ -41,9 +41,9 @@
                         @endif
                     </div>
                     <div class="grid items-center grid-cols-5 gap-4 text-base font-light">
-                        <div class="hidden sm:block justify-center w-24 h-20 py-2 text-center rounded-md bg-mark-default">
-                            <span class="text-sm">{{ date('M', strtotime($item->created_at)) }}</span><br>
-                            <span class="text-3xl font-semibold">{{ date('d', strtotime($item->created_at)) }}</span>
+                        <div class="justify-center hidden w-24 h-20 py-2 text-center rounded-md sm:block bg-mark-default">
+                            <span class="text-sm">{{ date('M', strtotime($item->news_date)) }}</span><br>
+                            <span class="text-3xl font-semibold">{{ date('d', strtotime($item->news_date)) }}</span>
                         </div>
                         <div class="col-span-5 sm:col-span-4 line-clamp-3">
                             @if (__('custom.lang') == 'id')

@@ -9,7 +9,8 @@ class ShortListNews extends Component
     public $news;
     public function mount()
     {
-        $this->news = News::orderBy('created_at', 'desc')
+        $this->news = News::where('status', 1)
+                            ->orderBy('news_date', 'desc')
                             ->limit(4)
                             ->get();
     }
