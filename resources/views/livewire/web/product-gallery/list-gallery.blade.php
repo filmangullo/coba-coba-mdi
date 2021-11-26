@@ -1,8 +1,10 @@
 <div class="mx-auto max-w-7xl">
-    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+    <div x-data="{ imgModal : @entangle('imgModal'), imgModalSrc : @entangle('imgModalSrc'), imgModalDesc : '' }">
         <template
-            @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;"
+            {{-- @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" --}}
+
             x-if="imgModal">
+            <img src="">
             <div x-transition:enter="transition ease-out duration-300"
                 x-transition:enter-start="opacity-0 transform"
                 x-transition:enter-end="opacity-100 transform "
@@ -28,7 +30,7 @@
         <div class="py-24 text-4xl font-bold text-center">Gallery</div>
         <div class="flex flex-wrap items-center pb-24 -mx-3 -my-3 ">
             @foreach($gallery ? : [] as $g)
-            <div @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset( $g->img ) }}', imgModalDesc: 'Mark Dynamics Indo' })"
+            <div wire:click='showImg("{{ asset( $g->img ) }}")'
                 class="px-3 py-3 sm:w-6/12 md:w-4/12 lg:w-3/12">
                 <img class="object-cover w-full h-48 rounded-md cursor-pointer pointer-events-auto hover:opacity-75" src="{{ asset( $g->img ) }}" alt="Mark Dynamics Gallery & Products">
             </div>
