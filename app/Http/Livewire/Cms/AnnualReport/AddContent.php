@@ -34,6 +34,7 @@ class AddContent extends Component
         $query->title_id    = $this->title_id;
         $query->title_en    = $this->title_en;
         $query->title_cn    = $this->title_cn;
+        $query->img         = 'storage/'.$file;
         $query->file        = 'storage/'.$file;
 
         $query->save();
