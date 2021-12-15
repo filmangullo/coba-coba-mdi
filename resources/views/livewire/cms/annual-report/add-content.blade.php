@@ -1,5 +1,5 @@
 <div>
-    <div x-data="{ tab: 'id' }" class="h-screen px-2 py-20 bg-gray-300">
+    <div x-data="{ tab: 'id' }" class="px-2 py-20 bg-gray-300 ">
         <div class="max-w-md mx-auto overflow-hidden bg-white rounded-lg md:max-w-lg">
             <div class="md:flex">
                 <div x-cloax class="w-full px-4">
@@ -58,7 +58,39 @@
                     </div>
 
                     <div class="p-3">
-
+                        <label for="cover-photo" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+                          Cover Image
+                        </label>
+                        <div class="sm:grid sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                            <div class="mt-1 sm:mt-0">
+                              <div class="flex justify-center max-w-lg px-6 pt-2 pb-2 border-2 border-gray-300 border-dashed rounded-md">
+                                <div wire:loading.remove wire:target="img" class="space-y-1 text-center">
+                                    @if (!$img == null)
+                                        <img class="h-32 mx-auto " src="{{ $img->temporaryUrl() }}" >
+                                    @else
+                                        <svg class="w-32 h-32 mx-auto text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    @endif
+                                    <div class="text-sm text-center text-gray-600">
+                                        <label for="img-upload" class="font-medium text-center text-indigo-600 bg-white rounded-md cursor-pointer hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                            <span class="mx-auto">Upload a img</span>
+                                            <input id="img-upload" wire:model="img" name="img-upload" type="file" class="sr-only">
+                                        </label>
+                                    </div>
+                                    <p class="text-xs text-gray-500">
+                                        PNG, JPG, GIF up to 1MB
+                                    </p>
+                                </div>
+                                <div wire:loading wire:target="img" class="flex flex-col items-center py-16">
+                                    <img class="w-1/5 mx-auto " src="{{ asset('loading.gif') }}" >
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        @error('img') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
+                    </div>
+                    <div class="p-3">
                         <div class="mb-2"> <span>Attachments</span>
                             <div class="relative flex items-center justify-center h-40 bg-white border-2 border-gray-400 border-dashed rounded-lg hover:cursor-pointer">
                                 <div class="absolute">
@@ -81,6 +113,7 @@
                                 </div> <input wire:model="file" type="file" class="w-full h-full opacity-0" name="">
                             </div>
                             <div class="flex items-center justify-between text-gray-400"> <span>Accepted file type:.doc, .pdf, img only</span> <span class="flex items-center "><i class="mr-1 fa fa-lock"></i> secure</span> </div>
+                            @error('file') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
                         </div>
                         <div class="pb-3 mt-3 text-center">
                             <button wire:click="save" class="w-full h-12 text-lg text-white bg-blue-600 rounded hover:bg-blue-700">Create</button>
