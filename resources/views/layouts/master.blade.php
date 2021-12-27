@@ -561,7 +561,7 @@
 							</a>
 							@else
 							<div x-data="{open: false}" class="relative w-full space-y-8">
-								<div x-on:click="open = !open" class="flex items-center justify-between w-full py-3 -my-3 rounded-md hover:bg-gray-50">
+								<div x-on:click="open = !open" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
 									<span class="text-base font-medium text-gray-900">
 										@if(App::isLocale('en'))
 											{!! $body->name_en !!}
