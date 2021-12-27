@@ -31,7 +31,9 @@ use App\Http\Controllers\cms\SliderController;
 */
 
 // Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-
+Route::get('/', function () {
+    return redirect()->route('dashboard');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('cms')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

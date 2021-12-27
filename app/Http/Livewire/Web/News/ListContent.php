@@ -15,7 +15,7 @@ class ListContent extends Component
     public function render()
     {
         return view('livewire.web.news.list-content', [
-            'news'      => News::where('status', 1)->orderBy('created_at', 'desc')->paginate(11)
+            'news'      => News::where('status', 1)->orderBy('news_date', 'desc')->paginate(11)
         ]);
     }
 }

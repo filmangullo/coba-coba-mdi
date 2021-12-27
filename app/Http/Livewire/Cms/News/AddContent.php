@@ -86,7 +86,7 @@ class AddContent extends Component
 
         $news = [
             'author_id'             => $this->author_id,
-            'slug'                  => date("Y-m-d", strtotime($this->date_news)).'-'.Str::slug($this->title_id, '-'),
+            'slug'                  => Str::slug($this->title_id, '-').'-|-'.date("Y-m-d", strtotime($this->date_news)),
             'news_date'             => $this->date_news,
             'status'                => $this->status,
             'title_id'              => $this->title_id,

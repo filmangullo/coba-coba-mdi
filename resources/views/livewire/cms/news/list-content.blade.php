@@ -27,6 +27,14 @@
                         <div class="mt-6 text-gray-500">
                             {!! $n->brief_description_id !!}
                         </div>
+                        <div class="mt-5 text-xs italic text-right text-gray-700 sm:flex sm:justify-between">
+                            <div>
+                                Created At {{ date('d F Y', strtotime($n->created_at))}}
+                            </div>
+                            <div>
+                                Publish Date {{ date('d F Y', strtotime($n->news_date))}}, Status : {{ $n->status == 1 ? 'Publish' : 'Hold'}}
+                            </div>
+                        </div>
                         <div class="mt-5 text-2xl text-right">
 
                                 <a href="{{ route('cms-news.show', $n->id) }}" class="px-5 py-2 text-sm text-gray-600 border border-gray-600 rounded-md focus:outline-none hover:bg-gray-50">Show</a>

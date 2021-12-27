@@ -33,6 +33,12 @@ class ListContent extends Component
             Storage::delete('public/'.$query->file);
         }
 
+        if (substr($query->img, 0, 8) == 'storage/'){
+            Storage::delete('public/'.substr($query->img, 8));
+        } else {
+            Storage::delete('public/'.$query->img);
+        }
+
         $query->delete();
 
         $this->deleteArId = null;
