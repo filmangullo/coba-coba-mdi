@@ -685,36 +685,6 @@
 								</div>
 							@endif
 						@endforeach
-
-                          <a x-on:click="sustain = !sustain" href="#" class="flex items-center justify-between p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <span class="text-base font-medium text-gray-900">
-                              @lang('custom.sustainability')
-                            </span>
-                            <svg :class="{ 'text-mark-default -rotate-180' : sustain === true, 'text-gray-400 group-hover:text-gray-500' : sustain === false }" class="w-5 h-5 ml-2 transition-all duration-200 transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                          </a>
-                          <div
-                          x-transition:enter="transition-all ease-out duration-200"
-                            x-transition:enter-start="opacity-0 translate-y-1"
-                            x-transition:enter-end="opacity-100 translate-y-0"
-                            x-transition:leave="transition-all ease-in duration-150"
-                            x-transition:leave-start="opacity-100 translate-y-0"
-                            x-transition:leave-end="opacity-0 translate-y-1"
-                          x-cloak x-show="sustain === true" x-on:click.away="sustain = false" class="grid px-5 gap-y-8">
-                            <a href="{{ route('csr') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.csr')
-                              </span>
-                            </a>
-                            <a href="{{ route('environment') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
-                              <!-- Heroicon name: outline/chart-bar -->
-                              <span class="text-base font-medium text-gray-900">
-                                @lang('custom.environment')
-                              </span>
-                            </a>
-                          </div>
                         </nav>
                       </div>
                     </div>
@@ -736,7 +706,7 @@
                         <div class="lg:hidden">
                             <div class="flex items-center w-20 rounded-md">
                                 <a href="{{ url('lang/en') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('en')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-l-md">EN</a>
-                                <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">ID</a>
+                                <a href="{{ url('lang/id') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('id')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none">ID</a>
                                 <a href="{{ url('lang/cn') }}" class="w-6/12 py-1 text-center text-xs font-semibold @if(App::isLocale('cn')) text-white bg-mark-default @else text-gray-400 bg-gray-200 @endif focus:outline-none rounded-r-md">中文</a>
                             </div>
                         </div>
