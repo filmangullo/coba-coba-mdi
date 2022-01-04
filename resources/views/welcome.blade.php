@@ -98,14 +98,15 @@
     <div class="mt-12 animate__fadeInUp wow animate__animated">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <a href="https://agrodynamicsindo.com/" class="block pt-6">
-          <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
-            <div class="-mt-6">
+          <div class="flow-root h-full p-8 bg-mark-default rounded-lg">
+            <div class="">
               <div class="flex justify-center">
-                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
+                  <img class="transition-all duration-500 transform scale-110 hover:scale-125" src="{{ asset('img/agriculture.png') }}" alt="Mark Dynamics Agriculture">
               </div>
               <div>
-                  <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.agriculture')</h3>
-                  <p class="mt-5 text-base text-gray-500">
+                  <h3 class="mt-8 text-lg font-bold tracking-tight text-white">@lang('custom.agriculture')</h3>
+                  <div class="my-4 w-6 h-0.5 rounded-full bg-white mx-auto"> </div>
+                  <p class="text-base text-white">
                     @lang('custom.agriculture-desc')
                   </p>
               </div>
@@ -114,6 +115,21 @@
         </a>
 
         <a href="{{ route('gallery') }}" class="block pt-6">
+          <div class="flow-root h-full p-8 bg-mark-default rounded-lg">
+            <div class="">
+              <div class="flex justify-center">
+                  <img class="transition-all duration-500 transform scale-110 hover:scale-125" src="{{ asset('img/handformer.png') }}" alt="Mark Dynamics Hand Former">
+              </div>
+              <h3 class="mt-8 text-lg font-bold tracking-tight text-white">@lang('custom.hand-former')</h3>
+              <div class="my-4 w-6 h-0.5 rounded-full bg-white mx-auto"> </div>
+              <p class="text-base text-white">
+                @lang('custom.hand-former-desc')
+              </p>
+            </div>
+          </div>
+        </a>
+
+        {{-- <a href="{{ route('gallery') }}" class="block pt-6">
           <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
             <div class="-mt-6">
               <div class="flex justify-center">
@@ -125,16 +141,17 @@
               </p>
             </div>
           </div>
-        </a>
+        </a> --}}
 
         <a href="https://berjayadynamicsindonesia.web.indotrading.com/" class="block pt-6">
-          <div class="flow-root h-full px-6 pb-8 bg-gray-200 rounded-lg">
-            <div class="grid content-between -mt-6">
+          <div class="flow-root h-full p-8 bg-mark-default rounded-lg">
+            <div class="grid content-between">
               <div class="flex justify-center">
-                  <img class="transition-all duration-500 transform hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
+                  <img class="transition-all duration-500 transform scale-110 hover:scale-125" src="{{ asset('img/toilet.png') }}" alt="Mark Dynamics Hand Former">
               </div>
-              <h3 class="mt-8 text-lg font-bold tracking-tight text-gray-900">@lang('custom.sanitary')</h3>
-              <p class="mt-5 text-base text-gray-500">
+              <h3 class="mt-8 text-lg font-bold tracking-tight text-white">@lang('custom.sanitary')</h3>
+              <div class="my-4 w-6 h-0.5 rounded-full bg-white mx-auto"> </div>
+              <p class="text-base text-white">
                 @lang('custom.sanitary-desc')
               </p>
             </div>
