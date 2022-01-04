@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="mt-8 mb-4 text-2xl">
-                        Welcome to Mark Dynamic Indo application!
+                        Welcome to Mark Dynamics Indonesia application!
                     </div>
 
                     @livewire('cms.message.list-content')
