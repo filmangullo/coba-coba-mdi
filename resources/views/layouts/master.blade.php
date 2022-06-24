@@ -659,6 +659,12 @@
 										@endif
 									@endforeach
 									@if($body->name_en == 'Investor Relation')
+										<a href="{{ route('shareholders') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
+											<!-- Heroicon name: outline/chart-bar -->
+											<span class="text-base font-medium text-gray-900">
+											@lang('custom.shareholders')
+											</span>
+										</a>
 										<a href="{{ route('annual-meeting') }}" class="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50">
 											<!-- Heroicon name: outline/chart-bar -->
 											<span class="text-base font-medium text-gray-900">
