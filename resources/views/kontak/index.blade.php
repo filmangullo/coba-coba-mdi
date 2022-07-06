@@ -41,7 +41,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
                         <p class="font-semibold text-white">Jl. Utama Dusun I, Desa Dalu Sepuluh - A
-                            Tanjung Morawa, Deli Serdang, <br>Sumatera Utara,
+                            Tanjung Morawa,<br> Deli Serdang, Sumatera Utara,
                             Indonesia – 20362</p>
                     </div>
                 </div>
