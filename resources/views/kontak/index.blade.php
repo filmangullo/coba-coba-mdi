@@ -1,14 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 pt-32 lg:px-8">
-    <h2 class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-mark-default sm:text-4xl">@lang('contact.title')</h2>
-    {{-- <p class="animate__fadeInDown animate__animated mt-2 text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+<div class="px-4 pt-32 pb-12 mx-auto max-w-7xl sm:px-6 lg:pb-16 lg:px-8">
+    <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-center animate__fadeInDown animate__animated text-mark-default sm:text-4xl">@lang('contact.title')</h2>
+    {{-- <p class="mt-2 text-3xl font-extrabold tracking-tight text-center text-gray-900 animate__fadeInDown animate__animated sm:text-4xl">
     Everything you need to deploy your app
     </p> --}}
 
-    <div class="lg:grid space-y-6 mt-12 lg:space-y-0 grid-cols-2 items-start w-full border border-gray-300 rounded-xl">
-        <div class="animate__fadeInLeft animate__animated p-10">
+    <div class="items-start w-full grid-cols-2 mt-12 space-y-6 border border-gray-300 lg:grid lg:space-y-0 rounded-xl">
+        <div class="p-10 animate__fadeInLeft animate__animated">
             <div class="h-full">
                 <div class="text-4xl font-bold">
                     @lang('contact.header')
@@ -17,8 +17,8 @@
                 @livewire('web.kontak.forms')
             </div>
         </div>
-        <div class="animate__fadeInRight h-full animate__animated">
-            <div class="p-10 space-y-12 h-full bg-mark-default rounded-r-xl">
+        <div class="h-full animate__fadeInRight animate__animated">
+            <div class="h-full p-10 space-y-12 bg-mark-default rounded-r-xl">
                 <div class="text-2xl font-bold text-white">
                     @lang('contact.our-information')
                 </div>
@@ -40,9 +40,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
-                        <p class="font-semibold text-white">Jl. Pelita Barat No. 2, Medan Star Industrial Estate, <br>
-                            Jl. Raya Medan Lubuk Pakam Km. 19,5 <br>
-                            North Sumatera – 20362, Indonesia</p>
+                        <p class="font-semibold text-white">Jl. Utama Dusun I, Desa Dalu Sepuluh - A
+                            Tanjung Morawa, Deli Serdang, <br>Sumatera Utara,
+                            Indonesia – 20362</p>
                     </div>
                 </div>
             </div>
