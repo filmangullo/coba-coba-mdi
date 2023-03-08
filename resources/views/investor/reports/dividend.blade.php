@@ -10,11 +10,11 @@
     </p> --}}
         <div class="w-full mt-12 lg:mt-24">
             @if (App::isLocale('id'))
-                <img class="w-full" src="{{ asset('img/deviden.jpg') }}" alt="Mark Dynamics Dividend Information">
+                <img class="w-full" src="{{ asset('img/deviden.png') }}" alt="Mark Dynamics Dividend Information">
             @elseif(App::isLocale('en'))
-                <img class="w-full" src="{{ asset('img/deviden-eng.jpg') }}" alt="Mark Dynamics Dividend Information">
+                <img class="w-full" src="{{ asset('img/deviden-eng.png') }}" alt="Mark Dynamics Dividend Information">
             @elseif(App::isLocale('cn'))
-                <img class="w-full" src="{{ asset('img/deviden-cn.jpg') }}" alt="Mark Dynamics Dividend Information">
+                <img class="w-full" src="{{ asset('img/deviden-cn.png') }}" alt="Mark Dynamics Dividend Information">
             @endif
         </div>
     </div>
