@@ -16,13 +16,13 @@ return [
     'vision-mission-valuesvision'   => 'Visi, Misi, & Nilai-Nilai Perseroan',
     'vision-mission'                => 'Visi & Misi',
     'vision'                        => 'Visi',
-    'section-vision'                => 'Mempertahankan dominasi Perseroan di pasar handformer global dan mempersembahkan nilai-nilai ekonomi kepada semua pemangku kepentingan.',
+    'section-vision'                => 'Menjadi perusahaan yang menghasilkan produk bermutu tinggi di dunia.',
     'mission'                       => 'Misi',
-    'section-mission-1'             => 'Berusaha menghasilkan produk-produk dengan kualitas terbaik,',
-    'section-mission-2'             => 'Berkomitmen mengurangi biaya produksi demi mencapai efisiensi,',
-    'section-mission-3'             => 'Menjaga hubungan baik dengan pelanggan melalui pengantaran tepat waktu,',
-    'section-mission-4'             => 'Mempekerjakan dan menjaga para talenta terbaik di Perseroan,',
-    'section-mission-5'             => 'Menghasilkan dan mengadopsi ide-ide baru dan inovasi produk.',
-
-
+    'section-mission-1'             => 'High Quality, menghasilkan kualitas yang terbaik di dunia.',
+    'section-mission-2'             => 'Low Cost, meningkatkan efisiensi di segala bidang sehingga biaya produksi dapat ditekan.',
+    'section-mission-3'             => 'Menjaga komunikasi yang baik dengan customer dan memberikan service tepat waktu',
+    'section-mission-4'             => 'Mempekerjakan tenaga-tenaga kerja yang potensial dan berbakat.',
+    'section-mission-5'             => 'Selalu berusaha memunculkan ide-ide baru dan produk baru.',
+    'section-mission-6'             => 'Menjadikan kecelakaan kerja dan penyakit akibat kerja.',
+    'section-mission-7'             => 'Meniadakan pencemaran lingkungan di sekitar areal pabrik.',
 ];

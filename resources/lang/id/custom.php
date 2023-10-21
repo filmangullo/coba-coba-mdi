@@ -34,7 +34,7 @@ return [
     'annual' => 'Laporan Tahunan',
     'pubex' => 'Pemaparan Publik',
     'dividend' => 'Informasi Dividen',
-    'annual-general' => 'Rapat Umum Pemegang Saham',
+    'annual-general' => 'Rapat Umum Pemegang Saham - Informasi Lain',
     'prospectus' => 'Prospektus',
     'sustainability' => 'Keberlanjutan',
     'csr' => 'Pengembangan Sosial & Masyarakat',
