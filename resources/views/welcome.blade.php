@@ -143,7 +143,7 @@
           </div>
         </a> --}}
 
-        <a href="https://berjayadynamicsindonesia.web.indotrading.com/" class="block pt-6">
+        <a href="https://berjayadynamicsindo.com" class="block pt-6">
           <div class="flow-root h-full p-8 bg-mark-default rounded-lg">
             <div class="grid content-between">
               <div class="flex justify-center">
