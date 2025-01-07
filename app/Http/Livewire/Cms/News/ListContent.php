@@ -9,6 +9,11 @@ class ListContent extends Component
 {
     use WithPagination;
 
+    public function delete($id) {
+         $news       = News::where("id", $id)->first();
+
+        $news->delete();
+    }
     public function render()
     {
         $news       = News::orderBy('news_date', 'desc')
